@@ -1,11 +1,11 @@
-import { c as create_ssr_component, a as compute_rest_props, g as get_current_component, b as spread, e as escape_attribute_value, d as escape_object, f as add_attribute, s as setContext, v as validate_component } from "../../chunks/index-9e8b912b.js";
-import { f as forwardEventsBuilder, c as classMap, a as classAdderBuilder, D as Div, S as Span, b as Svg } from "../../chunks/classAdderBuilder-4ade2dd0.js";
-import { I as IconButton, a as Icon } from "../../chunks/IconButton-05bf7efb.js";
-import { r as readable } from "../../chunks/index-504d544c.js";
+import { c as create_ssr_component, a as compute_rest_props, g as get_current_component, b as spread, e as escape_attribute_value, d as escape_object, f as add_attribute, s as setContext, v as validate_component } from "../../chunks/index-4e6387dd.js";
+import { r as readable } from "../../chunks/index-89505517.js";
+import { f as forwardEventsBuilder, c as classMap, a as classAdderBuilder, D as Div, S as Span } from "../../chunks/classAdderBuilder-b24d9c79.js";
 import { d as dispatch } from "../../chunks/dispatch-e66f93b5.js";
 import { __extends, __assign } from "tslib";
-import { M as MDCFoundation } from "../../chunks/Ripple-bde979ed.js";
-import { mdiGithub } from "@mdi/js";
+import { M as MDCFoundation } from "../../chunks/Ripple-816f236b.js";
+import { I as IconButton } from "../../chunks/IconButton-c17b8013.js";
+import "@mdi/js";
 /**
  * @license
  * Copyright 2018 Google Inc.
@@ -594,38 +594,37 @@ var Title = classAdderBuilder({
   component: Span
 });
 const Section = Section$1;
+var __layout_svelte_svelte_type_style_lang = "";
+const css = {
+  code: "app,body,html{display:block !important;height:auto !important;width:auto !important;position:static !important}",
+  map: null
+};
 const _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let topAppBar;
-  let $$settled;
-  let $$rendered;
-  do {
-    $$settled = true;
-    $$rendered = `${validate_component(TopAppBar, "TopAppBar").$$render($$result, { variant: "standard", this: topAppBar }, {
-      this: ($$value) => {
-        topAppBar = $$value;
-        $$settled = false;
-      }
-    }, {
-      default: () => `${validate_component(Row, "Row").$$render($$result, {}, {}, {
-        default: () => `${validate_component(Section, "Section").$$render($$result, {}, {}, {
-          default: () => `${validate_component(Title, "Title").$$render($$result, {}, {}, { default: () => `DarkDev Games` })}`
-        })}
-		${validate_component(Section, "Section").$$render($$result, { align: "end", toolbar: true }, {}, {
-          default: () => `${validate_component(IconButton, "IconButton").$$render($$result, {
-            "aria-label": "GitHub",
-            href: "https://github.com/hperrin/svelte-material-ui"
-          }, {}, {
-            default: () => `${validate_component(Icon, "Icon").$$render($$result, { component: Svg, viewBox: "0 0 24 24" }, {}, {
-              default: () => `<path fill="${"currentColor"}"${add_attribute("d", mdiGithub, 0)}></path>`
-            })}`
-          })}`
-        })}`
+  $$result.css.add(css);
+  return `${validate_component(TopAppBar, "TopAppBar").$$render($$result, { variant: "standard" }, {}, {
+    default: () => `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+      default: () => `${validate_component(Section, "Section").$$render($$result, {}, {}, {
+        default: () => `${validate_component(IconButton, "IconButton").$$render($$result, { class: "material-icons" }, {}, { default: () => `menu` })}
+      ${validate_component(Title, "Title").$$render($$result, {}, {}, { default: () => `Standard` })}`
+      })}
+    ${validate_component(Section, "Section").$$render($$result, { align: "end", toolbar: true }, {}, {
+        default: () => `${validate_component(IconButton, "IconButton").$$render($$result, {
+          class: "material-icons",
+          "aria-label": "Download"
+        }, {}, { default: () => `file_download` })}
+      ${validate_component(IconButton, "IconButton").$$render($$result, {
+          class: "material-icons",
+          "aria-label": "Print this page"
+        }, {}, { default: () => `print` })}
+      ${validate_component(IconButton, "IconButton").$$render($$result, {
+          class: "material-icons",
+          "aria-label": "Bookmark this page"
+        }, {}, { default: () => `bookmark` })}`
       })}`
-    })}
+    })}`
+  })}
 
 
 ${slots.default ? slots.default({}) : ``}`;
-  } while (!$$settled);
-  return $$rendered;
 });
 export { _layout as default };

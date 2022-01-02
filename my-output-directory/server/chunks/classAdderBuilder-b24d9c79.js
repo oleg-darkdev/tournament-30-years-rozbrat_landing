@@ -1,4 +1,4 @@
-import { l as listen, h as bubble, p as prevent_default, i as stop_propagation, c as create_ssr_component, a as compute_rest_props, g as get_current_component, b as spread, e as escape_attribute_value, d as escape_object, f as add_attribute, j as getContext, s as setContext, o as onDestroy, v as validate_component, m as missing_component, k as globals } from "./index-9e8b912b.js";
+import { l as listen, j as bubble, p as prevent_default, k as stop_propagation, c as create_ssr_component, a as compute_rest_props, g as get_current_component, b as spread, e as escape_attribute_value, d as escape_object, f as add_attribute, h as getContext, s as setContext, o as onDestroy, v as validate_component, m as missing_component, i as globals } from "./index-4e6387dd.js";
 function classMap(classObj) {
   return Object.entries(classObj).filter(([name, value]) => name !== "" && value).map(([name]) => name).join(" ");
 }
@@ -237,20 +237,6 @@ const Span$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.getElement(getElement);
   return `<span${spread([escape_object($$restProps)])}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``}</span>`;
 });
-const Svg$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["use", "getElement"]);
-  let { use = [] } = $$props;
-  forwardEventsBuilder(get_current_component());
-  let element;
-  function getElement() {
-    return element;
-  }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  return `<svg${spread([escape_object($$restProps)])}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``}</svg>`;
-});
 const Ul$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["use", "getElement"]);
   let { use = [] } = $$props;
@@ -275,7 +261,6 @@ const H6 = H6$1;
 const Li = Li$1;
 const Nav = Nav$1;
 const Span = Span$1;
-const Svg = Svg$1;
 const Ul = Ul$1;
 const { Object: Object_1 } = globals;
 const internals = {
@@ -360,4 +345,4 @@ function classAdderBuilder(props) {
     }
   });
 }
-export { A, Button as B, Div as D, H3 as H, Li as L, Nav as N, Span as S, Ul as U, classAdderBuilder as a, Svg as b, classMap as c, Span$1 as d, Svg$1 as e, forwardEventsBuilder as f, H5 as g, H6 as h };
+export { A, Button as B, Div as D, H3 as H, Li as L, Nav as N, Span as S, Ul as U, classAdderBuilder as a, Span$1 as b, classMap as c, H5 as d, H6 as e, forwardEventsBuilder as f };
