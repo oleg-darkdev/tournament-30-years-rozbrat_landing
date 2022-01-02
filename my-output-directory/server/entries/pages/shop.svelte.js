@@ -2,9 +2,8 @@ import { c as create_ssr_component, u as subscribe, s as setContext, o as onDest
 import { C as Card, P as PrimaryAction, M as Media, a as Content } from "../../chunks/index-9ad0e08d.js";
 import { w as writable } from "../../chunks/index-89505517.js";
 import { f as forwardEventsBuilder, c as classMap, D as Div } from "../../chunks/classAdderBuilder-b24d9c79.js";
-import { R as Ripple } from "../../chunks/Ripple-816f236b.js";
+import { R as Ripple } from "../../chunks/Ripple-96dfaf3f.js";
 import { B as BlackFaq, C as ColorFaq, S as SocialPanel } from "../../chunks/ColorFaq-2a3e5429.js";
-import "tslib";
 const ContextFragment = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $storeValue, $$unsubscribe_storeValue;
   let { key } = $$props;

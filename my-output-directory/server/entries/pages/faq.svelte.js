@@ -1,11 +1,10 @@
 import { c as create_ssr_component, r as escape, v as validate_component, t as each } from "../../chunks/index-4e6387dd.js";
 import { C as ColorFaq, S as SocialPanel, B as BlackFaq } from "../../chunks/ColorFaq-2a3e5429.js";
-import { L as List, I as Item, T as Text } from "../../chunks/index-76a51b29.js";
+import { L as List, I as Item, T as Text } from "../../chunks/index-af2ec3b0.js";
 import { C as Card, P as PrimaryAction, M as Media, a as Content } from "../../chunks/index-9ad0e08d.js";
 import "../../chunks/classAdderBuilder-b24d9c79.js";
 import "../../chunks/dispatch-e66f93b5.js";
-import "../../chunks/Ripple-816f236b.js";
-import "tslib";
+import "../../chunks/Ripple-96dfaf3f.js";
 const css$3 = {
   code: ".banner.svelte-1e1h7ax{height:560px;width:100%;background-repeat:no-repeat;background-attachment:fixed;background-position:350px -10px;margin-top:-1px;display:flex;justify-content:center;align-content:center;align-items:end}",
   map: null

@@ -1,8 +1,7 @@
 import { c as create_ssr_component, a as compute_rest_props, g as get_current_component, h as getContext, s as setContext, o as onDestroy, v as validate_component, m as missing_component, i as globals } from "./index-4e6387dd.js";
 import { f as forwardEventsBuilder, c as classMap, B as Button, A } from "./classAdderBuilder-b24d9c79.js";
 import { d as dispatch } from "./dispatch-e66f93b5.js";
-import { M as MDCFoundation, R as Ripple } from "./Ripple-816f236b.js";
-import { __extends, __assign } from "tslib";
+import { _ as __extends, a as __assign, M as MDCFoundation, R as Ripple } from "./Ripple-96dfaf3f.js";
 /**
  * @license
  * Copyright 2018 Google Inc.

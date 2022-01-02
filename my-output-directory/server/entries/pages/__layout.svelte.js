@@ -2,9 +2,8 @@ import { c as create_ssr_component, a as compute_rest_props, g as get_current_co
 import { r as readable } from "../../chunks/index-89505517.js";
 import { f as forwardEventsBuilder, c as classMap, a as classAdderBuilder, D as Div, S as Span } from "../../chunks/classAdderBuilder-b24d9c79.js";
 import { d as dispatch } from "../../chunks/dispatch-e66f93b5.js";
-import { __extends, __assign } from "tslib";
-import { M as MDCFoundation } from "../../chunks/Ripple-816f236b.js";
-import { I as IconButton } from "../../chunks/IconButton-c17b8013.js";
+import { _ as __extends, a as __assign, M as MDCFoundation } from "../../chunks/Ripple-96dfaf3f.js";
+import { I as IconButton } from "../../chunks/IconButton-d064aaf2.js";
 import "@mdi/js";
 /**
  * @license
