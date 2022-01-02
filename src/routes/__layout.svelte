@@ -12,7 +12,7 @@
 	import { Svg } from '@smui/common/elements';
 	import { mdiGithub, mdiWeb } from '@mdi/js';
 
-	let topAppBar: TopAppBarComponentDev;
+	let topAppBar = TopAppBarComponentDev;
 
 </script>
 
