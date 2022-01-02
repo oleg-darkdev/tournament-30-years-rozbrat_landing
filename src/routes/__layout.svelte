@@ -9,32 +9,30 @@
   import IconButton from '@smui/icon-button';
 	import { Label, Icon } from '@smui/common';
 	import { Svg } from '@smui/common/elements';
+  import Footer from '../components/Footer.svelte'
 
 </script>
 
-<TopAppBar variant="standard">
+<TopAppBar variant="short">
   <Row>
     <Section>
       <IconButton class="material-icons">menu</IconButton>
-      <Title>Standard</Title>
+      <Title>Short</Title>
     </Section>
     <Section align="end" toolbar>
       <IconButton class="material-icons" aria-label="Download"
         >file_download</IconButton
       >
-      <IconButton class="material-icons" aria-label="Print this page"
-        >print</IconButton
-      >
-      <IconButton class="material-icons" aria-label="Bookmark this page"
-        >bookmark</IconButton
-      >
     </Section>
   </Row>
 </TopAppBar>
 
-<!-- <div class="container"></div> -->
+
 <slot />
 
+
+
+<Footer />
 
 <style>
   /* Hide everything above this component. */
@@ -46,4 +44,5 @@
     width: auto !important;
     position: static !important;
   }
+
 </style>

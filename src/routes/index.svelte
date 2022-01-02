@@ -9,8 +9,8 @@
     ActionButtons,
     ActionIcons,
   } from '@smui/card';
-  import Button, { Label } from '@smui/button';
-  import IconButton, { Icon } from '@smui/icon-button';
+
+import SocialPanel from '../components/SocialPanel.svelte'
 
 
 
@@ -109,15 +109,19 @@ https://www.fontspace.com/whoa-font-f6273 */
 }
 
 .tur-bg {
-width: 100%;
-height: 1000px;
+width: 430px;
+/* max-width: ; */
+max-height: 600px;
+height: auto;
 background-color: #47babb;
 display: flex;
 justify-content: center;
+margin: 35px 0 15px 0;
+padding: 25px 0 ;
 /* flex-direction: column; */
 }
 
-.games-promo-wrap {
+/* .games-promo-wrap {
   display: flex;
 justify-content: center;
 flex-direction: row;
@@ -129,23 +133,25 @@ flex-direction: column;
 flex-wrap: nowrap;
 justify-content: space-between;
 margin-left:35px;
-}
+} */
 
 * :global(.hidden) {
 	display: none;
 }
-
 </style>
 
 <svelte:head>
   <title>DarkDev Games</title>
 </svelte:head>
 
+<div style="display: flex; justify-content: center;align-items: center;  flex-direction: column; ">
 
-<section style="max-width: 760px; width: 760px; margin: 0px 0 -45px 0; ">
+
+
+<section style="width: 430px; margin: 0; ">
 <div class="tur-bg" >
-  <Card style='width: 380px; margin-top: 25px; height: 550px; background-color: #000000;'>
-    <PrimaryAction >
+  <Card style='width: 380px; margin: 0; height: 550px; background-color: #000000;'>
+ 
       {#if !getStarted}
         <Media  style='background-image: url("img/glad_to_see_you.png");  height: 450px; width: 100%;' ></Media>
       {/if}
@@ -153,15 +159,15 @@ margin-left:35px;
       align-items: center; background-color: #050506; flex-direction: column;
       ">
       {#if !getStarted}
-      <Card style='width: 250px;  height: 80px; margin-bottom: 15px;'>
-      <PrimaryAction style="display: flex;      align-items: center; " on:click={() => getStarted = !getStarted} padded>
+      <Card style='width: 250px; background-color: #47babb;  height: 80px; margin-bottom: 15px;'>
+      <PrimaryAction style="display: flex; align-items: center;" on:click={() => getStarted = !getStarted} padded>
         <span style="font: 35px 'grafitty';">Get started</span>
       </PrimaryAction>
       </Card> 
    
       {:else}
       {#each firstMenu as menuItem}
-     <Card style='width: 300px;  height: 90px; margin-bottom: 10px;'>
+     <Card style='width: 300px; border: 2px solid #47babb; height: 90px; margin-bottom: 10px;  '>
       <PrimaryAction style="display: flex;      align-items: center; " on:click={() => {
         
         menuItem.variable = !menuItem.variable;
@@ -169,21 +175,18 @@ margin-left:35px;
       }} padded>
         <a rel=prefetch href={menuItem.link}><span style="font: 40px 'grafitty';">{menuItem.text} {menuItem.emoji}</span> </a>
       </PrimaryAction>
-
-  
-     
       </Card> 
       {/each}
       {/if}
           </Content>
-    </PrimaryAction>
-  </Card>
 
-  <!-- <SocialPanel style="" title=''/> -->
-   <!-- -->
+  </Card>
 </div>
 </section>
 
+    <SocialPanel title="I'm on social media"/>
+
+</div>
 <!-- 
 
 
