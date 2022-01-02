@@ -3,7 +3,7 @@ export const manifest = {
 	assets: new Set(["favicon.png","grafitty.otf","img/about/om.png","img/about/partners.png","img/about/partner_listovka.png","img/about копия.svg","img/blog/blog_bg.png","img/blog/post_card.png","img/darkdruk.png","img/faq/faq_bg.png","img/faq_1.png","img/footer/logo_footer.png","img/glad_to_see_you.png","img/main/about/about_1.png","img/main/about/logo_about.png","img/main/principles/edu.png","img/main/principles/eko.png","img/main/principles/gamify.png","img/main/principles/progress.png","img/main/principles/reflect.png","img/main/sale.png","img/principles/coop.png","img/principles/education.png","img/principles/eko.png","img/principles/gamify.png","img/principles/progress.png","img/principles/reflect.png","img/social/fb_mini.png","img/social/insta_mini.png","img/social/in_mini.png","img/social/telega_mini.png","img/social/tweeter_mini.png","img/social/youtube_mini.png","img/workshop/workshop.png","smui-dark.css","smui.css"]),
 	_: {
 		mime: {".png":"image/png",".otf":"font/otf",".svg":"image/svg+xml",".css":"text/css"},
-		entry: {"file":"start-ffabce95.js","js":["start-ffabce95.js","chunks/vendor-2fc4fd06.js"],"css":["assets/start-61d1577b.css"]},
+		entry: {"file":"start-505e13d6.js","js":["start-505e13d6.js","chunks/vendor-2fc4fd06.js"],"css":["assets/start-61d1577b.css"]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),

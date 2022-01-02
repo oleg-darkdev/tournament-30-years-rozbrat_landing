@@ -9,7 +9,6 @@
   import IconButton from '@smui/icon-button';
 	import { Label, Icon } from '@smui/common';
 	import { Svg } from '@smui/common/elements';
-	import { mdiGithub, mdiWeb } from '@mdi/js';
 
 </script>
 

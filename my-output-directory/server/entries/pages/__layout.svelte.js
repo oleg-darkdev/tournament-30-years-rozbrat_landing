@@ -4,7 +4,6 @@ import { f as forwardEventsBuilder, c as classMap, a as classAdderBuilder, D as 
 import { d as dispatch } from "../../chunks/dispatch-e66f93b5.js";
 import { _ as __extends, a as __assign, M as MDCFoundation } from "../../chunks/Ripple-96dfaf3f.js";
 import { I as IconButton } from "../../chunks/IconButton-d064aaf2.js";
-import "@mdi/js";
 /**
  * @license
  * Copyright 2018 Google Inc.
