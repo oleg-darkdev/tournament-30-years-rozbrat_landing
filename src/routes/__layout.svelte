@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import Button from '@smui/button';
 	import TopAppBar, {
 		Row,
