@@ -11,12 +11,13 @@ export let title
 
 </style>
 
-<section style="width: 100%; margin-top: -50px;">
-<SvgLine/>
+<section style="width: 100%; ">
+  <!--  margin-top: -50px; -->
+<!-- <SvgLine/> -->
   <div class="section-body" style="background-color: #47babb;">
-    <Paper color="primary" style="width: auto; max-width: 1200px; background-color: #000;" class="paper-demo">
+    <Paper color="primary" style="width: 90%; margin: 0 20%; max-width: 1200px; background-color: #191B1B;" class="paper-demo">
       <Title style="color: #fff; font: 26px 'grafitty';">{title}</Title>
-      <Content style="">
+      <Content >
         <slot>
         </slot>
       </Content>

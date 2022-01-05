@@ -10,10 +10,11 @@ export let title
 
 </style>
 
-<section style="width: 100%; margin-top: -50px;">
-<SvgLine/>
-  <div class="section-body" style="ackground-color: #000;">
-    <Paper style="width: auto; max-width: 960px; background-color: #47babb;" class="paper-demo">
+<section style="width: 100%; ">
+  <!--  margin-top: -50px; -->
+<!-- <SvgLine/> -->
+  <div class="section-body" style="ackground-color: #191B1B;">
+    <Paper style="width: auto; width: 90%; margin: 0 20%; max-width: 1200px; background-color: #47babb;" class="paper-demo">
       <Title style="color: #000; font: 26px 'grafitty';">{title}</Title>
       <Content style="">
         <slot>
@@ -23,4 +24,16 @@ export let title
   </div>
 </section>
 
-
+<!-- 
+<section style="width: 100%; margin-top: -50px;">
+<SvgLine/>
+  <div class="section-body" style="background-color: #47babb;">
+    <Paper color="primary" style="width: 90%; margin: 0 20%; max-width: 1200px; background-color: #191B1B;" class="paper-demo">
+      <Title style="color: #fff; font: 26px 'grafitty';">{title}</Title>
+      <Content >
+        <slot>
+        </slot>
+      </Content>
+    </Paper>
+  </div>
+</section> -->
