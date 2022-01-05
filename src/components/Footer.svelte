@@ -29,7 +29,7 @@ termsOfService;
   <PolicyMenu bind:merchPolicy  bind:refundPolicy bind:shippingPolicy bind:privacyPolicy bind:termsOfService/>
 
 <!-- <SvgLine /> -->
-<Paper
+<!-- <Paper
 			color="primary"
 			style=" max-width: 760px;  margin: 25px 30%; background-color: #fff;"
 			class="paper-demo"
@@ -59,7 +59,10 @@ termsOfService;
       </li>
 
     </ul>
-
+</div>
+		</Content>
+      
+	</Paper> -->
 		<!-- <div class="shop">
 <h3 > SHOP</h3>
 <div class="logos-column">
@@ -82,10 +85,8 @@ termsOfService;
 </div>
 </div> -->
 
-</div>
-			</Content>
-      
-	</Paper>
+
+	
 
 	<Line bind:merchPolicy  bind:refundPolicy bind:shippingPolicy bind:privacyPolicy bind:termsOfService/>
   
