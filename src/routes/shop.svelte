@@ -116,12 +116,5 @@ border-radius: 4px; */
 }
 
 
-.games-promo-wrap {
-  display: flex;
-justify-content: center;
-flex-direction: row;
-flex-wrap: wrap;
-}
-
 
 </style>
