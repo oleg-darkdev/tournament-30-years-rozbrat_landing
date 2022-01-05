@@ -18,21 +18,22 @@
     width: auto !important;
     position: static !important;
   }
-@font-face {
-    font-family: 'grafitty';
-    src: url('grafitty.otf');
-}
+
 
 :global(.section-body) {
   display: flex;
 justify-content: center;
-padding: 125px 0;
+/* padding: 125px 0; */
+padding: 50px 0;
+
 }
 
 :global(.section-svg-line) {
   display: block;
 width: 100%;
-margin-bottom: -10px;
+/* margin-bottom: -15px; */
+/* overflow: hidden;
+box-sizing: border-box; */
 }
 
 :global(.games-promo-wrap) {
