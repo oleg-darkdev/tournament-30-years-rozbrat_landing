@@ -42,14 +42,6 @@ flex-direction: row;
 flex-wrap: wrap;
 }
 
-* :global(a) {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-  text-decoration: none;
-}
 * :global(.hidden) {
 	display: none;
 }
