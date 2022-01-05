@@ -65,11 +65,6 @@ let listOfAuctions = [
 	.accordion-container {
 		max-width: 750px;
 	}
-   .questions-wrap {
-	  height: auto;
-			padding:25px;
-
-  }
 </style>
 
 

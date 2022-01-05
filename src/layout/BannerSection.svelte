@@ -13,9 +13,9 @@
 
 	.banner {
 		height: 560px; width: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-background-position: 350px -10px;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: 350px -10px;
 		margin-top: -1px;
 		display: flex;
 		justify-content: center;

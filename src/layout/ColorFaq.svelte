@@ -8,17 +8,12 @@ export let title
 </script>
 
 <style>
-.section-body {
-  background-color: #47babb;
-  display: flex;
-justify-content: center;
-padding: 125px 0;
-}
+
 </style>
 
 <section style="width: 100%; margin-top: -50px;">
 <SvgLine/>
-  <div class="section-body">
+  <div class="section-body" style="background-color: #47babb;">
     <Paper color="primary" style="width: auto; max-width: 1200px; background-color: #000;" class="paper-demo">
       <Title style="color: #fff; font: 26px 'grafitty';">{title}</Title>
       <Content style="">
