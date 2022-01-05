@@ -3,7 +3,7 @@
    import SvgLine from './BlackSvgLine.svelte'
    import Card, {Content} from '@smui/card/dist';
 
-export let title
+export let title, color = false;
 </script>
 
 <style>
@@ -13,8 +13,8 @@ export let title
 <section style="width: 100%; ">
   <!--  margin-top: -50px; -->
 <!-- <SvgLine/> -->
-  <div class="section-body" style="ackground-color: #191B1B;">
-    <Paper style="width: auto; width: 90%; margin: 0 20%; max-width: 1200px; background-color: #47babb;" class="paper-demo">
+  <div class="section-body" style="background-color: #191B1B;">
+    <Paper style="width: auto; width: 90%; margin: 0 20%; max-width: 1200px; background-color: {color ? color: '#47babb'};" class="paper-demo">
       <Title style="color: #000; font: 26px 'grafitty';">{title}</Title>
       <Content style="">
         <slot>
