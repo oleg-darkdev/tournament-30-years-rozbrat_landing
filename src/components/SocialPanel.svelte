@@ -1,10 +1,29 @@
 <script>
-		 import Card, {Content, PrimaryAction, Media, MediaContent, Actions, ActionButtons, ActionIcons} from '@smui/card';
+		 import Card, {Content, PrimaryAction, Media} from '@smui/card';
 
      const socialMini = [
-	// main, faq, Workshops, news
 	{
+		img: "img/social/insta_mini.png",
+		link: "",
+	},
+	{
+		img: "img/social/youtube_mini.png",
+		link: "",
+	},
+		{
+		img: "img/social/telega_mini.png",
+		link: "",
+	},
+		{
 		img: "img/social/fb_mini.png",
+		link: "",
+	},
+			{
+		img: "img/social/patronite.png",
+		link: "",
+	},
+	{
+		img: "img/social/pinterest.png",
 		link: "",
 	},
 	{
@@ -12,21 +31,14 @@
 		link: "",
 	},
 	{
-		img: "img/social/insta_mini.png",
-		link: "",
-	},
-	{
-		img: "img/social/telega_mini.png",
-		link: "",
-	},
-	{
 		img: "img/social/tweeter_mini.png",
 		link: "",
 	},
-	{
-		img: "img/social/youtube_mini.png",
+		{
+		img: "img/social/etsy.png",
 		link: "",
 	},
+
 ];
     
 
@@ -36,9 +48,10 @@ export let title = ''
 </script>
 
   <Paper style="margin: 0 auto; height: auto; margin-bottom: 25px;" class="paper-demo">
-    <Title style="font: 30px 'grafitty';">{title + ` 👇`}</Title>
+	  <!--  👇 -->
+    <Title style="font: 30px 'grafitty'; text-align: center;">{title + ` 💙`}</Title> 
     <!-- <Subtitle>This is a sheet of paper.</Subtitle> -->
-    <Content style="display: flex; flex-direction: row; justify-content: center; max-width: 600px; flex-wrap: wrap;">
+    <Content style="display: flex; flex-direction: row; justify-content: center; max-width: 500px; flex-wrap: wrap;">
 	{#each socialMini as social}
       <Card style="width: 70px; margin: 5px;">
 				<PrimaryAction on:click={() => location.href = social.link}>
