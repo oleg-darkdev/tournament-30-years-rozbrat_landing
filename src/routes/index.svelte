@@ -50,16 +50,37 @@ import SocialPanel from '../components/SocialPanel.svelte'
 let shop = false,
 faq = false,
 about = false,
+games = false,
+handmade = false,
 support = false,
 workshops = false;
 
 let getStarted = false,
 firstMenu = [
+  // {
+  //   text: 'shop',
+  //   variable: shop,
+  //   link: 'shop',
+  //   emoji: '🛒'
+  // },
   {
-    text: 'shop',
-    variable: shop,
-    link: 'shop',
-    emoji: '🛒'
+    text: 'Boardgames',
+    variable: games,
+    link: 'games',
+    emoji: '🎲'
+  },
+    
+  {
+    text: 'Workshops',
+    variable: workshops,
+    link: 'workshops',
+    emoji: '🎯'
+  },
+          {
+    text: 'Handmade',
+    variable: handmade,
+    link: 'handmade',
+    emoji: '🎨'
   },
     {
     text: 'FAQs',
@@ -67,18 +88,14 @@ firstMenu = [
     link: 'faq',
     emoji: '⁉️'
   },
-      {
-    text: 'Support',
+
+  {
+    text: 'Support ME',
     variable: support,
     link: 'support',
-    emoji: '🖤'
+    emoji: '💙'
   },
-  //     {
-  //   text: 'workshops',
-  //   variable: workshops,
-  //   link: 'workshops',
-  //   emoji: '🎲'
-  // },
+
   // {
   //   text: 'about',
   //   variable: about,
@@ -91,22 +108,12 @@ firstMenu = [
 
 
 <style>
-@font-face {
-    font-family: 'grafitty';
-    src: url('grafitty.otf');
-}
+
 /* https://www.fontspace.com/amanzing-grafiti-font-f47454
 https://www.fontspace.com/whoa-font-f6273 */
 
 
-* :global(a) {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-  text-decoration: none;
-}
+
 
 .tur-bg {
 width: 430px;
@@ -135,9 +142,7 @@ justify-content: space-between;
 margin-left:35px;
 } */
 
-* :global(.hidden) {
-	display: none;
-}
+
 </style>
 
 <svelte:head>
@@ -167,7 +172,7 @@ margin-left:35px;
    
       {:else}
       {#each firstMenu as menuItem}
-     <Card style='width: 300px; border: 2px solid #47babb; height: 90px; margin-bottom: 10px;  '>
+     <Card style='width: 330px; border: 2px solid #47babb; height: 90px; margin-bottom: 10px;  '>
       <PrimaryAction style="display: flex;      align-items: center; " on:click={() => {
         
         menuItem.variable = !menuItem.variable;
