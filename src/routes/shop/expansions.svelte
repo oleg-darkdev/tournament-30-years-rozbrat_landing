@@ -15,17 +15,9 @@
  import List, { Item, Text, PrimaryText, SecondaryText } from '@smui/list';   
 
 import SocialPanel from '../../components/SocialPanel.svelte'
-  import Banner from '../layout/BannerSection.svelte'
- import BlackFaq from '../layout/BlackFaq.svelte';
- import ColorFaq from '../layout/ColorFaq.svelte';
-
-
-
-
-  let showList = true;
-  let panel2Open = false;
-  let panel3Open = false;
-  let panel4Open = false;
+  // import Banner from '../layout/BannerSection.svelte'
+ import BlackFaq from '../../layout/BlackFaq.svelte';
+ import ColorFaq from '../../layout/ColorFaq.svelte';
 
 let listOfAuctions = [
 	{
@@ -57,19 +49,12 @@ let listOfAuctions = [
     ]
 	}
 ]
-
-
 </script>
 
 <style>
 	.accordion-container {
 		max-width: 750px;
 	}
-   .questions-wrap {
-	  height: auto;
-			padding:25px;
-
-  }
 </style>
 
 
