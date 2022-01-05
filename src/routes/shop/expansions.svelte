@@ -14,7 +14,7 @@
   import Button, { Group,  Label } from '@smui/button';
  import List, { Item, Text, PrimaryText, SecondaryText } from '@smui/list';   
 
-import SocialPanel from '../components/SocialPanel.svelte'
+import SocialPanel from '../../components/SocialPanel.svelte'
   import Banner from '../layout/BannerSection.svelte'
  import BlackFaq from '../layout/BlackFaq.svelte';
  import ColorFaq from '../layout/ColorFaq.svelte';
