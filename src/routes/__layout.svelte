@@ -28,6 +28,18 @@ padding: 50px 0;
 
 }
 
+:global(.tur-bg) {
+    width: 430px;
+    /* max-width: ; */
+    /* max-height: 600px; */
+    height: auto;
+
+    background-color: #47babb;
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 15px 0;
+    padding: 50px 0 25px 0;
+}
 :global(.section-svg-line) {
   display: block;
 width: 100%;

@@ -1,6 +1,6 @@
-import * as module from '../entries/pages/support.svelte.js';
+import * as module from '../entries/pages/workshops.svelte.js';
 export { module };
-export const entry = 'pages/support.svelte-11fecdce.js';
-export const js = ["pages/support.svelte-11fecdce.js","chunks/vendor-2fc4fd06.js","chunks/ColorFaq-f7c432b8.js"];
-export const css = ["assets/pages/support.svelte-504b5ee0.css","assets/ColorFaq-e9696e86.css"];
+export const entry = 'pages/workshops.svelte-d4eb9c38.js';
+export const js = ["pages/workshops.svelte-d4eb9c38.js","chunks/vendor-75a52fb2.js","chunks/ColorFaq-31feac9b.js","chunks/gamesData-1a9796e6.js","chunks/gulagSSSR-7bb563db.js"];
+export const css = ["assets/pages/workshops.svelte-13906da8.css"];
 

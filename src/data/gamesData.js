@@ -8,6 +8,9 @@ import civicActivismGames from './civicActivismGames';
 // import officeGames from './officeGames'; // spyral linux, kanbanel,
 // import managementGames from './managementGames'; // spyral kanbanel,
 
+
+// 🕋 Urbanism. Society of the future.', 🐧 Open source. Linux Operating System.',
+
 function getGames(gamesCategory) {
 	let arrayTemp = [],
 		key;

@@ -1,6 +1,6 @@
-import * as module from '../entries/pages/faq.svelte.js';
+import * as module from '../entries/pages/support.svelte.js';
 export { module };
-export const entry = 'pages/faq.svelte-177e68ec.js';
-export const js = ["pages/faq.svelte-177e68ec.js","chunks/vendor-2fc4fd06.js","chunks/ColorFaq-f7c432b8.js"];
-export const css = ["assets/pages/faq.svelte-f95cf2f7.css","assets/ColorFaq-e9696e86.css"];
+export const entry = 'pages/support.svelte-4c45be2c.js';
+export const js = ["pages/support.svelte-4c45be2c.js","chunks/vendor-75a52fb2.js","chunks/SocialPanel-b3f042c2.js","chunks/BlackFaq-fe1a4032.js"];
+export const css = ["assets/pages/support.svelte-e4546120.css","assets/BannerSection.svelte_svelte_type_style_lang-00c63c1b.css"];
 

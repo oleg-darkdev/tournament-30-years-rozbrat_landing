@@ -1,16 +1,21 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-505e13d6.js",
+    "file": "start-703bb958.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-2fc4fd06.js"
+      "_vendor-75a52fb2.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/build/components/error.svelte",
       "src/routes/index.svelte",
+      "src/routes/workshops.svelte",
+      "src/routes/handmade.svelte",
       "src/routes/support.svelte",
+      "src/routes/games/eco.svelte",
+      "src/routes/games.svelte",
+      "src/routes/shop/expansions.svelte",
       "src/routes/shop.svelte",
       "src/routes/faq.svelte"
     ],
@@ -19,87 +24,186 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-fd87dc8a.js",
+    "file": "pages/__layout.svelte-5f649ff6.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-2fc4fd06.js"
+      "_vendor-75a52fb2.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-fda7db20.css"
+      "assets/pages/__layout.svelte-630a08ff.css"
     ]
   },
   ".svelte-kit/build/components/error.svelte": {
-    "file": "error.svelte-d8474b2c.js",
+    "file": "error.svelte-145b6e75.js",
     "src": ".svelte-kit/build/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-2fc4fd06.js"
+      "_vendor-75a52fb2.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-e9b01d5e.js",
+    "file": "pages/index.svelte-b4406903.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-2fc4fd06.js"
+      "_vendor-75a52fb2.js",
+      "_SocialPanel-b3f042c2.js"
     ],
     "css": [
-      "assets/pages/index.svelte-92df273d.css"
+      "assets/pages/index.svelte-56fa6081.css"
+    ]
+  },
+  "src/routes/workshops.svelte": {
+    "file": "pages/workshops.svelte-d4eb9c38.js",
+    "src": "src/routes/workshops.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-75a52fb2.js",
+      "_ColorFaq-31feac9b.js",
+      "_gamesData-1a9796e6.js",
+      "_gulagSSSR-7bb563db.js"
+    ],
+    "css": [
+      "assets/pages/workshops.svelte-13906da8.css"
+    ]
+  },
+  "src/routes/handmade.svelte": {
+    "file": "pages/handmade.svelte-62999c99.js",
+    "src": "src/routes/handmade.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-75a52fb2.js",
+      "_BlackFaq-fe1a4032.js",
+      "_ColorFaq-31feac9b.js",
+      "_gamesData-1a9796e6.js",
+      "_gulagSSSR-7bb563db.js"
+    ],
+    "css": [
+      "assets/BannerSection.svelte_svelte_type_style_lang-00c63c1b.css"
     ]
   },
   "src/routes/support.svelte": {
-    "file": "pages/support.svelte-11fecdce.js",
+    "file": "pages/support.svelte-4c45be2c.js",
     "src": "src/routes/support.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-2fc4fd06.js",
-      "_ColorFaq-f7c432b8.js"
+      "_vendor-75a52fb2.js",
+      "_SocialPanel-b3f042c2.js",
+      "_BlackFaq-fe1a4032.js"
     ],
     "css": [
-      "assets/pages/support.svelte-504b5ee0.css"
+      "assets/pages/support.svelte-e4546120.css",
+      "assets/BannerSection.svelte_svelte_type_style_lang-00c63c1b.css"
+    ]
+  },
+  "src/routes/games/eco.svelte": {
+    "file": "pages/games/eco.svelte-18ac9377.js",
+    "src": "src/routes/games/eco.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-75a52fb2.js",
+      "_BlackFaq-fe1a4032.js",
+      "_ColorFaq-31feac9b.js"
+    ],
+    "css": [
+      "assets/BannerSection.svelte_svelte_type_style_lang-00c63c1b.css"
+    ]
+  },
+  "src/routes/games.svelte": {
+    "file": "pages/games.svelte-95c79749.js",
+    "src": "src/routes/games.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-75a52fb2.js",
+      "_SocialPanel-b3f042c2.js",
+      "_BlackFaq-fe1a4032.js",
+      "_ColorFaq-31feac9b.js",
+      "_gamesData-1a9796e6.js",
+      "_gulagSSSR-7bb563db.js"
+    ],
+    "css": [
+      "assets/pages/games.svelte-02ad7197.css",
+      "assets/BannerSection.svelte_svelte_type_style_lang-00c63c1b.css"
+    ]
+  },
+  "src/routes/shop/expansions.svelte": {
+    "file": "pages/shop/expansions.svelte-9157dde1.js",
+    "src": "src/routes/shop/expansions.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-75a52fb2.js",
+      "_SocialPanel-b3f042c2.js",
+      "_BlackFaq-fe1a4032.js",
+      "_ColorFaq-31feac9b.js"
+    ],
+    "css": [
+      "assets/pages/shop/expansions.svelte-bddbdd39.css"
     ]
   },
   "src/routes/shop.svelte": {
-    "file": "pages/shop.svelte-35f902aa.js",
+    "file": "pages/shop.svelte-30627ebe.js",
     "src": "src/routes/shop.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-2fc4fd06.js",
-      "_ColorFaq-f7c432b8.js"
-    ],
-    "css": [
-      "assets/pages/shop.svelte-70cf8d4d.css"
+      "_vendor-75a52fb2.js"
     ]
   },
   "src/routes/faq.svelte": {
-    "file": "pages/faq.svelte-177e68ec.js",
+    "file": "pages/faq.svelte-f8c14b84.js",
     "src": "src/routes/faq.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-2fc4fd06.js",
-      "_ColorFaq-f7c432b8.js"
+      "_vendor-75a52fb2.js",
+      "_SocialPanel-b3f042c2.js",
+      "_BlackFaq-fe1a4032.js",
+      "_ColorFaq-31feac9b.js",
+      "_gulagSSSR-7bb563db.js"
     ],
     "css": [
-      "assets/pages/faq.svelte-f95cf2f7.css"
+      "assets/pages/faq.svelte-68c64c72.css",
+      "assets/BannerSection.svelte_svelte_type_style_lang-00c63c1b.css"
     ]
   },
-  "_vendor-2fc4fd06.js": {
-    "file": "chunks/vendor-2fc4fd06.js"
+  "_vendor-75a52fb2.js": {
+    "file": "chunks/vendor-75a52fb2.js"
   },
-  "_ColorFaq-f7c432b8.js": {
-    "file": "chunks/ColorFaq-f7c432b8.js",
+  "_SocialPanel-b3f042c2.js": {
+    "file": "chunks/SocialPanel-b3f042c2.js",
     "imports": [
-      "_vendor-2fc4fd06.js"
-    ],
-    "css": [
-      "assets/ColorFaq-e9696e86.css"
+      "_vendor-75a52fb2.js"
+    ]
+  },
+  "_ColorFaq-31feac9b.js": {
+    "file": "chunks/ColorFaq-31feac9b.js",
+    "imports": [
+      "_vendor-75a52fb2.js"
+    ]
+  },
+  "_gamesData-1a9796e6.js": {
+    "file": "chunks/gamesData-1a9796e6.js",
+    "imports": [
+      "_gulagSSSR-7bb563db.js"
+    ]
+  },
+  "_gulagSSSR-7bb563db.js": {
+    "file": "chunks/gulagSSSR-7bb563db.js"
+  },
+  "_BlackFaq-fe1a4032.js": {
+    "file": "chunks/BlackFaq-fe1a4032.js",
+    "imports": [
+      "_vendor-75a52fb2.js"
     ]
   }
 }

@@ -104,19 +104,6 @@ let getStarted = false,
 /* https://www.fontspace.com/amanzing-grafiti-font-f47454
 https://www.fontspace.com/whoa-font-f6273 */
 
-.tur-bg {
-    width: 430px;
-    /* max-width: ; */
-    max-height: 600px;
-    height: auto;
-    background-color: #47babb;
-    display: flex;
-    justify-content: center;
-    margin: 35px 0 15px 0;
-    padding: 25px 0;
-    /* flex-direction: column; */
-}
-
 /* .games-promo-wrap {
   display: flex;
 justify-content: center;
@@ -140,10 +127,18 @@ a {
     text-decoration: none;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'grafitty';
     src: url('grafitty.otf');
-}
+} */
+  @font-face {
+        font-family: 'grafitty';
+        font-style: normal;
+        font-weight: 400;
+        src: local('grafitty'), format('otf');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    
 </style>
 
 <svelte:head>
@@ -153,9 +148,9 @@ a {
     <div style="display: flex; justify-content: center;align-items: center;  flex-direction: column; ">
         <section style="width: 430px; margin: 0; ">
             <div class="tur-bg" >
-                <Card style='width: 380px; margin: 0; height: 550px; background-color: #000000;'>
+                <Card style='width: 380px; margin: 0; height: auto; background-color: #000000;'>
                     {#if !getStarted}
-                    <Media  style='background-image: url("img/glad_to_see_you.png");  height: 450px; width: 100%;' ></Media>
+                    <Media  style='background-image: url("img/glad_to_see_you.png");  height: 390px; width: 100%;' ></Media>
                     {/if}
                     <Content class="mdc-typography--body2" style="display: flex;
                         align-items: center; background-color: #050506; flex-direction: column;
