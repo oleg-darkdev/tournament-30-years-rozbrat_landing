@@ -114,7 +114,8 @@ let game = {
         map: '',
         version: '0.0.1'
     }, ],
-    videos: [{
+    videos: [
+        {
             img: 'https://cdn.shopify.com/s/files/1/0106/0162/7706/products/51-RootBaseGameBoard-Winter-Editv2-Web_1024x1024.png?v=1617976948',
             link: 'https://www.youtube.com/',
             name: 'Walking Through Root',

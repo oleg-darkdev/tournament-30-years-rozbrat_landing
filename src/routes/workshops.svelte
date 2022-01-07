@@ -18,174 +18,15 @@ import Card, {
     ActionButtons,
     ActionIcons,
 } from '@smui/card';
-import Chip, {
-    Set,
-    LeadingIcon
-} from '@smui/chips';
-
-let choices = ['🌈 LTGBT+', '☘️ Eco bunt - eco activism', '🥕 FNB - food not bombs'];
-let selected = ['🌈 LTGBT+', '☘️ Eco bunt - eco activism'];
-
-// let choices = [];
-// let selected = ['🌈 LTGBT+', '☘️ Eco bunt - eco activism'];
 
 import BlackFaq from '../layout/BlackFaq.svelte';
 import ColorFaq from '../layout/ColorFaq.svelte';
 
-const gamesNames = {
-    lgbt: '🌈 LTGBT+',
-    eco: '☘️ Eco bunt - eco activism',
-    fnb: '🥕 FNB - food not bombs',
-    linux: '🐧 Open source. Linux Operating System.',
-    wtbj: '🎥 Repression of journalists in Belarus.',
-    wikileaks: '🌎 Wikileaks.',
-    katyn: '🧹 KATYN`40. Repression and archaeological expeditions.',
-    urbanism: '🕋 Urbanism. Society of the future.',
-    ksg: '', // 12.262
-}
+import workshops from '../data/workshopsList'
 
-const gamesShortNames = {
-    lgbtShortName: {
-        name: '🌈 LTGBT+',
-        show: true
-    },
-    ecoShortName: {
-        name: '☘️ Eco',
-        show: true
-    },
-    fnbShortName: {
-        name: '🥕 FNB',
-        show: true
-    },
-    linuxShortName: {
-        name: '🐧 Linux',
-        show: true
-    },
-    wtbShortName: {
-        name: '🎥 WTB',
-        show: true
-    },
-    wikileaksShortName: {
-        name: '🌎 Wikileaks',
-        show: true
-    },
-    katynShortName: {
-        name: '🧹 KATYN`40',
-        show: true
-    },
-    urbanismShortName: {
-        name: '🕋 Urbanism',
-        show: true
-    },
-    ksgShortName: {
-        name: '12.262',
-        show: true
-    }, // 12.262
-}
-
-const gamesImages = {
-    lgbt: 'img/games-logos/lgbt.png',
-    eco: 'img/games-logos/eco.png',
-    fnb: 'img/games-logos/fnb.png',
-    gulag: 'img/games-logos/gulag.png',
-    katyn: 'img/games-logos/katyn.png',
-    ror: 'img/games-logos/ror.png',
-    wikileaks: 'img/games-logos/wikileaks.png',
-    hackerspace: 'img/games-logos/hackerspace.png',
-    yakusa: 'img/games-logos/yakusa.png',
-    ksg: 'img/games-logos/12.262.png',
-    A: 'img/games-logos/A.png',
-    squatAction: 'img/games-logos/squat.png',
-    wtbj: 'img/games-logos/wtb.png',
-}
-// const lgbt = {
-//         name: gamesNames.lgbt,
-//         image: gamesImages.lgbt
-//     },
-//     eco = {
-//         name: gamesNames.eco,
-//         image: gamesImages.eco
-//     },
-//     fnb = {
-//         name: gamesNames.fnb,
-//         image: gamesImages.fnb
-//     },
-//     gulag = {
-//         name: gamesNames.gulag,
-//         image: gamesImages.gulag
-//     },
-//     ror = {
-//         name: gamesNames.ror,
-//         image: gamesImages.ror
-//     },
-//     wikileaks = {
-//         name: gamesNames.wikileaks,
-//         image: gamesImages.wikileaks
-//     },
-//     hackerspace = {
-//         name: gamesNames.hackerspace,
-//         image: gamesImages.hackerspace
-//     },
-//     yakusa = {
-//         name: gamesNames.yakusa,
-//         image: gamesImages.yakusa
-//     },
-//     ksg = {
-//         name: gamesNames.ksg,
-//         image: gamesImages.ksg
-//     },
-//     katyn = {
-//         name: gamesNames.katyn,
-//         image: gamesImages.katyn
-//     },
-//     squatAction = {
-//         name: gamesNames.squatAction,
-//         image: gamesImages.squatAction
-//     },
-//     wtbj = {
-//         name: gamesNames.wtbj,
-//         image: gamesImages.wtbj
-//     };
-
-const gamesTemplates = {
-    // lgbt, eco, fnb,
-    // gulag, ror, wikileaks, hackerspace,
-    // yakusa,
-    // ksg,
-    // katyn,
-    // squatAction,
-    // wtbj
-}
-
-const workshops = [
-    {
-        name: '🌈 LTGBT+',
-        img: 'img/games-logos/lgbt.png',
-        date: '19.02.2022',
-        place: 'ul. Puławska 37, Warsawa',
-        social: [ // 1- inst, 2 - teleg, 3- fb, 4- in, 5- tw
-            "",
-            "",
-            "",
-            "",
-            "",
-        ],
-        eventbrite: 'https://www.eventbrite.com/',
-    },
-    {
-         name: '☘️ Eco bunt - eco activism',
-        img: 'img/games-logos/eco.png',
-        date: '22.02.2022',
-        place: 'ul. Puławska 37, Warsawa',
-        social: [ // 1- inst, 2 - teleg, 3- fb, 4- in, 5- tw
-            "",
-            "",
-            "",
-            "",
-            "",
-        ],
-        eventbrite: 'https://www.eventbrite.com/',
-    }];
+let gamesShortNames = workshops.map(function(workshopData) {
+ return {shortName: workshopData.shortName, show: true}
+});
 
 const socialMini = [{
         img: "img/social/insta_mini.png"
@@ -213,9 +54,7 @@ const socialMini = [{
 let moreInfoMenu = [''],
     showMoreInfo = false;
 
-import {
-    onMount
-} from 'svelte';
+    console.log(workshops)
 
 // let gamesArray = Object.values(gamesNames);
 // console.log(gamesNames)	
@@ -241,7 +80,7 @@ import {
                 </Media>
             </Card> -->
             <Button style="margin: 2.5px;" on:click={() => game.selected = !game.selected} touch variant={game.selected ? 'outlined' : "unelevated"}>
-                <Label>#{game.name}</Label>
+                <Label>#{game.shortName}</Label>
             </Button>
             {/each}
             <!-- </div> -->
@@ -281,7 +120,7 @@ import {
             </Menu>
             
             <Card style="height: 100px; width: 200px; margin: 15px;">
-                <Media style="background-image: url({workshop.img});" class="card-media-16x9" aspectRatio="16x9">
+                <Media style="background-image: url({workshop.logo});" class="card-media-16x9" aspectRatio="16x9">
                     <MediaContent>
                     </MediaContent>
                 </Media>

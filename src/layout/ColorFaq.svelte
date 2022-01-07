@@ -14,7 +14,7 @@ export let title, color;
 <section style="width: 100%; ">
   <!--  margin-top: -50px; -->
 <!-- <SvgLine/> -->
-  <div class="section-body" style="background-color: {color ? color: '#191B1B'};">
+  <div class="section-body" style="background-color: {color ? color: '#47babb'};">
     <Paper color="primary" style="width: 90%; border: {color ? color: '#191B1B'}; margin: 0 20%; max-width: 1200px; background-color: #191B1B;" class="paper-demo">
       <Title style="color: {color ? color: '#fff'}; font: 26px 'grafitty';">{title}</Title>
       <Content >
