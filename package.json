@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "@material/typography": "^13.0.0",
-    "@smui-extra/accordion": "^6.0.0-beta.11",
     "@smui/button": "^6.0.0-beta.8",
     "@smui/card": "^6.0.0-beta.11",
     "@smui/chips": "^6.0.0-beta.11",
