@@ -5,21 +5,21 @@ let shortLorem =
 
 let game = {
 	promo: {
-		name: '🏠 Squat action',
-		shortName: '🏠 Squat action',
-		banner: 'img/games/banners/squat_banner.png',
-		logo: 'img/games/logos/squat.png',
+		name: '🥁 ROR',
+		shortName: '🥁 Rhythms of Resistance',
+		banner: 'img/games/banners/ror_banner.png',
+		logo: 'img/games/logos/ror.png',
 		status: 1, // 0 - alfa, 1 - beta, 2 - good,
 		shortDescription: shortLorem,
-		brandColor: '#FFFFFF',
-		id: 'squat',
+		brandColor: '#A6539B',
+		id: 'ror',
 		price: ''
 	},
 	croundfanding: {
 		links: {
 			allegro: 'https://allegro.pl/',
 			patronitePl: 'https://patronite.pl/',
-			auction: 'handmade#squat'
+			auction: 'handmade#ror'
 		},
 		goal: ''
 	},

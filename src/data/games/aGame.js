@@ -1,15 +1,27 @@
+let shortLorem =
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	bigLorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ';
+
 let game = {
 	promo: {
-		name: '',
-		img: '',
-		status: ''
+		name: '🏴 A',
+		shortName: '🏴 theory of Anarchism ',
+		banner: 'img/games/banners/A_banner.png',
+		logo: 'img/games/logos/A.png',
+		status: 1, // 0 - alfa, 1 - beta, 2 - good,
+		shortDescription: shortLorem,
+		brandColor: '#702282',
+		id: 'A',
+		price: ''
 	},
-	croundfandingLink: '',
-	goal: '',
-	educationMoments: ['', ''],
-	description: ['', ''],
-	targetAudience: '',
-	printableFiles: '',
+	croundfanding: {
+		links: {
+			allegro: 'https://allegro.pl/',
+			patronitePl: 'https://patronite.pl/',
+			auction: 'handmade#a'
+		},
+		goal: ''
+	},
 	workShopsReports: [
 		{
 			date: '',
@@ -17,9 +29,14 @@ let game = {
 			linkInstagram: ''
 		}
 	],
-	fullInfo: {
-		LOR: '',
-		photos: [],
+	moreInfo: {
+		LOR: [shortLorem, bigLorem, bigLorem, shortLorem],
+		lorImg: '',
+		goal: '',
+		educationMoments: ['', ''],
+		description: [bigLorem, bigLorem],
+		targetAudience: '',
+		photos: ['', '', ''],
 		сharacters: [
 			{
 				name: '',
@@ -30,11 +47,35 @@ let game = {
 	},
 	updates: [
 		{
-			date: '',
-			changes: ['', '', '']
+			date: '22.10.2020',
+			persons: 'Add: Doctor, Crow',
+			mechanic: '',
+			map: '',
+			version: '0.0.1'
+		}
+	],
+	resources: [
+		{
+			name: '',
+			type: 'pdf',
+			link: ''
+		}
+	],
+	videos: [
+		{
+			img: '',
+			link: '',
+			name: '',
+			type: 'video'
+		}
+	],
+	expansions: [
+		{
+			name: '', // The Riverfolk Expansion
+			img: '', // https://cdn.shopify.com/s/files/1/0106/0162/7706/products/10-RootUnderworldBox-Edit-Web_250x.png?v=1595310452
+			fullInfo: {} // for expansion page
 		}
 	]
 };
-
 
 export default game;

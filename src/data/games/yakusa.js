@@ -5,21 +5,21 @@ let shortLorem =
 
 let game = {
 	promo: {
-		name: '🏠 Squat action',
-		shortName: '🏠 Squat action',
-		banner: 'img/games/banners/squat_banner.png',
-		logo: 'img/games/logos/squat.png',
+		name: 'Yakusa',
+		shortName: 'Yakusa wars',
+		banner: 'img/games/banners/yakusa_banner.png',
+		logo: 'img/games/logos/yakusa.png',
 		status: 1, // 0 - alfa, 1 - beta, 2 - good,
 		shortDescription: shortLorem,
-		brandColor: '#FFFFFF',
-		id: 'squat',
+		brandColor: '#E5292A',
+		id: 'yakusa',
 		price: ''
 	},
 	croundfanding: {
 		links: {
 			allegro: 'https://allegro.pl/',
 			patronitePl: 'https://patronite.pl/',
-			auction: 'handmade#squat'
+			auction: 'handmade#yakusa'
 		},
 		goal: ''
 	},
