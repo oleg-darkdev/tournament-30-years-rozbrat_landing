@@ -16,9 +16,6 @@ import Customers from '../../components/game/customers.svelte'
 
 
 import gamesList from '../../data/gamesData'
-
-// let gamesList[$page.params.game] = gamesList[$page.params.game]List.gulag;
-
 let data = [
     {
         text: 'PLAY 🕹️',
