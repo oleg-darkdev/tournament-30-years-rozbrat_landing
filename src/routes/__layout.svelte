@@ -39,6 +39,7 @@ padding: 50px 0;
     justify-content: center;
     margin: 35px 0 15px 0;
     padding: 50px 0 25px 0;
+    border-radius: 4px;
 }
 :global(.section-svg-line) {
   display: block;
@@ -55,7 +56,7 @@ flex-direction: row;
 flex-wrap: wrap;
 }
 
-* :global(.hidden) {
+:global(.hidden) {
 	display: none;
 }
 </style>
