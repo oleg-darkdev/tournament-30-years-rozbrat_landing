@@ -1,7 +1,7 @@
-import historicalGames from './historicalGames';
-import civicActivismGames from './civicActivismGames';
-// import artGames from './artGames'; // graffity, tattoo,
-// import itGames from './itGames'; // linux, kanbanel,
+import historicalGames from './games/categories/historicalGames';
+import civicActivismGames from './games/categories/civicActivismGames';
+import artGames from './games/categories/artGames'; // graffity, tattoo,
+import itGames from './games/categories/itGames'; // linux, kanbanel,
 // import politicalGames from './politicalGames';
 // import economicalGames from './economicalGames';
 // import strategicGames from './strategicGames'; // ksg
@@ -10,6 +10,9 @@ import civicActivismGames from './civicActivismGames';
 
 
 // 🕋 Urbanism. Society of the future.', 🐧 Open source. Linux Operating System.',
+// 	ksg:  . , ?????
+
+
 
 function getGames(gamesCategory) {
 	let arrayTemp = [],
@@ -23,9 +26,9 @@ function getGames(gamesCategory) {
 let allGamesList = {
 	categories: {
 		civicActivism: civicActivismGames,
-		historical: historicalGames
-		// artGames: artGames,
-		// itGames: itGames,
+		historical: historicalGames,
+		artGames: artGames,
+		itGames: itGames,
 		// politicalGames: politicalGames,
 		// economicalGames: economicalGames,
 		// strategicGames: strategicGames,
@@ -35,11 +38,12 @@ let allGamesList = {
 	all: [].concat(getGames(historicalGames), getGames(civicActivismGames)),
 
 	// historicalGames
-	gulag: historicalGames.gulag,
+	gulagUSSR: historicalGames.gulagUSSR,
 	katyn: historicalGames.katyn,
 	yakusa: historicalGames.yakusa,
 	wtb: historicalGames.wtb,
 	wikileaks: historicalGames.wikileaks,
+	// gulagRussia:  . ,
 	// : historicalGames. ,
 
 	// civicActivismGames
@@ -49,10 +53,19 @@ let allGamesList = {
 	squat: civicActivismGames.squat,
 	hackerspace: civicActivismGames.hackerspace,
 	lgbt: civicActivismGames.lgbt,
-	ror: civicActivismGames.ror
+	ror: civicActivismGames.ror,
 	//  : civicActivismGames,
 
+
+
 	// artGames
+	graffity:  artGames.graffity,
+	tattoo:  artGames.tattoo ,
+
+	// itGames
+	kanbanel:  itGames.kanbanel ,
+	linux:  itGames.linux,
+
 };
 
 export default allGamesList;

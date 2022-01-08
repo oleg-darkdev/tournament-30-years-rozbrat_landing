@@ -1,6 +1,6 @@
-import GameClass from './template'
+// import GameClass from './template'
 
 
-let game = new GameClass();
+// let game = new GameClass();
 
-export default game;
+// export default game;

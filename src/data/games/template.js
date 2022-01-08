@@ -8,7 +8,7 @@ class Game {
 			status: 0,
 			shortDescription:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			brandColor: '',
+			brandColor: '#47babb',
 			id: '',
 			price: ''
 		};
@@ -105,6 +105,9 @@ class Game {
 			}
 		];
 	}
+	get promo() {
+		return this._promo;
+	}
 	get croundfanding() {
 		return this._croundfanding;
 	}
@@ -128,6 +131,9 @@ class Game {
 	}
 	get expansions() {
 		return this._expansions;
+	}
+	set promo(value) {
+		this._promo = value;
 	}
 	set croundfanding(value) {
 		this._croundfanding = value;

@@ -10,14 +10,14 @@ game.promo = {
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',
 	brandColor: '#E40F2A',
-	id: 'gulagUSSR',
+	id: 'gulag-ussr',
 	price: ''
 };
 game.croundfanding = {
 	links: {
 		allegro: 'https://allegro.pl/',
 		patronitePl: 'https://patronite.pl/',
-		auction: 'handmade#gulagUSSR'
+		auction: 'gulagUSSR'
 	},
 	goal: ''
 };

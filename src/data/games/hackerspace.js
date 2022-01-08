@@ -6,7 +6,7 @@ game.promo = {
 	name: '📟 Hackerspace',
 	shortName: '📟 Hackerspace',
 	banner: 'img/games/banners/hackerspace_banner.png',
-	logo: 'img/games/logos/hackerspace.png',
+	logo: 'img/games/logos/hackerspace_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',
 	brandColor: '#537A2D',
@@ -17,7 +17,7 @@ game.croundfanding = {
 	links: {
 		allegro: 'https://allegro.pl/',
 		patronitePl: 'https://patronite.pl/',
-		auction: 'handmade#hackerspace'
+		auction: 'hackerspace'
 	},
 	goal: ''
 };

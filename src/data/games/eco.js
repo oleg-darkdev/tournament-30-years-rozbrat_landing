@@ -6,7 +6,7 @@ game.promo = {
 	name: '☘️ Eco bunt - eco activism',
 	shortName: '☘️ Eco',
 	banner: 'img/games/banners/eco_banner.png',
-	logo: 'img/games/logos/eco.png',
+	logo: 'img/games/logos/eco_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',
 	brandColor: '#339A37',
@@ -17,7 +17,7 @@ game.croundfanding = {
 	links: {
 		allegro: 'https://allegro.pl/',
 		patronitePl: 'https://patronite.pl/',
-		auction: 'handmade#eco'
+		auction: 'eco'
 	},
 	goal: ''
 };
