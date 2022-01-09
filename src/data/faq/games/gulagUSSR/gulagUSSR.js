@@ -1,18 +1,17 @@
 import gameBasicFAQ from "../../basicGameQuestions";
 import otherFaq from './otherFaq';
 import popularFaq from './popularFaq';
-import gameData from '../../../games/gulagSSSR'
-
+import gameData from '../../../gamesData';
 
 const gameFAQ = {
 	basic: gameBasicFAQ,
 	popular: popularFaq,
 	other: otherFaq,
 	// showFaq: false,
-	logo: gameData.promo.logo,
-	name: gameData.promo.shortName,
-	id: gameData.promo.id,
-	brandColor: gameData.promo.brandColor
+	logo: gameData.gulag.promo.logo,
+	name: gameData.gulag.promo.shortName,
+	id: gameData.gulag.promo.id,
+	brandColor: gameData.gulag.promo.brandColor
 };
 
 
