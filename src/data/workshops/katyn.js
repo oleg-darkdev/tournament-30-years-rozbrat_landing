@@ -1,7 +1,7 @@
 import gamesData from '../gamesData';
 import Workshop from './template';
 
-let gameData = gamesData.lgbt;
+let gameData = gamesData.katyn;
 
 let historyWorkshops = [
 	{

@@ -1,25 +1,21 @@
-import gamesList from '../gamesData';
+import gamesData from '../gamesData';
+import Workshop from './template';
 
-const workshop = {
-	name: gamesList.gulag.promo.name,
-	logo: gamesList.gulag.promo.logo,
-	shortName: gamesList.gulag.promo.shortName,
+let gameData = gamesData.gulagUSSR;
 
-	date: '22.02.2022',
-	place: 'ul. Puławska 37, Warsawa',
-	social: [
-		// 1- inst, 2 - teleg, 3- fb, 4- in, 5- tw
-		'',
-		'',
-		'',
-		'',
-		''
-	],
-	eventbrite: 'https://www.eventbrite.com/',
-	show: true
-};
+let historyWorkshops = [
+	{
+		date: '22.02.2022',
+		place: 'ul. Puławska 37, Warsawa',
+		reports: [
+			'', '', '', '', '', ''
+			// telegram facebook instagram twitter linkedin youtube
+		],
+		maxPeople: 6,
+		eventbrite: 'https://www.eventbrite.com/'
+	}
+];
+let workshop = new Workshop(gameData.promo, gameData.croundfanding, gameData.moreInfo);
+workshop.history = historyWorkshops;
 
 export default workshop;
-
-
-
