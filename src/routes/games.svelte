@@ -1,66 +1,145 @@
 <script>
-   import Card, {
-    Content,
-    PrimaryAction,
-    Media,
-    MediaContent,
-    Actions,
-    ActionButtons,
-    ActionIcons,
-  } from '@smui/card';
-  import Button, { Label } from '@smui/button';
-  import IconButton, { Icon } from '@smui/icon-button';
-	import { slide  } from 'svelte/transition';
+import List, {
+    Item,
+    Text,
+    
+} from '@smui/list';
 
-import Filters from '../components/shop/Filters.svelte'
-import SocialPanel from '../components/SocialPanel.svelte'
-import Banner from '../layout/BannerSection.svelte'
- import BlackFaq from '../layout/BlackFaq.svelte';
- import ColorFaq from '../layout/ColorFaq.svelte';
-import gamesList from '../data/gamesData'
+import SocialPanel from '../layout/SocialPanel.svelte'
+import BlackFaq from '../layout/BlackFaq.svelte';
+import ColorFaq from '../layout/ColorFaq.svelte';
+import TableOfContent from '../components/games/TableOfContent.svelte';
+import ModulesView from '../components/games/ModulesView.svelte'
+import GamesCategoriesWrap from '../components/games/GamesCategoriesWrap.svelte'
+import ShortGamesList from '../components/shortGamesList.svelte';
+import FullPromo from '../components/auctionPage/PromoCard.svelte'
+import gamesList from '../data/gamesData';
 
+//  let msgSoory = ['The description will be ready soon 😇', '  The site is under construction ⚙️', 'Thank you for your interest 💙']
+$:options = {
+  categories: [],
+    view:  {
+    name: 'list',
+    icon: 'view_list',
+    description: 'Short list.'
+  },  
+};
 
-// Civic Activism
-// let allGamesList = ;
+const allGames = Object.values(gamesList.all),
+    historicalGames = Object.values(gamesList.categories.historical),
+    artGames = Object.values(gamesList.categories.art),
+    civicActivismGames = Object.values(gamesList.categories.civicActivism),
+    itGames = Object.values(gamesList.categories.it);
 
-// console.log(gamesList.all)
- let msgSoory = ['The description will be ready soon 😇', '  The site is under construction ⚙️', 'Thank you for your interest 💙']
+let step = 0;
 </script>
+  
+<svelte:head>
+	<title>Games 🎲</title>
+</svelte:head>
 
-<BlackFaq title="I created ({gamesList.all.length}) board games 🎲">
-  <div class="games-promo-wrap">
-{#each gamesList.all as game}
-<div transition:slide|local>
+<TableOfContent bind:step bind:options/>
 
-     <Card style="width: 400px; height: auto; margin: 10px;">
-      <PrimaryAction on:click={() => game.show = !game.show}>
-    <Media class="card-media-16x9" style="background-image: url({game.promo.logo});" aspectRatio="16x9">
+{#if step >= 2}
+<BlackFaq title="Total I created ({gamesList.all.length}) board games 🎲">
+  {#if options.view.name == 'list'}
+      {#each allGames as game}
 
-        </Media>
-         </PrimaryAction>
-        <Content style="  display: flex; flex-direction: column;"
-  >
-                  {#if game.show}
-      <h2  class="mdc-typography--headline6" style="margin: 0; font: 54px'grafitty'; color: #fff;">{game.promo.name}</h2>
-         <!-- {#each game.description as description} -->
-            <p class="mdc-typography--body2">
-                  {game.moreInfo.description ? game.moreInfo.description: msgSoory[0]} <br> {msgSoory[1]} <br> {msgSoory[2]}
-              </p>  
-        <!-- {/each} -->
-      {/if}
-      <div style="display: flex; justify-content: center;">
-           <div on:click={() => game.show = !game.show} class='show-more-about-game'>
-          <span style="font: 24px 'grafitty';">Learn more 🔬</span>
+      <!--           <Item on:click={() => location.href = `auctions/${game.croundfanding.links.auction}`}>
+ -->
+          <Item >
+              <Text style="color: #000;  font: 34px'grafitty';">{game.promo.name}</Text>
+          </Item>
+      {/each}
+  {/if}
+  {#if options.view.name == 'brief'}
+    {#if options.categories =='All'}
+      <div class="games-promo-wrap">
+        <ModulesView games={allGames}/>
+      </div>
+    {:else}
+    {#each options.categories as category}
+      {#if category=='Historical'}
+        <GamesCategoriesWrap gamesOnThisCategory={historicalGames.length} {category} > 
+        <div class="games-promo-wrap">
+          <ModulesView games={historicalGames}/>
         </div>
-         </div>
-          </Content>
-    </Card>
- </div>
-
-{/each}
-</div>
+      </GamesCategoriesWrap>
+      {/if}
+      {#if category=='Art'}
+        <GamesCategoriesWrap gamesOnThisCategory={artGames.length} {category}> 
+        <div class="games-promo-wrap">
+          <ModulesView games={artGames}/>
+        </div>
+        </GamesCategoriesWrap>
+      {/if}
+      {#if category=='Social activism'}
+        <GamesCategoriesWrap gamesOnThisCategory={civicActivismGames.length} {category}> 
+        <div class="games-promo-wrap">
+          <ModulesView games={civicActivismGames}/>
+        </div>
+      </GamesCategoriesWrap>
+      {/if}
+      {#if category=='It'}
+        <GamesCategoriesWrap gamesOnThisCategory={itGames.length} {category}> 
+        <div class="games-promo-wrap">
+          <ModulesView games={itGames}/>
+        </div>
+        </GamesCategoriesWrap>
+      {/if}
+    {/each}
+    {/if}
+    {:else}
+      {#if options.view.name == 'full'}
+      {#if options.categories =='All'}
+        <div class="games-promo-wrap">
+           {#each allGames as game}
+              <FullPromo {game}/>
+            {/each}
+        </div>
+      {:else}
+      {#each options.categories as category}
+        {#if category=='Historical'}
+          <GamesCategoriesWrap gamesOnThisCategory={historicalGames.length} {category} > 
+          <div class="games-promo-wrap">
+            {#each historicalGames as game}
+              <FullPromo {game}/>
+            {/each}
+          </div>
+        </GamesCategoriesWrap>
+        {/if}
+        {#if category=='Art'}
+          <GamesCategoriesWrap gamesOnThisCategory={artGames.length} {category}> 
+          <div class="games-promo-wrap">
+            {#each artGames as game}
+              <FullPromo {game}/>
+            {/each}          </div>
+          </GamesCategoriesWrap>
+        {/if}
+        {#if category=='Social activism'}
+          <GamesCategoriesWrap gamesOnThisCategory={civicActivismGames.length} {category}> 
+          <div class="games-promo-wrap">
+            {#each civicActivismGames as game}
+              <FullPromo {game}/>
+            {/each} 
+          </div>
+        </GamesCategoriesWrap>
+        {/if}
+        {#if category=='It'}
+          <GamesCategoriesWrap gamesOnThisCategory={itGames.length} {category}> 
+          <div class="games-promo-wrap">
+            {#each itGames as game}
+              <FullPromo {game}/>
+            {/each} 
+          </div>
+          </GamesCategoriesWrap>
+        {/if}
+      {/each}
+      {/if}
+  {/if}
+{/if}
 </BlackFaq>
-
+{/if}
 <ColorFaq title=""  >
   <SocialPanel title='Follow, i make content with love'/>
 </ColorFaq>
@@ -68,16 +147,5 @@ import gamesList from '../data/gamesData'
 
 
 <style>
-.show-more-about-game {
-  width: 250px; border: 2px solid #47babb; height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  color: #47babb;
-  }
-
-
-
 
 </style>
