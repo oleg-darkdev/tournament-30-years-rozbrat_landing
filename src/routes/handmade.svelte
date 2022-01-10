@@ -1,10 +1,10 @@
 <script>
-import SocialPanel from '../components/SocialPanel.svelte'
+import SocialPanel from '../layout/SocialPanel.svelte'
 import ColorFaq from '../layout/ColorFaq.svelte';
 import BlackFaq from '../layout/BlackFaq.svelte';
 
-import TableOfContent from './handmade/TableOfContent.svelte';
-import AuctionsList from './handmade/AuctionsList.svelte'
+import TableOfContent from '../components/handmade/TableOfContent.svelte';
+import AuctionsList from '../components/handmade/AuctionsList.svelte'
 import listOfAuctions from '../data/auctions';
 
 
@@ -15,10 +15,10 @@ let activeAuctions = arrayOfAuctions.filter(auction => auction.auctionStatus == 
 console.log(activeAuctions.length)
 
 </script>
-    <!-- Support the project - buying a homemade souvenir, at auction. -->
-<!-- Я организовал аукционы из предметов которые сделал своими руками - для сбора денег на обучающие игры: -->
-<!-- I organized auctions of items that I made with my own hands - to raise money for educational games: -->
 
+<svelte:head>
+	<title>Handmade 🎨</title>
+</svelte:head>
 <TableOfContent {arrayOfAuctions} nonActiveAuctions={nonActiveAuctions.length} activeAuctions={activeAuctions.length}/>
 
 <ColorFaq title="Active handmade sales at the auctions."  >
