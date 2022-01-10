@@ -10,7 +10,8 @@ class Game {
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			brandColor: '#47babb',
 			id: '',
-			price: ''
+			price: '',
+			categories: ['lorem', 'lorem', 'lorem', 'lorem']
 		};
 		this.croundfanding = {
 			links: {
@@ -28,6 +29,7 @@ class Game {
 			}
 		];
 		this.moreInfo = {
+			
 			players: '2-8',
 			age: '16+',
 			time: '120-180',
