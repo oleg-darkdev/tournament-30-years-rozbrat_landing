@@ -1,16 +1,7 @@
 <script>
-import Line from './footer/Line.svelte'
-import PolicyMenu from './footer/PolicyMenu.svelte'
-import SvgLine from "../layout/BlackSvgLine.svelte";
-
-import ImageList, {
-Item,
-ImageAspectContainer,
-Image,
-Supporting,
-Label,
-} from '@smui/image-list';
-import Paper, { Title, Subtitle, Content } from "@smui/paper";
+import Line from '../components/footer/Line.svelte'
+import PolicyMenu from '../components/footer/PolicyMenu.svelte'
+import SvgLine from "./BlackSvgLine.svelte";
 
 let merchPolicy,
 refundPolicy,
@@ -18,11 +9,6 @@ privacyPolicy,
 shippingPolicy,
 termsOfService;
 </script>
-<!-- <div style="			display: flex;		justify-content: flex-end;
-		align-content: center;
-		align-items: center;">
-</div> -->
-
 
 
 <footer style="background-color: #000;">
@@ -85,12 +71,7 @@ termsOfService;
 </div>
 </div> -->
 
-
-	
-
 	<Line bind:merchPolicy  bind:refundPolicy bind:shippingPolicy bind:privacyPolicy bind:termsOfService/>
-  
-<!-- </footer> -->
 </footer>
 
 <style>
