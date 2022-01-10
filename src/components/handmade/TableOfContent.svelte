@@ -8,14 +8,13 @@
     ActionButtons,
     ActionIcons,
   } from '@smui/card';
-  import Button, { Label } from '@smui/button';
-  import IconButton, { Icon } from '@smui/icon-button';
   import List, {
     Item,
     Text,
     PrimaryText,
     SecondaryText
 } from '@smui/list';
+import ShortGamesList from '../../components/shortGamesList.svelte';
 
 export let arrayOfAuctions;
 export let activeAuctions;
@@ -53,20 +52,14 @@ export let nonActiveAuctions;
         </Content>
     </Card>
 
-
-    <Card  style="max-width: 400px;">
-      <Content component={List}>
-        <Item>
-          <Text style="color: #fff;">I raise money money for next games 👇</Text>
-        </Item>
-       
+      <ShortGamesList text="I raise money money for next games 👇">
         {#each arrayOfAuctions as game}
-          <Item on:click={() => location.href = `auctions/${game.croundfanding.links.auction}`}>
-            <Text style="color: #47babb">{game.promo.name}</Text>
-          </Item>
+            <Item on:click={() => location.href = `auctions/${game.croundfanding.links.auction}`}>
+                <Text style="color: #47babb">{game.promo.name}</Text>
+            </Item>
         {/each}
-      </Content>
-    </Card>
+      </ShortGamesList>
+
         </div>
     </section>
 </div>

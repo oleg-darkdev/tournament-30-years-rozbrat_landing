@@ -21,6 +21,7 @@ import List, {
 import Chip, {
     Set
 } from '@smui/chips';
+import AuctionBtns from '../../components/auctionPage/AuctionBtns.svelte'
  import socialData from '../../data/socialMini';
 
 export let listOfAuctions;
@@ -72,12 +73,7 @@ export let listOfAuctions;
         </Set>
         </div>
        <div style="display: flex; width: 350px; flex-wrap: wrap; flex-direction: column; height: auto; align-content: flex-end;">
-        <Button style=" margin: 5px; background-color: {auction.promo.brandColor}; " variant="unelevated"  href={auction.croundfanding.links.allegro} target="_blank">
-            <Label style="color: #fff;">🔥 Auction on allegro </Label>
-        </Button>
-        <Button style="margin: 5px; background-color: {auction.promo.brandColor};" variant="outlined"  href={auction.croundfanding.links.patronitePl} target="_blank">
-            <Label style="color: #fff;">💸 Donate on patronite</Label>
-        </Button>
+            <AuctionBtns game={auction}/>
         </div>
     </Item>
     {/each}
