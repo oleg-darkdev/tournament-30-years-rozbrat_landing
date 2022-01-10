@@ -9,7 +9,7 @@ import Card, {
     ActionIcons,
 } from '@smui/card';
 
-import SocialPanel from '../components/SocialPanel.svelte'
+import SocialPanel from '../layout/SocialPanel.svelte'
 
 let workshopsCatalog = [{
         name: 'Workshop 1',
@@ -68,7 +68,7 @@ let getStarted = false,
             text: 'Workshops',
             variable: workshops,
             link: 'workshops',
-            emoji: '🎯'
+            emoji: '🧠'
         },
         {
             text: 'Handmade',
