@@ -1,26 +1,25 @@
 <script>
-import SocialPanel from '../components/SocialPanel.svelte'
+import SocialPanel from '../layout/SocialPanel.svelte'
 import QuestionsList from '../components/faq/QuestionsList.svelte'
 import GameQuestionsList from '../components/faq/GameQuestionsList.svelte'
 
-import Banner from '../layout/BannerSection.svelte'
 import BlackFaq from '../layout/BlackFaq.svelte';
 import ColorFaq from '../layout/ColorFaq.svelte';
-//  import CustomFaq from '../components/layout/CustomFaq.svelte';
-//  import WhiteFaq from '../components/layout/WhiteFaq.svelte';
+import TableOfContent from '../components/faq/TableOfContent.svelte';
 
 
+import FAQCategories from '../data/faq/FAQCategories';
 import generalFaq from '../data/faq/questionsGeneral';
 import typographyFaq from '../data/faq/questionsTypography';
 import shippingFaq from '../data/faq/questionsShipping';
 import workshopsFaq from '../data/faq/questionsWorkshops';
+import gamesFAQ from '../data/faq/questionsGames';
 
-import gulagUSSRFaq from '../data/faq/games/gulagUSSR/gulagUSSR';
-
+let step = 0;
 </script>
 
 <svelte:head>
-	<title>FAQ`s</title>
+	<title>FAQ`s ⁉️</title>
 </svelte:head>
 <!-- 
 	Что такое обучающие настольные игры
@@ -44,32 +43,31 @@ import gulagUSSRFaq from '../data/faq/games/gulagUSSR/gulagUSSR';
 
 
  -->
-<Banner text='Frequently Asked Questions' imgUrl='img/faq/faq_bg.png'/>
 
-<ColorFaq title="Please read the following FAQ before contacting us."  >
-<div style="	  display: flex;
-flex-direction: column; 		justify-content: center;">
-	<SocialPanel title='Ask us on social media'/>
+<div style="display: flex; justify-content: center;align-items: center;   ">
+	<TableOfContent bind:step/>
+</div>
+
+<BlackFaq title="Please read the following FAQ before contacting me.">
 	<div class="questions-wrap">
-		<QuestionsList title="General Help ⁉️" listQuestions={generalFaq}/>
-		<QuestionsList title="Shipping 🚚" listQuestions={workshopsFaq}/>
+		<QuestionsList category={FAQCategories.general} listQuestions={generalFaq}/>
+		<QuestionsList category={FAQCategories.workshops} listQuestions={workshopsFaq}/>
 	</div>
-</div>
-</ColorFaq>
+	<a name='{FAQCategories.shipping.id}'> </a>
 
-<BlackFaq title="Please read the following FAQ before contacting us.">
-<div class="questions-wrap">
-	<QuestionsList title="Workshops 🧠" listQuestions={shippingFaq}/>
-	<QuestionsList  title="Typography 📇"  listQuestions={typographyFaq}/>
-</div>
+	<div class="questions-wrap">
+		<QuestionsList category={FAQCategories.shipping} listQuestions={shippingFaq}/>
+		<QuestionsList  category={FAQCategories.typography} listQuestions={typographyFaq}/>
+	</div>
 </BlackFaq>
 
-<ColorFaq title="Please read the following FAQ before contacting us."  >
-<div class="questions-wrap">
-	<GameQuestionsList data={gulagUSSRFaq}/>
-</div>
-
+<ColorFaq title="FAQ about games 🎲"  >
+	<GameQuestionsList data={gamesFAQ.gulagUSSR}/>
 </ColorFaq>
+
+
+
+<!-- <SocialPanel title='Ask us on social media'/> -->
 
 <style>
 .questions-wrap {
