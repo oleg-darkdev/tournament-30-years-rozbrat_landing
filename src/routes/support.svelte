@@ -1,8 +1,3 @@
-<svelte:head>
-
-<title>Support DarkDev.games</title>
-</svelte:head>
-
 <script>
 import Card, {
     Content,
@@ -21,7 +16,7 @@ import IconButton, {
 } from '@smui/icon-button';
 import List, { Item, Graphic, Separator, Text } from '@smui/list';
 
-import SocialPanel from '../components/SocialPanel.svelte'
+import SocialPanel from '../layout/SocialPanel.svelte'
 import Banner from '../layout/BannerSection.svelte'
 import BlackFaq from '../layout/BlackFaq.svelte';
 import ColorFaq from '../layout/ColorFaq.svelte';
@@ -54,7 +49,9 @@ let services = [
 
 </script>
 
-
+<svelte:head>
+	<title>Support DarkDev.games 💙</title>
+</svelte:head>
 
 <!-- <Banner text='Frequently Asked Questions' imgUrl='img/faq/faq_bg.png'/> -->
 

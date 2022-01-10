@@ -23,9 +23,12 @@ import BlackFaq from '../layout/BlackFaq.svelte';
 import ColorFaq from '../layout/ColorFaq.svelte';
 
 import workshops from '../data/workshopsList'
+import PromoCard from '../components/game/promoCard.svelte';
 
-let gamesShortNames = workshops.map(function(workshopData) {
- return {shortName: workshopData.shortName, show: true}
+let workshopsArray = Object.values(workshops);
+
+let gamesShortNames = workshopsArray.map(function(workshopData) {
+ return {shortName: workshopData.promo.shortName, show: true}
 });
 
 const socialMini = [{
@@ -54,13 +57,13 @@ const socialMini = [{
 let moreInfoMenu = [''],
     showMoreInfo = false;
 
-    console.log(workshops)
-
-// let gamesArray = Object.values(gamesNames);
-// console.log(gamesNames)	
 </script>
 
-<ColorFaq title="Upcoming workshops 🎯" >
+<svelte:head>
+	<title>Workshops 🧠</title>
+</svelte:head>
+
+<ColorFaq title="Upcoming workshops 🧠" >
 <div style=" display: flex; flex-direction: row;">
     <Card style="width: 310px; height: auto; margin-right: 15px; "  variant="outlined" padded>
         <Content style="">
@@ -87,7 +90,7 @@ let moreInfoMenu = [''],
         </Content>
     </Card>
     <List style="max-width: 560px; width: auto; " threeLine>
-        {#each workshops as workshop, i}
+        {#each workshopsArray as workshop, i}
         <Item style="border: 2px solid #47babb; min-height: 135px; height: auto; display: flex; flex-direction: row;  justify-content: flex-start;  flex-wrap: wrap;">
             <Menu style="width: 100%; height: 100%;" bind:this={moreInfoMenu[i]}>
                 <div class="wrap-hide-menu" >
@@ -103,7 +106,6 @@ let moreInfoMenu = [''],
 
                     {:else}
                     <div style="display: flex; flex-direction: column; justify-content: center;">
-
                         <h2 class="mdc-typography--headline6"
                             style="color: #fff; font-family: 'grafitty'; margin: -5px;"
                             >
@@ -120,16 +122,16 @@ let moreInfoMenu = [''],
             </Menu>
             
             <Card style="height: 100px; width: 200px; margin: 15px;">
-                <Media style="background-image: url({workshop.logo});" class="card-media-16x9" aspectRatio="16x9">
+                <Media style="background-image: url({workshop.promo.logo});" class="card-media-16x9" aspectRatio="16x9">
                     <MediaContent>
                     </MediaContent>
                 </Media>
             </Card>
 
             <Text>
-                <PrimaryText style="color: #47babb;">{workshop.name} </PrimaryText>
-                <SecondaryText style="color: #47babb;">📅 {workshop.date}</SecondaryText>
-                <SecondaryText  style="color: #47babb;">🏠  {workshop.place} </SecondaryText>
+                <PrimaryText style="color: #47babb;">{workshop.promo.name} </PrimaryText>
+                <SecondaryText style="color: #47babb;">📅 {workshop.history[0].date}</SecondaryText>
+                <SecondaryText  style="color: #47babb;">🏠  {workshop.history[0].place} </SecondaryText>
 
                 <div class="wrap-btns">
                     <Button color="primary" style="margin-right: 15px;"on:click={() => {moreInfoMenu[i].setOpen(true); showMoreInfo = !showMoreInfo }} touch variant="outlined">

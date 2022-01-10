@@ -4,18 +4,19 @@ import { page } from '$app/stores';
 import BlackFaq from '../../layout/BlackFaq.svelte';
 import ColorFaq from '../../layout/ColorFaq.svelte';
 
-import NavPanel from '../../components/game/NavPanel.svelte'
-import Menu from '../../components/game/menu.svelte'
-import Video from '../../components/game/video.svelte'
-import PromoCard from '../../components/game/promoCard.svelte'
-import Lor from '../../components/game/lor.svelte'
-import Roles from '../../components/game/roles.svelte'
-import Expansion from '../../components/game/expansion.svelte'
-import Resources from '../../components/game/resources.svelte'
-import Customers from '../../components/game/customers.svelte'
+import NavPanel from '../../components/gamePage/NavPanel.svelte'
+import Menu from '../../components/gamePage/menu.svelte'
+import Video from '../../components/gamePage/video.svelte'
+import PromoCard from '../../components/gamePage/promoCard.svelte'
+import Lor from '../../components/gamePage/lor.svelte'
+import Roles from '../../components/gamePage/roles.svelte'
+import Expansion from '../../components/gamePage/expansion.svelte'
+import Resources from '../../components/gamePage/resources.svelte'
+import Customers from '../../components/gamePage/customers.svelte'
 
 
-import gamesList from '../../data/gamesData'
+import gamesList from '../../data/gamesData';
+let game = gamesList[$page.params.game];
 let data = [
     {
         text: 'PLAY 🕹️',
@@ -55,7 +56,7 @@ let data = [
 
 
 <svelte:head>
-    <title>☘️ Eco bunt - eco activism</title>
+    <title>{game.promo.name}</title>
 </svelte:head>
 <!-- 
     ToDO:
@@ -65,32 +66,32 @@ let data = [
      * добавить просмотр компонентов
  -->
 
- <!-- gamesList[$page.params.game]sList[$page.params.game].promo.name -->
-<BlackFaq title={gamesList[$page.params.game].promo.name} color='{gamesList[$page.params.game].promo.brandColor}'>
-    <Menu promo={gamesList[$page.params.game].promo} btnData={data} />
+ <!-- game.promo.name -->
+<BlackFaq title={game.promo.name} color='{game.promo.brandColor}'>
+    <Menu promo={game.promo} btnData={data} />
 </BlackFaq>
 
-<ColorFaq  title={gamesList[$page.params.game].promo.shortDescription} color='{gamesList[$page.params.game].promo.brandColor}' >
-    <Video videos={gamesList[$page.params.game].videos}/>
+<ColorFaq  title={game.promo.shortDescription} color='{game.promo.brandColor}' >
+    <Video videos={game.videos}/>
     <div style="display: flex; justify-content:  center;align-items: center;  flex-direction: column; ">
-        <PromoCard promo={gamesList[$page.params.game].promo} moreInfo={gamesList[$page.params.game].moreInfo}/>
+        <PromoCard promo={game.promo} moreInfo={game.moreInfo}/>
     </div>
     <div style="display: flex; justify-content: center;align-items: center;  flex-direction: column; ">
         <!-- fix they: bug  'promo' data -->
-        <!-- <Lor promo={gamesList[$page.params.game].promo} lor={gamesList[$page.params.game].lor} /> -->
-        <!-- <Roles promo={gamesList[$page.params.game].promo} roles={gamesList[$page.params.game].moreInfo.roles}/> -->
+        <!-- <Lor promo={game.promo} lor={game.lor} /> -->
+        <!-- <Roles promo={game.promo} roles={game.moreInfo.roles}/> -->
     </div>
 </ColorFaq>
 
-<BlackFaq title="Expansions" color='{gamesList[$page.params.game].promo.brandColor}'>
-   <Expansion expansions={gamesList[$page.params.game].expansions}/>
+<BlackFaq title="Expansions" color='{game.promo.brandColor}'>
+   <Expansion expansions={game.expansions}/>
 </BlackFaq>
 
-<ColorFaq title="Resources" color='{gamesList[$page.params.game].promo.brandColor}'>
-    <Resources resources={gamesList[$page.params.game].resources} videos={gamesList[$page.params.game].videos} promo={gamesList[$page.params.game].promo} /> ;
+<ColorFaq title="Resources" color='{game.promo.brandColor}'>
+    <Resources resources={game.resources} videos={game.videos} promo={game.promo} /> ;
 </ColorFaq >
 
-<BlackFaq title="Customers Who Bought This Item Also Bought" color='{gamesList[$page.params.game].promo.brandColor}'>
+<BlackFaq title="Customers Who Bought This Item Also Bought" color='{game.promo.brandColor}'>
     <Customers />
 </BlackFaq> 
 
@@ -108,7 +109,7 @@ let data = [
 </style>
 
 
-                                                    <!-- <h5 style="font-family: 'grafitty'; color: {gamesList[$page.params.game].promo.brandColor};" class="mdc-typography--headline4">Updates</h5>
+                                                    <!-- <h5 style="font-family: 'grafitty'; color: {game.promo.brandColor};" class="mdc-typography--headline4">Updates</h5>
 <DataTable stickyHeader table$aria-label="User list" style="max-width: 760px; width: 50%; margin-top: -15px;">
 <Head>
 <Row>
@@ -120,7 +121,7 @@ let data = [
 </Row>
 </Head>
 <Body>
-{#each gamesList[$page.params.game].updates as update}
+{#each game.updates as update}
 <Row>
 <Cell numeric>{update.version}</Cell>
 <Cell>{update.persons ? update.persons : 'No changes'}</Cell>
@@ -131,10 +132,10 @@ let data = [
 {/each}
 </Body>
                                                     </DataTable> -->
-<!-- <Card  style="width: 460px; background-color: {gamesList[$page.params.game].promo.brandColor};">
+<!-- <Card  style="width: 460px; background-color: {game.promo.brandColor};">
                     <Content>        <span style="font: 24px 'grafitty';">price: 60 euro</span>
                     </Content>
-                    <Actions style="background-color: {gamesList[$page.params.game].promo.brandColor};" fullBleed>
+                    <Actions style="background-color: {game.promo.brandColor};" fullBleed>
                         <Button on:click={() => console.log('click')}>
                             <Label style="font: 35px 'grafitty'; color: #000;">Buy it now</Label>
                             <i style="color: #000;" class="material-icons" aria-hidden="true">arrow_forward</i>
@@ -142,8 +143,8 @@ let data = [
                     </Actions>
                 </Card> -->
                        <!--
-            <Card style='width: 530px; background-color: {gamesList[$page.params.game].promo.brandColor};  height: 80px; '>
+            <Card style='width: 530px; background-color: {game.promo.brandColor};  height: 80px; '>
                 <PrimaryAction style="display: flex; align-items: center;" on:click={() => console.log('instagram link')} padded>
-                    <span style="font: 35px 'grafitty';">Real photos this boardgamesList[$page.params.game]</span>
+                    <span style="font: 35px 'grafitty';">Real photos this boardgame</span>
                 </PrimaryAction>
             </Card> -->
