@@ -1,14 +1,127 @@
 <script>
-  import Header from '../layout/Header.svelte'
-  import Footer from '../layout/Footer.svelte'
+import HeaderLayout from '../layout/Header.svelte'
+import Footer from '../layout/Footer.svelte'
+import Card, {
+  Content,
+  PrimaryAction,
+  Media,
+  MediaContent,
+} from '@smui/card';
+import List, { Item, Graphic, Separator, Text, Subheader  } from '@smui/list';
+  import Drawer, {
+  AppContent,
+  Header,
+  Subtitle,
+  Title,
+  Scrim,
+} from '@smui/drawer';
+import { H5 } from '@smui/common/elements';
 
+import firstMenuText from '../data/firstMenuText';
+import socialIcons from '../data/socialTq';
+import gamesList from '../data/gamesData';
+
+const topGames = [gamesList.gulagUSSR, gamesList.katyn, gamesList.lgbt];
+let open = false;
+let active = '';
+
+function setActive(value) {
+  active = value.text;
+  open = false;
+};
+// console.log(topGames[0].promo)
 </script>
 
-<Header />
-  <slot />
+<HeaderLayout bind:open/>
+<div class="drawer-container">
+      <Drawer variant="modal" bind:open>
+        <Header>
+          <div class="logo"></div>
+          <Title>DarkDev games 🎲</Title>
+          <Subtitle>Educational boardgames</Subtitle>
+        </Header>
+        <Content style="padding:  0 5px 0 10px;">
+          <List>
+           {#each firstMenuText as firstMenu}
+              <Item 
+                href={firstMenu.link}
+                on:click={() => setActive(firstMenu)}
+                activated={active === firstMenu.text}
+              >
+                <Text>
+                  <a rel=prefetch href={firstMenu.link}>
+                    <span style="font: 28px 'grafitty';">{firstMenu.text} {firstMenu.emoji}</span>
+                  </a>
+                </Text>
+              </Item>
+           {/each}
+            <Separator style="background-color: var(--mdc-theme-primary, #47babb);"/>
+            <Subheader style="" component={H5}>I'm in social 👇</Subheader>
+            <div style="display: flex; flex-direction: row; align-content: center; width: 200px; flex-wrap: wrap;">
+              {#each Object.values(socialIcons) as social}
+                <Card style="width: 40px; height: 40px; margin: 5px;">
+                  <PrimaryAction on:click={() => location.href = social.link}>
+                    <Media style="background-image: url('{social.img}');" class="card-media-square" aspectRatio="square">
+                  </Media>
+                  </PrimaryAction>
+                </Card>
+              {/each}
+            </div>
+            <Separator style="background-color: var(--mdc-theme-primary, #47babb);"/>
+            <Subheader style="" component={H5}>Top boardgames</Subheader>
+              {#each topGames as game}
+                <Item >
+                    <Text style="color: var(--mdc-theme-primary, #47babb);  font: 28px 'grafitty';">{game.promo.shortName}</Text>
+                </Item>
+              {/each}
+          </List>
+        </Content>
+      </Drawer>
+  </div>
+    <AppContent class="app-content">
+      <main class="main-content">
+          <slot />
+     </main>
+  </AppContent>
 <Footer />
 
 <style>
+
+  .logo {
+    background-image: url(img/logo.svg);
+    padding: 0 5px 0 15px;
+    margin: 10px 0 -10px 0;
+    height: 40px;
+    width: 200px;
+    background-repeat: no-repeat;
+  }
+  .drawer-container {
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 256px;
+    padding: 50px 0 0 0;
+    border: 1px solid
+      var(--mdc-theme-text-hint-on-background, rgba(0, 0, 0, 0.1));
+    overflow: hidden;
+    z-index: 1;
+  }
+  .main-content {
+    overflow: auto;
+    padding: 16px;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+  :global(a) {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
   /* Hide everything above this component. */
   :global(app),
   :global(body),
@@ -37,7 +150,9 @@ padding: 50px 0;
     background-color: #47babb;
     display: flex;
     justify-content: center;
-    margin: 35px 0 15px 0;
+    /* margin: 35px 0 15px 0; */
+        margin: -40px 0 15px 0;
+
     padding: 50px 0 25px 0;
     border-radius: 4px;
 }
