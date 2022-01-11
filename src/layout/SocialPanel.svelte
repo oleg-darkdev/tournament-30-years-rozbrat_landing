@@ -1,12 +1,12 @@
 <script>
 import Card, {Content, PrimaryAction, Media} from '@smui/card';
 import Paper, { Title, Subtitle } from '@smui/paper';
-import socialData from '../data/socialMini';
+import socialData from '../data/socialBlack';
 
 export let title = ''
 </script>
 
-  <Paper style="margin: 0 auto; max-width: 500px; height: auto; margin-bottom: 25px;" class="paper-demo">
+  <Paper style="margin: 0 auto; max-width: 340px; height: auto; margin-bottom: 25px;" class="paper-demo">
 	  <!--  👇 -->
     <Title style="font: 30px 'grafitty'; text-align: center;">{title + ` 💙`}</Title> 
     <!-- <Subtitle>This is a sheet of paper.</Subtitle> -->
