@@ -6,20 +6,93 @@
     AutoAdjust,
   } from '@smui/top-app-bar';
   import IconButton from '@smui/icon-button';
+  import Button, { Group, GroupItem, Label, Icon } from '@smui/button';
+  import Menu from '@smui/menu';
+  import List, { Item, Graphic, Separator, Text, Subheader  } from '@smui/list';
+
+
+
+
+  
+  let clicked = 0;
+  let menu;
+  let helpMenu, language = '';
+  
+  function translate(language) {
+		// return translateText = text.en;
+	}
+
+  $: selectedLanguage = language;
+  $: translateText = translate(selectedLanguage);
+
+  // export let selectedLanguage;
+  export let open;
 </script>
 
 
 
-<TopAppBar variant="short">
+<TopAppBar style="min-width: 270px;" variant="short">
   <Row>
     <Section>
-      <IconButton class="material-icons">menu</IconButton>
+      <IconButton class="material-icons" on:click={() => (open = !open)}>menu</IconButton>
       <!-- <Title>DarkDev Games</Title> -->
+   
     </Section>
-    <Section align="end" toolbar>
-      <!-- <IconButton class="material-icons" aria-label="Download"
-        >file_download</IconButton
-      > -->
+    <Section align="end" style="padding-right: 25px;"toolbar>
+      <div style="margin-rigth: 15px; width: 80px;" >
+      <Button color="secondary" style="" on:click={() => helpMenu.setOpen(true)} variant="unelevated"
+        ><Label>Help</Label></Button>
+
+
+      <Menu bind:this={helpMenu} anchorCorner="TOP_LEFT">
+        <List>
+          <Item on:SMUI:action={() => clicked++}><Text>FAQ`s</Text></Item>
+          <Item on:SMUI:action={() => clicked++}><Text>Contacts</Text></Item>
+          <Item on:SMUI:action={() => clicked++}><Text>Email form</Text></Item>
+          <Separator />
+          <Item on:SMUI:action={() => clicked++}><Text>Lorem</Text></Item>
+        </List>
+      </Menu>
+    </div>
+      <div class="btns">
+          <Group >
+            <Button color="secondary" on:click={() => menu.setOpen(true)} variant="raised"
+              ><Label>{language ? language: 'EN 🇺🇸'}</Label></Button
+            >
+            <div use:GroupItem>
+              <Button
+                on:click={() => menu.setOpen(true)}
+                variant="outlined"
+                color="secondary"
+                style="padding: 0; min-width: 36px;"
+              >
+                <Icon class="material-icons" style="margin: 0;">arrow_drop_down</Icon>
+              </Button>
+              <Menu bind:this={menu} anchorCorner="TOP_LEFT">
+                <List>
+                  <Item on:SMUI:action={() =>language = 'RU 🇷🇺'}><Text>RU 🇷🇺</Text></Item>
+                  <Item on:SMUI:action={() =>language = 'BY 🇧🇾'}><Text>BY 🇧🇾</Text></Item>
+                  <Item on:SMUI:action={() =>language = 'EN 🇺🇸'}><Text>EN 🇺🇸</Text></Item>
+                  <Separator />
+                  <Item on:SMUI:action={() =>language = 'PL 🇵🇱'}><Text>PL 🇵🇱</Text></Item>
+                </List>
+              </Menu>
+            </div>
+          </Group>
+        </div>
     </Section>
   </Row>
 </TopAppBar>
+ 
+
+ <style>
+
+ 
+  * :global(.app-content) {
+    flex: auto;
+    overflow: auto;
+    position: relative;
+    flex-grow: 1;
+  }
+
+  </style>
