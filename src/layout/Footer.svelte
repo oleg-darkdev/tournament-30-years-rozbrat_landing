@@ -2,6 +2,12 @@
 import Line from '../components/footer/Line.svelte'
 import PolicyMenu from '../components/footer/PolicyMenu.svelte'
 import SvgLine from "./BlackSvgLine.svelte";
+import Card, {
+    Content,
+    PrimaryAction,
+    Media,
+    MediaContent,
+  } from '@smui/card';
 
 let merchPolicy,
 refundPolicy,
@@ -12,7 +18,7 @@ termsOfService;
 
 
 <footer style="background-color: #000;">
-  <PolicyMenu bind:merchPolicy  bind:refundPolicy bind:shippingPolicy bind:privacyPolicy bind:termsOfService/>
+   <PolicyMenu bind:merchPolicy  bind:refundPolicy bind:shippingPolicy bind:privacyPolicy bind:termsOfService/>
 
 <!-- <SvgLine /> -->
 <!-- <Paper
@@ -75,13 +81,13 @@ termsOfService;
 </footer>
 
 <style>
-
 	footer {
 			display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-content: center;
 		align-items: center;
+    height: 350px;
 	}
 ul {
     margin: 0;
