@@ -20,6 +20,7 @@
     "@smui/card": "^6.0.0-beta.11",
     "@smui/chips": "^6.0.0-beta.11",
     "@smui/data-table": "^6.0.0-beta.11",
+    "@smui/drawer": "^6.0.0-beta.13",
     "@smui/fab": "^6.0.0-beta.11",
     "@smui/icon-button": "^6.0.0-beta.8",
     "@smui/image-list": "^6.0.0-beta.11",
