@@ -16,6 +16,7 @@ import workshopsFaq from '../data/faq/questionsWorkshops';
 import gamesFAQ from '../data/faq/questionsGames';
 
 let step = 0;
+// console.log()
 </script>
 
 <svelte:head>
@@ -62,7 +63,9 @@ let step = 0;
 </BlackFaq>
 
 <ColorFaq title="FAQ about games 🎲"  >
-	<GameQuestionsList data={gamesFAQ.gulagUSSR}/>
+	{#each Object.values(gamesFAQ) as game}
+		<GameQuestionsList data={game}/>
+	{/each}
 </ColorFaq>
 
 
