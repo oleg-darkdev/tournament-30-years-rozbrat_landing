@@ -8,7 +8,7 @@ import Card, {
     ActionButtons,
     ActionIcons,
 } from '@smui/card';
-
+import firstMenuText from '../data/firstMenuText';
 import SocialPanel from '../layout/SocialPanel.svelte'
 
 let workshopsCatalog = [{
@@ -41,63 +41,10 @@ let workshopsCatalog = [{
     },
 ];
 
-let shop = false,
-    faq = false,
-    about = false,
-    games = false,
-    handmade = false,
-    support = false,
-    workshops = false;
 
-let getStarted = false,
-    firstMenu = [
-        // {
-        //   text: 'shop',
-        //   variable: shop,
-        //   link: 'shop',
-        //   emoji: '🛒'
-        // },
-        {
-            text: 'Boardgames',
-            variable: games,
-            link: 'games',
-            emoji: '🎲'
-        },
+let getStarted = false;
+   
 
-        {
-            text: 'Workshops',
-            variable: workshops,
-            link: 'workshops',
-            emoji: '🧠'
-        },
-        {
-            text: 'Handmade',
-            variable: handmade,
-            link: 'handmade',
-            emoji: '🎨'
-        },
-        {
-            text: 'FAQs',
-            variable: faq,
-            link: 'faq',
-            emoji: '⁉️'
-        },
-
-        {
-            text: 'Support ME',
-            variable: support,
-            link: 'support',
-            emoji: '💙'
-        },
-
-        // {
-        //   text: 'about',
-        //   variable: about,
-        //   link: 'about',
-        //   emoji: 'ℹ️'
-        // }
-
-    ]
 </script>
 
 <style>
@@ -118,14 +65,7 @@ justify-content: space-between;
 margin-left:35px;
 } */
 
-a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    text-decoration: none;
-}
+
 
 /* @font-face {
     font-family: 'grafitty';
@@ -163,13 +103,14 @@ a {
                         </Card>
 
                         {:else}
-                        {#each firstMenu as menuItem}
+                        {#each firstMenuText as menuItem}
                         <Card style='width: 330px; border: 2px solid #47babb; height: 90px; margin-bottom: 10px;  '>
-                            <PrimaryAction style="display: flex;      align-items: center; " on:click={() => {
+                            <PrimaryAction style="display: flex;      align-items: center; "  padded>
+                                <!-- on:click={() => {
 
                                 menuItem.variable = !menuItem.variable;
                                 // console.log(menuItem.variable )
-                                }} padded>
+                                }} -->
                                 <a rel=prefetch href={menuItem.link}><span style="font: 40px 'grafitty';">{menuItem.text} {menuItem.emoji}</span> </a>
                             </PrimaryAction>
                         </Card>
