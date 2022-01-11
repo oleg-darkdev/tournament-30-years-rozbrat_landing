@@ -1,10 +1,11 @@
 import GameClass from './template'
+import categoriesGames from '../categoriesGames';
 
 
 let game = new GameClass();
 game.promo = {
-	name: '🌈 LTGBT+',
-	shortName: '🌈 LTGBT+',
+	name: '🌈 LGBT+',
+	shortName: '🌈 LGBT+',
 	banner: 'img/games/banners/lgbt_banner.png',
 	logo: 'img/games/logos/lgbt_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,

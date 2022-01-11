@@ -1,4 +1,5 @@
 import GameClass from './template'
+import categoriesGames from '../categoriesGames';
 
 
 let game = new GameClass();

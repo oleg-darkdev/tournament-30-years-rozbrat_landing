@@ -1,4 +1,5 @@
 import GameClass from './template';
+import categoriesGames from '../categoriesGames';
 
 let game = new GameClass();
 game.promo = {
@@ -10,7 +11,8 @@ game.promo = {
 	shortDescription: '',
 	brandColor: '#702282',
 	id: 'A',
-	price: ''
+	price: '',
+	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]
 };
 game.croundfanding = {
 	links: {
