@@ -18,7 +18,7 @@ import List, { Item, Graphic, Separator, Text, Subheader  } from '@smui/list';
 import { H5 } from '@smui/common/elements';
 
 import firstMenuText from '../data/firstMenuText';
-import socialIcons from '../data/socialTq';
+import socialIcons from '../data/social/socialTq';
 import gamesList from '../data/gamesData';
 
 const topGames = [gamesList.gulagUSSR, gamesList.katyn, gamesList.lgbt];

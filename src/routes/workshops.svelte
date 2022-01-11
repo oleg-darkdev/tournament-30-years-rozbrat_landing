@@ -21,9 +21,9 @@ import Card, {
 
 import BlackFaq from '../layout/BlackFaq.svelte';
 import ColorFaq from '../layout/ColorFaq.svelte';
-
 import workshops from '../data/workshopsList'
 import PromoCard from '../components/gamePage/promoCard.svelte';
+import socialBlack from '../data/social/socialWorkshops'
 
 let workshopsArray = Object.values(workshops);
 
@@ -31,28 +31,6 @@ let gamesShortNames = workshopsArray.map(function(workshopData) {
  return {shortName: workshopData.promo.shortName, show: true}
 });
 
-const socialMini = [{
-        img: "img/social/insta_mini.png"
-
-    },
-    {
-        img: "img/social/telega_mini.png"
-
-    },
-    {
-        img: "img/social/fb_mini.png"
-
-    },
-    {
-        img: "img/social/in_mini.png"
-
-    },
-    {
-        img: "img/social/tweeter_mini.png"
-
-    },
-
-];
 
 let moreInfoMenu = [''],
     showMoreInfo = false;
@@ -95,7 +73,7 @@ let moreInfoMenu = [''],
             <Menu style="width: 100%; height: 100%;" bind:this={moreInfoMenu[i]}>
                 <div class="wrap-hide-menu" >
                     {#if showMoreInfo}
-                    {#each socialMini as social, i}
+                    {#each socialBlack as social, i}
                     <Card style="width: 70px; margin: 5px;">
                         <PrimaryAction on:click={() => location.href = workshop.social}>
                             <Media class="card-media-square" style="background-image: url('{social.img}');" aspectRatio="square">

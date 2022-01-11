@@ -22,7 +22,7 @@ import Chip, {
     Set
 } from '@smui/chips';
 import AuctionBtns from '../../components/auctionPage/AuctionBtns.svelte'
- import socialData from '../../data/socialMini';
+import socialData from '../../data/social/socialBlack';
 
 export let listOfAuctions;
 // console.log(listOfAuctions)

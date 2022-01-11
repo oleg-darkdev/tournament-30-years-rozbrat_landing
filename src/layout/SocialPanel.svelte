@@ -1,7 +1,7 @@
 <script>
 import Card, {Content, PrimaryAction, Media} from '@smui/card';
 import Paper, { Title, Subtitle } from '@smui/paper';
-import socialData from '../data/socialBlack';
+import socialData from '../data/social/socialBlack';
 
 export let title = ''
 </script>
