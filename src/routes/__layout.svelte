@@ -34,7 +34,7 @@ function setActive(value) {
 
 <HeaderLayout bind:open/>
 <div class="drawer-container">
-      <Drawer variant="modal" bind:open>
+      <Drawer style="background-color: #191B1B;" variant="modal" bind:open>
         <Header>
           <div class="logo"></div>
           <Title>DarkDev games 🎲</Title>
@@ -96,6 +96,7 @@ function setActive(value) {
     background-repeat: no-repeat;
   }
   .drawer-container {
+    background-color: #191B1B;
     position: relative;
     display: flex;
     height: auto;

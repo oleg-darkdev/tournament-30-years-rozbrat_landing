@@ -15,7 +15,7 @@ import AnchorList from './TableOfContent/AnchorList.svelte';
 export let step;
 </script>
 
-<div style="display: flex; justify-content: center;align-items: center;   ">
+<div style="display: flex; justify-content: center;align-items: center; width: 100%;  background-color:#191B1B;  ">
     <section style="width: 430px; margin: 0; display: flex;  height: auto; ">
         <div class="tur-bg" style="flex-direction: column; align-items: center; ">
             <!-- max-width: 380px; -->

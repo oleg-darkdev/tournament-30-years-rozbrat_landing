@@ -31,7 +31,7 @@
 
 
 
-<TopAppBar style="min-width: 270px;" variant="short">
+<TopAppBar style="background-color: #47babb; min-width: 270px;" variant="short">
   <Row>
     <Section>
       <IconButton class="material-icons" on:click={() => (open = !open)}>menu</IconButton>
@@ -40,23 +40,23 @@
     </Section>
     <Section align="end" style="padding-right: 25px;"toolbar>
       <div style="margin-rigth: 15px; width: 80px;" >
-      <Button color="secondary" style="" on:click={() => helpMenu.setOpen(true)} variant="unelevated"
+      <Button color="secondary" style="background-color: #191B1B; color: #fff;" on:click={() => helpMenu.setOpen(true)} variant="unelevated"
         ><Label>Help</Label></Button>
 
 
-      <Menu bind:this={helpMenu} anchorCorner="TOP_LEFT">
-        <List>
-          <Item on:SMUI:action={() => clicked++}><Text>FAQ`s</Text></Item>
-          <Item on:SMUI:action={() => clicked++}><Text>Contacts</Text></Item>
-          <Item on:SMUI:action={() => clicked++}><Text>Email form</Text></Item>
+      <Menu style="background-color: #191B1B;" bind:this={helpMenu} anchorCorner="TOP_LEFT">
+        <List style="color: #fff; background-color: #191B1B;">
+          <Item style="color: #fff; background-color: #191B1B;" on:SMUI:action={() => clicked++}><Text>FAQ`s</Text></Item>
+          <Item style="color: #fff; background-color: #191B1B;" on:SMUI:action={() => clicked++}><Text>Contacts</Text></Item>
+          <Item style="color: #fff; background-color: #191B1B;" on:SMUI:action={() => clicked++}><Text>Email form</Text></Item>
           <Separator />
-          <Item on:SMUI:action={() => clicked++}><Text>Lorem</Text></Item>
+          <Item style="color: #fff; background-color: #191B1B;" on:SMUI:action={() => clicked++}><Text>Lorem</Text></Item>
         </List>
       </Menu>
     </div>
       <div class="btns">
           <Group >
-            <Button color="secondary" on:click={() => menu.setOpen(true)} variant="raised"
+            <Button color="secondary" style="background-color: #191B1B; color: #fff;" on:click={() => menu.setOpen(true)} variant="raised"
               ><Label>{language ? language: 'EN 🇺🇸'}</Label></Button
             >
             <div use:GroupItem>
@@ -68,13 +68,13 @@
               >
                 <Icon class="material-icons" style="margin: 0;">arrow_drop_down</Icon>
               </Button>
-              <Menu bind:this={menu} anchorCorner="TOP_LEFT">
-                <List>
-                  <Item on:SMUI:action={() =>language = 'RU 🇷🇺'}><Text>RU 🇷🇺</Text></Item>
-                  <Item on:SMUI:action={() =>language = 'BY 🇧🇾'}><Text>BY 🇧🇾</Text></Item>
-                  <Item on:SMUI:action={() =>language = 'EN 🇺🇸'}><Text>EN 🇺🇸</Text></Item>
+              <Menu style="background-color: #191B1B; color: #fff;" bind:this={menu} anchorCorner="TOP_LEFT">
+                <List style="background-color: #191B1B;">
+                  <Item style="color: #fff; background-color: #191B1B;" on:SMUI:action={() =>language = 'RU 🇷🇺'}><Text>RU 🇷🇺</Text></Item>
+                  <Item style="color: #fff;background-color: #191B1B;" on:SMUI:action={() =>language = 'BY 🇧🇾'}><Text>BY 🇧🇾</Text></Item>
+                  <Item style="color: #fff;background-color: #191B1B;" on:SMUI:action={() =>language = 'EN 🇺🇸'}><Text>EN 🇺🇸</Text></Item>
                   <Separator />
-                  <Item on:SMUI:action={() =>language = 'PL 🇵🇱'}><Text>PL 🇵🇱</Text></Item>
+                  <Item style="color: #fff;background-color: #191B1B;" on:SMUI:action={() =>language = 'PL 🇵🇱'}><Text>PL 🇵🇱</Text></Item>
                 </List>
               </Menu>
             </div>

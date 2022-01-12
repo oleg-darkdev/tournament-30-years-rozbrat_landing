@@ -23,7 +23,7 @@ export let nonActiveAuctions;
 
 </script>
 
-<div style="display: flex; justify-content: center;align-items: center;   ">
+<div style="display: flex; justify-content: center;align-items: center; width: 100%;  background-color:#191B1B;  ">
     <section style="width: 430px; margin: 0; display: flex;  height: auto; ">
         <div class="tur-bg" style="flex-direction: column; align-items: center;">
             <!-- max-width: 380px; -->
@@ -31,8 +31,9 @@ export let nonActiveAuctions;
       <!-- <PrimaryAction on:click={() => clicked++}> -->
         <Media  style="height: 515px; width: 100%; background-image: url('img/handmade.png');"/>
         <Content class="mdc-typography--body2">
-              <p>              At the moment I am found money for the development and printing of my games, and i organized auctions of items that I made with my own hands.
-</p>
+              <p>
+                At the moment I am found money for the development and printing of my games, and i organized auctions of items that I made with my own hands.
+              </p>
           <!-- -->
              <!-- В данный момент я собираю деньги на разработку и печать моих игр.   -->
              <!-- At the moment I am found money for the development and printing of my games.

@@ -85,7 +85,7 @@ margin-left:35px;
     <title>DarkDev Games</title>
 </svelte:head>
 
-    <div style="display: flex; justify-content: center;align-items: center;  flex-direction: column; ">
+    <div style="display: flex; justify-content: center;align-items: center;  flex-direction: column; width: 100%;  background-color:#191B1B; ">
         <section style="width: 430px; margin: 0; ">
             <div class="tur-bg" >
                 <Card style='width: 380px; margin: 0; height: auto; background-color: #000000;'>
