@@ -113,6 +113,7 @@ function setActive(value) {
     height: 100%;
     box-sizing: border-box;
     z-index: 0;
+      background-color:#191B1B;
   }
   :global(a) {
     margin: 0;
@@ -131,12 +132,14 @@ function setActive(value) {
     height: auto !important;
     width: auto !important;
     position: static !important;
+      background-color:#191B1B;
   }
 
 
 :global(.section-body) {
   display: flex;
 justify-content: center;
+
 /* padding: 125px 0; */
 padding: 50px 0;
 

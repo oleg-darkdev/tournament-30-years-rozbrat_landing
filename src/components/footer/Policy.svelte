@@ -30,7 +30,7 @@
 
     {#each text.text as listItem, listItemNumber}
       <Paper
-        style=" margin-bottom: 25px; width: 90%;"
+        style=" margin-bottom: 25px; width: 90%; "
         transition
         color="secondary"
         class="paper-demo">

@@ -98,11 +98,11 @@ font-size: 14px;
 		align-content: center;
 		align-items: center;">
 
-  <Button variant="outlined" color="primary" style="height: auto; margin: 0 5px 5px 0;" on:click={() => merchPolicy.setOpen(true)}  ><Label>Fan Art & Merch Policy</Label></Button>
-	<Button variant="outlined" color="primary" style="height: auto; margin: 0 5px 5px 0" on:click={() =>  refundPolicy.setOpen(true)} ><Label>Refund Policy</Label></Button>
-	<Button variant="outlined" color="primary" style="height: auto; margin: 0 5px 5px 0"  on:click={() => privacyPolicy.setOpen(true)}><Label>Privacy Policy</Label></Button>
-	<Button variant="outlined" color="primary" style="height: auto; margin: 0 5px 5px 0" on:click={() => shippingPolicy.setOpen(true)}><Label>Shipping Policy</Label></Button>
-	<Button variant="outlined" color="primary" style="height: auto; margin: 0 5px 5px 0" on:click={() => termsOfService.setOpen(true)}><Label>Terms of Service</Label></Button>
+  <Button variant="outlined" color="primary" style="height: auto; margin: 0 5px 5px 0; border: 2px #47babb solid; color: #47babb;" on:click={() => merchPolicy.setOpen(true)}  ><Label>Fan Art & Merch Policy</Label></Button>
+	<Button variant="outlined" color="primary" style="height: auto; margin: 0 5px 5px 0; border: 2px #47babb solid; color: #47babb;" on:click={() =>  refundPolicy.setOpen(true)} ><Label>Refund Policy</Label></Button>
+	<Button variant="outlined" color="primary" style="height: auto; margin: 0 5px 5px 0; border: 2px #47babb solid; color: #47babb;"  on:click={() => privacyPolicy.setOpen(true)}><Label>Privacy Policy</Label></Button>
+	<Button variant="outlined" color="primary" style="height: auto; margin: 0 5px 5px 0; border: 2px #47babb solid; color: #47babb;" on:click={() => shippingPolicy.setOpen(true)}><Label>Shipping Policy</Label></Button>
+	<Button variant="outlined" color="primary" style="height: auto; margin: 0 5px 5px 0; border: 2px #47babb solid; color: #47babb;" on:click={() => termsOfService.setOpen(true)}><Label>Terms of Service</Label></Button>
 	
 
     </Content>

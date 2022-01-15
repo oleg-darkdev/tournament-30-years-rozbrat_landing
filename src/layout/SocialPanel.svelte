@@ -6,9 +6,9 @@ import socialData from '../data/social/socialBlack';
 export let title = ''
 </script>
 
-  <Paper style="margin: 0 auto; max-width: 340px; height: auto; margin-bottom: 25px;" class="paper-demo">
+  <Paper style="margin: 0 auto; max-width: 340px; height: auto; margin-bottom: 25px; background-color: #191B1B;" class="paper-demo">
 	  <!--  👇 -->
-    <Title style="font: 30px 'grafitty'; text-align: center;">{title + ` 💙`}</Title> 
+    <Title style="font: 30px 'grafitty'; text-align: center; color: #fff;">{title + ` 💙`}</Title> 
     <!-- <Subtitle>This is a sheet of paper.</Subtitle> -->
     <Content style="display: flex; flex-direction: row; align-content: center; width: 100%; min-width: 300px; flex-wrap: wrap;">
 	{#each Object.values(socialData) as social}
