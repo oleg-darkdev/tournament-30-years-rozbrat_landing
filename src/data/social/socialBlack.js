@@ -1,15 +1,15 @@
  const socialBlack = {
 		insta: {
 			img: 'img/social/insta_black.png',
-			link: ''
+			link: 'https://www.instagram.com/darkdev.games/'
 		},
 		youtube: {
 			img: 'img/social/youtube_black.png',
-			link: ''
+			link: 'https://www.youtube.com/channel/UCkOSmUpGfWuLXMskYTymLGA'
 		},
 		tg: {
 			img: 'img/social/telega_black.png',
-			link: ''
+			link: 'https://t.me/darkdev_games'
 		},
 		fb: {
 			img: 'img/social/fb_black.png',
@@ -25,11 +25,11 @@
 		},
 		pinterest: {
 			img: 'img/social/pinterest_black.png',
-			link: ''
+			link: 'www.pinterest.com/darkdev_games'
 		},
 		in: {
 			img: 'img/social/in_black.png',
-			link: ''
+			link: 'https://www.linkedin.com/groups/13745684/'
 		},
 
 		etsy: {
