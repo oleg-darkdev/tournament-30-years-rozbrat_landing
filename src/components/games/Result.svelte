@@ -8,7 +8,7 @@ export let step;
 
 <div style="{step == 3 ? '': 'display: none;'}">
     <div class="wrap-games-hidden-block">
-        <h2 style="font: 28px 'grafitty'; margin: 0; text-align:center;">Games are filtered by the next criteries 👇</h2>
+        <h2 style="font: 28px 'grafitty'; margin: 0; text-align:center; color: #fff;">Games are filtered by the next criteries 👇</h2>
             <Group style="width: 320px;">
                 <Subheader style="font: 22px 'grafitty'; color: #fff; ">🎲 Categories</Subheader>
                 <List class="demo-list">

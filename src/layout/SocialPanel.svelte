@@ -6,7 +6,7 @@ import socialData from '../data/social/socialBlack';
 export let title = ''
 </script>
 
-  <Paper style="margin: 0 auto; max-width: 340px; height: auto; margin-bottom: 25px; background-color: #191B1B;" class="paper-demo">
+  <Paper style="margin: 0 auto; max-width: 340px; height: auto; margin-bottom: 25px; border: 2px solid #47babb; background-color: #191B1B;" class="paper-demo">
 	  <!--  👇 -->
     <Title style="font: 30px 'grafitty'; text-align: center; color: #fff;">{title + ` 💙`}</Title> 
     <!-- <Subtitle>This is a sheet of paper.</Subtitle> -->

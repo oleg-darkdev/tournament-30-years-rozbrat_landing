@@ -13,7 +13,7 @@ export let step;
 
 <div style="{step == 2 ? '': 'display: none;'}">
     <div class="wrap-games-hidden-block">
-        <h2 style="font: 28px 'grafitty'; margin: 0; text-align:center;">Select one or more boardgame category</h2>
+        <h2 style="font: 28px 'grafitty'; margin: 0; text-align:center; color: #fff;">Select one or more boardgame category</h2>
         <List style="width: 220px; margin: 0 0 25px 0;" checkList>
             {#each categoriesGames as category}
                 <Item>

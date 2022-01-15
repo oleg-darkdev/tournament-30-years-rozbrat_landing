@@ -84,7 +84,7 @@ font-size: 14px;
 <!-- <div style="margin-bottom: 50px;">
 </div> -->
 
-<Paper color="primary" variant="outlined" class="mdc-theme--primary">
+<Paper color="primary" variant="outlined" style="border: 2px #47babb solid; color: #47babb;" class="mdc-theme--primary">
     <Title style="font: 26px 'grafitty';">
 
 2021. DarkDev. All Rights Reserved.

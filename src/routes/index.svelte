@@ -111,7 +111,7 @@ margin-left:35px;
                                 menuItem.variable = !menuItem.variable;
                                 // console.log(menuItem.variable )
                                 }} -->
-                                <a rel=prefetch href={menuItem.link}><span style="font: 40px 'grafitty';">{menuItem.text} {menuItem.emoji}</span> </a>
+                                <a href={menuItem.link}><span style="font: 40px 'grafitty';">{menuItem.text} {menuItem.emoji}</span> </a>
                             </PrimaryAction>
                         </Card>
                         {/each}

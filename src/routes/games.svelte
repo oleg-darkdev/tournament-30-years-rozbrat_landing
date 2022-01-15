@@ -35,13 +35,13 @@ let step = 0;
 </script>
   
 <svelte:head>
-	<title>Games 🎲</title>
+	<title>Boardgames 🎲</title>
 </svelte:head>
 
 <TableOfContent bind:step bind:options/>
 
 {#if step >= 2}
-<BlackFaq title="Total I created ({gamesList.all.length}) board games 🎲">
+<BlackFaq title="Total I created ({gamesList.all.length}) boardgames 🎲">
   {#if options.view.name == 'list'}
       {#each allGames as game}
 

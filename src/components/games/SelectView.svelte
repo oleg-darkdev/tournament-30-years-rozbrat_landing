@@ -36,7 +36,7 @@ export let options;
 
 <div style="margin-bottom: 15px;" class={step == 1 ? '': 'hidden'}>
   <div class="wrap-games-hidden-block">
-    <h2 style="font: 28px 'grafitty'; margin: 0 0 15px 0; width: 280px; text-align:center;">Choose the format display 👇</h2>
+    <h2 style="font: 28px 'grafitty'; margin: 0 0 15px 0; width: 280px; text-align:center; color: #fff;">Choose the format display 👇</h2>
     <div style="display: flex; display: flex; justify-content: center;align-items: center; flex-direction: row;  flex-direction: row;">
     <SegmentedButton style="margin-right: 15px;"
         segments={views}

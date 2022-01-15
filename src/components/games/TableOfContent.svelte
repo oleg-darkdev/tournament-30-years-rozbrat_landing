@@ -21,13 +21,13 @@ export let step;
 export let options;
 </script>
 
-<div style="display: flex; justify-content: center;align-items: center;   ">
+<div style="display: flex; justify-content: center;align-items: center; width: 100%; background-color: #191B1B;">
     <section style="width: 430px; margin: 0; display: flex;  height: auto; ">
         <div class="tur-bg" style="flex-direction: column; align-items: center; ">
             <!-- max-width: 380px; -->
             <Card style="width: 360px;  margin-bottom: 15px;">
                   <Media  class={step == 0 ? '': 'hidden'} style="height: 400px; width: 100%; background-image: url('img/games.png');"/>
-                  <Content class="mdc-typography--body2" style="display: flex; justify-content: center;align-items: center; flex-direction: column;">
+                  <Content class="mdc-typography--body2" style="background-color: #191B1B; display: flex; justify-content: center;align-items: center; flex-direction: column;">
                       <GetStarted bind:step/>
                       <SelectView bind:step bind:options/>
                       <SelectCategory bind:step bind:options/>

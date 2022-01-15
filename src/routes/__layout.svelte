@@ -37,8 +37,8 @@ function setActive(value) {
       <Drawer style="background-color: #191B1B;" variant="modal" bind:open>
         <Header>
           <div class="logo"></div>
-          <Title>DarkDev games 🎲</Title>
-          <Subtitle>Educational boardgames</Subtitle>
+          <Title style="color: #fff;">DarkDev games 🎲</Title>
+          <Subtitle style="color: #fff;">Educational boardgames</Subtitle>
         </Header>
         <Content style="padding:  0 5px 0 10px;">
           <List>
@@ -56,7 +56,7 @@ function setActive(value) {
               </Item>
            {/each}
             <Separator style="background-color: var(--mdc-theme-primary, #47babb);"/>
-            <Subheader style="" component={H5}>I'm in social 👇</Subheader>
+            <Subheader component={H5} style="color: #fff;">I'm in social 👇</Subheader>
             <div style="display: flex; flex-direction: row; align-content: center; width: 200px; flex-wrap: wrap;">
               {#each Object.values(socialIcons) as social}
                 <Card style="width: 40px; height: 40px; margin: 5px;">
@@ -68,7 +68,7 @@ function setActive(value) {
               {/each}
             </div>
             <Separator style="background-color: var(--mdc-theme-primary, #47babb);"/>
-            <Subheader style="" component={H5}>Top boardgames</Subheader>
+            <Subheader style="color: #fff;"component={H5}>Top boardgames</Subheader>
               {#each topGames as game}
                 <Item >
                     <Text style="color: var(--mdc-theme-primary, #47babb);  font: 28px 'grafitty';">{game.promo.shortName}</Text>
