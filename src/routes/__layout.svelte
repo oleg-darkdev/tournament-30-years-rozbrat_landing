@@ -88,9 +88,9 @@ function setActive(value) {
 <style>
   @font-face {
     font-family: 'grafitty';
-    src: url('grafitty-webfont.woff2') format('woff2'),
-        url('grafitty-webfont.otf') format('otf'),
-         url('grafitty-webfont.woff') format('woff');
+    src: url('https://github.com/oleg-darkdev/dd/blob/deploy/static/grafitty-webfont.woff2') format('woff2'),
+        url('https://github.com/oleg-darkdev/dd/blob/deploy/static/grafitty-webfont.otf') format('otf'),
+         url('https://github.com/oleg-darkdev/dd/blob/deploy/static/grafitty-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 /* src: local('grafitty'), format('otf'); */
