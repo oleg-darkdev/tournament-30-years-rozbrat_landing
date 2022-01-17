@@ -25,7 +25,9 @@ game.moreInfo = {
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 	],
-	lorImg: 'img/games/a/banners/persons_banner.png',
+	lorImg:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/A_banner.png',
+
 	goal: '',
 	educationMoments: ['', ''],
 	description: [
@@ -35,21 +37,76 @@ game.moreInfo = {
 	],
 	targetAudience: '',
 	photos: ['', '', ''],
-	personsImg: 'img/games/a/persons/agorist_person.png',
-	roles: [
-		{
-			name: 'Lorem ipsum',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: 'img/games/a/persons/agorist_person.png'
-		},
-		{
-			name: 'Lorem ipsum',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: 'img/games/a/persons/capitalist_person.png'
-		}
-	]
+	roles: {
+		description: [
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+		],
+		banner:
+			'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/banners/persons_banner.png', // new
+		persons: [
+			{
+				name: 'Agorist',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/agorist_person.png'
+			},
+			{
+				name: 'Anarcho-capitalist',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/capitalist_person.png'
+			},
+			{
+				name: 'Anarcho-ecologist',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/ecolog_person.png'
+			},
+			{
+				name: 'Anarcho-individualist',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/egoist_person.png'
+			},
+			{
+				name: 'Anarcho-feminist',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/feminist_person.png'
+			},
+			{
+				name: 'Anarcho-maximalist',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/maximalist_person.png'
+			},
+			{
+				name: 'Anarcho-mutuelist',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/mutuelist_person.png'
+			},
+			{
+				name: 'Anarcho-qweer',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/qweer_person.png'
+			},
+			{
+				name: 'Anarcho-technocrat',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/technokrat_person.png'
+			}
+			// {
+			// 	name: 'Qweer',
+			// 	description:
+			// 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			// 	img: ''
+			// },
+		]
+	}
 };
 game.croundfanding = {
 	links: {

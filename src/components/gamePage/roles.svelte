@@ -13,19 +13,20 @@ export let roles;
 
 <div style="display: flex; justify-content: center;align-items: center;  flex-direction: row; flex-wrap: wrap; max-width: 760px;">
     {#each roles as role}
-        <Card style="width: 350px; height: 400px; margin: 15px; background-color: {promo.brandColor}; ">
-            <Media  class="card-media-16x9" aspectRatio="16x9" style="background-image: url({role.img})">
+        <Card style=" width: 370px;  margin: 5px; background-color: {promo.brandColor}; ">
+            <Media  class="card-media-square" aspectRatio="square" style=" width: 100%; height: 370px; background-image: url({role.img})">
                 <MediaContent>
                 </MediaContent>
             </Media>
-            <Content style="color: #191B1B;">
+            <Content style="color: #191B1B; padding: 5px;">
                 <h2
                     class="mdc-typography--headline6"
-                    style="color: #191B1B;"
+                    style="color: #fff; font: 28px 'grafitty';"
                     >
                     {role.name}
                 </h2>
-                {role.description}</Content>
+                {role.description}
+            </Content>
         </Card>
     {/each}
 </div>

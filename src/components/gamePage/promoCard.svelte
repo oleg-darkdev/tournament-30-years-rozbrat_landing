@@ -21,8 +21,8 @@ export let promo;
 </script>
 
 
-<Card style="margin-bottom: 15px; width: auto; max-width: 760px; background-color: {promo.brandColor};">
-<Media  style="height: 250px; background-image: url({moreInfo.personsImg});"/>
+<Card style="margin-bottom: 15px; width: auto; max-width: auto; background-color: {promo.brandColor};">
+<Media  style="height: 250px; background-image: url({moreInfo.lorImg});"/>
 <Content class="mdc-typography--body2" style="color: #191B1B;">
     <h2 class="mdc-typography--headline6" style="margin: 0;">
         {promo.name}
