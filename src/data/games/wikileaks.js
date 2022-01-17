@@ -4,8 +4,8 @@ import categoriesGames from '../categoriesGames';
 
 let game = new GameClass();
 game.promo = {
-	name: 'Wikileaks',
-	shortName: 'Wikileaks', // 🌎
+	name: '🌎 Wikileaks',
+	shortName: '🌎 Wikileaks',
 	banner: 'img/games/banners/wikileaks_banner.png',
 	logo: 'img/games/logos/wikileaks_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
