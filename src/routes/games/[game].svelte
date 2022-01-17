@@ -5,14 +5,14 @@ import BlackFaq from '../../layout/BlackFaq.svelte';
 import ColorFaq from '../../layout/ColorFaq.svelte';
 
 import NavPanel from '../../components/gamePage/NavPanel.svelte'
-import Menu from '../../components/gamePage/menu.svelte'
+import Menu from '../../components/gamePage/Menu.svelte'
 import Video from '../../components/gamePage/video.svelte'
-import PromoCard from '../../components/gamePage/promoCard.svelte'
-import Lor from '../../components/gamePage/lor.svelte'
-import Roles from '../../components/gamePage/roles.svelte'
-import Expansion from '../../components/gamePage/expansion.svelte'
-import Resources from '../../components/gamePage/resources.svelte'
-import Customers from '../../components/gamePage/customers.svelte'
+import PromoCard from '../../components/gamePage/PromoCard.svelte'
+import Lor from '../../components/gamePage/Lor.svelte'
+import Roles from '../../components/gamePage/Roles.svelte'
+import Expansion from '../../components/gamePage/Expansion.svelte'
+import Resources from '../../components/gamePage/Resources.svelte'
+import Customers from '../../components/gamePage/Customers.svelte'
 
 
 import gamesList from '../../data/gamesData';
@@ -75,13 +75,18 @@ let data = [
     <Video videos={game.videos}/>
     <div style="display: flex; justify-content:  center;align-items: center;  flex-direction: column; ">
         <PromoCard promo={game.promo} moreInfo={game.moreInfo}/>
+        <div style="flex-direction: column; ">
+            <Roles promo={game.promo} roles={game.moreInfo.roles}/>
+        </div>
     </div>
+
+</ColorFaq>
+
     <div style="display: flex; justify-content: center;align-items: center;  flex-direction: column; ">
         <!-- fix they: bug  'promo' data -->
         <!-- <Lor promo={game.promo} lor={game.lor} /> -->
-        <!-- <Roles promo={game.promo} roles={game.moreInfo.roles}/> -->
+        
     </div>
-</ColorFaq>
 
 <BlackFaq title="Expansions" color='{game.promo.brandColor}'>
    <Expansion expansions={game.expansions}/>
