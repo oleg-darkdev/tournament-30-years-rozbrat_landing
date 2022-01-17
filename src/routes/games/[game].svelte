@@ -5,7 +5,7 @@ import BlackFaq from '../../layout/BlackFaq.svelte';
 import ColorFaq from '../../layout/ColorFaq.svelte';
 
 import NavPanel from '../../components/gamePage/NavPanel.svelte';
-import Menu from '../../components/gamePage/Menu.svelte';
+import Menu from '../../components/gamePage/Menu.svelte'; // ../../components/gamePage/Menu.svelte
 import Video from '../../components/gamePage/video.svelte';
 import PromoCard from '../../components/gamePage/PromoCard.svelte';
 import PromoCardPersons from '../../components/gamePage/PromoCardPersons.svelte';
