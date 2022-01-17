@@ -1,7 +1,7 @@
 let categoriesGames = [
 	{
 		text: 'All',
-		emoji: ''
+		emoji: '✅'
 	},
 	{
 		text: 'Historical',
@@ -9,7 +9,7 @@ let categoriesGames = [
 	},
 	{
 		text: 'Strategy',
-		emoji: '📜'
+		emoji: '📯'
 	},
 	{
 		text: 'Art',
@@ -17,11 +17,11 @@ let categoriesGames = [
 	},
 	{
 		text: 'Office',
-		emoji: ''
+		emoji: '💼'
 	},
 	{
 		text: 'Political',
-		emoji: '📜'
+		emoji: '🏰'
 	},
 	{
 		text: 'Social activism',
@@ -29,11 +29,11 @@ let categoriesGames = [
 	},
 	{
 		text: 'Economic',
-		emoji: '👥'
+		emoji: '💸'
 	},
 	{
 		text: 'Management',
-		emoji: '📜'
+		emoji: '🗿'
 	},
 	{
 		text: 'It',
