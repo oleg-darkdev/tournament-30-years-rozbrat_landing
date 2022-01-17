@@ -9,7 +9,7 @@
   import Button, { Group, GroupItem, Label, Icon } from '@smui/button';
   import Menu from '@smui/menu';
   import List, { Item, Graphic, Separator, Text, Subheader  } from '@smui/list';
-
+ import Fab from '@smui/fab';
 
 
 
@@ -30,13 +30,19 @@
 </script>
 
 
-
-<TopAppBar style="background-color: #47babb; min-width: 270px;" variant="short">
+<!-- 270px -->
+<TopAppBar style="background-color: #47babb; min-width: 340px;" variant="short">
   <Row>
-    <Section>
-      <IconButton class="material-icons" on:click={() => (open = !open)}>menu</IconButton>
+    <Section style="margin-left: 10px;">
+      <!-- <IconButton class="material-icons" on:click={() => (open = !open)}>menu</IconButton> -->
       <!-- <Title>DarkDev Games</Title> -->
-   
+    <!-- <Fab color="secondary" on:click={() => (open = !open)} mini>
+      <Icon class="material-icons">menu</Icon>
+    </Fab> -->
+    <Button color="secondary" variant="raised" on:click={() => (open = !open)}>
+      <Icon class="material-icons">menu</Icon>
+      <Label style="font: 28px 'grafitty';">MENU</Label>
+    </Button>
     </Section>
     <Section align="end" style="padding-right: 25px;"toolbar>
       <div style="margin-rigth: 15px; width: 80px;" >
