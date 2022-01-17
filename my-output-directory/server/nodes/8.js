@@ -1,6 +1,6 @@
-import * as module from '../entries/pages/shop/expansions.svelte.js';
+import * as module from '../entries/pages/games.svelte.js';
 export { module };
-export const entry = 'pages/shop/expansions.svelte-9157dde1.js';
-export const js = ["pages/shop/expansions.svelte-9157dde1.js","chunks/vendor-75a52fb2.js","chunks/SocialPanel-b3f042c2.js","chunks/BlackFaq-fe1a4032.js","chunks/ColorFaq-31feac9b.js"];
-export const css = ["assets/pages/shop/expansions.svelte-bddbdd39.css"];
+export const entry = 'pages/games.svelte-67e64e85.js';
+export const js = ["pages/games.svelte-67e64e85.js","chunks/vendor-fbdada6f.js","chunks/SocialPanel-0ab0bc32.js","chunks/BlackFaq-00b7208a.js","chunks/ColorFaq-89bdc60b.js","chunks/gamesData-e89e0b32.js","chunks/PromoCard-0ae9ba6d.js","chunks/AuctionBtns-05022c6b.js"];
+export const css = ["assets/pages/games.svelte-f6e37e3c.css"];
 

@@ -1,10 +1,11 @@
-import { c as create_ssr_component, a as compute_rest_props, g as get_current_component, b as spread, e as escape_attribute_value, d as escape_object, f as add_attribute, s as setContext, v as validate_component, h as each, i as escape } from "../../chunks/index-99bd7138.js";
-import { r as readable } from "../../chunks/index-5c9f1cbc.js";
-import { f as forwardEventsBuilder, c as classMap, a as classAdderBuilder, D as Div, S as Span, P as Paper, T as Title, C as Content, b as Subtitle, L as Li, I as Img } from "../../chunks/Subtitle-e1b47b45.js";
-import { _ as __extends, a as __assign, M as MDCFoundation, d as dispatch } from "../../chunks/Ripple-d40e98c6.js";
-import { I as IconButton } from "../../chunks/IconButton-5857d6b7.js";
-import { B as Button_1, L as Label } from "../../chunks/Button-932af60d.js";
-import { M as MenuSurface } from "../../chunks/MenuSurface-ec8ff9c2.js";
+import { c as create_ssr_component, a as compute_rest_props, g as get_current_component, b as spread, e as escape_attribute_value, d as escape_object, f as add_attribute, s as setContext, v as validate_component, h as escape, i as each, l as listen, j as bubble, p as prevent_default, k as stop_propagation, o as onDestroy, n as getContext, m as missing_component, q as globals } from "../../chunks/index-d2f82617.js";
+import { r as readable } from "../../chunks/index-0141c37a.js";
+import { f as forwardEventsBuilder$1, c as classMap$1, a as classAdderBuilder$1, D as Div$2, S as Span, P as Paper, T as Title$1, C as Content, b as Subtitle$1, d as Content$1, H as H5, e as Card, g as PrimaryAction, M as Media } from "../../chunks/index-d5037018.js";
+import { _ as __extends, a as __assign, M as MDCFoundation, d as dispatch$1, I as Icon, L as Label, b as List, c as Item, T as Text, S as Separator, e as Subheader } from "../../chunks/index-2fbb442f.js";
+import { B as Button_1 } from "../../chunks/Button-19836e67.js";
+import { M as Menu, a as MenuSurface } from "../../chunks/SelectionGroupIcon-f0116078.js";
+import { f as firstMenu } from "../../chunks/firstMenuText-188754cb.js";
+import { a as allGamesList } from "../../chunks/gamesData-e89e0b32.js";
 /**
  * @license
  * Copyright 2018 Google Inc.
@@ -27,7 +28,7 @@ import { M as MenuSurface } from "../../chunks/MenuSurface-ec8ff9c2.js";
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-var cssClasses = {
+var cssClasses$1 = {
   FIXED_CLASS: "mdc-top-app-bar--fixed",
   FIXED_SCROLLED_CLASS: "mdc-top-app-bar--fixed-scrolled",
   SHORT_CLASS: "mdc-top-app-bar--short",
@@ -38,7 +39,7 @@ var numbers = {
   DEBOUNCE_THROTTLE_RESIZE_TIME_MS: 100,
   MAX_TOP_APP_BAR_HEIGHT: 128
 };
-var strings = {
+var strings$1 = {
   ACTION_ITEM_SELECTOR: ".mdc-top-app-bar__action-item",
   NAVIGATION_EVENT: "MDCTopAppBar:nav",
   NAVIGATION_ICON_SELECTOR: ".mdc-top-app-bar__navigation-icon",
@@ -74,14 +75,14 @@ var MDCTopAppBarBaseFoundation = function(_super) {
   }
   Object.defineProperty(MDCTopAppBarBaseFoundation2, "strings", {
     get: function() {
-      return strings;
+      return strings$1;
     },
     enumerable: false,
     configurable: true
   });
   Object.defineProperty(MDCTopAppBarBaseFoundation2, "cssClasses", {
     get: function() {
-      return cssClasses;
+      return cssClasses$1;
     },
     enumerable: false,
     configurable: true
@@ -278,12 +279,12 @@ var MDCFixedTopAppBarFoundation = function(_super) {
     var currentScroll = this.adapter.getViewportScrollY();
     if (currentScroll <= 0) {
       if (this.wasScrolled) {
-        this.adapter.removeClass(cssClasses.FIXED_SCROLLED_CLASS);
+        this.adapter.removeClass(cssClasses$1.FIXED_SCROLLED_CLASS);
         this.wasScrolled = false;
       }
     } else {
       if (!this.wasScrolled) {
-        this.adapter.addClass(cssClasses.FIXED_SCROLLED_CLASS);
+        this.adapter.addClass(cssClasses$1.FIXED_SCROLLED_CLASS);
         this.wasScrolled = true;
       }
     }
@@ -330,9 +331,9 @@ var MDCShortTopAppBarFoundation = function(_super) {
   MDCShortTopAppBarFoundation2.prototype.init = function() {
     _super.prototype.init.call(this);
     if (this.adapter.getTotalActionItems() > 0) {
-      this.adapter.addClass(cssClasses.SHORT_HAS_ACTION_ITEM_CLASS);
+      this.adapter.addClass(cssClasses$1.SHORT_HAS_ACTION_ITEM_CLASS);
     }
-    this.setAlwaysCollapsed(this.adapter.hasClass(cssClasses.SHORT_COLLAPSED_CLASS));
+    this.setAlwaysCollapsed(this.adapter.hasClass(cssClasses$1.SHORT_COLLAPSED_CLASS));
   };
   MDCShortTopAppBarFoundation2.prototype.setAlwaysCollapsed = function(value) {
     this.isAlwaysCollapsed = !!value;
@@ -364,11 +365,11 @@ var MDCShortTopAppBarFoundation = function(_super) {
     }
   };
   MDCShortTopAppBarFoundation2.prototype.uncollapse = function() {
-    this.adapter.removeClass(cssClasses.SHORT_COLLAPSED_CLASS);
+    this.adapter.removeClass(cssClasses$1.SHORT_COLLAPSED_CLASS);
     this.collapsed = false;
   };
   MDCShortTopAppBarFoundation2.prototype.collapse = function() {
-    this.adapter.addClass(cssClasses.SHORT_COLLAPSED_CLASS);
+    this.adapter.addClass(cssClasses$1.SHORT_COLLAPSED_CLASS);
     this.collapsed = true;
   };
   return MDCShortTopAppBarFoundation2;
@@ -387,7 +388,7 @@ const TopAppBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     "getPropStore",
     "getElement"
   ]);
-  forwardEventsBuilder(get_current_component());
+  forwardEventsBuilder$1(get_current_component());
   let uninitializedValue = () => {
   };
   function isUninitializedValue(value) {
@@ -428,7 +429,7 @@ const TopAppBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
       removeClass,
       setStyle: addStyle,
       getTopAppBarHeight: () => element.clientHeight,
-      notifyNavigationIconClicked: () => dispatch(element, "SMUITopAppBar:nav", void 0, void 0, true),
+      notifyNavigationIconClicked: () => dispatch$1(element, "SMUITopAppBar:nav", void 0, void 0, true),
       getViewportScrollY: () => scrollTarget == null ? window.pageYOffset : scrollTarget.scrollTop,
       getTotalActionItems: () => element.querySelectorAll(".mdc-top-app-bar__action-item").length
     });
@@ -527,7 +528,7 @@ const TopAppBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 
 <header${spread([
     {
-      class: escape_attribute_value(classMap({
+      class: escape_attribute_value(classMap$1({
         [className]: true,
         "mdc-top-app-bar": true,
         "mdc-top-app-bar--short": variant === "short",
@@ -547,13 +548,13 @@ const TopAppBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   ])}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``}
 </header>`;
 });
-var Row = classAdderBuilder({
+var Row = classAdderBuilder$1({
   class: "mdc-top-app-bar__row",
-  component: Div
+  component: Div$2
 });
 const Section$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["use", "class", "align", "toolbar", "getElement"]);
-  forwardEventsBuilder(get_current_component());
+  forwardEventsBuilder$1(get_current_component());
   let { use = [] } = $$props;
   let { class: className = "" } = $$props;
   let { align = "start" } = $$props;
@@ -576,7 +577,7 @@ const Section$1 = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     $$bindings.getElement(getElement);
   return `<section${spread([
     {
-      class: escape_attribute_value(classMap({
+      class: escape_attribute_value(classMap$1({
         [className]: true,
         "mdc-top-app-bar__section": true,
         "mdc-top-app-bar__section--align-start": align === "start",
@@ -588,21 +589,183 @@ const Section$1 = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   ])}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``}
 </section>`;
 });
-classAdderBuilder({
+classAdderBuilder$1({
   class: "mdc-top-app-bar__title",
   component: Span
 });
 const Section = Section$1;
-const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(TopAppBar, "TopAppBar").$$render($$result, { variant: "short" }, {}, {
-    default: () => `${validate_component(Row, "Row").$$render($$result, {}, {}, {
-      default: () => `${validate_component(Section, "Section").$$render($$result, {}, {}, {
-        default: () => `${validate_component(IconButton, "IconButton").$$render($$result, { class: "material-icons" }, {}, { default: () => `menu` })}
-      `
-      })}
-    ${validate_component(Section, "Section").$$render($$result, { align: "end", toolbar: true }, {}, {})}`
-    })}`
-  })}`;
+const Group$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["use", "class", "variant", "getElement"]);
+  forwardEventsBuilder$1(get_current_component());
+  let { use = [] } = $$props;
+  let { class: className = "" } = $$props;
+  let { variant = "text" } = $$props;
+  let element;
+  function getElement() {
+    return element;
+  }
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
+    $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
+    $$bindings.class(className);
+  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0)
+    $$bindings.variant(variant);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
+    $$bindings.getElement(getElement);
+  return `<div${spread([
+    {
+      class: escape_attribute_value(classMap$1({
+        [className]: true,
+        "smui-button__group": true,
+        "smui-button__group--raised": variant === "raised"
+      }))
+    },
+    escape_object($$restProps)
+  ])}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``}
+</div>`;
+});
+const Group = Group$1;
+var Header_svelte_svelte_type_style_lang = "";
+const css$3 = {
+  code: ".svelte-18wdnvq .app-content{flex:auto;overflow:auto;position:relative;flex-grow:1}",
+  map: null
+};
+const Header$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let menu;
+  let helpMenu;
+  let { open } = $$props;
+  if ($$props.open === void 0 && $$bindings.open && open !== void 0)
+    $$bindings.open(open);
+  $$result.css.add(css$3);
+  let $$settled;
+  let $$rendered;
+  do {
+    $$settled = true;
+    $$rendered = `
+${validate_component(TopAppBar, "TopAppBar").$$render($$result, {
+      style: "background-color: #47babb; min-width: 340px;",
+      variant: "short"
+    }, {}, {
+      default: () => `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+        default: () => `${validate_component(Section, "Section").$$render($$result, { style: "margin-left: 10px;" }, {}, {
+          default: () => `
+      
+    
+    ${validate_component(Button_1, "Button").$$render($$result, { color: "secondary", variant: "raised" }, {}, {
+            default: () => `${validate_component(Icon, "Icon").$$render($$result, { class: "material-icons" }, {}, { default: () => `menu` })}
+      ${validate_component(Label, "Label").$$render($$result, { style: "font: 28px 'grafitty';" }, {}, { default: () => `MENU` })}`
+          })}`
+        })}
+    ${validate_component(Section, "Section").$$render($$result, {
+          align: "end",
+          style: "padding-right: 25px;",
+          toolbar: true
+        }, {}, {
+          default: () => `<div style="${"margin-rigth: 15px; width: 80px;"}" class="${"svelte-18wdnvq"}">${validate_component(Button_1, "Button").$$render($$result, {
+            color: "secondary",
+            style: "background-color: #191B1B; color: #fff;",
+            variant: "unelevated"
+          }, {}, {
+            default: () => `${validate_component(Label, "Label").$$render($$result, {}, {}, { default: () => `Help` })}`
+          })}
+
+
+      ${validate_component(Menu, "Menu").$$render($$result, {
+            style: "background-color: #191B1B;",
+            anchorCorner: "TOP_LEFT",
+            this: helpMenu
+          }, {
+            this: ($$value) => {
+              helpMenu = $$value;
+              $$settled = false;
+            }
+          }, {
+            default: () => `${validate_component(List, "List").$$render($$result, {
+              style: "color: #fff; background-color: #191B1B;"
+            }, {}, {
+              default: () => `${validate_component(Item, "Item").$$render($$result, {
+                style: "color: #fff; background-color: #191B1B;"
+              }, {}, {
+                default: () => `${validate_component(Text, "Text").$$render($$result, {}, {}, { default: () => `FAQ\`s` })}`
+              })}
+          ${validate_component(Item, "Item").$$render($$result, {
+                style: "color: #fff; background-color: #191B1B;"
+              }, {}, {
+                default: () => `${validate_component(Text, "Text").$$render($$result, {}, {}, { default: () => `Contacts` })}`
+              })}
+          ${validate_component(Item, "Item").$$render($$result, {
+                style: "color: #fff; background-color: #191B1B;"
+              }, {}, {
+                default: () => `${validate_component(Text, "Text").$$render($$result, {}, {}, { default: () => `Email form` })}`
+              })}
+          ${validate_component(Separator, "Separator").$$render($$result, {}, {}, {})}
+          ${validate_component(Item, "Item").$$render($$result, {
+                style: "color: #fff; background-color: #191B1B;"
+              }, {}, {
+                default: () => `${validate_component(Text, "Text").$$render($$result, {}, {}, { default: () => `Lorem` })}`
+              })}`
+            })}`
+          })}</div>
+      <div class="${"btns svelte-18wdnvq"}">${validate_component(Group, "Group").$$render($$result, {}, {}, {
+            default: () => `${validate_component(Button_1, "Button").$$render($$result, {
+              color: "secondary",
+              style: "background-color: #191B1B; color: #fff;",
+              variant: "raised"
+            }, {}, {
+              default: () => `${validate_component(Label, "Label").$$render($$result, {}, {}, {
+                default: () => `${escape("EN \u{1F1FA}\u{1F1F8}")}`
+              })}`
+            })}
+            <div class="${"svelte-18wdnvq"}">${validate_component(Button_1, "Button").$$render($$result, {
+              variant: "outlined",
+              color: "secondary",
+              style: "padding: 0; min-width: 36px;"
+            }, {}, {
+              default: () => `${validate_component(Icon, "Icon").$$render($$result, {
+                class: "material-icons",
+                style: "margin: 0;"
+              }, {}, { default: () => `arrow_drop_down` })}`
+            })}
+              ${validate_component(Menu, "Menu").$$render($$result, {
+              style: "background-color: #191B1B; color: #fff;",
+              anchorCorner: "TOP_LEFT",
+              this: menu
+            }, {
+              this: ($$value) => {
+                menu = $$value;
+                $$settled = false;
+              }
+            }, {
+              default: () => `${validate_component(List, "List").$$render($$result, { style: "background-color: #191B1B;" }, {}, {
+                default: () => `${validate_component(Item, "Item").$$render($$result, {
+                  style: "color: #fff; background-color: #191B1B;"
+                }, {}, {
+                  default: () => `${validate_component(Text, "Text").$$render($$result, {}, {}, { default: () => `RU \u{1F1F7}\u{1F1FA}` })}`
+                })}
+                  ${validate_component(Item, "Item").$$render($$result, {
+                  style: "color: #fff;background-color: #191B1B;"
+                }, {}, {
+                  default: () => `${validate_component(Text, "Text").$$render($$result, {}, {}, { default: () => `BY \u{1F1E7}\u{1F1FE}` })}`
+                })}
+                  ${validate_component(Item, "Item").$$render($$result, {
+                  style: "color: #fff;background-color: #191B1B;"
+                }, {}, {
+                  default: () => `${validate_component(Text, "Text").$$render($$result, {}, {}, { default: () => `EN \u{1F1FA}\u{1F1F8}` })}`
+                })}
+                  ${validate_component(Separator, "Separator").$$render($$result, {}, {}, {})}
+                  ${validate_component(Item, "Item").$$render($$result, {
+                  style: "color: #fff;background-color: #191B1B;"
+                }, {}, {
+                  default: () => `${validate_component(Text, "Text").$$render($$result, {}, {}, { default: () => `PL \u{1F1F5}\u{1F1F1}` })}`
+                })}`
+              })}`
+            })}</div>`
+          })}</div>`
+        })}`
+      })}`
+    })}`;
+  } while (!$$settled);
+  return $$rendered;
 });
 var Line_svelte_svelte_type_style_lang = "";
 const css$2 = {
@@ -628,9 +791,10 @@ const Line = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 ${validate_component(Paper, "Paper").$$render($$result, {
     color: "primary",
     variant: "outlined",
+    style: "border: 2px #47babb solid; color: #47babb;",
     class: "mdc-theme--primary"
   }, {}, {
-    default: () => `${validate_component(Title, "Title").$$render($$result, { style: "font: 26px 'grafitty';" }, {}, {
+    default: () => `${validate_component(Title$1, "Title").$$render($$result, { style: "font: 26px 'grafitty';" }, {}, {
       default: () => `2021. DarkDev. All Rights Reserved.
 `
     })}
@@ -640,7 +804,7 @@ ${validate_component(Paper, "Paper").$$render($$result, {
       default: () => `${validate_component(Button_1, "Button").$$render($$result, {
         variant: "outlined",
         color: "primary",
-        style: "height: auto; margin: 0 5px 5px 0;"
+        style: "height: auto; margin: 0 5px 5px 0; border: 2px #47babb solid; color: #47babb;"
       }, {}, {
         default: () => `${validate_component(Label, "Label").$$render($$result, {}, {}, {
           default: () => `Fan Art &amp; Merch Policy`
@@ -649,28 +813,28 @@ ${validate_component(Paper, "Paper").$$render($$result, {
 	${validate_component(Button_1, "Button").$$render($$result, {
         variant: "outlined",
         color: "primary",
-        style: "height: auto; margin: 0 5px 5px 0"
+        style: "height: auto; margin: 0 5px 5px 0; border: 2px #47babb solid; color: #47babb;"
       }, {}, {
         default: () => `${validate_component(Label, "Label").$$render($$result, {}, {}, { default: () => `Refund Policy` })}`
       })}
 	${validate_component(Button_1, "Button").$$render($$result, {
         variant: "outlined",
         color: "primary",
-        style: "height: auto; margin: 0 5px 5px 0"
+        style: "height: auto; margin: 0 5px 5px 0; border: 2px #47babb solid; color: #47babb;"
       }, {}, {
         default: () => `${validate_component(Label, "Label").$$render($$result, {}, {}, { default: () => `Privacy Policy` })}`
       })}
 	${validate_component(Button_1, "Button").$$render($$result, {
         variant: "outlined",
         color: "primary",
-        style: "height: auto; margin: 0 5px 5px 0"
+        style: "height: auto; margin: 0 5px 5px 0; border: 2px #47babb solid; color: #47babb;"
       }, {}, {
         default: () => `${validate_component(Label, "Label").$$render($$result, {}, {}, { default: () => `Shipping Policy` })}`
       })}
 	${validate_component(Button_1, "Button").$$render($$result, {
         variant: "outlined",
         color: "primary",
-        style: "height: auto; margin: 0 5px 5px 0"
+        style: "height: auto; margin: 0 5px 5px 0; border: 2px #47babb solid; color: #47babb;"
       }, {}, {
         default: () => `${validate_component(Label, "Label").$$render($$result, {}, {}, { default: () => `Terms of Service` })}`
       })}`
@@ -700,20 +864,20 @@ const Policy = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       default: () => `<div style="${"margin: 1em; display: flex; flex-direction: column; align-items: flex-end;"}">
 
     ${each(text.text, (listItem, listItemNumber) => `${validate_component(Paper, "Paper").$$render($$result, {
-        style: " margin-bottom: 25px; width: 90%;",
+        style: " margin-bottom: 25px; width: 90%; ",
         transition: true,
         color: "secondary",
         class: "paper-demo"
       }, {}, {
         default: () => `
 
-        ${validate_component(Title, "Title").$$render($$result, {}, {}, {
+        ${validate_component(Title$1, "Title").$$render($$result, {}, {}, {
           default: () => `${escape(listItemNumber + 1)}. ${escape(listItem.title)}`
         })}
         
 
         
-        ${validate_component(Subtitle, "Subtitle").$$render($$result, {}, {}, {
+        ${validate_component(Subtitle$1, "Subtitle").$$render($$result, {}, {}, {
           default: () => `${escape(listItem.subtitle)}`
         })}
 
@@ -1380,25 +1544,9 @@ const PolicyMenu = create_ssr_component(($$result, $$props, $$bindings, slots) =
   } while (!$$settled);
   return $$rendered;
 });
-classAdderBuilder({
-  class: "mdc-image-list__item",
-  component: Li
-});
-classAdderBuilder({
-  class: "mdc-image-list__image-aspect-container",
-  component: Div
-});
-classAdderBuilder({
-  class: "mdc-image-list__image",
-  component: Img
-});
-classAdderBuilder({
-  class: "mdc-image-list__supporting",
-  component: Div
-});
 var Footer_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "footer.svelte-o51ejd{display:flex;flex-direction:column;justify-content:center;align-content:center;align-items:center}",
+  code: "footer.svelte-1rxof2j{display:flex;flex-direction:column;justify-content:center;align-content:center;align-items:center;height:350px}",
   map: null
 };
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1408,11 +1556,7 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$rendered;
   do {
     $$settled = true;
-    $$rendered = `
-
-
-
-<footer style="${"background-color: #000;"}" class="${"svelte-o51ejd"}">${validate_component(PolicyMenu, "PolicyMenu").$$render($$result, {
+    $$rendered = `<footer style="${"background-color: #000;"}" class="${"svelte-1rxof2j"}">${validate_component(PolicyMenu, "PolicyMenu").$$render($$result, {
       merchPolicy,
       refundPolicy,
       shippingPolicy,
@@ -1445,9 +1589,6 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 		
 
-
-	
-
 	${validate_component(Line, "Line").$$render($$result, {
       merchPolicy,
       refundPolicy,
@@ -1476,21 +1617,775 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         $$settled = false;
       }
     }, {})}
-  
-
 </footer>`;
   } while (!$$settled);
   return $$rendered;
 });
+/**
+ * @license
+ * Copyright 2016 Google Inc.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+var cssClasses = {
+  ANIMATE: "mdc-drawer--animate",
+  CLOSING: "mdc-drawer--closing",
+  DISMISSIBLE: "mdc-drawer--dismissible",
+  MODAL: "mdc-drawer--modal",
+  OPEN: "mdc-drawer--open",
+  OPENING: "mdc-drawer--opening",
+  ROOT: "mdc-drawer"
+};
+var strings = {
+  APP_CONTENT_SELECTOR: ".mdc-drawer-app-content",
+  CLOSE_EVENT: "MDCDrawer:closed",
+  OPEN_EVENT: "MDCDrawer:opened",
+  SCRIM_SELECTOR: ".mdc-drawer-scrim",
+  LIST_SELECTOR: ".mdc-list,.mdc-deprecated-list",
+  LIST_ITEM_ACTIVATED_SELECTOR: ".mdc-list-item--activated,.mdc-deprecated-list-item--activated"
+};
+/**
+ * @license
+ * Copyright 2018 Google Inc.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+var MDCDismissibleDrawerFoundation = function(_super) {
+  __extends(MDCDismissibleDrawerFoundation2, _super);
+  function MDCDismissibleDrawerFoundation2(adapter) {
+    var _this = _super.call(this, __assign(__assign({}, MDCDismissibleDrawerFoundation2.defaultAdapter), adapter)) || this;
+    _this.animationFrame = 0;
+    _this.animationTimer = 0;
+    return _this;
+  }
+  Object.defineProperty(MDCDismissibleDrawerFoundation2, "strings", {
+    get: function() {
+      return strings;
+    },
+    enumerable: false,
+    configurable: true
+  });
+  Object.defineProperty(MDCDismissibleDrawerFoundation2, "cssClasses", {
+    get: function() {
+      return cssClasses;
+    },
+    enumerable: false,
+    configurable: true
+  });
+  Object.defineProperty(MDCDismissibleDrawerFoundation2, "defaultAdapter", {
+    get: function() {
+      return {
+        addClass: function() {
+          return void 0;
+        },
+        removeClass: function() {
+          return void 0;
+        },
+        hasClass: function() {
+          return false;
+        },
+        elementHasClass: function() {
+          return false;
+        },
+        notifyClose: function() {
+          return void 0;
+        },
+        notifyOpen: function() {
+          return void 0;
+        },
+        saveFocus: function() {
+          return void 0;
+        },
+        restoreFocus: function() {
+          return void 0;
+        },
+        focusActiveNavigationItem: function() {
+          return void 0;
+        },
+        trapFocus: function() {
+          return void 0;
+        },
+        releaseFocus: function() {
+          return void 0;
+        }
+      };
+    },
+    enumerable: false,
+    configurable: true
+  });
+  MDCDismissibleDrawerFoundation2.prototype.destroy = function() {
+    if (this.animationFrame) {
+      cancelAnimationFrame(this.animationFrame);
+    }
+    if (this.animationTimer) {
+      clearTimeout(this.animationTimer);
+    }
+  };
+  MDCDismissibleDrawerFoundation2.prototype.open = function() {
+    var _this = this;
+    if (this.isOpen() || this.isOpening() || this.isClosing()) {
+      return;
+    }
+    this.adapter.addClass(cssClasses.OPEN);
+    this.adapter.addClass(cssClasses.ANIMATE);
+    this.runNextAnimationFrame(function() {
+      _this.adapter.addClass(cssClasses.OPENING);
+    });
+    this.adapter.saveFocus();
+  };
+  MDCDismissibleDrawerFoundation2.prototype.close = function() {
+    if (!this.isOpen() || this.isOpening() || this.isClosing()) {
+      return;
+    }
+    this.adapter.addClass(cssClasses.CLOSING);
+  };
+  MDCDismissibleDrawerFoundation2.prototype.isOpen = function() {
+    return this.adapter.hasClass(cssClasses.OPEN);
+  };
+  MDCDismissibleDrawerFoundation2.prototype.isOpening = function() {
+    return this.adapter.hasClass(cssClasses.OPENING) || this.adapter.hasClass(cssClasses.ANIMATE);
+  };
+  MDCDismissibleDrawerFoundation2.prototype.isClosing = function() {
+    return this.adapter.hasClass(cssClasses.CLOSING);
+  };
+  MDCDismissibleDrawerFoundation2.prototype.handleKeydown = function(evt) {
+    var keyCode = evt.keyCode, key = evt.key;
+    var isEscape = key === "Escape" || keyCode === 27;
+    if (isEscape) {
+      this.close();
+    }
+  };
+  MDCDismissibleDrawerFoundation2.prototype.handleTransitionEnd = function(evt) {
+    var OPENING = cssClasses.OPENING, CLOSING = cssClasses.CLOSING, OPEN = cssClasses.OPEN, ANIMATE = cssClasses.ANIMATE, ROOT = cssClasses.ROOT;
+    var isRootElement = this.isElement(evt.target) && this.adapter.elementHasClass(evt.target, ROOT);
+    if (!isRootElement) {
+      return;
+    }
+    if (this.isClosing()) {
+      this.adapter.removeClass(OPEN);
+      this.closed();
+      this.adapter.restoreFocus();
+      this.adapter.notifyClose();
+    } else {
+      this.adapter.focusActiveNavigationItem();
+      this.opened();
+      this.adapter.notifyOpen();
+    }
+    this.adapter.removeClass(ANIMATE);
+    this.adapter.removeClass(OPENING);
+    this.adapter.removeClass(CLOSING);
+  };
+  MDCDismissibleDrawerFoundation2.prototype.opened = function() {
+  };
+  MDCDismissibleDrawerFoundation2.prototype.closed = function() {
+  };
+  MDCDismissibleDrawerFoundation2.prototype.runNextAnimationFrame = function(callback) {
+    var _this = this;
+    cancelAnimationFrame(this.animationFrame);
+    this.animationFrame = requestAnimationFrame(function() {
+      _this.animationFrame = 0;
+      clearTimeout(_this.animationTimer);
+      _this.animationTimer = setTimeout(callback, 0);
+    });
+  };
+  MDCDismissibleDrawerFoundation2.prototype.isElement = function(element) {
+    return Boolean(element.classList);
+  };
+  return MDCDismissibleDrawerFoundation2;
+}(MDCFoundation);
+/**
+ * @license
+ * Copyright 2018 Google Inc.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+var MDCModalDrawerFoundation = function(_super) {
+  __extends(MDCModalDrawerFoundation2, _super);
+  function MDCModalDrawerFoundation2() {
+    return _super !== null && _super.apply(this, arguments) || this;
+  }
+  MDCModalDrawerFoundation2.prototype.handleScrimClick = function() {
+    this.close();
+  };
+  MDCModalDrawerFoundation2.prototype.opened = function() {
+    this.adapter.trapFocus();
+  };
+  MDCModalDrawerFoundation2.prototype.closed = function() {
+    this.adapter.releaseFocus();
+  };
+  return MDCModalDrawerFoundation2;
+}(MDCDismissibleDrawerFoundation);
+function classMap(classObj) {
+  return Object.entries(classObj).filter(([name, value]) => name !== "" && value).map(([name]) => name).join(" ");
+}
+function dispatch(element, eventType, detail, eventInit = { bubbles: true }, duplicateEventForMDC = false) {
+  if (typeof Event !== "undefined" && element) {
+    const event = new CustomEvent(eventType, Object.assign(Object.assign({}, eventInit), { detail }));
+    element === null || element === void 0 ? void 0 : element.dispatchEvent(event);
+    if (duplicateEventForMDC && eventType.startsWith("SMUI")) {
+      const duplicateEvent = new CustomEvent(eventType.replace(/^SMUI/g, () => "MDC"), Object.assign(Object.assign({}, eventInit), { detail }));
+      element === null || element === void 0 ? void 0 : element.dispatchEvent(duplicateEvent);
+      if (duplicateEvent.defaultPrevented) {
+        event.preventDefault();
+      }
+    }
+    return event;
+  }
+}
+const oldModifierRegex = /^[a-z]+(?::(?:preventDefault|stopPropagation|passive|nonpassive|capture|once|self))+$/;
+const newModifierRegex = /^[^$]+(?:\$(?:preventDefault|stopPropagation|passive|nonpassive|capture|once|self))+$/;
+function forwardEventsBuilder(component) {
+  let $on;
+  let events = [];
+  component.$on = (fullEventType, callback) => {
+    let eventType = fullEventType;
+    let destructor = () => {
+    };
+    if ($on) {
+      destructor = $on(eventType, callback);
+    } else {
+      events.push([eventType, callback]);
+    }
+    const oldModifierMatch = eventType.match(oldModifierRegex);
+    if (oldModifierMatch && console) {
+      console.warn('Event modifiers in SMUI now use "$" instead of ":", so that all events can be bound with modifiers. Please update your event binding: ', eventType);
+    }
+    return () => {
+      destructor();
+    };
+  };
+  function forward(e) {
+    bubble(component, e);
+  }
+  return (node) => {
+    const destructors = [];
+    const forwardDestructors = {};
+    $on = (fullEventType, callback) => {
+      let eventType = fullEventType;
+      let handler = callback;
+      let options = false;
+      const oldModifierMatch = eventType.match(oldModifierRegex);
+      const newModifierMatch = eventType.match(newModifierRegex);
+      const modifierMatch = oldModifierMatch || newModifierMatch;
+      if (eventType.match(/^SMUI:\w+:/)) {
+        const newEventTypeParts = eventType.split(":");
+        let newEventType = "";
+        for (let i = 0; i < newEventTypeParts.length; i++) {
+          newEventType += i === newEventTypeParts.length - 1 ? ":" + newEventTypeParts[i] : newEventTypeParts[i].split("-").map((value) => value.slice(0, 1).toUpperCase() + value.slice(1)).join("");
+        }
+        console.warn(`The event ${eventType.split("$")[0]} has been renamed to ${newEventType.split("$")[0]}.`);
+        eventType = newEventType;
+      }
+      if (modifierMatch) {
+        const parts = eventType.split(oldModifierMatch ? ":" : "$");
+        eventType = parts[0];
+        const eventOptions = Object.fromEntries(parts.slice(1).map((mod) => [mod, true]));
+        if (eventOptions.passive) {
+          options = options || {};
+          options.passive = true;
+        }
+        if (eventOptions.nonpassive) {
+          options = options || {};
+          options.passive = false;
+        }
+        if (eventOptions.capture) {
+          options = options || {};
+          options.capture = true;
+        }
+        if (eventOptions.once) {
+          options = options || {};
+          options.once = true;
+        }
+        if (eventOptions.preventDefault) {
+          handler = prevent_default(handler);
+        }
+        if (eventOptions.stopPropagation) {
+          handler = stop_propagation(handler);
+        }
+      }
+      const off = listen(node, eventType, handler, options);
+      const destructor = () => {
+        off();
+        const idx = destructors.indexOf(destructor);
+        if (idx > -1) {
+          destructors.splice(idx, 1);
+        }
+      };
+      destructors.push(destructor);
+      if (!(eventType in forwardDestructors)) {
+        forwardDestructors[eventType] = listen(node, eventType, forward);
+      }
+      return destructor;
+    };
+    for (let i = 0; i < events.length; i++) {
+      $on(events[i][0], events[i][1]);
+    }
+    return {
+      destroy: () => {
+        for (let i = 0; i < destructors.length; i++) {
+          destructors[i]();
+        }
+        for (let entry of Object.entries(forwardDestructors)) {
+          entry[1]();
+        }
+      }
+    };
+  };
+}
+const Drawer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["use", "class", "variant", "open", "fixed", "setOpen", "isOpen", "getElement"]);
+  forwardEventsBuilder(get_current_component());
+  let { use = [] } = $$props;
+  let { class: className = "" } = $$props;
+  let { variant = void 0 } = $$props;
+  let { open = false } = $$props;
+  let { fixed = true } = $$props;
+  let element;
+  let instance = void 0;
+  let internalClasses = {};
+  let previousFocus = null;
+  let focusTrap;
+  let scrim = false;
+  setContext("SMUI:list:nav", true);
+  setContext("SMUI:list:item:nav", true);
+  setContext("SMUI:list:wrapFocus", true);
+  let oldVariant = variant;
+  onDestroy(() => {
+    instance && instance.destroy();
+    scrim && scrim.removeEventListener("SMUIDrawerScrim:click", handleScrimClick);
+  });
+  function getInstance() {
+    var _a, _b;
+    if (scrim) {
+      scrim.removeEventListener("SMUIDrawerScrim:click", handleScrimClick);
+    }
+    if (variant === "modal") {
+      scrim = (_b = (_a = element.parentNode) === null || _a === void 0 ? void 0 : _a.querySelector(".mdc-drawer-scrim")) !== null && _b !== void 0 ? _b : false;
+      if (scrim) {
+        scrim.addEventListener("SMUIDrawerScrim:click", handleScrimClick);
+      }
+    }
+    const Foundation = variant === "dismissible" ? MDCDismissibleDrawerFoundation : variant === "modal" ? MDCModalDrawerFoundation : void 0;
+    return Foundation ? new Foundation({
+      addClass,
+      removeClass,
+      hasClass,
+      elementHasClass: (element2, className2) => element2.classList.contains(className2),
+      saveFocus: () => previousFocus = document.activeElement,
+      restoreFocus: () => {
+        if (previousFocus && "focus" in previousFocus && element.contains(document.activeElement)) {
+          previousFocus.focus();
+        }
+      },
+      focusActiveNavigationItem: () => {
+        const activeNavItemEl = element.querySelector(".mdc-list-item--activated,.mdc-deprecated-list-item--activated");
+        if (activeNavItemEl) {
+          activeNavItemEl.focus();
+        }
+      },
+      notifyClose: () => {
+        open = false;
+        dispatch(element, "SMUIDrawer:closed", void 0, void 0, true);
+      },
+      notifyOpen: () => {
+        open = true;
+        dispatch(element, "SMUIDrawer:opened", void 0, void 0, true);
+      },
+      trapFocus: () => focusTrap.trapFocus(),
+      releaseFocus: () => focusTrap.releaseFocus()
+    }) : void 0;
+  }
+  function hasClass(className2) {
+    return className2 in internalClasses ? internalClasses[className2] : getElement().classList.contains(className2);
+  }
+  function addClass(className2) {
+    if (!internalClasses[className2]) {
+      internalClasses[className2] = true;
+    }
+  }
+  function removeClass(className2) {
+    if (!(className2 in internalClasses) || internalClasses[className2]) {
+      internalClasses[className2] = false;
+    }
+  }
+  function handleScrimClick() {
+    instance && "handleScrimClick" in instance && instance.handleScrimClick();
+  }
+  function setOpen(value) {
+    open = value;
+  }
+  function isOpen() {
+    return open;
+  }
+  function getElement() {
+    return element;
+  }
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
+    $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
+    $$bindings.class(className);
+  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0)
+    $$bindings.variant(variant);
+  if ($$props.open === void 0 && $$bindings.open && open !== void 0)
+    $$bindings.open(open);
+  if ($$props.fixed === void 0 && $$bindings.fixed && fixed !== void 0)
+    $$bindings.fixed(fixed);
+  if ($$props.setOpen === void 0 && $$bindings.setOpen && setOpen !== void 0)
+    $$bindings.setOpen(setOpen);
+  if ($$props.isOpen === void 0 && $$bindings.isOpen && isOpen !== void 0)
+    $$bindings.isOpen(isOpen);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
+    $$bindings.getElement(getElement);
+  {
+    if (oldVariant !== variant) {
+      oldVariant = variant;
+      instance && instance.destroy();
+      internalClasses = {};
+      instance = getInstance();
+      instance && instance.init();
+    }
+  }
+  {
+    if (instance && instance.isOpen() !== open) {
+      if (open) {
+        instance.open();
+      } else {
+        instance.close();
+      }
+    }
+  }
+  return `<aside${spread([
+    {
+      class: escape_attribute_value(classMap({
+        [className]: true,
+        "mdc-drawer": true,
+        "mdc-drawer--dismissible": variant === "dismissible",
+        "mdc-drawer--modal": variant === "modal",
+        "smui-drawer__absolute": variant === "modal" && !fixed,
+        ...internalClasses
+      }))
+    },
+    escape_object($$restProps)
+  ])}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``}
+</aside>`;
+});
+const Div$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["use", "getElement"]);
+  let { use = [] } = $$props;
+  forwardEventsBuilder(get_current_component());
+  let element;
+  function getElement() {
+    return element;
+  }
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
+    $$bindings.use(use);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
+    $$bindings.getElement(getElement);
+  return `<div${spread([escape_object($$restProps)])}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``}
+</div>`;
+});
+const { Object: Object_1 } = globals;
+const internals = {
+  component: Div$1,
+  class: "",
+  classMap: {},
+  contexts: {},
+  props: {}
+};
+const ClassAdder = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["use", "class", "component", "getElement"]);
+  let { use = [] } = $$props;
+  let { class: className = "" } = $$props;
+  let element;
+  const smuiClass = internals.class;
+  const smuiClassMap = {};
+  const smuiClassUnsubscribes = [];
+  const contexts = internals.contexts;
+  const props = internals.props;
+  let { component = internals.component } = $$props;
+  Object.entries(internals.classMap).forEach(([name, context]) => {
+    const store = getContext(context);
+    if (store && "subscribe" in store) {
+      smuiClassUnsubscribes.push(store.subscribe((value) => {
+        smuiClassMap[name] = value;
+      }));
+    }
+  });
+  const forwardEvents = forwardEventsBuilder(get_current_component());
+  for (let context in contexts) {
+    if (contexts.hasOwnProperty(context)) {
+      setContext(context, contexts[context]);
+    }
+  }
+  onDestroy(() => {
+    for (const unsubscribe of smuiClassUnsubscribes) {
+      unsubscribe();
+    }
+  });
+  function getElement() {
+    return element.getElement();
+  }
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
+    $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
+    $$bindings.class(className);
+  if ($$props.component === void 0 && $$bindings.component && component !== void 0)
+    $$bindings.component(component);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
+    $$bindings.getElement(getElement);
+  let $$settled;
+  let $$rendered;
+  do {
+    $$settled = true;
+    $$rendered = `${validate_component(component || missing_component, "svelte:component").$$render($$result, Object_1.assign({ use: [forwardEvents, ...use] }, {
+      class: classMap({
+        [className]: true,
+        [smuiClass]: true,
+        ...smuiClassMap
+      })
+    }, props, $$restProps, { this: element }), {
+      this: ($$value) => {
+        element = $$value;
+        $$settled = false;
+      }
+    }, {
+      default: () => `${slots.default ? slots.default({}) : ``}`
+    })}`;
+  } while (!$$settled);
+  return $$rendered;
+});
+const defaults = Object.assign({}, internals);
+function classAdderBuilder(props) {
+  return new Proxy(ClassAdder, {
+    construct: function(target, args) {
+      Object.assign(internals, defaults, props);
+      return new target(...args);
+    },
+    get: function(target, prop) {
+      Object.assign(internals, defaults, props);
+      return target[prop];
+    }
+  });
+}
+const H1$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["use", "getElement"]);
+  let { use = [] } = $$props;
+  forwardEventsBuilder(get_current_component());
+  let element;
+  function getElement() {
+    return element;
+  }
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
+    $$bindings.use(use);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
+    $$bindings.getElement(getElement);
+  return `<h1${spread([escape_object($$restProps)])}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``}
+</h1>`;
+});
+const H2$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["use", "getElement"]);
+  let { use = [] } = $$props;
+  forwardEventsBuilder(get_current_component());
+  let element;
+  function getElement() {
+    return element;
+  }
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
+    $$bindings.use(use);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
+    $$bindings.getElement(getElement);
+  return `<h2${spread([escape_object($$restProps)])}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``}
+</h2>`;
+});
+const Div = Div$1;
+const H1 = H1$1;
+const H2 = H2$1;
+var AppContent = classAdderBuilder({
+  class: "mdc-drawer-app-content",
+  component: Div
+});
+classAdderBuilder({
+  class: "mdc-drawer__content",
+  component: Div
+});
+var Header = classAdderBuilder({
+  class: "mdc-drawer__header",
+  component: Div
+});
+var Title = classAdderBuilder({
+  class: "mdc-drawer__title",
+  component: H1
+});
+var Subtitle = classAdderBuilder({
+  class: "mdc-drawer__subtitle",
+  component: H2
+});
+const socialtq = {
+  insta: {
+    img: "img/social/insta_tq.png",
+    link: ""
+  },
+  youtube: {
+    img: "img/social/youtube_tq.png",
+    link: ""
+  },
+  tg: {
+    img: "img/social/telega_tq.png",
+    link: ""
+  },
+  fb: {
+    img: "img/social/fb_tq.png",
+    link: ""
+  },
+  twitter: {
+    img: "img/social/tweeter_tq.png",
+    link: ""
+  },
+  patronite: {
+    img: "img/social/patronite_tq.png",
+    link: ""
+  },
+  pinterest: {
+    img: "img/social/pinterest_tq.png",
+    link: ""
+  },
+  in: {
+    img: "img/social/in_tq.png",
+    link: ""
+  }
+};
 var __layout_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "app,body,html{display:block !important;height:auto !important;width:auto !important;position:static !important}.section-body{display:flex;justify-content:center;padding:50px 0}.tur-bg{width:430px;height:auto;background-color:#47babb;display:flex;justify-content:center;margin:35px 0 15px 0;padding:50px 0 25px 0}.section-svg-line{display:block;width:100%}.games-promo-wrap{display:flex;justify-content:center;flex-direction:row;flex-wrap:wrap}.svelte-5b8lr1 .hidden{display:none}",
+  code: "@font-face{font-family:'grafitty';src:local('grafitty-webfont.woff2') format('woff2'),\r\n        local('grafitty-webfont.otf') format('otf'),\r\n         local('grafitty-webfont.woff') format('woff');font-weight:normal;font-style:normal}.bg-img{background-position:center center;background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-color:#fff}.wrap-games-hidden-block{display:flex;justify-content:center;align-items:center;flex-direction:column}.logo.svelte-1g799k3{background-image:url(img/logo.svg);padding:0 5px 0 15px;margin:10px 0 -10px 0;height:40px;width:200px;background-repeat:no-repeat}.drawer-container.svelte-1g799k3{background-color:#191B1B;position:relative;display:flex;height:auto;width:256px;padding:50px 0 0 0;border:1px solid\r\n      var(--mdc-theme-text-hint-on-background, rgba(0, 0, 0, 0.1));overflow:hidden;z-index:1}.main-content.svelte-1g799k3{overflow:auto;padding:0px;height:100%;box-sizing:border-box;z-index:0}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}app,body,html{display:block !important;height:auto !important;width:auto !important;position:static !important;background-color:#191B1B}.section-body{display:flex;justify-content:center;padding:50px 0}.tur-bg{min-width:380px;width:auto;max-width:760px;height:auto;background-color:#47babb;display:flex;justify-content:center;margin:-40px 0 15px 0;padding:50px 25px 25px 25px;border-radius:4px}.section-svg-line{display:block;width:100%}.games-promo-wrap{display:flex;justify-content:center;flex-direction:row;flex-wrap:wrap}.hidden{display:none}",
   map: null
 };
 const _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  const topGames = [allGamesList.gulagUSSR, allGamesList.katyn, allGamesList.lgbt];
+  let open = false;
+  let active = "";
   $$result.css.add(css);
-  return `${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
-  ${slots.default ? slots.default({}) : ``}
+  let $$settled;
+  let $$rendered;
+  do {
+    $$settled = true;
+    $$rendered = `${validate_component(Header$1, "HeaderLayout").$$render($$result, { open }, {
+      open: ($$value) => {
+        open = $$value;
+        $$settled = false;
+      }
+    }, {})}
+<div class="${"drawer-container svelte-1g799k3"}">${validate_component(Drawer, "Drawer").$$render($$result, {
+      style: "background-color: #191B1B;",
+      variant: "modal",
+      open
+    }, {
+      open: ($$value) => {
+        open = $$value;
+        $$settled = false;
+      }
+    }, {
+      default: () => `${validate_component(Header, "Header").$$render($$result, {}, {}, {
+        default: () => `<div class="${"logo svelte-1g799k3"}"></div>
+          ${validate_component(Title, "Title").$$render($$result, { style: "color: #fff;" }, {}, { default: () => `DarkDev games \u{1F3B2}` })}
+          ${validate_component(Subtitle, "Subtitle").$$render($$result, { style: "color: #fff;" }, {}, { default: () => `Educational boardgames` })}`
+      })}
+        ${validate_component(Content$1, "Content").$$render($$result, { style: "padding:  0 5px 0 10px;" }, {}, {
+        default: () => `${validate_component(List, "List").$$render($$result, {}, {}, {
+          default: () => `${each(firstMenu, (firstMenu2) => `${validate_component(Item, "Item").$$render($$result, {
+            href: firstMenu2.link,
+            activated: active === firstMenu2.text
+          }, {}, {
+            default: () => `${validate_component(Text, "Text").$$render($$result, {}, {}, {
+              default: () => `<a rel="${"prefetch"}"${add_attribute("href", firstMenu2.link, 0)}><span style="${"font: 28px 'grafitty';"}">${escape(firstMenu2.text)} ${escape(firstMenu2.emoji)}</span></a>
+                `
+            })}
+              `
+          })}`)}
+            ${validate_component(Separator, "Separator").$$render($$result, {
+            style: "background-color: var(--mdc-theme-primary, #47babb);"
+          }, {}, {})}
+            ${validate_component(Subheader, "Subheader").$$render($$result, { component: H5, style: "color: #fff;" }, {}, { default: () => `I&#39;m in social \u{1F447}` })}
+            <div style="${"display: flex; flex-direction: row; align-content: center; width: 200px; flex-wrap: wrap;"}">${each(Object.values(socialtq), (social) => `${validate_component(Card, "Card").$$render($$result, {
+            style: "width: 40px; height: 40px; margin: 5px;"
+          }, {}, {
+            default: () => `${validate_component(PrimaryAction, "PrimaryAction").$$render($$result, {}, {}, {
+              default: () => `${validate_component(Media, "Media").$$render($$result, {
+                style: "background-image: url('" + social.img + "');",
+                class: "card-media-square",
+                aspectRatio: "square"
+              }, {}, {})}
+                  `
+            })}
+                `
+          })}`)}</div>
+            ${validate_component(Separator, "Separator").$$render($$result, {
+            style: "background-color: var(--mdc-theme-primary, #47babb);"
+          }, {}, {})}
+            ${validate_component(Subheader, "Subheader").$$render($$result, { style: "color: #fff;", component: H5 }, {}, { default: () => `Top boardgames` })}
+              ${each(topGames, (game) => `${validate_component(Item, "Item").$$render($$result, {}, {}, {
+            default: () => `${validate_component(Text, "Text").$$render($$result, {
+              style: "color: var(--mdc-theme-primary, #47babb);  font: 28px 'grafitty';"
+            }, {}, {
+              default: () => `${escape(game.promo.shortName)}`
+            })}
+                `
+          })}`)}`
+        })}`
+      })}`
+    })}</div>
+    ${validate_component(AppContent, "AppContent").$$render($$result, { class: "app-content" }, {}, {
+      default: () => `<main class="${"main-content svelte-1g799k3"}">${slots.default ? slots.default({}) : ``}</main>`
+    })}
 ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
+  } while (!$$settled);
+  return $$rendered;
 });
 export { _layout as default };

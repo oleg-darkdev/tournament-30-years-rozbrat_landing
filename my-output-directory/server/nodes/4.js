@@ -1,6 +1,6 @@
-import * as module from '../entries/pages/handmade.svelte.js';
+import * as module from '../entries/pages/auctions/_auction_.svelte.js';
 export { module };
-export const entry = 'pages/handmade.svelte-62999c99.js';
-export const js = ["pages/handmade.svelte-62999c99.js","chunks/vendor-75a52fb2.js","chunks/BlackFaq-fe1a4032.js","chunks/ColorFaq-31feac9b.js","chunks/gamesData-1a9796e6.js","chunks/gulagSSSR-7bb563db.js"];
-export const css = ["assets/BannerSection.svelte_svelte_type_style_lang-00c63c1b.css"];
+export const entry = 'pages/auctions/_auction_.svelte-4ae5d15d.js';
+export const js = ["pages/auctions/_auction_.svelte-4ae5d15d.js","chunks/vendor-fbdada6f.js","chunks/PromoCard-0ae9ba6d.js","chunks/AuctionBtns-05022c6b.js","chunks/BlackFaq-00b7208a.js","chunks/stores-dfe52d75.js","chunks/auctions-9fae30b6.js","chunks/gamesData-e89e0b32.js"];
+export const css = [];
 

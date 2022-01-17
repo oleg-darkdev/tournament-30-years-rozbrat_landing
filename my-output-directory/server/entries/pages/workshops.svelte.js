@@ -1,125 +1,306 @@
-import { c as create_ssr_component, a as compute_rest_props, g as get_current_component, v as validate_component, h as each, i as escape } from "../../chunks/index-99bd7138.js";
-import { G as Graphic, L as List, I as Item, T as Text, P as PrimaryText, S as SecondaryText } from "../../chunks/index-9e8f6ec6.js";
-import { f as forwardEventsBuilder, c as classMap, a as classAdderBuilder } from "../../chunks/Subtitle-e1b47b45.js";
-import { M as MenuSurface } from "../../chunks/MenuSurface-ec8ff9c2.js";
-import { B as Button_1, L as Label } from "../../chunks/Button-932af60d.js";
-import { C as Card, a as Content, P as PrimaryAction, M as Media, b as MediaContent } from "../../chunks/index-f655cb0a.js";
-import { C as ColorFaq } from "../../chunks/ColorFaq-01e0e8cd.js";
-import { a as allGamesList } from "../../chunks/gamesData-1a9796e6.js";
-import "../../chunks/Ripple-d40e98c6.js";
-import "../../chunks/gulagSSSR-7bb563db.js";
-const Menu = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let usePass;
-  let $$restProps = compute_rest_props($$props, [
-    "use",
-    "class",
-    "open",
-    "isOpen",
-    "setOpen",
-    "setDefaultFocusState",
-    "getSelectedIndex",
-    "getElement"
-  ]);
-  const forwardEvents = forwardEventsBuilder(get_current_component());
-  let { use = [] } = $$props;
-  let { class: className = "" } = $$props;
-  let { open = false } = $$props;
-  let element;
-  let instance;
-  function isOpen() {
-    return open;
+import { c as create_ssr_component, v as validate_component, i as each, h as escape } from "../../chunks/index-d2f82617.js";
+import { b as List, L as Label, c as Item, T as Text, P as PrimaryText, f as SecondaryText } from "../../chunks/index-2fbb442f.js";
+import { M as Menu } from "../../chunks/SelectionGroupIcon-f0116078.js";
+import { B as Button_1 } from "../../chunks/Button-19836e67.js";
+import { e as Card, d as Content, g as PrimaryAction, M as Media, k as MediaContent } from "../../chunks/index-d5037018.js";
+import { C as ColorFaq } from "../../chunks/ColorFaq-c54aa38b.js";
+import { a as allGamesList } from "../../chunks/gamesData-e89e0b32.js";
+class Auction {
+  constructor(valuePromo, valueCroundfanding, valueMoreInfo) {
+    this.promo = valuePromo;
+    this.croundfanding = valueCroundfanding;
+    this.moreInfo = valueMoreInfo;
+    this.history = [""];
   }
-  function setOpen(value) {
-    open = value;
+  get promo() {
+    return this._promo;
   }
-  function setDefaultFocusState(focusState) {
-    instance.setDefaultFocusState(focusState);
+  get croundfanding() {
+    return this._croundfanding;
   }
-  function getSelectedIndex() {
-    return instance.getSelectedIndex();
+  get moreInfo() {
+    return this._moreInfo;
   }
-  function getElement() {
-    return element.getElement();
+  get history() {
+    return this._history;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.open === void 0 && $$bindings.open && open !== void 0)
-    $$bindings.open(open);
-  if ($$props.isOpen === void 0 && $$bindings.isOpen && isOpen !== void 0)
-    $$bindings.isOpen(isOpen);
-  if ($$props.setOpen === void 0 && $$bindings.setOpen && setOpen !== void 0)
-    $$bindings.setOpen(setOpen);
-  if ($$props.setDefaultFocusState === void 0 && $$bindings.setDefaultFocusState && setDefaultFocusState !== void 0)
-    $$bindings.setDefaultFocusState(setDefaultFocusState);
-  if ($$props.getSelectedIndex === void 0 && $$bindings.getSelectedIndex && getSelectedIndex !== void 0)
-    $$bindings.getSelectedIndex(getSelectedIndex);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  let $$settled;
-  let $$rendered;
-  do {
-    $$settled = true;
-    usePass = [forwardEvents, ...use];
-    $$rendered = `${validate_component(MenuSurface, "MenuSurface").$$render($$result, Object.assign({ use: usePass }, {
-      class: classMap({ [className]: true, "mdc-menu": true })
-    }, $$restProps, { this: element }, { open }), {
-      this: ($$value) => {
-        element = $$value;
-        $$settled = false;
-      },
-      open: ($$value) => {
-        open = $$value;
-        $$settled = false;
-      }
-    }, {
-      default: () => `${slots.default ? slots.default({}) : ``}`
-    })}`;
-  } while (!$$settled);
-  return $$rendered;
-});
-classAdderBuilder({
-  class: "mdc-menu__selection-group-icon",
-  component: Graphic
-});
-const workshop = {
-  name: allGamesList.gulag.promo.name,
-  logo: allGamesList.gulag.promo.logo,
-  shortName: allGamesList.gulag.promo.shortName,
-  date: "22.02.2022",
-  place: "ul. Pu\u0142awska 37, Warsawa",
-  social: [
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
-  eventbrite: "https://www.eventbrite.com/",
-  show: true
+  set promo(value) {
+    this._promo = value;
+  }
+  set moreInfo(value) {
+    this._moreInfo = value;
+  }
+  set croundfanding(value) {
+    this._croundfanding = value;
+  }
+  set history(value) {
+    this._history = value;
+  }
+}
+let gameData$b = allGamesList.eco;
+let historyWorkshops$b = [
+  {
+    date: "22.02.2022",
+    place: "ul. Pu\u0142awska 37, Warsawa",
+    reports: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    maxPeople: 6,
+    eventbrite: "https://www.eventbrite.com/"
+  }
+];
+let workshop$b = new Auction(gameData$b.promo, gameData$b.croundfanding, gameData$b.moreInfo);
+workshop$b.history = historyWorkshops$b;
+let gameData$a = allGamesList.lgbt;
+let historyWorkshops$a = [
+  {
+    date: "22.02.2022",
+    place: "ul. Pu\u0142awska 37, Warsawa",
+    reports: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    maxPeople: 6,
+    eventbrite: "https://www.eventbrite.com/"
+  }
+];
+let workshop$a = new Auction(gameData$a.promo, gameData$a.croundfanding, gameData$a.moreInfo);
+workshop$a.history = historyWorkshops$a;
+let gameData$9 = allGamesList.gulagUSSR;
+let historyWorkshops$9 = [
+  {
+    date: "22.02.2022",
+    place: "ul. Pu\u0142awska 37, Warsawa",
+    reports: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    maxPeople: 6,
+    eventbrite: "https://www.eventbrite.com/"
+  }
+];
+let workshop$9 = new Auction(gameData$9.promo, gameData$9.croundfanding, gameData$9.moreInfo);
+workshop$9.history = historyWorkshops$9;
+let gameData$8 = allGamesList.fnb;
+let historyWorkshops$8 = [
+  {
+    date: "22.02.2022",
+    place: "ul. Pu\u0142awska 37, Warsawa",
+    reports: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    maxPeople: 6,
+    eventbrite: "https://www.eventbrite.com/"
+  }
+];
+let workshop$8 = new Auction(gameData$8.promo, gameData$8.croundfanding, gameData$8.moreInfo);
+workshop$8.history = historyWorkshops$8;
+let gameData$7 = allGamesList.a;
+let historyWorkshops$7 = [
+  {
+    date: "22.02.2022",
+    place: "ul. Pu\u0142awska 37, Warsawa",
+    reports: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    maxPeople: 6,
+    eventbrite: "https://www.eventbrite.com/"
+  }
+];
+let workshop$7 = new Auction(gameData$7.promo, gameData$7.croundfanding, gameData$7.moreInfo);
+workshop$7.history = historyWorkshops$7;
+let gameData$6 = allGamesList.hackerspace;
+let historyWorkshops$6 = [
+  {
+    date: "22.02.2022",
+    place: "ul. Pu\u0142awska 37, Warsawa",
+    reports: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    maxPeople: 6,
+    eventbrite: "https://www.eventbrite.com/"
+  }
+];
+let workshop$6 = new Auction(gameData$6.promo, gameData$6.croundfanding, gameData$6.moreInfo);
+workshop$6.history = historyWorkshops$6;
+let gameData$5 = allGamesList.katyn;
+let historyWorkshops$5 = [
+  {
+    date: "22.02.2022",
+    place: "ul. Pu\u0142awska 37, Warsawa",
+    reports: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    maxPeople: 6,
+    eventbrite: "https://www.eventbrite.com/"
+  }
+];
+let workshop$5 = new Auction(gameData$5.promo, gameData$5.croundfanding, gameData$5.moreInfo);
+workshop$5.history = historyWorkshops$5;
+let gameData$4 = allGamesList.ror;
+let historyWorkshops$4 = [
+  {
+    date: "22.02.2022",
+    place: "ul. Pu\u0142awska 37, Warsawa",
+    reports: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    maxPeople: 6,
+    eventbrite: "https://www.eventbrite.com/"
+  }
+];
+let workshop$4 = new Auction(gameData$4.promo, gameData$4.croundfanding, gameData$4.moreInfo);
+workshop$4.history = historyWorkshops$4;
+let gameData$3 = allGamesList.squat;
+let historyWorkshops$3 = [
+  {
+    date: "22.02.2022",
+    place: "ul. Pu\u0142awska 37, Warsawa",
+    reports: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    maxPeople: 6,
+    eventbrite: "https://www.eventbrite.com/"
+  }
+];
+let workshop$3 = new Auction(gameData$3.promo, gameData$3.croundfanding, gameData$3.moreInfo);
+workshop$3.history = historyWorkshops$3;
+let gameData$2 = allGamesList.wikileaks;
+let historyWorkshops$2 = [
+  {
+    date: "22.02.2022",
+    place: "ul. Pu\u0142awska 37, Warsawa",
+    reports: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    maxPeople: 6,
+    eventbrite: "https://www.eventbrite.com/"
+  }
+];
+let workshop$2 = new Auction(gameData$2.promo, gameData$2.croundfanding, gameData$2.moreInfo);
+workshop$2.history = historyWorkshops$2;
+let gameData$1 = allGamesList.wtb;
+let historyWorkshops$1 = [
+  {
+    date: "22.02.2022",
+    place: "ul. Pu\u0142awska 37, Warsawa",
+    reports: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    maxPeople: 6,
+    eventbrite: "https://www.eventbrite.com/"
+  }
+];
+let workshop$1 = new Auction(gameData$1.promo, gameData$1.croundfanding, gameData$1.moreInfo);
+workshop$1.history = historyWorkshops$1;
+let gameData = allGamesList.yakusa;
+let historyWorkshops = [
+  {
+    date: "22.02.2022",
+    place: "ul. Pu\u0142awska 37, Warsawa",
+    reports: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    maxPeople: 6,
+    eventbrite: "https://www.eventbrite.com/"
+  }
+];
+let workshop = new Auction(gameData.promo, gameData.croundfanding, gameData.moreInfo);
+workshop.history = historyWorkshops;
+const workshops = {
+  gulagUSSR: workshop$9,
+  eco: workshop$b,
+  lgbt: workshop$a,
+  fnb: workshop$8,
+  a: workshop$7,
+  hackerspace: workshop$6,
+  katyn: workshop$5,
+  ror: workshop$4,
+  squat: workshop$3,
+  wikileaks: workshop$2,
+  wtb: workshop$1,
+  yakusa: workshop
 };
-const workshops = [workshop];
 var workshops_svelte_svelte_type_style_lang = "";
 const css = {
   code: ".wrap-hide-menu.svelte-16nqwdu{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:20px 0}.wrap-hide-menu.svelte-16nqwdu,.wrap-btns.svelte-16nqwdu{display:flex;flex-direction:row;flex-wrap:wrap}.wrap-btns.svelte-16nqwdu{margin-top:15px;justify-content:flex-end;align-content:flex-end;align-items:flex-end}",
   map: null
 };
 const Workshops = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let gamesShortNames = workshops.map(function(workshopData) {
+  let workshopsArray = Object.values(workshops);
+  let gamesShortNames = workshopsArray.map(function(workshopData) {
     return {
-      shortName: workshopData.shortName,
+      shortName: workshopData.promo.shortName,
       show: true
     };
   });
   let moreInfoMenu = [""];
-  console.log(workshops);
   $$result.css.add(css);
   let $$settled;
   let $$rendered;
   do {
     $$settled = true;
-    $$rendered = `${validate_component(ColorFaq, "ColorFaq").$$render($$result, { title: "Upcoming workshops \u{1F3AF}" }, {}, {
+    $$rendered = `${$$result.head += `${$$result.title = `<title>Workshops \u{1F9E0}</title>`, ""}`, ""}
+
+${validate_component(ColorFaq, "ColorFaq").$$render($$result, { title: "Upcoming workshops \u{1F9E0}" }, {}, {
       default: () => `<div style="${"display: flex; flex-direction: row;"}">${validate_component(Card, "Card").$$render($$result, {
         style: "width: 310px; height: auto; margin-right: 15px; ",
         variant: "outlined",
@@ -149,7 +330,7 @@ const Workshops = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         style: "max-width: 560px; width: auto; ",
         threeLine: true
       }, {}, {
-        default: () => `${each(workshops, (workshop2, i) => `${validate_component(Item, "Item").$$render($$result, {
+        default: () => `${each(workshopsArray, (workshop2, i) => `${validate_component(Item, "Item").$$render($$result, {
           style: "border: 2px solid #47babb; min-height: 135px; height: auto; display: flex; flex-direction: row;  justify-content: flex-start;  flex-wrap: wrap;"
         }, {}, {
           default: () => `${validate_component(Menu, "Menu").$$render($$result, {
@@ -183,7 +364,7 @@ const Workshops = create_ssr_component(($$result, $$props, $$bindings, slots) =>
             style: "height: 100px; width: 200px; margin: 15px;"
           }, {}, {
             default: () => `${validate_component(Media, "Media").$$render($$result, {
-              style: "background-image: url(" + workshop2.logo + ");",
+              style: "background-image: url(" + workshop2.promo.logo + ");",
               class: "card-media-16x9",
               aspectRatio: "16x9"
             }, {}, {
@@ -195,13 +376,13 @@ const Workshops = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 
             ${validate_component(Text, "Text").$$render($$result, {}, {}, {
             default: () => `${validate_component(PrimaryText, "PrimaryText").$$render($$result, { style: "color: #47babb;" }, {}, {
-              default: () => `${escape(workshop2.name)} `
+              default: () => `${escape(workshop2.promo.name)} `
             })}
                 ${validate_component(SecondaryText, "SecondaryText").$$render($$result, { style: "color: #47babb;" }, {}, {
-              default: () => `\u{1F4C5} ${escape(workshop2.date)}`
+              default: () => `\u{1F4C5} ${escape(workshop2.history[0].date)}`
             })}
                 ${validate_component(SecondaryText, "SecondaryText").$$render($$result, { style: "color: #47babb;" }, {}, {
-              default: () => `\u{1F3E0}  ${escape(workshop2.place)} `
+              default: () => `\u{1F3E0}  ${escape(workshop2.history[0].place)} `
             })}
 
                 <div class="${"wrap-btns svelte-16nqwdu"}">${validate_component(Button_1, "Button").$$render($$result, {

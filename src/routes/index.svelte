@@ -81,7 +81,8 @@ let getStarted = false;
         height: 100%;     
            
     }
- /* .bg-img-games {
-     background-image: url(img/bg/games_bg.png);
-  } */
+
+ .bg-img-index {
+     background-image: url(img/bg/main_bg.png);
+  }
 </style>

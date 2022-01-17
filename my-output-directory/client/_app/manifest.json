@@ -1,19 +1,20 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-703bb958.js",
+    "file": "start-d52b6ac7.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-75a52fb2.js"
+      "_vendor-fbdada6f.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/build/components/error.svelte",
       "src/routes/index.svelte",
       "src/routes/workshops.svelte",
+      "src/routes/auctions/[auction].svelte",
       "src/routes/handmade.svelte",
       "src/routes/support.svelte",
-      "src/routes/games/eco.svelte",
+      "src/routes/games/[game].svelte",
       "src/routes/games.svelte",
       "src/routes/shop/expansions.svelte",
       "src/routes/shop.svelte",
@@ -24,186 +25,213 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-5f649ff6.js",
+    "file": "pages/__layout.svelte-872b760d.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-75a52fb2.js"
+      "_vendor-fbdada6f.js",
+      "_firstMenuText-188754cb.js",
+      "_gamesData-e89e0b32.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-630a08ff.css"
+      "assets/pages/__layout.svelte-5df705a8.css"
     ]
   },
   ".svelte-kit/build/components/error.svelte": {
-    "file": "error.svelte-145b6e75.js",
+    "file": "error.svelte-f13f99cb.js",
     "src": ".svelte-kit/build/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-75a52fb2.js"
+      "_vendor-fbdada6f.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-b4406903.js",
+    "file": "pages/index.svelte-5e378e1d.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-75a52fb2.js",
-      "_SocialPanel-b3f042c2.js"
+      "_vendor-fbdada6f.js",
+      "_firstMenuText-188754cb.js",
+      "_SocialPanel-0ab0bc32.js"
     ],
     "css": [
-      "assets/pages/index.svelte-56fa6081.css"
+      "assets/pages/index.svelte-6d0c8690.css"
     ]
   },
   "src/routes/workshops.svelte": {
-    "file": "pages/workshops.svelte-d4eb9c38.js",
+    "file": "pages/workshops.svelte-8909b7eb.js",
     "src": "src/routes/workshops.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-75a52fb2.js",
-      "_ColorFaq-31feac9b.js",
-      "_gamesData-1a9796e6.js",
-      "_gulagSSSR-7bb563db.js"
+      "_vendor-fbdada6f.js",
+      "_ColorFaq-89bdc60b.js",
+      "_gamesData-e89e0b32.js"
     ],
     "css": [
       "assets/pages/workshops.svelte-13906da8.css"
     ]
   },
+  "src/routes/auctions/[auction].svelte": {
+    "file": "pages/auctions/_auction_.svelte-4ae5d15d.js",
+    "src": "src/routes/auctions/[auction].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-fbdada6f.js",
+      "_PromoCard-0ae9ba6d.js",
+      "_BlackFaq-00b7208a.js",
+      "_stores-dfe52d75.js",
+      "_auctions-9fae30b6.js",
+      "_AuctionBtns-05022c6b.js",
+      "_gamesData-e89e0b32.js"
+    ]
+  },
   "src/routes/handmade.svelte": {
-    "file": "pages/handmade.svelte-62999c99.js",
+    "file": "pages/handmade.svelte-e52dfa00.js",
     "src": "src/routes/handmade.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-75a52fb2.js",
-      "_BlackFaq-fe1a4032.js",
-      "_ColorFaq-31feac9b.js",
-      "_gamesData-1a9796e6.js",
-      "_gulagSSSR-7bb563db.js"
-    ],
-    "css": [
-      "assets/BannerSection.svelte_svelte_type_style_lang-00c63c1b.css"
+      "_vendor-fbdada6f.js",
+      "_SocialPanel-0ab0bc32.js",
+      "_ColorFaq-89bdc60b.js",
+      "_AuctionBtns-05022c6b.js",
+      "_auctions-9fae30b6.js",
+      "_gamesData-e89e0b32.js"
     ]
   },
   "src/routes/support.svelte": {
-    "file": "pages/support.svelte-4c45be2c.js",
+    "file": "pages/support.svelte-f5628148.js",
     "src": "src/routes/support.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-75a52fb2.js",
-      "_SocialPanel-b3f042c2.js",
-      "_BlackFaq-fe1a4032.js"
+      "_vendor-fbdada6f.js",
+      "_SocialPanel-0ab0bc32.js",
+      "_BlackFaq-00b7208a.js"
     ],
     "css": [
-      "assets/pages/support.svelte-e4546120.css",
-      "assets/BannerSection.svelte_svelte_type_style_lang-00c63c1b.css"
+      "assets/pages/support.svelte-eaf1081d.css"
     ]
   },
-  "src/routes/games/eco.svelte": {
-    "file": "pages/games/eco.svelte-18ac9377.js",
-    "src": "src/routes/games/eco.svelte",
+  "src/routes/games/[game].svelte": {
+    "file": "pages/games/_game_.svelte-79b255be.js",
+    "src": "src/routes/games/[game].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-75a52fb2.js",
-      "_BlackFaq-fe1a4032.js",
-      "_ColorFaq-31feac9b.js"
-    ],
-    "css": [
-      "assets/BannerSection.svelte_svelte_type_style_lang-00c63c1b.css"
+      "_vendor-fbdada6f.js",
+      "_stores-dfe52d75.js",
+      "_BlackFaq-00b7208a.js",
+      "_ColorFaq-89bdc60b.js",
+      "_gamesData-e89e0b32.js"
     ]
   },
   "src/routes/games.svelte": {
-    "file": "pages/games.svelte-95c79749.js",
+    "file": "pages/games.svelte-67e64e85.js",
     "src": "src/routes/games.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-75a52fb2.js",
-      "_SocialPanel-b3f042c2.js",
-      "_BlackFaq-fe1a4032.js",
-      "_ColorFaq-31feac9b.js",
-      "_gamesData-1a9796e6.js",
-      "_gulagSSSR-7bb563db.js"
+      "_vendor-fbdada6f.js",
+      "_SocialPanel-0ab0bc32.js",
+      "_BlackFaq-00b7208a.js",
+      "_ColorFaq-89bdc60b.js",
+      "_gamesData-e89e0b32.js",
+      "_PromoCard-0ae9ba6d.js",
+      "_AuctionBtns-05022c6b.js"
     ],
     "css": [
-      "assets/pages/games.svelte-02ad7197.css",
-      "assets/BannerSection.svelte_svelte_type_style_lang-00c63c1b.css"
+      "assets/pages/games.svelte-f6e37e3c.css"
     ]
   },
   "src/routes/shop/expansions.svelte": {
-    "file": "pages/shop/expansions.svelte-9157dde1.js",
+    "file": "pages/shop/expansions.svelte-a1c38bda.js",
     "src": "src/routes/shop/expansions.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-75a52fb2.js",
-      "_SocialPanel-b3f042c2.js",
-      "_BlackFaq-fe1a4032.js",
-      "_ColorFaq-31feac9b.js"
-    ],
-    "css": [
-      "assets/pages/shop/expansions.svelte-bddbdd39.css"
+      "_vendor-fbdada6f.js"
     ]
   },
   "src/routes/shop.svelte": {
-    "file": "pages/shop.svelte-30627ebe.js",
+    "file": "pages/shop.svelte-ad78676a.js",
     "src": "src/routes/shop.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-75a52fb2.js"
+      "_vendor-fbdada6f.js"
     ]
   },
   "src/routes/faq.svelte": {
-    "file": "pages/faq.svelte-f8c14b84.js",
+    "file": "pages/faq.svelte-c50b676b.js",
     "src": "src/routes/faq.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-75a52fb2.js",
-      "_SocialPanel-b3f042c2.js",
-      "_BlackFaq-fe1a4032.js",
-      "_ColorFaq-31feac9b.js",
-      "_gulagSSSR-7bb563db.js"
+      "_vendor-fbdada6f.js",
+      "_BlackFaq-00b7208a.js",
+      "_ColorFaq-89bdc60b.js",
+      "_gamesData-e89e0b32.js"
     ],
     "css": [
-      "assets/pages/faq.svelte-68c64c72.css",
-      "assets/BannerSection.svelte_svelte_type_style_lang-00c63c1b.css"
+      "assets/pages/faq.svelte-b486ed91.css"
     ]
   },
-  "_vendor-75a52fb2.js": {
-    "file": "chunks/vendor-75a52fb2.js"
+  "_vendor-fbdada6f.js": {
+    "file": "chunks/vendor-fbdada6f.js"
   },
-  "_SocialPanel-b3f042c2.js": {
-    "file": "chunks/SocialPanel-b3f042c2.js",
+  "_firstMenuText-188754cb.js": {
+    "file": "chunks/firstMenuText-188754cb.js"
+  },
+  "_gamesData-e89e0b32.js": {
+    "file": "chunks/gamesData-e89e0b32.js"
+  },
+  "_SocialPanel-0ab0bc32.js": {
+    "file": "chunks/SocialPanel-0ab0bc32.js",
     "imports": [
-      "_vendor-75a52fb2.js"
+      "_vendor-fbdada6f.js"
     ]
   },
-  "_ColorFaq-31feac9b.js": {
-    "file": "chunks/ColorFaq-31feac9b.js",
+  "_ColorFaq-89bdc60b.js": {
+    "file": "chunks/ColorFaq-89bdc60b.js",
     "imports": [
-      "_vendor-75a52fb2.js"
+      "_vendor-fbdada6f.js"
     ]
   },
-  "_gamesData-1a9796e6.js": {
-    "file": "chunks/gamesData-1a9796e6.js",
+  "_PromoCard-0ae9ba6d.js": {
+    "file": "chunks/PromoCard-0ae9ba6d.js",
     "imports": [
-      "_gulagSSSR-7bb563db.js"
+      "_vendor-fbdada6f.js",
+      "_AuctionBtns-05022c6b.js"
     ]
   },
-  "_gulagSSSR-7bb563db.js": {
-    "file": "chunks/gulagSSSR-7bb563db.js"
-  },
-  "_BlackFaq-fe1a4032.js": {
-    "file": "chunks/BlackFaq-fe1a4032.js",
+  "_BlackFaq-00b7208a.js": {
+    "file": "chunks/BlackFaq-00b7208a.js",
     "imports": [
-      "_vendor-75a52fb2.js"
+      "_vendor-fbdada6f.js"
+    ]
+  },
+  "_stores-dfe52d75.js": {
+    "file": "chunks/stores-dfe52d75.js",
+    "imports": [
+      "_vendor-fbdada6f.js"
+    ]
+  },
+  "_auctions-9fae30b6.js": {
+    "file": "chunks/auctions-9fae30b6.js",
+    "imports": [
+      "_gamesData-e89e0b32.js"
+    ]
+  },
+  "_AuctionBtns-05022c6b.js": {
+    "file": "chunks/AuctionBtns-05022c6b.js",
+    "imports": [
+      "_vendor-fbdada6f.js"
     ]
   }
 }

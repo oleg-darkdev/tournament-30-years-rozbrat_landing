@@ -1,11 +1,10 @@
-import { c as create_ssr_component, v as validate_component, h as each, i as escape } from "../../chunks/index-99bd7138.js";
-import { C as Card, M as Media, a as Content } from "../../chunks/index-f655cb0a.js";
-import { B as Button_1, L as Label } from "../../chunks/Button-932af60d.js";
-import { L as List, I as Item, T as Text } from "../../chunks/index-9e8f6ec6.js";
-import { S as SocialPanel } from "../../chunks/SocialPanel-a8bc2212.js";
-/* empty css                                                                 */import { B as BlackFaq } from "../../chunks/BlackFaq-78830e0c.js";
-import "../../chunks/Subtitle-e1b47b45.js";
-import "../../chunks/Ripple-d40e98c6.js";
+import { c as create_ssr_component, v as validate_component, i as each, h as escape } from "../../chunks/index-d2f82617.js";
+import { e as Card, M as Media, d as Content } from "../../chunks/index-d5037018.js";
+import { B as Button_1 } from "../../chunks/Button-19836e67.js";
+import { L as Label, b as List, c as Item, T as Text } from "../../chunks/index-2fbb442f.js";
+import { S as SocialPanel } from "../../chunks/SocialPanel-aff7763b.js";
+import { B as BlackFaq } from "../../chunks/BlackFaq-325a0523.js";
+var BannerSection_svelte_svelte_type_style_lang = "";
 var support_svelte_svelte_type_style_lang = "";
 const css = {
   code: ".wrap-btns.svelte-v0vi9c{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;align-content:flex-start;margin:0 0 10px 0;width:100%}",
@@ -19,11 +18,7 @@ const Support = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     "\u{1F525} Laser cutting and engraving on my equipment"
   ];
   $$result.css.add(css);
-  return `${$$result.head += `${$$result.title = `<title>Support DarkDev.games</title>`, ""}`, ""}
-
-
-
-
+  return `${$$result.head += `${$$result.title = `<title>Support DarkDev.games \u{1F499}</title>`, ""}`, ""}
 
 
 

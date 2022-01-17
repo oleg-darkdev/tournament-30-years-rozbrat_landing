@@ -4,7 +4,7 @@
     "src": ".svelte-kit/build/app.js",
     "isEntry": true,
     "imports": [
-      "_index-99bd7138.js"
+      "_index-d2f82617.js"
     ],
     "css": [
       "assets/app-6009617f.css"
@@ -15,16 +15,17 @@
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index-99bd7138.js",
-      "_index-5c9f1cbc.js",
-      "_Subtitle-e1b47b45.js",
-      "_Ripple-d40e98c6.js",
-      "_IconButton-5857d6b7.js",
-      "_Button-932af60d.js",
-      "_MenuSurface-ec8ff9c2.js"
+      "_index-d2f82617.js",
+      "_index-0141c37a.js",
+      "_index-d5037018.js",
+      "_index-2fbb442f.js",
+      "_Button-19836e67.js",
+      "_SelectionGroupIcon-f0116078.js",
+      "_firstMenuText-188754cb.js",
+      "_gamesData-e89e0b32.js"
     ],
     "css": [
-      "assets/entries/pages/__layout.svelte-10820369.css"
+      "assets/entries/pages/__layout.svelte-6f3e4cd4.css"
     ]
   },
   ".svelte-kit/build/components/error.svelte": {
@@ -32,7 +33,7 @@
     "src": ".svelte-kit/build/components/error.svelte",
     "isEntry": true,
     "imports": [
-      "_index-99bd7138.js"
+      "_index-d2f82617.js"
     ]
   },
   "src/routes/index.svelte": {
@@ -40,13 +41,13 @@
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "imports": [
-      "_index-99bd7138.js",
-      "_index-f655cb0a.js",
-      "_SocialPanel-a8bc2212.js",
-      "_Subtitle-e1b47b45.js"
+      "_index-d2f82617.js",
+      "_index-d5037018.js",
+      "_firstMenuText-188754cb.js",
+      "_SocialPanel-aff7763b.js"
     ],
     "css": [
-      "assets/entries/pages/index.svelte-19a3ba20.css"
+      "assets/entries/pages/index.svelte-1c54b74a.css"
     ]
   },
   "src/routes/workshops.svelte": {
@@ -54,19 +55,34 @@
     "src": "src/routes/workshops.svelte",
     "isEntry": true,
     "imports": [
-      "_index-99bd7138.js",
-      "_index-9e8f6ec6.js",
-      "_Subtitle-e1b47b45.js",
-      "_MenuSurface-ec8ff9c2.js",
-      "_Button-932af60d.js",
-      "_index-f655cb0a.js",
-      "_ColorFaq-01e0e8cd.js",
-      "_gamesData-1a9796e6.js",
-      "_Ripple-d40e98c6.js",
-      "_gulagSSSR-7bb563db.js"
+      "_index-d2f82617.js",
+      "_index-2fbb442f.js",
+      "_SelectionGroupIcon-f0116078.js",
+      "_Button-19836e67.js",
+      "_index-d5037018.js",
+      "_ColorFaq-c54aa38b.js",
+      "_gamesData-e89e0b32.js"
     ],
     "css": [
       "assets/entries/pages/workshops.svelte-3aad4c6f.css"
+    ]
+  },
+  "src/routes/auctions/[auction].svelte": {
+    "file": "entries/pages/auctions/_auction_.svelte.js",
+    "src": "src/routes/auctions/[auction].svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d2f82617.js",
+      "_index-d5037018.js",
+      "_index-2fbb442f.js",
+      "_PromoCard-dbbbc03d.js",
+      "_BlackFaq-325a0523.js",
+      "_stores-a50a587a.js",
+      "_auctions-9fae30b6.js",
+      "_Button-19836e67.js",
+      "_AuctionBtns-93c88936.js",
+      "_index-0141c37a.js",
+      "_gamesData-e89e0b32.js"
     ]
   },
   "src/routes/handmade.svelte": {
@@ -74,20 +90,16 @@
     "src": "src/routes/handmade.svelte",
     "isEntry": true,
     "imports": [
-      "_index-99bd7138.js",
-      "_Button-932af60d.js",
-      "_index-f655cb0a.js",
-      "_index-9e8f6ec6.js",
-      "_index-5c9f1cbc.js",
-      "_Subtitle-e1b47b45.js",
-      "_Ripple-d40e98c6.js",
-      "_BlackFaq-78830e0c.js",
-      "_ColorFaq-01e0e8cd.js",
-      "_gamesData-1a9796e6.js",
-      "_gulagSSSR-7bb563db.js"
-    ],
-    "css": [
-      "assets/BannerSection.svelte_svelte_type_style_lang-5d73fa89.css"
+      "_index-d2f82617.js",
+      "_SocialPanel-aff7763b.js",
+      "_ColorFaq-c54aa38b.js",
+      "_index-d5037018.js",
+      "_index-2fbb442f.js",
+      "_Button-19836e67.js",
+      "_AuctionBtns-93c88936.js",
+      "_auctions-9fae30b6.js",
+      "_index-0141c37a.js",
+      "_gamesData-e89e0b32.js"
     ]
   },
   "src/routes/support.svelte": {
@@ -95,37 +107,30 @@
     "src": "src/routes/support.svelte",
     "isEntry": true,
     "imports": [
-      "_index-99bd7138.js",
-      "_index-f655cb0a.js",
-      "_Button-932af60d.js",
-      "_index-9e8f6ec6.js",
-      "_SocialPanel-a8bc2212.js",
-      "_BlackFaq-78830e0c.js",
-      "_Subtitle-e1b47b45.js",
-      "_Ripple-d40e98c6.js"
+      "_index-d2f82617.js",
+      "_index-d5037018.js",
+      "_Button-19836e67.js",
+      "_index-2fbb442f.js",
+      "_SocialPanel-aff7763b.js",
+      "_BlackFaq-325a0523.js"
     ],
     "css": [
-      "assets/entries/pages/support.svelte-b46cbfb0.css",
-      "assets/BannerSection.svelte_svelte_type_style_lang-5d73fa89.css"
+      "assets/entries/pages/support.svelte-8380dc98.css"
     ]
   },
-  "src/routes/games/eco.svelte": {
-    "file": "entries/pages/games/eco.svelte.js",
-    "src": "src/routes/games/eco.svelte",
+  "src/routes/games/[game].svelte": {
+    "file": "entries/pages/games/_game_.svelte.js",
+    "src": "src/routes/games/[game].svelte",
     "isEntry": true,
     "imports": [
-      "_index-99bd7138.js",
-      "_index-f655cb0a.js",
-      "_Button-932af60d.js",
-      "_IconButton-5857d6b7.js",
-      "_index-9e8f6ec6.js",
-      "_BlackFaq-78830e0c.js",
-      "_ColorFaq-01e0e8cd.js",
-      "_Subtitle-e1b47b45.js",
-      "_Ripple-d40e98c6.js"
-    ],
-    "css": [
-      "assets/BannerSection.svelte_svelte_type_style_lang-5d73fa89.css"
+      "_index-d2f82617.js",
+      "_stores-a50a587a.js",
+      "_BlackFaq-325a0523.js",
+      "_ColorFaq-c54aa38b.js",
+      "_index-d5037018.js",
+      "_Button-19836e67.js",
+      "_index-2fbb442f.js",
+      "_gamesData-e89e0b32.js"
     ]
   },
   "src/routes/games.svelte": {
@@ -133,18 +138,21 @@
     "src": "src/routes/games.svelte",
     "isEntry": true,
     "imports": [
-      "_index-99bd7138.js",
-      "_index-f655cb0a.js",
-      "_SocialPanel-a8bc2212.js",
-      "_BlackFaq-78830e0c.js",
-      "_ColorFaq-01e0e8cd.js",
-      "_gamesData-1a9796e6.js",
-      "_Subtitle-e1b47b45.js",
-      "_gulagSSSR-7bb563db.js"
+      "_index-d2f82617.js",
+      "_index-2fbb442f.js",
+      "_SocialPanel-aff7763b.js",
+      "_BlackFaq-325a0523.js",
+      "_ColorFaq-c54aa38b.js",
+      "_index-d5037018.js",
+      "_index-0141c37a.js",
+      "_Fab-389ebb11.js",
+      "_gamesData-e89e0b32.js",
+      "_Button-19836e67.js",
+      "_PromoCard-dbbbc03d.js",
+      "_AuctionBtns-93c88936.js"
     ],
     "css": [
-      "assets/entries/pages/games.svelte-df6d86cf.css",
-      "assets/BannerSection.svelte_svelte_type_style_lang-5d73fa89.css"
+      "assets/entries/pages/games.svelte-1767e2fd.css"
     ]
   },
   "src/routes/shop/expansions.svelte": {
@@ -152,19 +160,7 @@
     "src": "src/routes/shop/expansions.svelte",
     "isEntry": true,
     "imports": [
-      "_index-99bd7138.js",
-      "_IconButton-5857d6b7.js",
-      "_Button-932af60d.js",
-      "_index-f655cb0a.js",
-      "_index-9e8f6ec6.js",
-      "_SocialPanel-a8bc2212.js",
-      "_BlackFaq-78830e0c.js",
-      "_ColorFaq-01e0e8cd.js",
-      "_Subtitle-e1b47b45.js",
-      "_Ripple-d40e98c6.js"
-    ],
-    "css": [
-      "assets/entries/pages/shop/expansions.svelte-e3f3a202.css"
+      "_index-d2f82617.js"
     ]
   },
   "src/routes/shop.svelte": {
@@ -172,7 +168,7 @@
     "src": "src/routes/shop.svelte",
     "isEntry": true,
     "imports": [
-      "_index-99bd7138.js"
+      "_index-d2f82617.js"
     ]
   },
   "src/routes/faq.svelte": {
@@ -180,111 +176,121 @@
     "src": "src/routes/faq.svelte",
     "isEntry": true,
     "imports": [
-      "_index-99bd7138.js",
-      "_SocialPanel-a8bc2212.js",
-      "_index-9e8f6ec6.js",
-      "_index-f655cb0a.js",
-      "_BlackFaq-78830e0c.js",
-      "_ColorFaq-01e0e8cd.js",
-      "_gulagSSSR-7bb563db.js",
-      "_Subtitle-e1b47b45.js",
-      "_Ripple-d40e98c6.js"
+      "_index-d2f82617.js",
+      "_index-d5037018.js",
+      "_index-2fbb442f.js",
+      "_Fab-389ebb11.js",
+      "_BlackFaq-325a0523.js",
+      "_ColorFaq-c54aa38b.js",
+      "_gamesData-e89e0b32.js"
     ],
     "css": [
-      "assets/entries/pages/faq.svelte-0735533b.css",
-      "assets/BannerSection.svelte_svelte_type_style_lang-5d73fa89.css"
+      "assets/entries/pages/faq.svelte-459a37ae.css"
     ]
   },
-  "_index-99bd7138.js": {
-    "file": "chunks/index-99bd7138.js"
+  "_index-d2f82617.js": {
+    "file": "chunks/index-d2f82617.js"
   },
-  "_IconButton-5857d6b7.js": {
-    "file": "chunks/IconButton-5857d6b7.js",
+  "_index-d5037018.js": {
+    "file": "chunks/index-d5037018.js",
     "imports": [
-      "_index-99bd7138.js",
-      "_Subtitle-e1b47b45.js",
-      "_Ripple-d40e98c6.js"
+      "_index-d2f82617.js"
     ]
   },
-  "_Subtitle-e1b47b45.js": {
-    "file": "chunks/Subtitle-e1b47b45.js",
+  "_index-2fbb442f.js": {
+    "file": "chunks/index-2fbb442f.js",
     "imports": [
-      "_index-99bd7138.js"
+      "_index-d2f82617.js",
+      "_index-d5037018.js"
     ]
   },
-  "_Ripple-d40e98c6.js": {
-    "file": "chunks/Ripple-d40e98c6.js",
+  "_firstMenuText-188754cb.js": {
+    "file": "chunks/firstMenuText-188754cb.js"
+  },
+  "_gamesData-e89e0b32.js": {
+    "file": "chunks/gamesData-e89e0b32.js"
+  },
+  "_SelectionGroupIcon-f0116078.js": {
+    "file": "chunks/SelectionGroupIcon-f0116078.js",
     "imports": [
-      "_index-99bd7138.js"
+      "_index-d2f82617.js",
+      "_index-d5037018.js",
+      "_index-2fbb442f.js"
     ]
   },
-  "_index-5c9f1cbc.js": {
-    "file": "chunks/index-5c9f1cbc.js",
+  "_Button-19836e67.js": {
+    "file": "chunks/Button-19836e67.js",
     "imports": [
-      "_index-99bd7138.js"
+      "_index-d2f82617.js",
+      "_index-d5037018.js",
+      "_index-2fbb442f.js"
     ]
   },
-  "_Button-932af60d.js": {
-    "file": "chunks/Button-932af60d.js",
+  "_index-0141c37a.js": {
+    "file": "chunks/index-0141c37a.js",
     "imports": [
-      "_index-99bd7138.js",
-      "_Subtitle-e1b47b45.js",
-      "_Ripple-d40e98c6.js"
+      "_index-d2f82617.js"
     ]
   },
-  "_MenuSurface-ec8ff9c2.js": {
-    "file": "chunks/MenuSurface-ec8ff9c2.js",
+  "_SocialPanel-aff7763b.js": {
+    "file": "chunks/SocialPanel-aff7763b.js",
     "imports": [
-      "_index-99bd7138.js",
-      "_Subtitle-e1b47b45.js"
+      "_index-d2f82617.js",
+      "_index-d5037018.js"
     ]
   },
-  "_index-f655cb0a.js": {
-    "file": "chunks/index-f655cb0a.js",
+  "_ColorFaq-c54aa38b.js": {
+    "file": "chunks/ColorFaq-c54aa38b.js",
     "imports": [
-      "_index-99bd7138.js",
-      "_Subtitle-e1b47b45.js"
+      "_index-d2f82617.js",
+      "_index-d5037018.js"
     ]
   },
-  "_SocialPanel-a8bc2212.js": {
-    "file": "chunks/SocialPanel-a8bc2212.js",
+  "_PromoCard-dbbbc03d.js": {
+    "file": "chunks/PromoCard-dbbbc03d.js",
     "imports": [
-      "_index-99bd7138.js",
-      "_index-f655cb0a.js",
-      "_Subtitle-e1b47b45.js"
+      "_index-d2f82617.js",
+      "_index-d5037018.js",
+      "_index-2fbb442f.js",
+      "_Button-19836e67.js",
+      "_AuctionBtns-93c88936.js"
     ]
   },
-  "_index-9e8f6ec6.js": {
-    "file": "chunks/index-9e8f6ec6.js",
+  "_BlackFaq-325a0523.js": {
+    "file": "chunks/BlackFaq-325a0523.js",
     "imports": [
-      "_index-99bd7138.js",
-      "_Subtitle-e1b47b45.js",
-      "_Ripple-d40e98c6.js"
+      "_index-d2f82617.js",
+      "_index-d5037018.js"
     ]
   },
-  "_ColorFaq-01e0e8cd.js": {
-    "file": "chunks/ColorFaq-01e0e8cd.js",
+  "_stores-a50a587a.js": {
+    "file": "chunks/stores-a50a587a.js",
     "imports": [
-      "_index-99bd7138.js",
-      "_Subtitle-e1b47b45.js",
-      "_index-f655cb0a.js"
+      "_index-d2f82617.js"
     ]
   },
-  "_gamesData-1a9796e6.js": {
-    "file": "chunks/gamesData-1a9796e6.js",
+  "_auctions-9fae30b6.js": {
+    "file": "chunks/auctions-9fae30b6.js",
     "imports": [
-      "_gulagSSSR-7bb563db.js"
+      "_gamesData-e89e0b32.js"
     ]
   },
-  "_gulagSSSR-7bb563db.js": {
-    "file": "chunks/gulagSSSR-7bb563db.js"
-  },
-  "_BlackFaq-78830e0c.js": {
-    "file": "chunks/BlackFaq-78830e0c.js",
+  "_AuctionBtns-93c88936.js": {
+    "file": "chunks/AuctionBtns-93c88936.js",
     "imports": [
-      "_index-99bd7138.js",
-      "_Subtitle-e1b47b45.js",
-      "_index-f655cb0a.js"
+      "_index-d2f82617.js",
+      "_index-0141c37a.js",
+      "_index-d5037018.js",
+      "_index-2fbb442f.js",
+      "_Button-19836e67.js"
+    ]
+  },
+  "_Fab-389ebb11.js": {
+    "file": "chunks/Fab-389ebb11.js",
+    "imports": [
+      "_index-d2f82617.js",
+      "_index-d5037018.js",
+      "_index-2fbb442f.js"
     ]
   }
 }
