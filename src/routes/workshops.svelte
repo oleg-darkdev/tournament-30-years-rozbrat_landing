@@ -21,8 +21,9 @@ import Card, {
 
 import BlackFaq from '../layout/BlackFaq.svelte';
 import ColorFaq from '../layout/ColorFaq.svelte';
+// import PromoCard from '../components/gamePage/PromoCard.svelte';
+
 import workshops from '../data/workshopsList'
-import PromoCard from '../components/gamePage/promoCard.svelte';
 import socialBlack from '../data/social/socialWorkshops'
 
 let workshopsArray = Object.values(workshops);
