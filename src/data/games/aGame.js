@@ -3,8 +3,8 @@ import categoriesGames from '../categoriesGames';
 
 let game = new GameClass();
 game.promo = {
-	name: '🏴 Theory of Anarchism',
-	shortName: '🏴 Anarchism',
+	name: 'Theory of Anarchism', // 🏴
+	shortName: 'Anarchism',
 	banner: 'img/games/banners/A_banner.png',
 	logo: 'img/games/logos/A_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
