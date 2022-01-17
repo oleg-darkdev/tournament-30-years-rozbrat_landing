@@ -81,4 +81,7 @@ let getStarted = false;
         height: 100%;     
            
     }
+ /* .bg-img-games {
+     background-image: url(img/bg/games_bg.png);
+  } */
 </style>
