@@ -22,6 +22,11 @@ const firstMenu = [
 		emoji: '🎨'
 	},
 	{
+	  text: 'About',
+	  link: 'about',
+	  emoji: 'ℹ️'
+	},
+	{
 		text: 'FAQs',
 		link: 'faq',
 		emoji: '⁉️'
@@ -31,13 +36,8 @@ const firstMenu = [
 		text: 'Support ME',
 		link: 'support',
 		emoji: '💙'
-	}
+	},
 
-	// {
-	//   text: 'about',
-	//   link: 'about',
-	//   emoji: 'ℹ️'
-	// }
 ];
 
 
