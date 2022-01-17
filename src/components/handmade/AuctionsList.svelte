@@ -30,7 +30,7 @@ export let listOfAuctions;
 
 {#if !listOfAuctions.length}
 <div style="display: flex; justify-content: center;">
-    <Card style="max-width:450px; height: auto; ">
+    <Card style="max-width:450px; height: auto; background-color: rgb(25, 27, 27);">
         <Content>        
             <p style="font: 28px 'grafitty'; max-width: 500px; color: #47babb; text-align: center;">At the moment I do not conduct auctions, but the patronite or store on etsy is always available 💙</p>
         </Content>
@@ -40,7 +40,7 @@ export let listOfAuctions;
         <Button style=" margin: 5px;" color="primary" variant="unelevated"  href={socialData.patronite.link} target="_blank">
             <Label style="color: #fff;">🔥 Handmade on etsy </Label>
         </Button>
-        <Button style="margin: 5px;" color="primary" variant="outlined"  href={socialData.patronite.link} target="_blank">
+        <Button style="margin: 5px; border: 1px solid #47babb; background-color: rgb(25, 27, 27);" color="primary" variant="outlined"  href={socialData.patronite.link} target="_blank">
             <Label style="color: #fff;">💸 Donate on patronite</Label>
         </Button>
         </div>

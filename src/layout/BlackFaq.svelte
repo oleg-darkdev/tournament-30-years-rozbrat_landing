@@ -10,7 +10,7 @@ export let title, color = false;
 
 </style>
 
-<section style="width: 100%; ">
+<section style="width: 100%; background-color: #191B1B;">
   <!--  margin-top: -50px; -->
 <!-- <SvgLine/> -->
   <div class="section-body" style="background-color: #191B1B;">

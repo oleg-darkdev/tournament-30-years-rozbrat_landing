@@ -109,7 +109,7 @@ function setActive(value) {
   }
   .main-content {
     overflow: auto;
-    padding: 16px;
+    padding: 0px;
     height: 100%;
     box-sizing: border-box;
     z-index: 0;

@@ -11,9 +11,9 @@
 </script>   
 
 
-<Card  style="max-width: 400px;">
+<Card  style="max-width: 400px; color: #fff; background-color: rgb(25, 27, 27);">
     <Content component={List}>
-    <Item>
+    <Item style="background-color: rgb(25, 27, 27);">
         <Text style="color: #fff;">{text}</Text>
     </Item>
     <slot>
