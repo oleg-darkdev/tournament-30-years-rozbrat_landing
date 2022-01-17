@@ -88,12 +88,12 @@ function setActive(value) {
 <style>
   @font-face {
     font-family: 'grafitty';
-    src: url('https://github.com/oleg-darkdev/dd/blob/deploy/static/grafitty-webfont.woff2') format('woff2'),
+    /* src: url('https://github.com/oleg-darkdev/dd/blob/deploy/static/grafitty-webfont.woff2') format('woff2'),
         url('https://github.com/oleg-darkdev/dd/blob/deploy/static/grafitty-webfont.otf') format('otf'),
-         url('https://github.com/oleg-darkdev/dd/blob/deploy/static/grafitty-webfont.woff') format('woff');
+         url('https://github.com/oleg-darkdev/dd/blob/deploy/static/grafitty-webfont.woff') format('woff'); */
     font-weight: normal;
     font-style: normal;
-/* src: local('grafitty'), format('otf'); */
+    src: local('grafitty'), format('otf');
 }
 
   :global(.bg-img) {
