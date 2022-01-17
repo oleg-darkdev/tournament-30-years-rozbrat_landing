@@ -40,7 +40,7 @@ let step = 0;
 
 <TableOfContent bind:step bind:options/>
 
-{#if step >= 2}
+<!-- {#if step >= 1} -->
 <BlackFaq title="Total I created ({gamesList.all.length}) boardgames 🎲">
   {#if options.view.name == 'list'}
       {#each allGames as game}
@@ -139,7 +139,7 @@ let step = 0;
   {/if}
 {/if}
 </BlackFaq>
-{/if}
+<!-- {/if} -->
 <ColorFaq title=""  >
   <SocialPanel title='Follow, i make content with love'/>
 </ColorFaq>

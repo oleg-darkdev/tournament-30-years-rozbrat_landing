@@ -22,16 +22,16 @@ export let options;
 </script>
 
 <div style="display: flex; justify-content: center;align-items: center; background-color: #fff;">
-    <section style="max-width: 760px;  margin: 0; display: flex;  height: auto; ">
-        <div class="tur-bg" style="flex-direction: column; align-items: center;">
+    <section style="width: 430px; margin: 0; display: flex;  height: auto; ">
+        <div class="tur-bg" style="flex-direction: column; align-items: center; ">
             <!-- max-width: 380px; -->
-            <Card style="max-width: 740px;  margin-bottom: 15px;">
-                  <!-- <Media  class={step == 0 ? '': 'hidden'} style="height: 400px; width: 100%; background-image: url('img/games.png');"/> -->
-                  <Content class="mdc-typography--body2" style="background-color: #191B1B; display: flex; flex-direction: column;">
-                      <!-- <GetStarted bind:step/> -->
+            <Card style="width: 360px;  margin-bottom: 15px;">
+                  <Media  class={step == 0 ? '': 'hidden'} style="height: 400px; width: 100%; background-image: url('img/games.png');"/>
+                  <Content class="mdc-typography--body2" style="background-color: #191B1B; display: flex; justify-content: center;align-items: center; flex-direction: column;">
+                      <GetStarted bind:step/>
                       <SelectView bind:step bind:options/>
                       <SelectCategory bind:step bind:options/>
-                      <!-- <Result bind:step bind:options/> -->
+                      <Result bind:step bind:options/>
                   </Content>
               </Card>
         </div>

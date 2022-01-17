@@ -1,12 +1,12 @@
 <script>
 import List, { Group, Item, Graphic, Subheader, Text } from '@smui/list';
-import PreviousBtn from '../BtnTableOfContentStepsPanel/PreviousBtn.svelte'
+// import PreviousBtn from '../BtnTableOfContentStepsPanel/PreviousBtn.svelte'
 
 export let options;
-export let step;
+// export let step;
 </script>
 
-<div style="{step == 3 ? '': 'display: none;'}">
+<!-- <div style="{step == 3 ? '': 'display: none;'}"> -->
     <div class="wrap-games-hidden-block">
         <h2 style="font: 28px 'grafitty'; margin: 0; text-align:center; color: #fff;">Games are filtered by the next criteries 👇</h2>
             <Group style="width: 320px;">
@@ -27,6 +27,6 @@ export let step;
                 </List>
         </Group>
 
-        <PreviousBtn bind:step/>
+        <!-- <PreviousBtn bind:step/> -->
     </div>
-</div>
+<!-- </div> -->
