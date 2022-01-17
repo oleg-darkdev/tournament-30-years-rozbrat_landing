@@ -104,16 +104,12 @@ function setActive(value) {
     background-color: #fff;
 
   }
-  :global(.bg-img-index) {
-     background-image: url(img/bg/main_bg.png);
+    :global(.wrap-games-hidden-block) {
+    display: flex; justify-content: center;align-items: center; flex-direction: column; 
   }
+
   .main-content {
-    /* background: url(img/bg.png);
-    background-position: center center;      
-    background-repeat: no-repeat;      
-    background-attachment: fixed;      
-    background-size: cover;      
-    background-color: #fff; */
+
   }
   .logo {
     background-image: url(img/logo.svg);
@@ -175,18 +171,16 @@ padding: 50px 0;
 }
 
 :global(.tur-bg) {
-    width: 430px;
-    /* max-width: ; */
+    min-width: 380px;
+    width: auto;
+    max-width: 760px;
     /* max-height: 600px; */
     height: auto;
-
     background-color: #47babb;
     display: flex;
     justify-content: center;
-    /* margin: 35px 0 15px 0; */
-        margin: -40px 0 15px 0;
-
-    padding: 50px 0 25px 0;
+    margin: -40px 0 15px 0;
+    padding: 50px 25px 25px 25px;
     border-radius: 4px;
 }
 :global(.section-svg-line) {
