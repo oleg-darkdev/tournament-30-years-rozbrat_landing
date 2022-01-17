@@ -86,7 +86,32 @@ function setActive(value) {
 <Footer />
 
 <style>
+    @font-face {
+        font-family: 'grafitty';
+        font-style: normal;
+        font-weight: 400;
+        src: local('grafitty'), format('otf');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  :global(.bg-img) {
+ background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;      
+    background-color: #fff;
 
+  }
+  :global(.bg-img-index) {
+     background-image: url(img/bg/main_bg.png);
+  }
+  .main-content {
+    /* background: url(img/bg.png);
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;      
+    background-color: #fff; */
+  }
   .logo {
     background-image: url(img/logo.svg);
     padding: 0 5px 0 15px;
@@ -113,7 +138,7 @@ function setActive(value) {
     height: 100%;
     box-sizing: border-box;
     z-index: 0;
-      background-color:#191B1B;
+      /* background-color:#191B1B; */
   }
   :global(a) {
     margin: 0;
@@ -133,6 +158,7 @@ function setActive(value) {
     width: auto !important;
     position: static !important;
       background-color:#191B1B;
+
   }
 
 
