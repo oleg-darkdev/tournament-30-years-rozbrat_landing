@@ -75,15 +75,15 @@ let data = [
 <ColorFaq  title={game.promo.shortDescription} color='{game.promo.brandColor}' >
     <Video videos={game.videos}/>
     <div style="display: flex; justify-content:  center;align-items: center;  flex-direction: column; ">
-        <PromoCard promo={game.promo} moreInfo={game.moreInfo}/>
+        <PromoCard promo={game.promo} info={game.moreInfo}/>
     </div>
 </ColorFaq>
 
 <ColorFaq  title='Characters available in the game' color='{game.promo.brandColor}' >
     <div style="display: flex;  justify-content:  center; align-items: center; width: 100%; flex-direction: column; ">
-        <PromoCardPersons promo={game.promo} moreInfo={game.moreInfo}/>
+        <PromoCardPersons promo={game.promo} info={game.roles}/>
         <div style="flex-direction: column; ">
-            <Roles promo={game.promo} roles={game.moreInfo.roles.persons}/>
+            <Roles promo={game.promo} roles={game.roles.characters}/>
         </div>
     </div>
 </ColorFaq>

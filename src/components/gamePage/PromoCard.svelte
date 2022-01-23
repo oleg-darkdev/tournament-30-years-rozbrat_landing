@@ -15,17 +15,17 @@ import IconButton, {
     Icon
 } from '@smui/icon-button';
 
-export let moreInfo;
+export let info;
 export let promo;
 </script>
 
 <Card style="margin-bottom: 15px; width: auto; max-width: auto; background-color: {promo.brandColor};">
-<Media  style="height: 250px; background-image: url({moreInfo.lorImg});"/>
+<Media  style="height: 250px; background-image: url({info.lorImg});"/>
 <Content class="mdc-typography--body2" style="color: #191B1B;">
     <h2 class="mdc-typography--headline6" style="margin: 0;">
         {promo.name}
     </h2>
-    {#each moreInfo.description as description}
+    {#each info.description as description}
         <p>{description}</p>        
     {/each}
 
@@ -36,21 +36,21 @@ export let promo;
             variant="outlined"
             class="button-shaped-round"
             >
-            <Label style="font: 24px 'grafitty'; color:#191B1B;">{moreInfo.players} Players</Label>
+            <Label style="font: 24px 'grafitty'; color:#191B1B;">{info.players} Players</Label>
             <Icon style="color:#191B1B;" class="material-icons">groups</Icon>
         </Button>
         <Button
             variant="outlined"
             class="button-shaped-round"
             >
-            <Label style="font: 24px 'grafitty'; color:#191B1B;">{moreInfo.age} 8+ age</Label>
+            <Label style="font: 24px 'grafitty'; color:#191B1B;">{info.age} 8+ age</Label>
             <Icon style="color:#191B1B;" class="material-icons">face</Icon>
         </Button>
         <Button
             variant="outlined"
             class="button-shaped-round"
             >
-            <Label style="font: 24px 'grafitty'; color:#191B1B;">{moreInfo.time} min.</Label>
+            <Label style="font: 24px 'grafitty'; color:#191B1B;">{info.time} min.</Label>
             <Icon style="color:#191B1B;" class="material-icons">schedule</Icon>
         </Button>
     </div>

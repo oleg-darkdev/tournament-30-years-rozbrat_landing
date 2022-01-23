@@ -17,12 +17,12 @@ export let roles;
                 </MediaContent>
             </Media>
             <Content style="color: #191B1B; padding: 5px;">
-                <h2
+                <!-- <h2
                     class="mdc-typography--headline6"
                     style="color: #fff; font: 28px 'grafitty';"
                     >
                     {role.name}
-                </h2>
+                </h2> -->
                 {role.description}
             </Content>
         </Card>

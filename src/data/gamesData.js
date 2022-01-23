@@ -9,10 +9,7 @@ import itGames from './games/categories/itGames'; // linux, kanbanel,
 // import managementGames from './managementGames'; // spyral kanbanel,
 
 
-// 🕋 Urbanism. Society of the future.', 🐧 Open source. Linux Operating System.',
-// 	ksg:  . , ?????
-
-
+// 🕋 Urbanism. Society of the future.', ',
 
 function getGames(gamesCategory) {
 	let arrayTemp = [],
@@ -43,6 +40,8 @@ let allGamesList = {
 	yakusa: historicalGames.yakusa,
 	wtb: historicalGames.wtb,
 	wikileaks: historicalGames.wikileaks,
+	covid: historicalGames.covid,
+	ksg: historicalGames.ksg,
 	// gulagRussia:  . ,
 	// : historicalGames. ,
 

@@ -83,6 +83,6 @@ let getStarted = false;
     }
 
  .bg-img-index {
-     background-image: url(img/bg/main_bg.png);
+     background-image: url('img/bg/main_bg.png');
   }
 </style>

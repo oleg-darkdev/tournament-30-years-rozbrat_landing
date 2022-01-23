@@ -29,7 +29,6 @@ class Game {
 			}
 		];
 		this.moreInfo = {
-			
 			players: '2-8',
 			age: '16+',
 			time: '120-180',
@@ -48,21 +47,7 @@ class Game {
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
 			],
 			targetAudience: '',
-			photos: ['', '', ''],
-			roles: [
-				{
-					name: 'Lorem ipsum',
-					description:
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					photo: ''
-				},
-				{
-					name: 'Lorem ipsum',
-					description:
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					photo: ''
-				}
-			]
+			photos: ['', '', '']
 		};
 		this.updates = [
 			{
@@ -73,6 +58,21 @@ class Game {
 				version: ''
 			}
 		];
+		this.roles = {
+			description: [
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+			],
+			banner: '',
+			characters: [
+				{
+					name: 'Lorem ipsum',
+					description:
+						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+					img: ''
+				},
+			]
+		};
 		this.resources = [
 			{
 				name: '',
@@ -133,6 +133,12 @@ class Game {
 	}
 	get expansions() {
 		return this._expansions;
+	}
+	get roles() {
+		return this._roles;
+	}
+	set roles(value) {
+		this._roles = value;
 	}
 	set promo(value) {
 		this._promo = value;
