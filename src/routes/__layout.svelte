@@ -108,9 +108,6 @@ function setActive(value) {
     display: flex; justify-content: center;align-items: center; flex-direction: column; 
   }
 
-  .main-content {
-
-  }
   .logo {
     background-image: url(img/logo.svg);
     padding: 0 5px 0 15px;
@@ -139,6 +136,8 @@ function setActive(value) {
     z-index: 0;
       /* background-color:#191B1B; */
   }
+
+
   :global(a) {
     margin: 0;
     padding: 0;
