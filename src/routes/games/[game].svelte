@@ -3,10 +3,11 @@ import { page } from '$app/stores';
 
 import BlackFaq from '../../layout/BlackFaq.svelte';
 import ColorFaq from '../../layout/ColorFaq.svelte';
+import ImgFaq from '../../layout/ImgFaq.svelte';
 
 import NavPanel from '../../components/gamePage/NavPanel.svelte';
 import Menu from '../../components/gamePage/Menu.svelte'; // ../../components/gamePage/Menu.svelte
-import Video from '../../components/gamePage/video.svelte';
+import Video from '../../components/gamePage/Video.svelte';
 import PromoCard from '../../components/gamePage/PromoCard.svelte';
 import PromoCardPersons from '../../components/gamePage/PromoCardPersons.svelte';
 import Lor from '../../components/gamePage/Lor.svelte';
@@ -62,7 +63,6 @@ let data = [
 <!-- 
     ToDO:
      * добавить отображение статуса
-     * добавить обработчики пустоты
      * добавить стоимость
      * добавить просмотр компонентов
  -->
@@ -72,41 +72,47 @@ let data = [
     <Menu promo={game.promo} btnData={data} />
 </BlackFaq>
 
-<ColorFaq  title={game.promo.shortDescription} color='{game.promo.brandColor}' >
-    <Video videos={game.videos}/>
-    <div style="display: flex; justify-content:  center;align-items: center;  flex-direction: column; ">
-        <PromoCard promo={game.promo} info={game.moreInfo}/>
-    </div>
-</ColorFaq>
+<ImgFaq  title={game.promo.shortDescription} img='{game.promo.banner}' color='{game.promo.brandColor}' >
+    <Video videos={game.videos} sorryBgColor='{game.promo.brandColor}'/>
+</ImgFaq>
 
-<ColorFaq  title='Characters available in the game' color='{game.promo.brandColor}' >
+
+<ColorFaq  title={game.promo.shortDescription} color='{game.promo.brandColor}' >
+       <PromoCard promo={game.promo} info={game.moreInfo}/>
+    <!-- </div> -->
+</ColorFaq>
+   
+  
+<!-- <ColorFaq  title='' color='{game.promo.brandColor}' >
+    -->
+<ImgFaq  title='Characters available in the game' img='{game.roles.banner}' color='{game.promo.brandColor}' >
     <div style="display: flex;  justify-content:  center; align-items: center; width: 100%; flex-direction: column; ">
         <PromoCardPersons promo={game.promo} info={game.roles}/>
         <div style="flex-direction: column; ">
-            <Roles promo={game.promo} roles={game.roles.characters}/>
+            <Roles roles={game.roles.characters} />
         </div>
     </div>
-</ColorFaq>
+</ImgFaq> 
 
 
    
-    <div style="display: flex; justify-content: center;align-items: center;  flex-direction: column; ">
-        <!-- fix they: bug  'promo' data -->
-        <!-- <Lor promo={game.promo} lor={game.lor} /> -->
-        
-    </div>
+<div style="display: flex; justify-content: center;align-items: center;  flex-direction: column; ">
+    <!-- fix they: bug  'promo' data -->
+    <!-- <Lor promo={game.promo} lor={game.lor} /> -->
+    
+</div>
 
-<BlackFaq title="Expansions" color='{game.promo.brandColor}'>
-   <Expansion expansions={game.expansions}/>
-</BlackFaq>
+<ColorFaq title="Expansions" color='{game.promo.brandColor}'>
+   <Expansion expansions={game.expansions} sorryBgColor='{game.promo.brandColor}'/>
+</ColorFaq>
 
-<ColorFaq title="Resources" color='{game.promo.brandColor}'>
-    <Resources resources={game.resources} videos={game.videos} promo={game.promo} /> ;
-</ColorFaq >
+<ImgFaq  title='Resources' img='{game.promo.banner}' color='{game.promo.brandColor}' >
+   <Resources resources={game.resources} videos={game.videos} promo={game.promo}/> ;
+</ImgFaq>
 
-<BlackFaq title="Customers Who Bought This Item Also Bought" color='{game.promo.brandColor}'>
-    <Customers />
-</BlackFaq> 
+<ColorFaq title="Customers who bought this item also bought" color='{game.promo.brandColor}'>
+    <Customers sorryBgColor='{game.promo.brandColor}'/>
+</ColorFaq> 
 
 <!-- <ColorFaq >
 

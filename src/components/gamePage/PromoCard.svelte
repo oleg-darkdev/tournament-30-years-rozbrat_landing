@@ -55,7 +55,7 @@ export let promo;
         </Button>
     </div>
 </Content>
-<Actions>
+<!-- <Actions>
     <ActionButtons>
         <Button style="color:#191B1B;" on:click={() => console.log('click')}>
             <Label>Action</Label>
@@ -83,7 +83,7 @@ export let promo;
                 title="More options">more_vert</IconButton
                 >
         </ActionIcons>
-    </Actions>
+    </Actions> -->
 </Card>
 
 
