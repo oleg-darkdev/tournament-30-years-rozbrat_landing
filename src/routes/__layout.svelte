@@ -16,10 +16,13 @@ import List, { Item, Graphic, Separator, Text, Subheader  } from '@smui/list';
   Scrim,
 } from '@smui/drawer';
 import { H5 } from '@smui/common/elements';
+import 'aos/dist/aos.css';
 
 import firstMenuText from '../data/firstMenuText';
 import socialIcons from '../data/social/socialTq';
 import gamesList from '../data/gamesData';
+
+
 
 const topGames = [gamesList.gulagUSSR, gamesList.katyn, gamesList.lgbt];
 let open = false;
@@ -95,6 +98,25 @@ function setActive(value) {
     font-style: normal;
 /* src: local('grafitty'), format('otf'); */
 }
+
+
+  * :global(.app-content) {
+    flex: auto;
+    overflow: auto;
+    position: relative;
+    flex-grow: 1;
+  }
+
+  :global(.wrap-game-block) {
+    display: flex; 
+    height: 50%; 
+    padding: 4%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #191B1B;
+    margin: 25px 0;
+  }
 
   :global(.bg-img) {
  background-position: center center;      
