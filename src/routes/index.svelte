@@ -1,62 +1,62 @@
 <script>
-import Card, {
-    Content,
-    PrimaryAction,
-    Media,
-    MediaContent,
-    Actions,
-    ActionButtons,
-    ActionIcons,
-} from '@smui/card';
-import firstMenuText from '../data/firstMenuText';
-import SocialPanel from '../layout/SocialPanel.svelte'
+import { onMount } from 'svelte';
+import AOS from 'aos';
 
-let getStarted = false;
+import Menu from '../components/landingPage/mainMenu.svelte';
+import GameMenu from '../components/landingPage/GameMenu.svelte';
+import AnimationLeftWrap from '../layout/AnimationLeftWrap.svelte';
+import AnimationRightWrap from '../layout/AnimationRightWrap.svelte';
+
+import SocialPanel from '../layout/SocialPanel.svelte';
+
+import gamesData from '../data/gamesData';
+
+onMount(() => {
+    AOS.init();
+});
 </script>
 
 <svelte:head>
     <title>DarkDev Games</title>
 </svelte:head>
-<!--  background-color:#191B1B; -->
-    <div class="index-menu bg-img-index" style="">
-        <Card>
-      <PrimaryAction on:click={() => clicked++}>
-        <Media class="card-media-16x9" aspectRatio="16x9">
-          <MediaContent>
-            <div
-              style="color: #fff; position: absolute; bottom: 16px; left: 16px;"
-            >
-              <h2 class="mdc-typography--headline6" style="margin: 0;">
-                A card with media.
-              </h2>
-              <h3 class="mdc-typography--subtitle2" style="margin: 0;">
-                And a subtitle.
-              </h3>
-            </div>
-          </MediaContent>
-        </Media>
-        <Content class="mdc-typography--body2">
-          It's all in this card. It's a veritable smorgasbord of card features.
-        </Content>
-      </PrimaryAction>
-    </Card>
-    </div>
-<style>
-    .index-menu {
-        display: flex; 
-        justify-content: center;
-        align-items: center;  
-        flex-direction: column; 
-   /* Full height */
-  height: 50%; 
-        padding: 4%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-    }
+<div class="wrap-game-block" style="height: 300px; z-index: 0; margin-top: 0px; background-image: url('img/bg/first_bg.png');">
+</div>      
+<div class="index-menu" style="position: absolute; top: 20px; left: 37%; z-index: 1; ">
+    <section style="width: 430px; margin: 0; ">
+        <div class="tur-bg" >
+            <Menu />
+        </div>
+    </section>
+</div>
 
- .bg-img-index {
-     background-image: url('https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/main_bg.png');
-  }
+<AnimationRightWrap backgroundImg='img/covid_bg.png'>
+    <GameMenu gameData={gamesData.covid}/>
+</AnimationRightWrap>
+
+<AnimationLeftWrap backgroundImg='img/a_bg.png'>
+    <GameMenu gameData={gamesData.a}/>
+</AnimationLeftWrap>
+
+<AnimationRightWrap backgroundImg='img/graffity_bg.png'>
+    <GameMenu gameData={gamesData.graffity}/>
+</AnimationRightWrap>
+
+ <AnimationLeftWrap backgroundImg='img/linux_bg.png'>
+    <GameMenu gameData={gamesData.linux}/>
+</AnimationLeftWrap>
+
+<AnimationRightWrap backgroundImg='img/ksg_bg.png'>
+    <GameMenu gameData={gamesData.ksg}/>
+</AnimationRightWrap>
+
+
+
+<style>
+.index-menu {
+    display: flex; 
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    z-index: 1;  
+}
 </style>
