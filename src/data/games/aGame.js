@@ -1,5 +1,6 @@
 import GameClass from './template';
 import categoriesGames from '../categoriesGames';
+// import workshopsList from '../workshopsList';
 
 let game = new GameClass();
 game.promo = {
@@ -116,6 +117,8 @@ game.croundfanding = {
 	},
 	goal: ''
 };
+// game.workshopsHistory = workshopsList.a;
+
 
 export default game;
 

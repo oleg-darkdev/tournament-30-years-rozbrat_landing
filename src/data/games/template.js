@@ -70,7 +70,7 @@ class Game {
 					description:
 						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 					img: ''
-				},
+				}
 			]
 		};
 		this.resources = [
@@ -106,6 +106,7 @@ class Game {
 				} // for expansion page
 			}
 		];
+	
 	}
 	get promo() {
 		return this._promo;
@@ -137,9 +138,12 @@ class Game {
 	get roles() {
 		return this._roles;
 	}
+
+
 	set roles(value) {
 		this._roles = value;
 	}
+
 	set promo(value) {
 		this._promo = value;
 	}
