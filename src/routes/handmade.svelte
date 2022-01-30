@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 import SocialPanel from '../layout/SocialPanel.svelte'
 import ColorFaq from '../layout/ColorFaq.svelte';
 import BlackFaq from '../layout/BlackFaq.svelte';
@@ -34,4 +34,4 @@ console.log(activeAuctions.length)
   <SocialPanel title='I make content with love'/>
 </ColorFaq>
 <style>
-</style>
+</style> -->
