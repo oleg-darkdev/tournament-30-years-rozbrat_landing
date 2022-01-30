@@ -8,14 +8,19 @@
     ActionButtons,
     ActionIcons,
 } from '@smui/card';
-import firstMenuText from '../../data/firstMenuText';
+import firstMenuText from '../../data/gameMenuText';
+import MenuBtn from './MenuBtn.svelte'
+
+let showMenu, showWorkshops, showSupport, showFaq;
 
 export let gameData;
+
 </script>
 
-<Card style="width: 370px;  margin: 5px; background-color: {gameData.promo.brandColor}; ">
+
+<Card style="min-width: 370px; width: auto; max-width: 760px;  margin: 5px; background-color: {gameData.promo.brandColor}; ">
   <!-- <PrimaryAction on:click={() => clicked++}> -->
-    <Media class="card-media-16x9" aspectRatio="16x9" style="background-image: url({gameData.promo.logo});">
+    <Media class="card-media-16x9 {showMenu ? 'hidden': ''}" aspectRatio="16x9" style="background-image: url({gameData.promo.logo});">
       <MediaContent>
 
       </MediaContent>
@@ -25,33 +30,38 @@ export let gameData;
             {gameData.promo.name}
           </h2>
         <h3
-        class="mdc-typography--subtitle2"
+        class="mdc-typography--subtitle2 {showMenu ? 'hidden': ''}"
         style="margin: 0 0 10px; color: #888;"
         >
             {gameData.promo.shortDescription}
         </h3>
-      
-
-        <!-- {#if !getStarted}
-          <Card style='width: 250px; background-color: #47babb;  height: 80px; margin-bottom: 15px;'>
-              <PrimaryAction style="display: flex; align-items: center;" on:click={() => getStarted = !getStarted} padded>
-                  <span style="font: 35px 'grafitty';">Get started</span>
-              </PrimaryAction>
-          </Card>
-
-          {:else} -->
-
-          <!-- {#each firstMenuText as menuItem}
-          <Card style='width: 330px; border: 2px solid #47babb; height: 90px; margin-bottom: 10px;  '>
-              <PrimaryAction style="display: flex;      align-items: center; "  padded>
-               
-                  <a href={menuItem.link}><span style="font: 40px 'grafitty';">{menuItem.text} {menuItem.emoji}</span> </a>
-              </PrimaryAction>
-          </Card>
-          {/each} -->
-
-          
-          <!-- {/if} -->
+   
+<div style="display: flex; align-items: center; flex-direction: column;">
+  {#if !showMenu & !showWorkshops & !showSupport & !showFaq}
+    <Card style='width: 250px; background-color: #191B1B;  height: 80px; margin-bottom: 15px;'>
+        <PrimaryAction style="display: flex; align-items: center;" on:click={() => showMenu = !showMenu} padded>
+            <span style="font: 35px 'grafitty';">GAME MENU</span>
+        </PrimaryAction>
+    </Card>
+  {/if}
+  {#if showMenu}
+    <!-- {#each firstMenuText as menuItem} -->
+      <MenuBtn color='#191B1B'>                        
+          <a href='games/{gameData.promo.id}'><span style="font: 40px 'grafitty';  color: #fff;">About ℹ️</span> </a>
+      </MenuBtn>
+        <MenuBtn color='#191B1B' on:click={() => showWorkshops = !showWorkshops}>                        
+          <span style="font: 40px 'grafitty';  color: #fff;">Workshops 🧠</span>
+      </MenuBtn>
+        <MenuBtn color='#191B1B' on:click={() => showFaq = !showFaq}>                        
+          <span style="font: 40px 'grafitty';  color: #fff;">FAQ`s ⁉️</span>
+      </MenuBtn>
+        <MenuBtn color='#191B1B' on:click={() => showSupport = !showSupport}>                        
+          <span style="font: 40px 'grafitty';  color: #fff;">Support 💙</span>
+      </MenuBtn>
+    <!-- {/each}  -->
+    {/if}
+  
+</div>
     </Content>
   <!-- </PrimaryAction> -->
 </Card>
