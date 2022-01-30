@@ -8,8 +8,8 @@ game.promo = {
 	banner: 'img/games/banners/linux_banner.png',
 	logo: 'img/games/logos/linux_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
-	shortDescription: '',
-	brandColor: '#D4944A',
+	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	brandColor: '#F28C23',
 	id: 'linux',
 	price: '',
 	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]

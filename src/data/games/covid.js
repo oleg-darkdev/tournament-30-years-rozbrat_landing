@@ -6,19 +6,14 @@ let game = new GameClass();
 game.promo = {
 	name: ' Covid resistance',
 	shortName: ' CR',
-	banner: 'img/games/banners/fnb_banner.png',
-	logo: 'img/games/logos/fnb_logo.png',
+	banner: 'img/games/banners/covid_banner.png',
+	logo: 'img/games/logos/covid_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',
-	brandColor: '#D4944A',
-	id: 'fnb',
+	brandColor: '#EA4C80',
+	id: 'covid',
 	price: '',
-	categories: [
-		categoriesGames[1],
-		categoriesGames[2],
-		categoriesGames[5],
-		categoriesGames[6]
-	]
+	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]
 };
 game.croundfanding = {
 	links: {

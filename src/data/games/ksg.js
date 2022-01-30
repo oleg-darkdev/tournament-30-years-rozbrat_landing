@@ -9,7 +9,7 @@ game.promo = {
 	logo: 'img/games/logos/ksg_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',
-	brandColor: '#D4944A',
+	brandColor: '#97501E',
 	id: 'ksg',
 	price: '',
 	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]

@@ -9,7 +9,7 @@ game.promo = {
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/graffity_banner.png',
 	logo: 'img/games/logos/graffity_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
-	shortDescription: '',
+	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
 	brandColor: '#FEEB1A',
 	id: 'graffity',
 	price: '',
