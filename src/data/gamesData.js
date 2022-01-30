@@ -35,11 +35,11 @@ let allGamesList = {
 	all: [].concat(getGames(historicalGames), getGames(civicActivismGames)),
 
 	// historicalGames
-	gulagUSSR: historicalGames.gulagUSSR,
-	katyn: historicalGames.katyn,
-	yakusa: historicalGames.yakusa,
-	wtb: historicalGames.wtb,
-	wikileaks: historicalGames.wikileaks,
+	// gulagUSSR: historicalGames.gulagUSSR,
+	// katyn: historicalGames.katyn,
+	// yakusa: historicalGames.yakusa,
+	// wtb: historicalGames.wtb,
+	// wikileaks: historicalGames.wikileaks,
 	covid: historicalGames.covid,
 	ksg: historicalGames.ksg,
 	// gulagRussia:  . ,
@@ -47,22 +47,22 @@ let allGamesList = {
 
 	// civicActivismGames
 	a: civicActivismGames.a,
-	fnb: civicActivismGames.fnb,
-	eco: civicActivismGames.eco,
-	squat: civicActivismGames.squat,
-	hackerspace: civicActivismGames.hackerspace,
-	lgbt: civicActivismGames.lgbt,
-	ror: civicActivismGames.ror,
+	// fnb: civicActivismGames.fnb,
+	// eco: civicActivismGames.eco,
+	// squat: civicActivismGames.squat,
+	// hackerspace: civicActivismGames.hackerspace,
+	// lgbt: civicActivismGames.lgbt,
+	// ror: civicActivismGames.ror,
 	//  : civicActivismGames,
 
 
 
 	// artGames
 	graffity:  artGames.graffity,
-	tattoo:  artGames.tattoo ,
+	// tattoo:  artGames.tattoo ,
 
 	// itGames
-	kanbanel:  itGames.kanbanel ,
+	// kanbanel:  itGames.kanbanel ,
 	linux:  itGames.linux,
 
 };

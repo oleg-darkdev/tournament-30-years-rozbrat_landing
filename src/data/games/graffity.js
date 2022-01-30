@@ -1,7 +1,10 @@
 import GameClass from './template';
 import categoriesGames from '../categoriesGames';
+// import faq from '../faq/questionsGames';
+
 
 let game = new GameClass();
+// game.faq = faq.a;
 game.promo = {
 	name: 'Graffity',
 	shortName: 'Graffity',
@@ -288,5 +291,6 @@ game.croundfanding = {
 	},
 	goal: ''
 };
+
 
 export default game;

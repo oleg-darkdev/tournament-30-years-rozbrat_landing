@@ -1,8 +1,9 @@
 import GameClass from './template';
 import categoriesGames from '../categoriesGames';
-
+// import faq from '../faq/questionsGames';
 
 let game = new GameClass();
+// game.faq = faq.a;
 game.promo = {
 	name: '💀 Gulag: 1928-1953',
 	shortName: '💀 Gulag',
@@ -28,6 +29,7 @@ game.croundfanding = {
 	},
 	goal: ''
 };
+
 
 export default game;
 // console.log(game)

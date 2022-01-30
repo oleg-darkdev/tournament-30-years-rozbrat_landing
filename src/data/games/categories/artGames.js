@@ -1,9 +1,9 @@
 import graffity from '../graffity';
-import tattoo from '../tattoo';
+// import tattoo from '../tattoo';
 
 const games = {
     graffity,
-    tattoo,
+    // tattoo,
 };
 
 export default games;

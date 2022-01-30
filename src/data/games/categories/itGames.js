@@ -1,8 +1,8 @@
-import kanbanel from '../kanbanel';
+// import kanbanel from '../kanbanel';
 import linux from '../linux';
 
 const games = {
-	kanbanel,
+	// kanbanel,
 	linux
 };
 

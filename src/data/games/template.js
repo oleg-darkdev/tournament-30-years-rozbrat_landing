@@ -106,7 +106,26 @@ class Game {
 				} // for expansion page
 			}
 		];
-	
+		this.faq = {
+			basicFAQ: [
+				{
+					question: 'Sorry 💙... Write soon',
+					answer: 'Sorry 💙... Write soon'
+				}
+			],
+			popularFaq: [
+				{
+					question: 'Sorry 💙... Write soon',
+					answer: 'Sorry 💙... Write soon'
+				}
+			],
+			otherFaq: [
+				{
+					question: 'Sorry 💙... Write soon',
+					answer: 'Sorry 💙... Write soon'
+				}
+			]
+		};
 	}
 	get promo() {
 		return this._promo;
@@ -138,7 +157,13 @@ class Game {
 	get roles() {
 		return this._roles;
 	}
+	get faq() {
+		return this._faq;
+	}
 
+	set faq(value) {
+		this._faq = value;
+	}
 
 	set roles(value) {
 		this._roles = value;

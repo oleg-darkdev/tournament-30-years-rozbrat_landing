@@ -35,14 +35,14 @@ export let data = {}
                  </div>
 
             {#if data.showFaq}
-            <div style="display: flex; justify-content: center; width: 100%;">
-                <Group style="width: 100%;">
-                    <PartGameFaqList text="Basic FAQ ⁉️" faqData={data.basicFAQ}/>
-                    <PartGameFaqList text="Popular FAQ ⁉️" faqData={data.popularFaq}/>
-                    <PartGameFaqList text="Other FAQ ⁉️" faqData={data.otherFaq}/>
-                </Group>
-            </div>
-        {/if}
+                <div style="display: flex; justify-content: center; width: 100%;">
+                    <Group style="width: 100%;">
+                        <PartGameFaqList text="Basic FAQ ⁉️" faqData={data.basicFAQ}/>
+                        <PartGameFaqList text="Popular FAQ ⁉️" faqData={data.popularFaq}/>
+                        <PartGameFaqList text="Other FAQ ⁉️" faqData={data.otherFaq}/>
+                    </Group>
+                </div>
+            {/if}
     </Content>
 </Card>
 

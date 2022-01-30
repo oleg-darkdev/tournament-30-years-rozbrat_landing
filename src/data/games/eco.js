@@ -1,7 +1,10 @@
 import GameClass from './template'
 import categoriesGames from '../categoriesGames';
+// import faq from '../faq/questionsGames';
+
 
 let game = new GameClass();
+// game.faq = faq.a;
 game.promo = {
 	name: '☘️ Eco bunt - eco activism',
 	shortName: '☘️ Eco',

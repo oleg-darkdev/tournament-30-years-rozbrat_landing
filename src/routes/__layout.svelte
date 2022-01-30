@@ -72,11 +72,11 @@ function setActive(value) {
             </div>
             <Separator style="background-color: var(--mdc-theme-primary, #47babb);"/>
             <Subheader style="color: #fff;"component={H5}>Top boardgames</Subheader>
-              {#each topGames as game}
+              <!-- {#each topGames as game}
                 <Item >
                     <Text style="color: var(--mdc-theme-primary, #47babb);  font: 28px 'grafitty';">{game.promo.shortName}</Text>
                 </Item>
-              {/each}
+              {/each} -->
           </List>
         </Content>
       </Drawer>

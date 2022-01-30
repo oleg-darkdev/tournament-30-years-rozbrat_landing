@@ -10,7 +10,10 @@
 } from '@smui/card';
 import MenuBtn from './MenuBtn.svelte'
 import WorkshopsList from './WorkshopList.svelte';
-import workshops from '../../data/workshopsList'
+import ReturnBtn from './ReturnMenuBtn.svelte';
+import FaqList from './GameMenuFAQ.svelte';
+
+// import workshops from '../../data/workshopsList';
 
 let showMenu, showWorkshops, showSupport, showFaq;
 
@@ -21,7 +24,7 @@ export let gameData;
 
 <Card style="min-width: 370px; width: auto; max-width: 760px;  margin: 5px; background-color: {gameData.promo.brandColor}; ">
   <!-- <PrimaryAction on:click={() => clicked++}> -->
-    <Media class="card-media-16x9 {showMenu ? 'hidden': ''}" aspectRatio="16x9" style="background-image: url({gameData.promo.logo});">
+    <Media class="card-media-16x9 {showMenu || showWorkshops || showSupport || showFaq ? 'hidden': ''}" aspectRatio="16x9" style="background-image: url({gameData.promo.logo});">
       <MediaContent>
 
       </MediaContent>
@@ -47,26 +50,27 @@ export let gameData;
         {/if}
         {#if showMenu}
           <!-- {#each firstMenuText as menuItem} -->
-            <MenuBtn color='#191B1B'>                        
+            <MenuBtn >                        
                 <a href='games/{gameData.promo.id}'><span style="font: 40px 'grafitty';  color: #fff;">About ℹ️</span> </a>
             </MenuBtn>
-              <MenuBtn color='#191B1B'>                        
-                <span style="font: 40px 'grafitty';  color: #fff;" on:click={() => {
-                showWorkshops = !showWorkshops;
-                showMenu = !showMenu;
-                // console.log(workshops.a.history);
-              }}>Workshops 🧠</span>
+              <MenuBtn  bind:showMenu bind:currentMenu={showWorkshops}>                        
+                <span style="font: 40px 'grafitty';  color: #fff;" >Workshops 🧠</span>
             </MenuBtn>
-              <MenuBtn color='#191B1B' on:click={() => showFaq = !showFaq}>                        
+              <MenuBtn  bind:showMenu bind:currentMenu={showFaq}>                        
                 <span style="font: 40px 'grafitty';  color: #fff;">FAQ`s ⁉️</span>
             </MenuBtn>
-              <MenuBtn color='#191B1B' on:click={() => showSupport = !showSupport}>                        
+              <MenuBtn bind:showMenu bind:currentMenu={showSupport}>                        
                 <span style="font: 40px 'grafitty';  color: #fff;">Support 💙</span>
             </MenuBtn>
           <!-- {/each}  -->
         {/if}
-        {#if !showWorkshops}
-            <WorkshopsList workshopData={workshops.a}/>
+        {#if showWorkshops}
+            <!-- <WorkshopsList workshopData={workshops.a}/> -->
+            <ReturnBtn bind:showMenu bind:currentMenu={showWorkshops} />  
+        {/if}
+        {#if showFaq}
+            <FaqList faqData={gameData.faq}/>
+            <ReturnBtn bind:showMenu bind:currentMenu={showFaq} />  
         {/if}
       </div>
     </Content>

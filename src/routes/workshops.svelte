@@ -74,7 +74,7 @@ let moreInfoMenu = [''],
             <Menu style="width: 100%; height: 100%;" bind:this={moreInfoMenu[i]}>
                 <div class="wrap-hide-menu" >
                     {#if showMoreInfo}
-                    {#each socialBlack as social, i}
+                    {#each Object.values(socialBlack) as social, i}
                     <Card style="width: 70px; margin: 5px;">
                         <PrimaryAction on:click={() => location.href = workshop.social}>
                             <Media class="card-media-square" style="background-image: url('{social.img}');" aspectRatio="square">
