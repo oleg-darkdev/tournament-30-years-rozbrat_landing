@@ -23,8 +23,8 @@ import covid from './games/covid';
 const gamesFaq = {
 	// gulagUSSR: gulagUSSR,
 	a: a,
-	eco: eco,
-	fnb: fnb,
+	// eco: eco,
+	// fnb: fnb,
 	linux: linux,
 	ksg: ksg,
 	graffity: graffity,
