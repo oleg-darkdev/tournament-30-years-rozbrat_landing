@@ -49,9 +49,9 @@ let allGamesList = {
 	a: civicActivismGames.a,
 	// fnb: civicActivismGames.fnb,
 	// eco: civicActivismGames.eco,
-	// squat: civicActivismGames.squat,
+	squat: civicActivismGames.squat,
 	// hackerspace: civicActivismGames.hackerspace,
-	// lgbt: civicActivismGames.lgbt,
+	lgbt: civicActivismGames.lgbt,
 	// ror: civicActivismGames.ror,
 	//  : civicActivismGames,
 
