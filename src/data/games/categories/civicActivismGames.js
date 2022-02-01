@@ -1,18 +1,18 @@
 import a from '../aGame';
 // import fnb from '../fnb';
 // import eco from '../eco';
-// import squat from '../squat';
+import squat from '../squat';
 // import ror from '../ror';
-// import lgbt from '../lgbt';
+import lgbt from '../lgbt';
 // import hackerspace from '../hackerspace';
 
 const games = {
 	a,
 	// fnb,
 	// eco,
-	// squat,
+	squat,
 	// hackerspace,
-	// lgbt,
+	lgbt,
 	// ror,
 };
 
