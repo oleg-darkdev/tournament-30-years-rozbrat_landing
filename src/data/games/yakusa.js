@@ -8,6 +8,7 @@ game.promo = {
 	name: 'Yakusa wars',
 	shortName: 'Yakusa', // 🥷
 	banner: 'img/games/banners/yakusa_banner.png',
+	landingBanner: '',
 	logo: 'img/games/logos/yakusa_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',

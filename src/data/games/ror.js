@@ -8,6 +8,7 @@ game.promo = {
 	name: '🥁 Rhythms of Resistance',
 	shortName: '🥁 ROR',
 	banner: 'img/games/banners/ror_banner.png',
+	landingBanner: '',
 	logo: 'img/games/logos/ror_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',

@@ -9,18 +9,14 @@ game.promo = {
 	name: 'Katyn`40. Archaeological expeditions.',
 	shortName: 'Katyn`40',
 	banner: 'img/games/banners/katyn_banner.png',
+	landingBanner: '',
 	logo: 'img/games/logos/katyn_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',
 	brandColor: '#E4262E',
 	id: 'katyn',
 	price: '',
-	categories: [
-		categoriesGames[1],
-		categoriesGames[2],
-		categoriesGames[7],
-		categoriesGames[6]
-	]
+	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[7], categoriesGames[6]]
 };
 game.croundfanding = {
 	links: {

@@ -10,6 +10,7 @@ game.promo = {
 	shortName: '☘️ Eco',
 	banner:
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/eco_banner.png',
+	landingBanner: '',
 	logo: 'img/games/logos/eco_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',

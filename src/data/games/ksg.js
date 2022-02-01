@@ -9,6 +9,8 @@ game.promo = {
 	name: '12.262',
 	shortName: '12.262',
 	banner: 'img/games/banners/ksg_banner.png',
+	landingBanner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/ksg_bg.png',
 	logo: 'img/games/logos/ksg_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',

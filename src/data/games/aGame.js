@@ -10,6 +10,7 @@ game.promo = {
 	shortName: '🏴 Anarchism',
 	banner:
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/A_banner.png',
+	landingBanner: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/a_bg.png',
 	logo: 'img/games/logos/A_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -18,6 +19,7 @@ game.promo = {
 	price: '',
 	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]
 };
+
 game.moreInfo = {
 	players: '2-8',
 	age: '16+',

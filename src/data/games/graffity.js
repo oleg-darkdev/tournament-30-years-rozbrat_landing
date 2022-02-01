@@ -10,6 +10,8 @@ game.promo = {
 	shortName: 'Graffity',
 	banner:
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/graffity_banner.png',
+	landingBanner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/graffity_bg.png',
 	logo: 'img/games/logos/graffity_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
