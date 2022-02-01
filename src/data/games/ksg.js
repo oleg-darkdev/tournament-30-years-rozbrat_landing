@@ -27,70 +27,103 @@ game.roles = {
 	banner: '',
 	characters: [
 		{
-			name: 'Lorem ipsum',
+			name: 'Chappie',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/chappie_person.png'
+		},
+		{
+			name: 'Satan',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/satan_person.png'
+		},
+		,
+		{
+			name: 'Tedy',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/tedy_person.png'
+		},
+		{
+			name: 'Thunderbird',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/thunderbird_person.png'
+		},
+		{
+			name: 'Vagosh',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/vagosh_person.png'
+		},
+		{
+			name: 'Yoki',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/yoki_person.png'
+		},
+		{
+			name: 'Prospector',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/prospector_person.png'
+		},
+		{
+			name: 'Geotecton',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/geotecton_person.png'
+		},
+		{
+			name: 'Geognosia',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/geognosia_person.png'
+		},
+		{
+			name: 'Earthlinger',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/earthlinger_person.png'
+		},
+
+		{
+			name: 'Xeno',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/xeno_person.png'
+		},
+		{
+			name: 'Polygenro',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/polygenro_person.png'
+		},
+		{
+			name: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/khaetano_person.png',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: ''
 		},
 		{
-			name: 'Lorem ipsum',
+			name: 'Isfeno',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/isfeno_person.png'
 		},
 		{
-			name: 'Lorem ipsum',
+			name: 'Kato',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/kato_person.png'
 		},
+
 		{
-			name: 'Lorem ipsum',
+			name: 'Fevagno',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
-		},
-		{
-			name: 'Lorem ipsum',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
-		},
-		{
-			name: 'Lorem ipsum',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
-		},
-		{
-			name: 'Lorem ipsum',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
-		},
-		{
-			name: 'Lorem ipsum',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
-		},
-		{
-			name: 'Lorem ipsum',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
-		},
-		{
-			name: 'Lorem ipsum',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
-		},
-		{
-			name: 'Lorem ipsum',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/ksg/persons/fevagno_person.png'
 		}
 	]
 };

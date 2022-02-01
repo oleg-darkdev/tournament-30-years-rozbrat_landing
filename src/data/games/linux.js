@@ -28,70 +28,76 @@ game.roles = {
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/banners/persons_banner.png', // new
 	characters: [
 		{
-			name: '',
+			name: 'Manager',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/linux/persons/MANAGER_person.png'
 		},
 		{
-			name: '',
+			name: 'Arch',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/linux/persons/arch_person.png'
 		},
 		{
-			name: '',
+			name: 'Centos',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/linux/persons/centos_person.png'
 		},
 		{
-			name: '',
+			name: 'Debian',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/linux/persons/debian_person.png'
 		},
 		{
-			name: '',
+			name: 'Devops',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/linux/persons/devops_person.png'
 		},
 		{
-			name: '',
+			name: 'Fedora',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/linux/persons/fedora_person.png'
 		},
 		{
-			name: '',
+			name: 'FreeBSD',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/linux/persons/freebsd_person.png'
 		},
 		{
-			name: '',
+			name: 'Gentoo',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/linux/persons/gentoo_person.png'
 		},
 		{
-			name: '',
+			name: 'Opensuse',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/linux/persons/opensuse_person.png'
 		},
 		{
-			name: '',
+			name: 'Redhat',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/linux/persons/redhat_person.png'
 		},
 		{
-			name: '',
+			name: 'Sales',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: ''
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/linux/persons/sales_person.png'
+		},
+		{
+			name: 'Ubunty',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/linux/persons/ubunty_person.png'
 		}
 	]
 };
