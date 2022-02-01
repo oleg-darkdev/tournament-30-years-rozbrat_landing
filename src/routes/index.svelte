@@ -32,25 +32,41 @@ onMount(() => {
 </div>    
 
 
-<AnimationRightWrap backgroundImg='https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/covid_bg.png'>
+<AnimationRightWrap backgroundImg={gamesData.covid.promo.landingBanner}>
     <GameMenu gameData={gamesData.covid}/>
 </AnimationRightWrap>
-
-<AnimationLeftWrap backgroundImg='https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/a_bg.png'>
+<AnimationLeftWrap backgroundImg={gamesData.a.promo.landingBanner}>
     <GameMenu gameData={gamesData.a}/>
 </AnimationLeftWrap>
 
-<AnimationRightWrap backgroundImg='https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/graffity_bg.png'>
+
+<AnimationRightWrap backgroundImg={gamesData.graffity.promo.landingBanner}>
     <GameMenu gameData={gamesData.graffity}/>
 </AnimationRightWrap>
-
- <AnimationLeftWrap backgroundImg='https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/linux_bg.png'>
+<AnimationLeftWrap backgroundImg={gamesData.linux.promo.landingBanner}>
     <GameMenu gameData={gamesData.linux}/>
 </AnimationLeftWrap>
 
-<AnimationRightWrap backgroundImg='https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/ksg_bg.png'>
+
+<AnimationRightWrap backgroundImg={gamesData.ksg.promo.landingBanner}>
     <GameMenu gameData={gamesData.ksg}/>
 </AnimationRightWrap>
+<AnimationLeftWrap backgroundImg={gamesData.lgbt.promo.landingBanner}>
+    <GameMenu gameData={gamesData.lgbt}/>
+</AnimationLeftWrap>
+
+
+<AnimationRightWrap backgroundImg={gamesData.squat.promo.landingBanner}>
+    <GameMenu gameData={gamesData.squat}/>
+</AnimationRightWrap>
+<AnimationLeftWrap backgroundImg={gamesData.lgbt.promo.landingBanner}>
+    <GameMenu gameData={gamesData.lgbt}/>
+</AnimationLeftWrap>
+
+
+
+
+
 
 
 
