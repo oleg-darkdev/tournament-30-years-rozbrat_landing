@@ -5,8 +5,8 @@ import CarouselBg from '../components/landingPage/CarouselBg.svelte';
 
 import Menu from '../components/landingPage/MainMenu.svelte';
 import GameMenu from '../components/landingPage/GameMenu.svelte';
-        // import AnimationLeftWrap from '../layout/AnimationLeftWrap.svelte';
-        // import AnimationRightWrap from '../layout/AnimationRightWrap.svelte';
+import AnimationLeftWrap from '../layout/AnimationLeftWrap.svelte';
+import AnimationRightWrap from '../layout/AnimationRightWrap.svelte';
 
 import SocialPanel from '../layout/SocialPanel.svelte';
 
