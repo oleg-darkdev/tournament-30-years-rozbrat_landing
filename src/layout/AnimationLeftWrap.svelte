@@ -1,4 +1,9 @@
 <script>
+import AOS from 'aos';
+onMount(() => {
+    AOS.init();
+});
+
 export let backgroundImg;
 </script>
 
