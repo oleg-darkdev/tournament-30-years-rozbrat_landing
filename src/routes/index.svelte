@@ -121,7 +121,7 @@ const bgImages = [
 
 
 
-<!-- 
+
 <AnimationRightWrap backgroundImg={gamesData.covid.promo.landingBanner}>
     <GameMenu gameData={gamesData.covid}/>
 </AnimationRightWrap>
@@ -148,7 +148,7 @@ const bgImages = [
 
 <AnimationRightWrap backgroundImg={gamesData.squat.promo.landingBanner}>
     <GameMenu gameData={gamesData.squat}/>
-</AnimationRightWrap> -->
+</AnimationRightWrap>
 <!-- <AnimationLeftWrap backgroundImg={gamesData.lgbt.promo.landingBanner}>
     <GameMenu gameData={gamesData.lgbt}/>
 </AnimationLeftWrap> -->

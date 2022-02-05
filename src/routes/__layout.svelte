@@ -17,7 +17,6 @@ import List, { Item, Graphic, Separator, Text, Subheader  } from '@smui/list';
 } from '@smui/drawer';
 import { H5 } from '@smui/common/elements';
 
-// import 'aos/dist/aos.css';
 
 import firstMenuText from '../data/firstMenuText';
 import socialIcons from '../data/social/socialTq';
