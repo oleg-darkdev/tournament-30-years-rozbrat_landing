@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 import { onMount } from 'svelte';
 import AOS from 'aos';
 onMount(() => {
@@ -33,4 +33,4 @@ export let backgroundImg;
     justify-content: right;
     align-items: right;  
 }
-</style>
+</style> -->
