@@ -5,11 +5,12 @@
   export let images;
 //   export let imageWidth = 300;
 //   export let imageSpacing = 20;
-  export let speed = 2000;
+  export let speed = 500;
   export let controlColor= '#444';
   export let controlScale = '0.5';
   export let autoplay = false;
   export let autoplaySpeed = 5000;
+  export let displayControls = true;
   let interval;
 
 
@@ -49,7 +50,7 @@
   <div id="carousel-images">
     {#each images as image (image.id)}
     <div style=''
-        on:mouseover={stopAutoPlay}
+    on:mouseover={stopAutoPlay}
         on:mouseout={startAutoPlay}
         animate:flip={{duration: speed}}>
         <img style='width: 350px; margin: 0 15px; height: 350px; border-radius: 2%;'
@@ -60,6 +61,7 @@
     </div>
     {/each}
   </div>
+  {#if displayControls}
   <button id="left" on:click={rotateLeft}>
     <slot name="left-control">
         <svg width="39px" height="110px" id="svg8" transform={`scale(${controlScale})`}>
@@ -84,7 +86,7 @@
       </svg>
     </slot>
   </button>
-
+  {/if}
 </div>
 
 <style>

@@ -1,7 +1,7 @@
 <script>
 import Paper, {Title, Subtitle, Content} from '@smui/paper/dist';
 import Carousel from '../components/landingPage/Carousel.svelte';
-// import CarouselBg from '../components/landingPage/Carousel.svelte';
+import CarouselBg from '../components/landingPage/CarouselBg.svelte';
 
 import Menu from '../components/landingPage/MainMenu.svelte';
 import GameMenu from '../components/landingPage/GameMenu.svelte';
@@ -34,7 +34,28 @@ const images = [
 		// {path: '', id: '20'},
 	]
 
-
+const bgImages = [
+		{path: '/img/bg/boardgames.png', id: '101'},
+		{path: '/img/bg/workshops.png', id: '102'},
+		{path: '/img/bg/handmade.png', id: '103'},
+		{path: '/img/bg/faq.png', id: '104'},
+		{path: '/img/bg/boardgames.png', id: '105'},
+		// {path: '/img/bg/workshops.png', id: '106'},
+		// {path: '/img/bg/workshops.png', id: '107'},
+		// {path: '', id: '108'},
+		// {path: '', id: '109'},
+		// {path: '', id: '110'},
+		// {path: '', id: '111'},
+		// {path: '', id: '112'},
+		// {path: '', id: '113'},
+		// {path: '', id: '114'},
+		// {path: '', id: '115'},
+		// {path: '', id: '116'},
+		// {path: '', id: '117'},
+		// {path: '', id: '118'},
+		// {path: '', id: '119'},
+		// {path: '', id: '120'},
+	]
 
 </script>
 
@@ -48,13 +69,33 @@ const images = [
             
         </div>
     </div> -->
+    <!-- <div style="height: 100vh; width: 100%;">
+    <CarouselBg 
+        {bgImages}
+        controlColor={'white'}
+        controlScale={0.8}
+        autoplay={true}
+        autoplaySpeed={3000}
+    />
+    </div> -->
 
-<div class="wrap-game-block" style="height: 230px; z-index: 0; background-image: url('img/bg/first_bg.png');  margin-top: 0px; ">
-</div>   
+
+<!-- <div class="wrap-game-block" style="height: 230px; z-index: 0; background-image: url('img/bg/first_bg.png');  margin-top: 0px; ">
+ 
+</div>    -->
+<!-- 640px -->
+      <div style="height: 700px; width: 100%; z-index: 0;">
+          <CarouselBg 
+        {bgImages}
+        controlColor={'white'}
+        controlScale={0.8}
+        autoplay={true}
+        autoplaySpeed={3000}/>
+    </div>
+
 <div class="index-menu" style=" ">
     <section style="min-width: 430px;  max-width:760px; width: auto; margin: 0; ">
         <div class="tur-bg" >
-            <!-- <div style="max-width: 700px; width: 100%; height: 124px; max-height: 124px; background-image: url(img/menuBtn/logo_menu.png); "></div> -->
             <Menu />
         </div>
     </section>
@@ -80,7 +121,7 @@ const images = [
 
 
 
-
+<!-- 
 <AnimationRightWrap backgroundImg={gamesData.covid.promo.landingBanner}>
     <GameMenu gameData={gamesData.covid}/>
 </AnimationRightWrap>
@@ -107,7 +148,7 @@ const images = [
 
 <AnimationRightWrap backgroundImg={gamesData.squat.promo.landingBanner}>
     <GameMenu gameData={gamesData.squat}/>
-</AnimationRightWrap>
+</AnimationRightWrap> -->
 <!-- <AnimationLeftWrap backgroundImg={gamesData.lgbt.promo.landingBanner}>
     <GameMenu gameData={gamesData.lgbt}/>
 </AnimationLeftWrap> -->
@@ -160,7 +201,7 @@ const images = [
     justify-content: center;
     align-items: center;  
     flex-direction: column;
-    margin-top: -360px;
+    margin-top: -340px;
     z-index: 9999;  
     position: relative;
     /* background-image: url('img/bg/first_bg.png'); z-index: 0; */
