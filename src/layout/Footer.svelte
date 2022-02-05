@@ -1,13 +1,18 @@
 <script>
-import Line from '../components/footer/Line.svelte'
-import PolicyMenu from '../components/footer/PolicyMenu.svelte'
+import Line from '../components/footer/Line.svelte';
+import PolicyMenu from '../components/footer/PolicyMenu.svelte';
+// import Paper, {Title, Subtitle, Content} from '@smui/paper/dist';
+import gameslist from '../data/gamesData';
 import SvgLine from "./BlackSvgLine.svelte";
 import Card, {
-    Content,
-    PrimaryAction,
-    Media,
-    MediaContent,
-  } from '@smui/card';
+  Content,
+  PrimaryAction,
+  Media,
+  MediaContent,
+} from '@smui/card';
+
+
+import socialIcons from '../data/social/socialTq';
 
 let merchPolicy,
 refundPolicy,
@@ -17,21 +22,19 @@ termsOfService;
 </script>
 
 
-<footer style="background-color: #000;">
-   <PolicyMenu bind:merchPolicy  bind:refundPolicy bind:shippingPolicy bind:privacyPolicy bind:termsOfService/>
+<footer style="background-color: #000; height: auto;">
 
 <!-- <SvgLine /> -->
 <!-- <Paper
 			color="primary"
-			style=" max-width: 760px;  margin: 25px 30%; background-color: #fff;"
+			style=" max-width: 760px;  margin: 25px 5%; background-color: #fff;"
 			class="paper-demo"
 		>
   
-			<Content>
+			<Content> -->
 <div  style="display: flex; flex-direction: row; flex-wrap: wrap;
 ">
-
- <ul >
+ <!-- <ul >
 
       <li>
         <a href=".">FAQs</a>
@@ -49,10 +52,35 @@ termsOfService;
 			      <li>
         <a href=".">Careers</a>
       </li>
+    </ul> -->
 
+     <ul >
+      <li>
+        <a style="color: #fff;" href=".">Boardgames</a>
+      </li>
+       {#each gameslist.all as game}
+        <li>
+          <a style="color: #fff;" href={`games/${game.promo.id}`}>{game.promo.shortName}</a>
+        </li>
+      {/each}
     </ul>
+
+    <div  style="display: flex; flex-direction: column;"> 
+      <h2 style="font: 26px 'grafitty';">Follow ME</h2>
+      <div style="display: flex; flex-direction: row; align-content: center; width: 200px; flex-wrap: wrap;">
+        {#each Object.values(socialIcons) as social}
+          <Card style="width: 40px; height: 40px; margin: 5px;">
+            <PrimaryAction on:click={() => location.href = social.link}>
+              <Media style="background-image: url('{social.img}');" class="card-media-square" aspectRatio="square">
+            </Media>
+            </PrimaryAction>
+          </Card>
+        {/each}
+      </div>
+    </div>
+
 </div>
-		</Content>
+		<!-- </Content>
       
 	</Paper> -->
 		<!-- <div class="shop">
@@ -76,6 +104,7 @@ termsOfService;
     </ImageList>
 </div>
 </div> -->
+   <PolicyMenu bind:merchPolicy  bind:refundPolicy bind:shippingPolicy bind:privacyPolicy bind:termsOfService/>
 
 	<Line bind:merchPolicy  bind:refundPolicy bind:shippingPolicy bind:privacyPolicy bind:termsOfService/>
 </footer>
