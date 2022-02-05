@@ -16,7 +16,8 @@ import List, { Item, Graphic, Separator, Text, Subheader  } from '@smui/list';
   Scrim,
 } from '@smui/drawer';
 import { H5 } from '@smui/common/elements';
-import 'aos/dist/aos.css';
+
+// import 'aos/dist/aos.css';
 
 import firstMenuText from '../data/firstMenuText';
 import socialIcons from '../data/social/socialTq';
@@ -59,7 +60,7 @@ function setActive(value) {
               </Item>
            {/each}
             <Separator style="background-color: var(--mdc-theme-primary, #47babb);"/>
-            <Subheader component={H5} style="color: #fff;">I'm in social 👇</Subheader>
+            <Subheader component={H5} style="color: #fff;">Follow ME 👇</Subheader>
             <div style="display: flex; flex-direction: row; align-content: center; width: 200px; flex-wrap: wrap;">
               {#each Object.values(socialIcons) as social}
                 <Card style="width: 40px; height: 40px; margin: 5px;">
