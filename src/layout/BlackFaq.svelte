@@ -1,7 +1,8 @@
 <script>
-   import Paper, {Title, Subtitle} from '@smui/paper/dist';
+
    import SvgLine from './BlackSvgLine.svelte'
-   import Card, {Content} from '@smui/card/dist';
+  import Paper, {Title, Subtitle} from '@smui/paper/dist';
+  import Card, {Content} from '@smui/card/dist';
 
 export let title, color = false;
 </script>
