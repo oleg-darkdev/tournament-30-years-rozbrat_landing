@@ -1,5 +1,6 @@
 <script>
 import { onMount } from 'svelte';
+import AOS from 'aos';
 
 import Paper, {Title, Subtitle, Content} from '@smui/paper/dist';
 import Carousel from '../components/landingPage/Carousel.svelte';
@@ -36,6 +37,10 @@ const images = [
 		// {path: '', id: '20'},
 	]
 
+
+onMount(() => {
+    AOS.init();
+});
 
 </script>
 
