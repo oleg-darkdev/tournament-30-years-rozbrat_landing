@@ -199,6 +199,7 @@ padding: 50px 0;
     height: auto;
     background-color: #47babb;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: -40px 0 15px 0;
     padding: 50px 25px 25px 25px;

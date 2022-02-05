@@ -31,7 +31,7 @@
 
 
 <!-- 270px -->
-<TopAppBar style="background-color: #47babb; min-width: 340px;" variant="short">
+<TopAppBar style="background-color: #47babb; z-index: 3; min-width: 340px; " variant="short">
   <Row>
     <Section style="margin-left: 10px;">
       <!-- <IconButton class="material-icons" on:click={() => (open = !open)}>menu</IconButton> -->
