@@ -52,65 +52,77 @@ game.roles = {
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/banners/persons_banner.png', // new
 	characters: [
 		{
-			name: 'Agorist',
+			name: 'Anarcho-mutuelist',
+			bgColor: '#e39900',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/agorist_person.png'
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/mutuelist_person.png'
 		},
 		{
 			name: 'Anarcho-capitalist',
+			bgColor: '#ece322',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/capitalist_person.png'
 		},
 		{
 			name: 'Anarcho-ecologist',
+			bgColor: '#109a39',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/ecolog_person.png'
 		},
 		{
 			name: 'Anarcho-individualist',
+			bgColor: '#057c69',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/egoist_person.png'
 		},
 		{
 			name: 'Anarcho-feminist',
+			bgColor: '#913b8e',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/feminist_person.png'
 		},
 		{
-			name: 'Anarcho-maximalist',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/maximalist_person.png'
-		},
-		{
-			name: 'Anarcho-mutuelist',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/mutuelist_person.png'
-		},
-		{
 			name: 'Anarcho-qweer',
+			bgColor: '#dc88b8',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/qweer_person.png'
 		},
 		{
 			name: 'Anarcho-technocrat',
+			bgColor: '#366eb5',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/technokrat_person.png'
+		},
+		{
+			name: 'Agorist',
+			bgColor: '#7f7f80',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/agorist_person.png'
+		},
+
+		{
+			name: 'Anarcho-sindikalist',
+			bgColor: '#df3814',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/sindikalist_person.png'
+		},
+
+		{
+			name: 'Anarcho-maximalist',
+			bgColor: '#df3814',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/a/persons/maximalist_person.png'
 		}
-		// {
-		// 	name: 'Qweer',
-		// 	description:
-		// 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		// 	img: ''
-		// },
 	]
 };
 game.croundfanding = {
