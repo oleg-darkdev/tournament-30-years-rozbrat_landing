@@ -157,6 +157,8 @@ function setActive(value) {
     box-sizing: border-box;
     z-index: 0;
       /* background-color:#191B1B; */
+        overflow-x: hidden;
+    overflow-y: hidden;
   }
 
 
