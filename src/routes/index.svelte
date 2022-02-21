@@ -146,6 +146,14 @@ const bgImages = [
 </AnimationLeftWrap>
 
 
+<AnimationRightWrap backgroundImg={gamesData.fnb.promo.landingBanner}>
+    <GameMenu gameData={gamesData.fnb}/>
+</AnimationRightWrap>
+<AnimationLeftWrap backgroundImg={gamesData.ror.promo.landingBanner}>
+    <GameMenu gameData={gamesData.ror}/>
+</AnimationLeftWrap>
+
+
 <AnimationRightWrap backgroundImg={gamesData.squat.promo.landingBanner}>
     <GameMenu gameData={gamesData.squat}/>
 </AnimationRightWrap>
@@ -153,7 +161,12 @@ const bgImages = [
     <GameMenu gameData={gamesData.lgbt}/>
 </AnimationLeftWrap> -->
 
-
+<AnimationRightWrap backgroundImg={gamesData.gulagUSSR.promo.landingBanner}>
+    <GameMenu gameData={gamesData.gulagUSSR}/>
+</AnimationRightWrap>
+<!-- <AnimationLeftWrap backgroundImg={gamesData.gulagUSSR.promo.landingBanner}>
+    <GameMenu gameData={gamesData.gulagUSSR}/>
+</AnimationLeftWrap> -->
 
 
 
