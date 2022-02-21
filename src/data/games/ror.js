@@ -7,7 +7,8 @@ let game = new GameClass();
 game.promo = {
 	name: '🥁 Rhythms of Resistance',
 	shortName: '🥁 ROR',
-	banner: 'img/games/banners/ror_banner.png',
+	banner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/ror_banner.png',
 	landingBanner: '',
 	logo: 'img/games/logos/ror_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
@@ -15,6 +16,58 @@ game.promo = {
 	brandColor: '#A6539B',
 	id: 'ror',
 	price: ''
+};
+game.roles = {
+	description: [
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+	],
+	banner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/samba/banners/persons_banner.png',
+	characters: [
+		{
+			name: 'Bydgoszcz',
+			bgColor: '#c0241c',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/samba/persons/BYDGOSZCZ_person.png'
+		},
+		{
+			name: 'Kraków',
+			bgColor: '#a9173b',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/samba/persons/KRAK%C3%93W_person.png'
+		},
+		{
+			name: 'Poznań',
+			bgColor: '#ecd344',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/samba/persons/POZNA%C5%83_person.png'
+		},
+		{
+			name: 'Wrocław',
+			bgColor: '#e72a79',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/samba/persons/WROC%C5%81AW_person.png'
+		},
+		{
+			name: 'Troimiasto',
+			bgColor: '#f4adc8',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/samba/persons/troimiasto_person.png'
+		},
+		{
+			name: 'Warszawa',
+			bgColor: '#52ae80',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/samba/persons/warszawa_person.png'
+		}
+	]
 };
 game.croundfanding = {
 	links: {
