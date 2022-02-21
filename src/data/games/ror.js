@@ -9,7 +9,8 @@ game.promo = {
 	shortName: '🥁 ROR',
 	banner:
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/ror_banner.png',
-	landingBanner: '',
+	landingBanner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/samba_bg.png',
 	logo: 'img/games/logos/ror_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',

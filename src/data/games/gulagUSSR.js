@@ -8,7 +8,8 @@ game.promo = {
 	name: '💀 Gulag: 1928-1953',
 	shortName: '💀 Gulag',
 	banner: 'img/games/banners/gulag_banner.png',
-	landingBanner: '',
+	landingBanner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/gulag_bg.png',
 	logo: 'img/games/logos/gulagUSSR_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',

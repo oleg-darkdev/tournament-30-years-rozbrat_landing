@@ -8,7 +8,8 @@ game.promo = {
 	name: '🥕 FNB - food not bombs',
 	shortName: '🥕 FNB',
 	banner: 'img/games/banners/fnb_banner.png',
-	landingBanner: '',
+	landingBanner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/fnb_bg.png',
 	logo: 'img/games/logos/fnb_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',
