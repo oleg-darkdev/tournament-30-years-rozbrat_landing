@@ -47,12 +47,12 @@ let allGamesList = {
 
 	// civicActivismGames
 	a: civicActivismGames.a,
-	// fnb: civicActivismGames.fnb,
+	fnb: civicActivismGames.fnb,
 	// eco: civicActivismGames.eco,
 	squat: civicActivismGames.squat,
 	// hackerspace: civicActivismGames.hackerspace,
 	lgbt: civicActivismGames.lgbt,
-	// ror: civicActivismGames.ror,
+	ror: civicActivismGames.ror,
 	//  : civicActivismGames,
 
 
