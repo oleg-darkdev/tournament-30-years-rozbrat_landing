@@ -1,4 +1,4 @@
-// import gulagUSSR from '../gulagUSSR';
+import gulagUSSR from '../gulagUSSR';
 // import katyn from '../katyn';
 // import yakusa from '../yakusa';
 // import wtb from '../wtb';
@@ -7,7 +7,7 @@ import covid from '../covid';
 import ksg from '../ksg';
 
 const games = {
-	// gulagUSSR,
+	gulagUSSR,
 	// katyn,
 	// yakusa,
 	// wtb,
