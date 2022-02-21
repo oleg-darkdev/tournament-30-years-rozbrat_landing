@@ -35,7 +35,7 @@ let allGamesList = {
 	all: [].concat(getGames(historicalGames), getGames(civicActivismGames)),
 
 	// historicalGames
-	// gulagUSSR: historicalGames.gulagUSSR,
+	gulagUSSR: historicalGames.gulagUSSR,
 	// katyn: historicalGames.katyn,
 	// yakusa: historicalGames.yakusa,
 	// wtb: historicalGames.wtb,
