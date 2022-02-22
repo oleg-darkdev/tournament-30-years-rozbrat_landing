@@ -11,28 +11,23 @@ import AnimationRightWrap from '../layout/AnimationRightWrap.svelte';
 import SocialPanel from '../layout/SocialPanel.svelte';
 
 import gamesData from '../data/gamesData';
-const images = [
-		{path: 'img/games/landingPromo/graffity.png', id: '1'},
-		{path: 'img/games/landingPromo/a.png', id: '2'},
-		{path: 'img/games/landingPromo/lgbt.png', id: '3'},
-		{path: 'img/games/landingPromo/covid.png', id: '4'},
-		{path: 'img/games/landingPromo/ksg.png', id: '5'},
-		{path: 'img/games/landingPromo/linux.png', id: '6'},
-		{path: 'img/games/landingPromo/gulag.png', id: '7'},
-		{path: 'img/games/landingPromo/fnb.png', id: '8'},
-		{path: 'img/games/landingPromo/samba.png', id: '9'},
-		// {path: '', id: '10'},
-		// {path: '', id: '11'},
-		// {path: '', id: '12'},
-		// {path: '', id: '13'},
-		// {path: '', id: '14'},
-		// {path: '', id: '15'},
-		// {path: '', id: '16'},
-		// {path: '', id: '17'},
-		// {path: '', id: '18'},
-		// {path: '', id: '19'},
-		// {path: '', id: '20'},
-	]
+const games = [
+    {path:  gamesData.graffity.promo.promo, id: gamesData.graffity.promo.serial, link: gamesData.graffity.promo.id},
+    {path:  gamesData.a.promo.promo, id: gamesData.a.promo.serial, link: gamesData.a.promo.id},
+    {path:  gamesData.lgbt.promo.promo, id: gamesData.lgbt.promo.serial, link: gamesData.lgbt.promo.id},
+    {path:  gamesData.covid.promo.promo, id: gamesData.covid.promo.serial, link: gamesData.covid.promo.id},
+    {path:  gamesData.ksg.promo.promo, id: gamesData.ksg.promo.serial, link: gamesData.ksg.promo.id},
+    {path:  gamesData.linux.promo.promo, id: gamesData.linux.promo.serial, link: gamesData.linux.promo.id},
+    {path:  gamesData.gulagUSSR.promo.promo, id: gamesData.gulagUSSR.promo.serial, link: gamesData.gulagUSSR.promo.id},
+    {path:  gamesData.fnb.promo.promo, id: gamesData.fnb.promo.serial, link: gamesData.fnb.promo.id},
+    {path:  gamesData.ror.promo.promo, id: gamesData.ror.promo.serial, link: gamesData.ror.promo.id},
+    // {path:  gamesData.fnb.promo.promo, id: gamesData.fnb.promo.serial, link: gamesData.graffity.promo.id},
+    // {path:  gamesData.fnb.promo.promo, id: gamesData.fnb.promo.serial, link: gamesData.graffity.promo.id},
+    // {path:  gamesData.fnb.promo.promo, id: gamesData.fnb.promo.serial, link: gamesData.graffity.promo.id},
+    // {path:  gamesData.fnb.promo.promo, id: gamesData.fnb.promo.serial, link: gamesData.graffity.promo.id},
+    // {path:  gamesData.fnb.promo.promo, id: gamesData.fnb.promo.serial, link: gamesData.graffity.promo.id},
+	
+	];
 
 const bgImages = [
 		{path: '/img/bg/boardgames.png', id: '101'},
@@ -108,7 +103,7 @@ const bgImages = [
       <Title style="color: #fff; font: 26px 'grafitty';">My Boardgames</Title>
       <Content style="">
         <Carousel 
-        {images}
+        {games}
         controlColor={'white'}
         controlScale={0.8}
         autoplay={true}
