@@ -28,105 +28,105 @@ game.roles = {
 	characters: [
 		{
 			name: 'Lydia Korneyevna Chukovskaya',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/gulag/persons/chukovskaya_person.png'
 		},
 		{
 			name: 'Yury Osipovich Dombrovsky',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/gulag/persons/dombrovsky_person.png'
 		},
 		{
 			name: 'Nikolay Stepanovich Gumilyov',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/gulag/persons/gumilyov_person.png'
 		},
 		{
 			name: 'Daniil Ivanovich Kharms',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/gulag/persons/kharms_person.png'
 		},
 		{
 			name: 'Boris Petrovich Kornilov',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/gulag/persons/kornilov_person.png'
 		},
 		{
 			name: 'Osip Emilyevich Mandelstam',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/gulag/persons/mandelstam_person.png'
 		},
 		{
 			name: 'Boris Andreyevich Pilnyak',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/gulag/persons/pilnyak_person.png'
 		},
 		{
 			name: 'Yaroslav Vasilevich Smelyakov',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/gulag/persons/smelyakov_person.png'
 		},
 		{
 			name: 'Aleksandr Isayevich Solzhenitsyn',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/gulag/persons/solzhenitsyn_person.png'
 		},
 		{
 			name: 'Varlam Tikhonovich Shalamov',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/gulag/persons/varlamov_person.png'
 		},
 		{
 			name: 'Nikolay Alekseyevich Zabolotsky',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/gulag/persons/zabolotsky_person.png'
 		},
 		{
 			name: '',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: ''
 		},
 		{
 			name: '',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: ''
 		},
 		{
 			name: '',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: ''
 		},
 		{
 			name: '',
-			bgColor: '#e73c20',
+			bgColor: '#E40F2A',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: ''
