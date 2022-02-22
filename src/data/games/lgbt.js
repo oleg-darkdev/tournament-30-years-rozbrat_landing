@@ -13,8 +13,7 @@ game.promo = {
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/d45fec7333c68c75264acfead3be04a4de16b2bf/static/img/bg/lgbt_bg.png',
 	logo: 'img/games/logos/lgbt_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
-	shortDescription:
-		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
+	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 	brandColor: '#00B1CD',
 	id: 'lgbt',
 	price: ''

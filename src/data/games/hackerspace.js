@@ -11,7 +11,7 @@ game.promo = {
 	landingBanner: '',
 	logo: 'img/games/logos/hackerspace_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
-	shortDescription: '',
+	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 	brandColor: '#537A2D',
 	id: 'hackerspace',
 	price: '',

@@ -13,7 +13,7 @@ game.promo = {
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/fnb_bg.png',
 	logo: 'img/games/logos/fnb_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
-	shortDescription: '',
+	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 	brandColor: '#81B228',
 	id: 'fnb',
 	price: '',

@@ -13,7 +13,7 @@ game.promo = {
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/samba_bg.png',
 	logo: 'img/games/logos/ror_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
-	shortDescription: '',
+	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 	brandColor: '#A6539B',
 	id: 'ror',
 	price: ''
