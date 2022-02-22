@@ -111,7 +111,7 @@ let data = [
 </ImgFaq>
 
 <ColorFaq title="Recommendations 🔥" color='{game.promo.brandColor}'>
-    <Customers recommendations={game.recommendations} sorryBgColor='{game.promo.brandColor}'/>
+    <Recommendations recommendations={game.recommendations} sorryBgColor='{game.promo.brandColor}'/>
 </ColorFaq> 
 
 <!-- <ColorFaq >
