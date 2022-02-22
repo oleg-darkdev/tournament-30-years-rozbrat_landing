@@ -5,11 +5,13 @@ class Game {
 			shortName: '',
 			banner: '',
 			logo: '',
+			promo: '',
 			status: 0,
 			shortDescription:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			brandColor: '#47babb',
 			id: '',
+			serial: '',
 			price: '',
 			categories: ['lorem', 'lorem', 'lorem', 'lorem']
 		};
@@ -106,6 +108,18 @@ class Game {
 				} // for expansion page
 			}
 		];
+		this.recommendations = [
+			{
+				path: '', // gamesData.graffity.promo.promo,
+				id: '', // gamesData.graffity.promo.serial,
+				link: '' //  gamesData.graffity.promo.id
+			},
+			{
+				path: '', 
+				id: '', 
+				link: '' 
+			}
+		];
 		this.faq = {
 			basicFAQ: [
 				{
@@ -160,7 +174,13 @@ class Game {
 	get faq() {
 		return this._faq;
 	}
+	get recommendations() {
+		return this._recommendations;
+	}
 
+	set recommendations(value) {
+		this._recommendations = value;
+	}
 	set faq(value) {
 		this._faq = value;
 	}

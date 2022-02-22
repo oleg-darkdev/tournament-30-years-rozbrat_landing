@@ -1,6 +1,7 @@
 import GameClass from './template'
 import categoriesGames from '../categoriesGames';
 // import faq from '../faq/questionsGames';
+import recommendationsData from './lgbt/recommendations';
 
 let game = new GameClass();
 // game.faq = faq.a;
@@ -12,11 +13,35 @@ game.promo = {
 	landingBanner:
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/d45fec7333c68c75264acfead3be04a4de16b2bf/static/img/bg/lgbt_bg.png',
 	logo: 'img/games/logos/lgbt_logo.png',
+	promo: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/landingPromo/lgbt.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 	brandColor: '#00B1CD',
 	id: 'lgbt',
+	serial: '7',
 	price: ''
+};
+game.moreInfo = {
+	players: '2-8',
+	age: '16+',
+	time: '120-180',
+	LOR: [
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	],
+	lorImg:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/lgbt_banner.png',
+	goal: '',
+	educationMoments: ['', ''],
+	description: [
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+	],
+	targetAudience: '',
+	photos: ['', '', '']
 };
 game.croundfanding = {
 	links: {
@@ -115,6 +140,7 @@ game.roles = {
 		}
 	]
 };
-
+game.recommendations = recommendationsData;
+// game.workshopsHistory = workshopsList.a;
 
 export default game;

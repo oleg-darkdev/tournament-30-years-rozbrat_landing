@@ -2,6 +2,7 @@ import GameClass from './template';
 import categoriesGames from '../categoriesGames';
 // import workshopsList from '../workshopsList';
 // import faq from '../faq/questionsGames';
+import recommendationsData from './aGame/recommendations';
 
 let game = new GameClass();
 // game.faq = faq.a;
@@ -12,10 +13,12 @@ game.promo = {
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/A_banner.png',
 	landingBanner: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/a_bg.png',
 	logo: 'img/games/logos/A_logo.png',
+	promo: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/landingPromo/a.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 	brandColor: '#702282',
 	id: 'a',
+	serial: '1',
 	price: '',
 	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]
 };
@@ -133,6 +136,8 @@ game.croundfanding = {
 	},
 	goal: ''
 };
+
+game.recommendations = recommendationsData;
 // game.workshopsHistory = workshopsList.a;
 
 

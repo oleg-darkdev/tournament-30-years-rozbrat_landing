@@ -1,22 +1,47 @@
 import GameClass from './template';
 import categoriesGames from '../categoriesGames';
 // import faq from '../faq/questionsGames';
+import recommendationsData from './gulagUSSR/recommendations';
 
 let game = new GameClass();
 // game.faq = faq.a;
 game.promo = {
 	name: '💀 Gulag: 1928-1953',
 	shortName: '💀 Gulag',
-	banner: 'img/games/banners/gulag_banner.png',
+	banner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/gulag_banner.png',
 	landingBanner:
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/gulag_bg.png',
 	logo: 'img/games/logos/gulagUSSR_logo.png',
+	promo: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/landingPromo/gulag.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 	brandColor: '#E40F2A',
 	id: 'gulag-ussr',
+	serial: '5',
 	price: '',
 	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]
+};
+game.moreInfo = {
+	players: '2-8',
+	age: '16+',
+	time: '120-180',
+	LOR: [
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	],
+	lorImg: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/gulag_banner.png',
+	goal: '',
+	educationMoments: ['', ''],
+	description: [
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+	],
+	targetAudience: '',
+	photos: ['', '', '']
 };
 game.roles = {
 	description: [
@@ -141,7 +166,7 @@ game.croundfanding = {
 	},
 	goal: ''
 };
-
+game.recommendations = recommendationsData;
+// game.workshopsHistory = workshopsList.a;
 
 export default game;
-// console.log(game)

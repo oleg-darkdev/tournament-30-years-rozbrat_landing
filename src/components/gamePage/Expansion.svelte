@@ -14,7 +14,7 @@ export let expansions;
     {#if expansions.length < 2}
         <Sorry {sorryBgColor}/>
     {:else}
-              {#each expansions as expansion}
+        {#each expansions as expansion}
             <Card style="min-width: 300px; margin: 5px; margin: 5px;">
                 <Media class="card-media-square" style="background-image: url({expansion.img})" aspectRatio="square">
                     <div style="color: #fff; position: absolute; bottom: 16px; left: 16px;">

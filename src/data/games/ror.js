@@ -1,6 +1,8 @@
 import GameClass from './template'
 import categoriesGames from '../categoriesGames';
 // import faq from '../faq/questionsGames';
+import recommendationsData from './linux/recommendations';
+
 
 let game = new GameClass();
 // game.faq = faq.a;
@@ -12,11 +14,35 @@ game.promo = {
 	landingBanner:
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/samba_bg.png',
 	logo: 'img/games/logos/ror_logo.png',
+	promo: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/landingPromo/samba.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 	brandColor: '#A6539B',
 	id: 'ror',
+	serial: '9',
 	price: ''
+};
+game.moreInfo = {
+	players: '2-8',
+	age: '16+',
+	time: '120-180',
+	LOR: [
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	],
+	lorImg:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/ror_banner.png',
+	goal: '',
+	educationMoments: ['', ''],
+	description: [
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+	],
+	targetAudience: '',
+	photos: ['', '', '']
 };
 game.roles = {
 	description: [
@@ -78,5 +104,7 @@ game.croundfanding = {
 	},
 	goal: ''
 };
+game.recommendations = recommendationsData;
+// game.workshopsHistory = workshopsList.a;
 
 export default game;
