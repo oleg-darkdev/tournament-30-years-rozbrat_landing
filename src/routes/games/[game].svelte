@@ -14,7 +14,7 @@ import Lor from '../../components/gamePage/Lor.svelte';
 import Roles from '../../components/gamePage/Roles.svelte';
 import Expansion from '../../components/gamePage/Expansion.svelte';
 import Resources from '../../components/gamePage/Resources.svelte';
-import Customers from '../../components/gamePage/Customers.svelte';
+import Recommendations from '../../components/gamePage/Recommendations.svelte';
 
 
 import gamesList from '../../data/gamesData';
@@ -72,12 +72,12 @@ let data = [
     <Menu promo={game.promo} btnData={data} />
 </BlackFaq>
 
-<ImgFaq  title={game.promo.shortDescription} img='{game.promo.banner}' color='{game.promo.brandColor}' >
+<ImgFaq  title='Photo \ Video 📽️' img='{game.promo.banner}' color='{game.promo.brandColor}' >
     <Video videos={game.videos} sorryBgColor='{game.promo.brandColor}'/>
 </ImgFaq>
 
-
-<ColorFaq  title={game.promo.shortDescription} color='{game.promo.brandColor}' >
+<!-- title={game.promo.shortDescription} -->
+<ColorFaq  title='' color='{game.promo.brandColor}' >
        <PromoCard promo={game.promo} info={game.moreInfo}/>
     <!-- </div> -->
 </ColorFaq>
@@ -102,16 +102,16 @@ let data = [
     
 </div>
 
-<ColorFaq title="Expansions" color='{game.promo.brandColor}'>
+<ColorFaq title="Expansions 👇" color='{game.promo.brandColor}'>
    <Expansion expansions={game.expansions} sorryBgColor='{game.promo.brandColor}'/>
 </ColorFaq>
 
-<ImgFaq  title='Resources' img='{game.promo.banner}' color='{game.promo.brandColor}' >
+<ImgFaq  title='Resources 💎' img='{game.promo.banner}' color='{game.promo.brandColor}' >
    <Resources resources={game.resources} videos={game.videos} promo={game.promo}/> ;
 </ImgFaq>
 
-<ColorFaq title="Customers who bought this item also bought" color='{game.promo.brandColor}'>
-    <Customers sorryBgColor='{game.promo.brandColor}'/>
+<ColorFaq title="Recommendations 🔥" color='{game.promo.brandColor}'>
+    <Customers recommendations={game.recommendations} sorryBgColor='{game.promo.brandColor}'/>
 </ColorFaq> 
 
 <!-- <ColorFaq >
