@@ -2,7 +2,7 @@
   import { flip } from 'svelte/animate';
   import { onDestroy } from 'svelte';
 
-  export let images;
+  export let games;
 //   export let imageWidth = 300;
 //   export let imageSpacing = 20;
   export let speed = 500;
@@ -15,16 +15,16 @@
 
 
   const rotateLeft = e => {
-    const transitioningImage = images[images.length - 1]
+    const transitioningImage = games[games.length - 1]
     document.getElementById(transitioningImage.id).style.opacity = 0;
-    images = [images[images.length -1],...images.slice(0, images.length - 1)]
+    games = [games[games.length -1],...games.slice(0, games.length - 1)]
     setTimeout(() => (document.getElementById(transitioningImage.id).style.opacity = 1), speed);
   }
 
   const rotateRight = e => {
-    const transitioningImage = images[0]
+    const transitioningImage = games[0]
     document.getElementById(transitioningImage.id).style.opacity = 0;
-    images = [...images.slice(1, images.length), images[0]]
+    games = [...games.slice(1, games.length), games[0]]
     setTimeout(() => (document.getElementById(transitioningImage.id).style.opacity = 1), speed);
   }
 
@@ -48,16 +48,18 @@
 
 <div id="carousel-container">
   <div id="carousel-images">
-    {#each images as image (image.id)}
+    {#each games as game (game.id)}
     <div style=''
     on:mouseover={stopAutoPlay}
         on:mouseout={startAutoPlay}
         animate:flip={{duration: speed}}>
+        <a href='games/{game.link}'>
         <img style='width: 350px; margin: 0 15px; height: 350px; border-radius: 2%;'
-            src={image.path}
-            alt={image.id}
-            id={image.id}
+            src={game.path}
+            alt={game.id}
+            id={game.id}
         />
+        </a>
     </div>
     {/each}
   </div>
