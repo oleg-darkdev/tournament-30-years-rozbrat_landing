@@ -15,7 +15,7 @@ game.promo = {
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription:
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
-	brandColor: '#FEEB1A',
+	brandColor: '#00B1CD',
 	id: 'lgbt',
 	price: ''
 };
