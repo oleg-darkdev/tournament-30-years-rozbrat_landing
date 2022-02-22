@@ -2,7 +2,7 @@
 import Line from '../components/footer/Line.svelte';
 import PolicyMenu from '../components/footer/PolicyMenu.svelte';
 // import Paper, {Title, Subtitle, Content} from '@smui/paper/dist';
-import gameslist from '../data/gamesData';
+import gamesData from '../data/gamesData';
 import SvgLine from "./BlackSvgLine.svelte";
 import Card, {
   Content,
@@ -58,7 +58,7 @@ termsOfService;
       <li>
         <a style="color: #fff;" href=".">Boardgames</a>
       </li>
-       {#each gameslist.all as game}
+       {#each gamesData.all as game}
         <li>
           <a style="color: #fff;" href={`games/${game.promo.id}`}>{game.promo.shortName}</a>
         </li>
