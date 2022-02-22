@@ -32,64 +32,74 @@ game.roles = {
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
 	],
 	banner:
-		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/squat/banners/persons_banner.png', // new
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/squat/banners/squat_banner.png',
 	characters: [
 		{
 			name: 'Cops',
+			bgColor: '#191B1B',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/squat/persons/acab_person.png'
 		},
 		{
 			name: 'White trash',
+			bgColor: '#191B1B',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/squat/persons/whitetrash_person.png'
 		},
 		{
 			name: 'Capitalist',
+			bgColor: '#191B1B',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/squat/persons/capitalist_person.png'
 		},
 		{
 			name: 'A.D.A. squat',
+			bgColor: '#191B1B',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/squat/persons/ada_person.png'
 		},
 		{
 			name: 'ELBA squat',
+			bgColor: '#191B1B',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/squat/persons/elba_person.png'
 		},
 		{
 			name: 'Hulai pole squat',
+			bgColor: '#191B1B',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/squat/persons/hulaipole_person.png'
 		},
 		{
 			name: 'Pandamia squat',
+			bgColor: '#191B1B',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/squat/persons/pandemia_person.png'
 		},
 		{
 			name: 'Przychodnia squat',
+			bgColor: '#191B1B',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/squat/persons/przychodnia_person.png'
 		},
 		{
 			name: 'Syrena squat',
+			bgColor: '#191B1B',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/squat/persons/syrena_person.png'
 		},
 		{
 			name: 'Rozbrat squat',
+			bgColor: '#191B1B',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/squat/persons/rozbrat_person.png'
