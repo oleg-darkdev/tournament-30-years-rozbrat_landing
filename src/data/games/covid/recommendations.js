@@ -1,14 +1,9 @@
-import fnb from '../fnb';
-
-
-
 let recommendations = [
 		{
-			path: fnb.promo.promo, 
-			id: fnb.promo.serial, 
-			link: fnb.promo.id 
+			path: '', 
+			id: 23, 
+			link: 'a' 
 		},
-	
 ];
 
 
