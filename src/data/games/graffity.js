@@ -6,8 +6,8 @@ import categoriesGames from '../categoriesGames';
 let game = new GameClass();
 // game.faq = faq.a;
 game.promo = {
-	name: 'Graffity',
-	shortName: 'Graffity',
+	name: '🖍 Graffity',
+	shortName: '🖍 Graffity',
 	banner:
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/graffity_banner.png',
 	landingBanner:
