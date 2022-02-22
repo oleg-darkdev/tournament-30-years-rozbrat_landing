@@ -7,13 +7,14 @@ let game = new GameClass();
 game.promo = {
 	name: '🥕 FNB - food not bombs',
 	shortName: '🥕 FNB',
-	banner: 'img/games/banners/fnb_banner.png',
+	banner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/fnb_banner.png',
 	landingBanner:
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/fnb_bg.png',
 	logo: 'img/games/logos/fnb_logo.png',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',
-	brandColor: '#D4944A',
+	brandColor: '#81B228',
 	id: 'fnb',
 	price: '',
 	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]
