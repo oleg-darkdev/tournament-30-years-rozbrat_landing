@@ -5,8 +5,8 @@ import categoriesGames from '../categoriesGames';
 let game = new GameClass();
 // game.faq = faq.a;
 game.promo = {
-	name: ' Covid resistance',
-	shortName: ' CR',
+	name: '🦠 Covid resistance',
+	shortName: '🦠 CR',
 	banner: 'img/games/banners/covid_banner.png',
 	landingBanner:
 		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/covid_bg.png',
