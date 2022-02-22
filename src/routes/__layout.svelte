@@ -23,8 +23,8 @@ import socialIcons from '../data/social/socialTq';
 import gamesList from '../data/gamesData';
 
 
-
-const topGames = [gamesList.gulagUSSR, gamesList.katyn, gamesList.lgbt];
+// gamesList.gulagUSSR, gamesList.katyn, gamesList.lgbt
+const topGames = ['', '', ''];
 let open = false;
 let active = '';
 
