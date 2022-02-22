@@ -10,10 +10,12 @@ game.promo = {
 	banner: 'img/games/banners/yakusa_banner.png',
 	landingBanner: '',
 	logo: 'img/games/logos/yakusa_logo.png',
+	promo: '',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',
 	brandColor: '#E5292A',
 	id: 'yakusa',
+	serial: '',
 	price: ''
 };
 game.croundfanding = {

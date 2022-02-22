@@ -10,10 +10,12 @@ game.promo = {
 	banner: 'img/games/banners/wtb_banner.png',
 	landingBanner: '',
 	logo: 'img/games/logos/wtb_logo.png',
+	promo: '',
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	shortDescription: '',
 	brandColor: '#E4262E',
 	id: 'wtb',
+	serial: '',
 	price: ''
 };
 game.croundfanding = {
