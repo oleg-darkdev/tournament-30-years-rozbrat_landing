@@ -76,10 +76,8 @@ let data = [
     <Video videos={game.videos} sorryBgColor='{game.promo.brandColor}'/>
 </ImgFaq>
 
-<!-- title={game.promo.shortDescription} -->
 <ColorFaq  title='' color='{game.promo.brandColor}' >
        <PromoCard promo={game.promo} info={game.moreInfo}/>
-    <!-- </div> -->
 </ColorFaq>
    
   

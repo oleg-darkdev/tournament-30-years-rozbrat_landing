@@ -7,8 +7,7 @@ class Game {
 			logo: '',
 			promo: '',
 			status: 0,
-			shortDescription:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			brandColor: '#47babb',
 			id: '',
 			serial: '',
