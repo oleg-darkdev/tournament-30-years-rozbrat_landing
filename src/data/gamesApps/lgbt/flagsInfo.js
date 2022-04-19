@@ -470,7 +470,7 @@ const imgsInfo = {
 		name: 'quoisexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
-		img: '',
+		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/quoisexual.png',
 		shortDescription: loremShortDescriptionText,
 		number: 65
 	},
