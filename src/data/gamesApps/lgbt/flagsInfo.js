@@ -27,7 +27,7 @@ const сategories = {
 
 const imgsInfo = {
 	man: {
-		name: 'man',
+		name: 'Man',
 		category: [],
 		description: loremDescriptionText,
 		img: '',
@@ -35,7 +35,7 @@ const imgsInfo = {
 		number: 1
 	},
 	woman: {
-		name: 'woman',
+		name: 'Woman',
 		category: [],
 		description: loremDescriptionText,
 		img: '',
@@ -43,7 +43,7 @@ const imgsInfo = {
 		number: 2
 	},
 	gay: {
-		name: 'gay',
+		name: 'Gay',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: '',
@@ -51,7 +51,7 @@ const imgsInfo = {
 		number: 12
 	},
 	queer: {
-		name: 'queer',
+		name: 'Queer',
 		category: [сategories.sexual, сategories.gender],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/queer.png',
@@ -59,7 +59,7 @@ const imgsInfo = {
 		number: 13
 	},
 	bigender: {
-		name: 'bigender',
+		name: 'Bigender',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/bigender.png',
@@ -67,7 +67,7 @@ const imgsInfo = {
 		number: 14
 	},
 	twink: {
-		name: 'twink',
+		name: 'Twink',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/twink.png',
@@ -75,7 +75,7 @@ const imgsInfo = {
 		number: 15
 	},
 	genderfae: {
-		name: 'genderfae',
+		name: 'Genderfae',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/genderfae.png',
@@ -83,7 +83,7 @@ const imgsInfo = {
 		number: 16
 	},
 	mogai: {
-		name: 'mogai',
+		name: 'Mogai',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/mogai.png',
@@ -91,7 +91,7 @@ const imgsInfo = {
 		number: 17
 	},
 	cassgender: {
-		name: 'cassgender',
+		name: 'Cassgender',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/cassgender.png',
@@ -99,7 +99,7 @@ const imgsInfo = {
 		number: 18
 	},
 	lesbian: {
-		name: 'lesbian',
+		name: 'Lesbian',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/lesbian.png',
@@ -107,7 +107,7 @@ const imgsInfo = {
 		number: 19
 	},
 	lithromantic: {
-		name: 'lithromantic',
+		name: 'Lithromantic',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/lithromantic.png',
@@ -115,7 +115,7 @@ const imgsInfo = {
 		number: 20
 	},
 	mascic: {
-		name: 'mascic',
+		name: 'Mascic',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/mascic.png',
@@ -123,7 +123,7 @@ const imgsInfo = {
 		number: 21
 	},
 	greygender: {
-		name: 'greygender',
+		name: 'Greygender',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/greygender.png',
@@ -131,7 +131,7 @@ const imgsInfo = {
 		number: 22
 	},
 	torik: {
-		name: 'torik',
+		name: 'Torik',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/toric.png',
@@ -139,7 +139,7 @@ const imgsInfo = {
 		number: 23
 	},
 	xenogender: {
-		name: 'xenogender',
+		name: 'Xenogender',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://github.com/oleg-darkdev/dd/blob/deploy/static/img/apps/lgbt/flags/xenogender.png',
@@ -147,7 +147,7 @@ const imgsInfo = {
 		number: 24
 	},
 	butch: {
-		name: 'butch',
+		name: 'Butch',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/butch.png',
@@ -155,7 +155,7 @@ const imgsInfo = {
 		number: 25
 	},
 	gynesexual: {
-		name: 'gynesexual',
+		name: 'Gynesexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/gynesexual.png',
@@ -163,7 +163,7 @@ const imgsInfo = {
 		number: 26
 	},
 	asexual: {
-		name: 'asexual',
+		name: 'Asexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/asexual%20.png',
@@ -171,7 +171,7 @@ const imgsInfo = {
 		number: 27
 	},
 	demisexual: {
-		name: 'demisexual',
+		name: 'Demisexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/demisexual.png',
@@ -179,7 +179,7 @@ const imgsInfo = {
 		number: 28
 	},
 	noninsexual: {
-		name: 'noninsexual',
+		name: 'Noninsexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/noninsexual.png',
@@ -187,7 +187,7 @@ const imgsInfo = {
 		number: 29
 	},
 	trixic: {
-		name: 'trixic',
+		name: 'Trixic',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/trixic.png',
@@ -195,7 +195,7 @@ const imgsInfo = {
 		number: 30
 	},
 	enbian: {
-		name: 'enbian',
+		name: 'Enbian',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/enbian.png',
@@ -203,7 +203,7 @@ const imgsInfo = {
 		number: 31
 	},
 	quoiromantic: {
-		name: 'quoiromantic',
+		name: 'Quoiromantic',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/quoiromantic.png',
@@ -211,7 +211,7 @@ const imgsInfo = {
 		number: 32
 	},
 	androsexual: {
-		name: 'androsexual',
+		name: 'Androsexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/androsexual.png',
@@ -219,7 +219,7 @@ const imgsInfo = {
 		number: 33
 	},
 	bear: {
-		name: 'bear',
+		name: 'Bear',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/bear.png',
@@ -227,7 +227,7 @@ const imgsInfo = {
 		number: 34
 	},
 	pansexual: {
-		name: 'pansexual',
+		name: 'Pansexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/pansexual.png',
@@ -235,7 +235,7 @@ const imgsInfo = {
 		number: 35
 	},
 	intersex: {
-		name: 'intersex',
+		name: 'Intersex',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/intersex.png',
@@ -243,7 +243,7 @@ const imgsInfo = {
 		number: 36
 	},
 	diamoric: {
-		name: 'diamoric',
+		name: 'Diamoric',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/diamoric.png',
@@ -251,7 +251,7 @@ const imgsInfo = {
 		number: 37
 	},
 	nofinsexual: {
-		name: 'nofinsexual',
+		name: 'Nofinsexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/nofinsexual.png',
@@ -259,7 +259,7 @@ const imgsInfo = {
 		number: 38
 	},
 	graysexual: {
-		name: 'graysexual',
+		name: 'Graysexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/graysexual.png',
@@ -267,7 +267,7 @@ const imgsInfo = {
 		number: 39
 	},
 	reciprosexual: {
-		name: 'reciprosexual',
+		name: 'Reciprosexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: '',
@@ -275,7 +275,7 @@ const imgsInfo = {
 		number: 40
 	},
 	demifluid: {
-		name: 'demifluid',
+		name: 'Demifluid',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/demifluid.png',
@@ -283,7 +283,7 @@ const imgsInfo = {
 		number: 41
 	},
 	femaric: {
-		name: 'femaric',
+		name: 'Femaric',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/femaric.png',
@@ -291,7 +291,7 @@ const imgsInfo = {
 		number: 42
 	},
 	neutrois: {
-		name: 'neutrois',
+		name: 'Neutrois',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/neutrois.png',
@@ -299,7 +299,7 @@ const imgsInfo = {
 		number: 43
 	},
 	polysexual: {
-		name: 'polysexual',
+		name: 'Polysexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/polysexual.png',
@@ -307,7 +307,7 @@ const imgsInfo = {
 		number: 44
 	},
 	omnisexual: {
-		name: 'omnisexual',
+		name: 'Omnisexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/omnisexual.png',
@@ -315,7 +315,7 @@ const imgsInfo = {
 		number: 45
 	},
 	greyromantic: {
-		name: 'greyromantic',
+		name: 'Greyromantic',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/greyromantic.png',
@@ -323,7 +323,7 @@ const imgsInfo = {
 		number: 46
 	},
 	achillean: {
-		name: 'achillean',
+		name: 'Achillean',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/achillean.png',
@@ -331,7 +331,7 @@ const imgsInfo = {
 		number: 47
 	},
 	pomosexual: {
-		name: 'pomosexual',
+		name: 'Pomosexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/pomosexual.png',
@@ -339,7 +339,7 @@ const imgsInfo = {
 		number: 48
 	},
 	cupioromantic: {
-		name: 'cupioromantic',
+		name: 'Cupioromantic',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/cupioromantic.png',
@@ -347,7 +347,7 @@ const imgsInfo = {
 		number: 49
 	},
 	aegoromantic: {
-		name: 'aegoromantic',
+		name: 'Aegoromantic',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/aegoromantic.png',
@@ -355,7 +355,7 @@ const imgsInfo = {
 		number: 50
 	},
 	transmasculine: {
-		name: 'trans masculine',
+		name: 'Trans masculine',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://github.com/oleg-darkdev/dd/blob/deploy/static/img/apps/lgbt/flags/transmasculine.png',
@@ -363,7 +363,7 @@ const imgsInfo = {
 		number: 51
 	},
 	demiromantic: {
-		name: 'demiromantic',
+		name: 'Demiromantic',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/demiromantic.png',
@@ -371,7 +371,7 @@ const imgsInfo = {
 		number: 52
 	},
 	genderNonConforming: {
-		name: 'gender non conforming',
+		name: 'Gender non conforming',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/nonconforming.png',
@@ -379,7 +379,7 @@ const imgsInfo = {
 		number: 53
 	},
 	ceterosexual: {
-		name: 'ceterosexual',
+		name: 'Ceterosexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/ceterosexual.png',
@@ -387,7 +387,7 @@ const imgsInfo = {
 		number: 54
 	},
 	polyamorous: {
-		name: 'polyamorous',
+		name: 'Polyamorous',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/polyamorous.png',
@@ -395,7 +395,7 @@ const imgsInfo = {
 		number: 55
 	},
 	genderflor: {
-		name: 'genderflor',
+		name: 'Genderflor',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/genderflor.png',
@@ -403,7 +403,7 @@ const imgsInfo = {
 		number: 56
 	},
 	genderfaun: {
-		name: 'genderfaun',
+		name: 'Genderfaun',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/genderfaun.png',
@@ -411,7 +411,7 @@ const imgsInfo = {
 		number: 57
 	},
 	aromantic: {
-		name: 'aromantic',
+		name: 'Aromantic',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/aromantic.png',
@@ -419,7 +419,7 @@ const imgsInfo = {
 		number: 58
 	},
 	alexigender: {
-		name: 'alexigender',
+		name: 'Alexigender',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/alexigender.png',
@@ -427,7 +427,7 @@ const imgsInfo = {
 		number: 59
 	},
 	libramasculine: {
-		name: 'libramasculine',
+		name: 'Libramasculine',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/libramasculine.png',
@@ -435,7 +435,7 @@ const imgsInfo = {
 		number: 60
 	},
 	queerPlatonicRelationship: {
-		name: 'queer platonic relationship',
+		name: 'Queer platonic relationship',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/queerplatonic_Relationship.png',
@@ -443,7 +443,7 @@ const imgsInfo = {
 		number: 61
 	},
 	androgyne: {
-		name: 'androgyne',
+		name: 'Androgyne',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/androgyne.png',
@@ -451,7 +451,7 @@ const imgsInfo = {
 		number: 62
 	},
 	librafeminine: {
-		name: 'librafeminine',
+		name: 'Librafeminine',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/librafeminine.png',
@@ -459,7 +459,7 @@ const imgsInfo = {
 		number: 63
 	},
 	freysexual: {
-		name: 'freysexual',
+		name: 'Freysexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/freysexual.png',
@@ -467,7 +467,7 @@ const imgsInfo = {
 		number: 64
 	},
 	quoisexual: {
-		name: 'quoisexual',
+		name: 'Quoisexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/quoisexual.png',
@@ -475,7 +475,7 @@ const imgsInfo = {
 		number: 65
 	},
 	trigender: {
-		name: 'trigender',
+		name: 'Trigender',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/trigender.png',
@@ -483,7 +483,7 @@ const imgsInfo = {
 		number: 66
 	},
 	mavierique: {
-		name: 'mavierique',
+		name: 'Mavierique',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/mavierique.png',
@@ -491,7 +491,7 @@ const imgsInfo = {
 		number: 67
 	},
 	bisexual: {
-		name: 'bisexual',
+		name: 'Bisexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/bisexual.png',
@@ -499,7 +499,7 @@ const imgsInfo = {
 		number: 68
 	},
 	orientedAroace: {
-		name: 'oriented aroace',
+		name: 'Oriented aroace',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/oriented_Aroace.png',
@@ -507,7 +507,7 @@ const imgsInfo = {
 		number: 69
 	},
 	transFeminine: {
-		name: 'trans feminine',
+		name: 'Trans feminine',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/transfeminine.png',
@@ -515,7 +515,7 @@ const imgsInfo = {
 		number: 70
 	},
 	twospirit: {
-		name: 'two spirit',
+		name: 'Two spirit',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/two_Spirit.png',
@@ -523,7 +523,7 @@ const imgsInfo = {
 		number: 71
 	},
 	coeosexual: {
-		name: 'coeosexual',
+		name: 'Coeosexual',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/coeosexual.png',
@@ -531,7 +531,7 @@ const imgsInfo = {
 		number: 72
 	},
 	pangender: {
-		name: 'pangender',
+		name: 'Pangender',
 		category: [сategories.sexual],
 		description: loremDescriptionText,
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/pangender.png',

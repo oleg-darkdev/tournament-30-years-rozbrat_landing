@@ -16,7 +16,7 @@
 	bind:selectedIndex={selectionIndex}
 >
 	{#each flags as flag}
-		<Item style="margin: 0 10px 0 0; "
+		<Item style="margin: 0 10px 0 0; height: 70px; padding: 0; "
 			on:SMUI:action={() => (selection = flag.name)}
 			disabled={flag.disabled}
 			selected={selection === flag.name}
@@ -35,7 +35,7 @@
 <style>
 	.flag-promo {
 		width: 100px;
-		height: 50px;
+		height: 40px;
 		margin: 0 10px 0 0;
 		border-radius: 4px;
 		background-size: cover;

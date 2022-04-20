@@ -17,17 +17,13 @@
 </script>
 
 
-<Card style="width: 360px; height: 500px; margin: 0 0 15px 0;">
-    <Media style="height: 250px; background-image: url({flag.img});">
-    <MediaContent>
-        <div
-        style="color: #fff; position: absolute; bottom: 16px; left: 16px;"
-        >
+<Card style="width: 340px; margin: 0 0 15px 0;">
+    <div style="padding: 1rem;">
         <h2 class="mdc-typography--headline6" style="margin: 0;">
-            #{flag.number} {flag.name}
+         #{flag.number} {flag.name}
         </h2>
-        </div>
-    </MediaContent>
+      </div>
+    <Media style="height: 190px; width: 340px; background-image: url({flag.img});">
     </Media>
     <Content class="mdc-typography--body2">
         {flag.shortDescription}

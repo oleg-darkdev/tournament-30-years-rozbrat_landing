@@ -33,20 +33,14 @@
       <Title style="color: #fff; font: 26px 'grafitty';">LGBTQ+ Wikipedia</Title>
       <Content>
  
-        <Card variant="outlined" style="margin-bottom: 25px;" padded>
+        <!-- <Card variant="outlined" style="margin-bottom: 25px;" padded>
               <div class="smartyFlagList-wrap">
                 <SmartyFlagList flags={flags.slice(0, 9)}/>
                 <SmartyFlagList flags={flags.slice(10, 19)}/>
                 <SmartyFlagList flags={flags.slice(20, 29)}/>
                 <SmartyFlagList flags={flags.splice(30, 39)}/> 
-                <!-- <SmartyFlagList flags={flags.splice(40, 49)}/>
-                <SmartyFlagList flags={flags.splice(50, 59)}/> -->
-                <!-- 
-                
-                <SmartyFlagList flags={flags.splice(60, 69)}/>
-                <SmartyFlagList flags={flags.splice(70, 79)}/> -->
               </div>
-        </Card>
+        </Card> -->
         <div class="flags">
           {#each flags as flag}
             <FlagCard {flag} />
