@@ -9,12 +9,12 @@
         MediaContent,
     } from '@smui/card';
 
-    import FlagCard from '../../../components/apps/lgbt/wikipedia/FlagCard.svelte'
+    import FlagCard from '../../../components/apps/lgbt/wikipedia/FlagCard.svelte';
     import SmartyFlagList from '../../../components/apps/lgbt/wikipedia/SmartyFlagList.svelte'
     // import TabPanel from '../../components/apps/lgbt/TabPanel.svelte';
     import flags from '../../../data/gamesApps/lgbt/arrayFlags.js';
 
-
+    let brandColor = '#702282';
 </script>
 
 
@@ -43,7 +43,7 @@
         </Card> -->
         <div class="flags">
           {#each flags as flag}
-            <FlagCard {flag} />
+            <FlagCard {flag} {brandColor}/>
           {/each}
           </div>
       </Content>
