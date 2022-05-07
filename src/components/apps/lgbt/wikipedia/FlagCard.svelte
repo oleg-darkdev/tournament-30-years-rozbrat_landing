@@ -1,36 +1,50 @@
 <script>
-        import Card, {
-        Content,
-        PrimaryAction,
-        Actions,
-        ActionButtons,
-        ActionIcons,
-        Media,
-        MediaContent,
-    } from '@smui/card';
-    import Button, { Label } from '@smui/button';
-    import Chip, { Set, LeadingIcon, TrailingIcon, Text } from '@smui/chips';
-    import { fly } from 'svelte/transition';
-    import List from '@smui/list';
+import Card, {
+    Content,
+    PrimaryAction,
+    Actions,
+    ActionButtons,
+    ActionIcons,
+    Media,
+    MediaContent,
+} from '@smui/card';
+import Button, { Label } from '@smui/button';
+import Chip, { Set, LeadingIcon, TrailingIcon, Text } from '@smui/chips';
+import { fly } from 'svelte/transition';
+import List from '@smui/list';
 
-  import ListRow from './card/ListRow.svelte';
-  import FlagColors from './card/FlagColors.svelte';
-  import Etymology from './card/Etymology.svelte';
-  import References from './card/References.svelte';
-  import RelatedTermsTable from './card/RelatedTermsTable.svelte';
-  import SpecificsTable from './card/SpecificsTable.svelte';
+import ListRow from './card/ListRow.svelte';
+import FlagColors from './card/FlagColors.svelte';
+import Etymology from './card/Etymology.svelte';
+import References from './card/References.svelte';
+import RelatedTermsTable from './card/RelatedTermsTable.svelte';
+import SpecificsTable from './card/SpecificsTable.svelte';
+import ReactionsList from './ReactionsList.svelte';
+import ReactionIngridients from './ReactionIngridients.svelte'
+import trueReactions from '../../../../data/gamesApps/lgbt/reactions';
 
-    let showSpecifics = false,
-        showRelatedTerms = false, 
-        showEtymology = false, 
-        showReferences = false, 
-        showFlagInfo = false,
-        showHint = false;
+let showSpecifics = false,
+    showRelatedTerms = false, 
+    showEtymology = false, 
+    showReferences = false, 
+    showFlagInfo = false,
+    showReaactions = false;
 
-    let showFullInfo = false;
+let showFullInfo = false;
+let sortArr = [];
+let ingridients = [];
 
-    export let brandColor;
-    export let flag;
+
+
+
+	let questionContinueReaction = false;
+	function showReaction() {
+		questionContinueReaction = !questionContinueReaction;
+	}
+
+
+export let brandColor;
+export let flag;
 </script>
 
 
@@ -47,7 +61,7 @@
         <Media style="height: 190px; width: 340px; background-image: url({flag.img});" />
     </PrimaryAction>
     <Content class="mdc-typography--body2">
-        {#if showFullInfo}
+        {#if showFullInfo & !showReaactions}
             <div transition:fly="{{ y: -20, duration: 400 }}">
                 {flag.shortDescription}
                 <List class="demo-list">
@@ -80,7 +94,28 @@
                 </Set>
             </div>
         {/if}
-        <Card on:click={() => showHint =!showHint}  style='width: 300px; margin: 15px 0 10px 0; border: 2px solid {brandColor}; background-image: url(https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/bg_btn_hint.png);height: 85px; '/>
+        {#if showReaactions}
+            {#if questionContinueReaction == false}
+                <ReactionsList {sortArr} bind:selectionReaction={ingridients} on:showReaction={showReaction}/>
+            {:else}
+                <div  transition:fly="{{ y: -20, duration: 400 }}">
+                    <ReactionIngridients bind:ingridients={ingridients} bind:showReaactions bind:questionContinueReaction/>
+                </div>
+            {/if}
+        {/if}
+        {#if !showReaactions}
+            <Card on:click={() => {
+                let temp;
+                trueReactions.forEach((reactionArrayForElement, ind) => {
+                    temp = reactionArrayForElement.filter(function (e) {
+                        return e.number == flag.number;
+                    });
+                    if (temp.length > 0) sortArr.push(reactionArrayForElement);
+                });
+                showReaactions =!showReaactions;
+                }}  style='width: 300px; margin: 15px 0 10px 0; border: 2px solid {brandColor}; background-image: url(https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/bg_btn_hint.png);height: 85px; '>
+            </Card>
+        {/if}
     </Content>
     <!-- <Actions fullBleed>
         <Button on:click={() => showFullInfo = !showFullInfo}>
@@ -94,6 +129,7 @@
     <style>
         .d {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            justify-content: space-around;
         }
     </style>

@@ -13,19 +13,10 @@
     import SmartyFlagList from '../../../components/apps/lgbt/wikipedia/SmartyFlagList.svelte'
     // import TabPanel from '../../components/apps/lgbt/TabPanel.svelte';
     import flags from '../../../data/gamesApps/lgbt/arrayFlags.js';
+    import AlchimIngridients from '../../../components/apps/lgbt/wikipedia/AlchimIngridients.svelte';
 
     let brandColor = '#702282';
 </script>
-
-
-<!-- name: 'gay',
-		category: [сategories.sexual],
-		description: loremDescriptionText,
-		flag: '', 
-		shortDescription: loremShortDescriptionText,
-		number: 12
-     -->
-
 
 <div class="app-wrap">
  
@@ -41,6 +32,7 @@
                 <SmartyFlagList flags={flags.splice(30, 39)}/> 
               </div>
         </Card> -->
+        <AlchimIngridients {flags} />
         <div class="flags">
           {#each flags as flag}
             <FlagCard {flag} {brandColor}/>

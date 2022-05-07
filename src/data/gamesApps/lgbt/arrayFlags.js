@@ -64,7 +64,13 @@ const arrayTokensData = [
 	flagsInfo.transFeminine,
 	flagsInfo.twospirit,
 	flagsInfo.coeosexual,
-	flagsInfo.pangender
+	flagsInfo.pangender,
+	flagsInfo.libragender,
+	flagsInfo.nominsexual,
+	flagsInfo.genderflux,
+	flagsInfo.abrosexual,
+	flagsInfo.hijra,
+	flagsInfo.tranfen
 ];
 
 export default arrayTokensData;

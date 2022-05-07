@@ -11,6 +11,14 @@ const loremDescriptionText = [
 
 const loremShortDescriptionText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi proin sed libero enim sed faucibus turpis in. Faucibus turpis in eu mi bibendum neque. Felis eget nunc lobortis mattis aliquam faucibus. Pharetra pharetra massa massa ultricies.';
 
+
+
+/* 
+libragender - добавить,
+hira - обновить инфу
+
+
+*/
 const сategories = {
 	// romantic: 'Романтические предпочтения',
 	// sexual: 'Сексуальные предпочтения',
@@ -33,7 +41,7 @@ const сategories = {
 const imgsInfo = {
 	man: {
 		name: 'Man',
-		category: [],
+		category: ['text'],
 		description: [loremDescriptionText],
 		etymology: [''],
 		references: [
@@ -84,7 +92,7 @@ const imgsInfo = {
 	},
 	woman: {
 		name: 'Woman',
-		category: [],
+		category: ['text'],
 		description: [loremDescriptionText],
 		etymology: [''],
 		references: [
@@ -622,7 +630,7 @@ Twinks are typically associated with a few key tropes: general physical attracti
 	},
 	cassgender: {
 		name: 'Cassgender',
-		category: [''],
+		category: ['text'],
 		description: [loremDescriptionText],
 		flagInfo: {
 			description: [
@@ -1708,7 +1716,7 @@ Twinks are typically associated with a few key tropes: general physical attracti
 	},
 	intersex: {
 		name: 'Intersex',
-		category: [''],
+		category: ['text'],
 		description: [
 			'According to the ISNA it is estimated that as many as 1.7% of individuals are born with intersex traits; however, cases of intersex people can be unreported or undiagnosed. Additionally, many people may be unaware of their intersex traits unless they receive genetic testing. Intersex people are not as uncommon as once believed; they have just been invisible until recent years. Intersex individuals may have any gender identity or gender expression.',
 			`After years of activist efforts, members of the hijra community in India gained legal recognition in 2014 as part of a third gender category. Aspects of the hijra identity can include wearing clothing and cosmetics that are considered feminine. Some intersex people are part of the hijra community.`
@@ -2907,7 +2915,7 @@ Twinks are typically associated with a few key tropes: general physical attracti
 	},
 	genderfaun: {
 		name: 'Genderfaun',
-		category: [''],
+		category: ['text'],
 		description: [loremDescriptionText],
 		flagInfo: {
 			description: [''],
@@ -3125,7 +3133,7 @@ Twinks are typically associated with a few key tropes: general physical attracti
 	},
 	queerPlatonicRelationship: {
 		name: 'Queer platonic relationship',
-		category: [''],
+		category: ['text'],
 		description: [
 			`It may involve a greater degree of intimacy or commitment than a platonic friendship, but does not always include sexual or romantic elements. Queerplatonic relationships are not limited to the aromantic community, and also includes asexuals and those on the asexual spectrum, among other gender and sexual identities.`
 		],
@@ -3696,7 +3704,8 @@ Twinks are typically associated with a few key tropes: general physical attracti
 				}
 			]
 		},
-		linkOriginalWiki: 'https://lgbtqia.fandom.com/wiki/Aromantic_asexual#cite_note-AUREA:_All_Terms-1',
+		linkOriginalWiki:
+			'https://lgbtqia.fandom.com/wiki/Aromantic_asexual#cite_note-AUREA:_All_Terms-1',
 		etymology: [''],
 		references: [
 			{
@@ -3776,7 +3785,7 @@ Twinks are typically associated with a few key tropes: general physical attracti
 	},
 	twospirit: {
 		name: 'Two spirit',
-		category: [сategories.sexualOrientation, categories.genderIdentity, categories.umbrellaTerm],
+		category: [сategories.sexualOrientation, сategories.genderIdentity, сategories.umbrellaTerm],
 		description: [
 			`While some use the term specifically as it relates to the cultural roles of individuals who embody both spirits, Two-Spirit is also used to describe Aboriginal LGBTQIA+ people. It reflects traditionally Aboriginal gender diversity, including the fluid nature of gender, sexual identity, and other identities and how it connects with spirituality.`,
 			`Two-Spirit is also an ancient teaching among Indigenous people. According to Elders' teachings, some people were gifted by carrying two spirits; that of a male and female. These members had roles in their community that were not traditionally that of their assigned gender. For example, women engaged in tribal warfare, women married women, and men married other men. Two-Spirited people were revered in the community and respected as fundamental components of these cultures and societies.`
@@ -3983,43 +3992,271 @@ Twinks are typically associated with a few key tropes: general physical attracti
 		img: 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/flags/pangender.png',
 		shortDescription: `Pangender is a gender identity defined as experiencing many or all genders. As an identity that is multigender—experiencing or having multiple genders—the number of genders experienced may be unknown or may fluctuate, and they may be experienced one at a time or simultaneously. Pangender falls under the non-binary and transgender umbrella terms.`,
 		number: 73
+	},
+	hijra: {
+		name: 'hijra',
+		category: [сategories.sexuality, сategories.sexuality],
+		description: [loremDescriptionText],
+		flagInfo: {
+			description: [''],
+			colors: [
+				{
+					color: '',
+					description: ''
+				},
+				{
+					color: '',
+					description: ''
+				}
+			]
+		},
+		linkOriginalWiki: '',
+		etymology: [''],
+		references: [
+			{
+				name: '',
+				link: '',
+				source: ''
+			}
+		],
+
+		brandColor: '#702282',
+		alternativeName: [''],
+		specifics: {
+			genders: [''],
+			attractedTo: [''],
+			attractionType: [''],
+			spectrumOrUmbrella: ['']
+		},
+		relatedTerms: {
+			differentFrom: [''],
+			associatedRomanticism: ['']
+		},
+
+		img: '',
+		shortDescription: ``,
+		number: 74
+	},
+	libragender: {
+		name: 'libragender',
+		category: [сategories.sexuality, сategories.sexuality],
+		description: [loremDescriptionText],
+		flagInfo: {
+			description: [''],
+			colors: [
+				{
+					color: '',
+					description: ''
+				},
+				{
+					color: '',
+					description: ''
+				}
+			]
+		},
+		linkOriginalWiki: '',
+		etymology: [''],
+		references: [
+			{
+				name: '',
+				link: '',
+				source: ''
+			}
+		],
+
+		brandColor: '#702282',
+		alternativeName: [''],
+		specifics: {
+			genders: [''],
+			attractedTo: [''],
+			attractionType: [''],
+			spectrumOrUmbrella: ['']
+		},
+		relatedTerms: {
+			differentFrom: [''],
+			associatedRomanticism: ['']
+		},
+
+		img: '',
+		shortDescription: ``,
+		number: 75
+	},
+	nominsexual: {
+		name: 'nominsexual',
+		category: [сategories.sexuality, сategories.sexuality],
+		description: [loremDescriptionText],
+		flagInfo: {
+			description: [''],
+			colors: [
+				{
+					color: '',
+					description: ''
+				},
+				{
+					color: '',
+					description: ''
+				}
+			]
+		},
+		linkOriginalWiki: '',
+		etymology: [''],
+		references: [
+			{
+				name: '',
+				link: '',
+				source: ''
+			}
+		],
+
+		brandColor: '#702282',
+		alternativeName: [''],
+		specifics: {
+			genders: [''],
+			attractedTo: [''],
+			attractionType: [''],
+			spectrumOrUmbrella: ['']
+		},
+		relatedTerms: {
+			differentFrom: [''],
+			associatedRomanticism: ['']
+		},
+
+		img: '',
+		shortDescription: ``,
+		number: 76
+	},
+	genderflux: {
+		name: 'genderflux',
+		category: [сategories.sexuality, сategories.sexuality],
+		description: [loremDescriptionText],
+		flagInfo: {
+			description: [''],
+			colors: [
+				{
+					color: '',
+					description: ''
+				},
+				{
+					color: '',
+					description: ''
+				}
+			]
+		},
+		linkOriginalWiki: '',
+		etymology: [''],
+		references: [
+			{
+				name: '',
+				link: '',
+				source: ''
+			}
+		],
+
+		brandColor: '#702282',
+		alternativeName: [''],
+		specifics: {
+			genders: [''],
+			attractedTo: [''],
+			attractionType: [''],
+			spectrumOrUmbrella: ['']
+		},
+		relatedTerms: {
+			differentFrom: [''],
+			associatedRomanticism: ['']
+		},
+
+		img: '',
+		shortDescription: ``,
+		number: 77
+	},
+	abrosexual: {
+		name: 'abrosexual',
+		category: [сategories.sexuality, сategories.sexuality],
+		description: [loremDescriptionText],
+		flagInfo: {
+			description: [''],
+			colors: [
+				{
+					color: '',
+					description: ''
+				},
+				{
+					color: '',
+					description: ''
+				}
+			]
+		},
+		linkOriginalWiki: '',
+		etymology: [''],
+		references: [
+			{
+				name: '',
+				link: '',
+				source: ''
+			}
+		],
+
+		brandColor: '#702282',
+		alternativeName: [''],
+		specifics: {
+			genders: [''],
+			attractedTo: [''],
+			attractionType: [''],
+			spectrumOrUmbrella: ['']
+		},
+		relatedTerms: {
+			differentFrom: [''],
+			associatedRomanticism: ['']
+		},
+
+		img: '',
+		shortDescription: ``,
+		number: 78
+	},
+	tranfen: {
+		name: 'tranfen',
+		category: [сategories.sexuality, сategories.sexuality],
+		description: [loremDescriptionText],
+		flagInfo: {
+			description: [''],
+			colors: [
+				{
+					color: '',
+					description: ''
+				},
+				{
+					color: '',
+					description: ''
+				}
+			]
+		},
+		linkOriginalWiki: '',
+		etymology: [''],
+		references: [
+			{
+				name: '',
+				link: '',
+				source: ''
+			}
+		],
+
+		brandColor: '#702282',
+		alternativeName: [''],
+		specifics: {
+			genders: [''],
+			attractedTo: [''],
+			attractionType: [''],
+			spectrumOrUmbrella: ['']
+		},
+		relatedTerms: {
+			differentFrom: [''],
+			associatedRomanticism: ['']
+		},
+
+		img: '',
+		shortDescription: ``,
+		number: 79
 	}
-	// woman: {
-	// 	name: 'woman',
-	// 	category: [сategories.sexuality, сategories.sexuality],
-	// 	description: [loremDescriptionText],
-	// flagInfo: {
-	//     description: [''],
-	//     colors: [{
-	//         color: '',
-	//         description: ''
-	//     }, {
-	//         color: '',
-	//         description: ''
-	//     }],
-	// },
-	// linkOriginalWiki: '', etymology: [''],
-	// references: [{
-	//     name: '',
-	//     link: '',
-	// source: ''
-	// }],
-	// main: {
-	//     ,
-	//
-	// },
-	// brandColor: '#702282',
-	// alternativeName: [''],
-	// specifics: {
-	//     genders: [''],
-	//     attractedTo: [''],
-	//     attractionType: [''],
-	//     spectrumOrUmbrella: ['']
-	// },
-	// relatedTerms: {
-	//     differentFrom: [''],
-	//     associatedRomanticism: ['']
-	// },
 };
 
 
