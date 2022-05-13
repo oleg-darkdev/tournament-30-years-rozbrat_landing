@@ -8,7 +8,6 @@ import Card, {
     Media,
     MediaContent,
 } from '@smui/card';
-import Button, { Label } from '@smui/button';
 import Chip, { Set, LeadingIcon, TrailingIcon, Text } from '@smui/chips';
 import { fly } from 'svelte/transition';
 import List from '@smui/list';
@@ -20,7 +19,8 @@ import References from './card/References.svelte';
 import RelatedTermsTable from './card/RelatedTermsTable.svelte';
 import SpecificsTable from './card/SpecificsTable.svelte';
 import ReactionsList from './ReactionsList.svelte';
-import ReactionIngridients from './ReactionIngridients.svelte'
+import ReactionIngridients from './ReactionIngridients.svelte';
+
 import trueReactions from '../../../../data/gamesApps/lgbt/reactions';
 
 let showSpecifics = false,
