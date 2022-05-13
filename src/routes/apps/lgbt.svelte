@@ -9,13 +9,14 @@
         MediaContent,
     } from '@smui/card';
 
-    import FlagCard from '../../../components/apps/lgbt/wikipedia/FlagCard.svelte';
-    import SmartyFlagList from '../../../components/apps/lgbt/wikipedia/SmartyFlagList.svelte'
+    import FlagCard from '../../components/apps/lgbt/wikipedia/FlagCard.svelte';
+    // import SmartyFlagList from '../../components/apps/lgbt/wikipedia/SmartyFlagList.svelte'
     // import TabPanel from '../../components/apps/lgbt/TabPanel.svelte';
-    import allflags from '../../../data/gamesApps/lgbt/arrayFlags.js';
-    import AlchimIngridients from '../../../components/apps/lgbt/wikipedia/AlchimIngridients.svelte';
+    import allflags from '../../data/gamesApps/lgbt/arrayFlags.js';
+    import AlchimIngridients from '../../components/apps/lgbt/wikipedia/AlchimIngridients.svelte';
 
     const lesbianFlags = allflags.lesbian,
+          bearFlags = allflags.bear,
           gayFirstPartFlags = allflags.gayFirstPart,
           gaySecondPartFlags = allflags.gaySecondPart, 
           bisexualFlags = allflags.bisexual;
@@ -28,23 +29,28 @@
     let branches = [
       {
         data: lesbianFlags,
-        name: '',
-        img: `https://images.vispronet.com/gilbert-baker2.jpg`,
+        name: 'Lesbian',
+        img: `https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/main__menu/lesbian.png`,
       },
-            {
+      {
         data: gayFirstPartFlags,
         name: '',
-        img: `https://images.vispronet.com/Bisexual-01-Main2.jpg`,
+        img: `https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/main__menu/gay_1.png`,
       },
-            {
-        data: gaySecondPartFlags,
-        name: '',
-        img: `https://images.vispronet.com/bear73.jpg`,
+      // {
+      //   data: gaySecondPartFlags,
+      //   name: 'Bear',
+      //   img: `https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/main__menu/bear.png`,
+      // },
+      {
+        data: bearFlags,
+        name: 'Bear',
+        img: `https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/main__menu/bear.png`,
       },
-            {
+      {
         data: bisexualFlags,
-        name: '',
-        img: `https://images.vispronet.com/Bisexual-01-Main2.jpg`,
+        name: 'Bisexual',
+        img: `https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/main__menu/bisexual.png`,
       }
 
     ]
@@ -54,7 +60,7 @@
  
    <Paper style="width: auto; width: 90%; margin: 15px 20%; max-width: 1200px; background-color: {brandColor};" class="paper-demo">
       <Title style="color: #fff; font: 26px 'grafitty';">LGBTQ+ Wikipedia</Title>
-      <Content>
+      <Content style="display: flex; align-items: center;">
         <div class="branches-wrap" style="{showWikipedia ? 'display: none': ''}">
           {#each branches as branch}
           <Card style="width: 300px; margin: 5px;" on:click={() => {
@@ -102,15 +108,16 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 700px;
     height: auto;
   }
   .flags {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    /* max-width: 700px; */
     min-width: 350px;
     margin: 0;
     padding: 0;
