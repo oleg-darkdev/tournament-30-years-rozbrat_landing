@@ -14,6 +14,8 @@
 
 	let selectFirstIngridient = false,
 		selectSecondIngridient = false,
+		showFirstIngridient = true,
+		showSecondIngridient = true,
 		hideMixedBtn = false,
         noReactionMsg = false;
 
@@ -53,54 +55,69 @@
 	export let wikipediaData;
 </script>
 
+<div style="display: flex; justify-content: center; align-items: center; width: 100%;">
 <Card style="width: 340px; margin: 0 0 25px 0; max-height: 600px;">
-	<Content style="padding: 25;">
+	<Content style="padding: 25; ">
 		<div style=" display: flex; flex-direction: row; overflow-y: auto; max-height: 280px; ">
 			{#if !resultReaction[0].img}
-			<Card
-				style=" width: 140px; height: 70px; margin: 0 25px 0 0;"
-				on:click={() => {
-					selectFirstIngridient = true;
-					selectSecondIngridient = false;
-					hideMixedBtn = true;
-				}}
-			>
-				<Media
-					class="card-media-16x9"
-					style="background-image: url({firstIngridient ? firstIngridient.img : ''});"
-					aspectRatio="16x9"
-				/>
-			</Card>
-			{#if selectFirstIngridient}
-				<SelectIngridient
-					{wikipediaData}
-					bind:selectedIngridient={firstIngridient}
-					bind:showIngridientsList={selectFirstIngridient}
-					bind:hideMixedBtn
-				/>
-			{/if}
-			<Card
-				style=" width: 140px; height: 70px; margin: 0 25px 0 0;"
-				on:click={() => {
-					selectFirstIngridient = false;
-					selectSecondIngridient = true;
-					hideMixedBtn = true;
-				}}
-			>
-				<Media
-					class="card-media-16x9"
-					style="background-image: url({secondIngridient ? secondIngridient.img : ''});"
-					aspectRatio="16x9"
-				/>
-			</Card>
-			{#if selectSecondIngridient}
-				<SelectIngridient
-					{wikipediaData}
-					bind:selectedIngridient={secondIngridient}
-					bind:showIngridientsList={selectSecondIngridient}
-					bind:hideMixedBtn
-				/>
-			{/if}
+				{#if showFirstIngridient}
+				<Card
+					style=" width: 140px; height: 70px; margin: 0 25px 0 0;"
+					on:click={() => {
+						selectFirstIngridient = true;
+						selectSecondIngridient = false;
+						hideMixedBtn = true;
+						showSecondIngridient = false;
+						showFirstIngridient = false;
+					}}
+				>
+					<Media
+						class="card-media-16x9"
+						style="background-image: url({firstIngridient ? firstIngridient.img : ''});"
+						aspectRatio="16x9"
+					/>
+				</Card>
+				{/if}
+					{#if selectFirstIngridient}
+						<SelectIngridient
+							{wikipediaData}
+							bind:selectedIngridient={firstIngridient}
+							bind:showIngridientsList={selectFirstIngridient}
+							bind:hideMixedBtn
+							bind:showSecondIngridient
+							bind:showFirstIngridient 
+						/>
+					{/if}
+					
+				{#if showSecondIngridient}
+					<Card
+						style=" width: 140px; height: 70px; margin: 0 25px 0 0;"
+						on:click={() => {
+							selectFirstIngridient = false;
+							selectSecondIngridient = true;
+							hideMixedBtn = true;
+							showSecondIngridient = false;
+							showFirstIngridient = false;
+						}}
+					>
+						<Media
+							class="card-media-16x9"
+							style="background-image: url({secondIngridient ? secondIngridient.img : ''});"
+							aspectRatio="16x9"
+						/>
+					</Card>
+					{/if}
+						{#if selectSecondIngridient}
+							<SelectIngridient
+								{wikipediaData}
+								bind:selectedIngridient={secondIngridient}
+								bind:showIngridientsList={selectSecondIngridient}
+								bind:hideMixedBtn
+								bind:showSecondIngridient
+								bind:showFirstIngridient
+							/>
+						{/if}
+					
 			{/if}
 		</div>
 		{#if !hideMixedBtn && !resultReaction[0].img}
@@ -133,4 +150,4 @@
 		{/if}
 	</Content>
 </Card>
-
+ </div>
