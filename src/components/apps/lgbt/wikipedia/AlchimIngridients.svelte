@@ -25,36 +25,38 @@
 		};
 
 	let sortArr = [],
-        resultReaction = [],
+        resultReaction = [{}, {}, {img: ''}],
         temp = [];
 
 	function findFirstIngridient() {
 		trueReactions.forEach((reactionArrayForFirstElement, ind) => {
-			temp = reactionArrayForFirstElement.filter(function (e) {
-				return e.number == firstIngridient.number;
-			});
-			if (temp.length > 0) sortArr.push(reactionArrayForFirstElement);
+			if (reactionArrayForFirstElement[0].number == firstIngridient.number) {
+				return sortArr.push(reactionArrayForFirstElement)
+			} 
+			if (reactionArrayForFirstElement[1].number == firstIngridient.number) {
+				return sortArr.push(reactionArrayForFirstElement)
+			}
 		});
 	}
 
 	function findSecondIngridient() {
-        sortArr.forEach((reactionArrayForSecondElement, ind) => {
-            temp = reactionArrayForSecondElement.filter(function (e) {
-                if (e.number == secondIngridient.number) {
-                    return resultReaction = reactionArrayForSecondElement}
-                else {
-                    return noReactionMsg = true;}
-            });
-        });
-	}
+        sortArr.forEach((reactionArrayForSecondElement) => {
+			if (reactionArrayForSecondElement[0].number == firstIngridient.number && reactionArrayForSecondElement[1].number == secondIngridient.number) {
+				return resultReaction = reactionArrayForSecondElement
+			} 
+			else {
+				return noReactionMsg = true;
+            }
+		})
+	};
 
-	export let flags;
+	export let wikipediaData;
 </script>
 
 <Card style="width: 340px; margin: 0 0 25px 0; max-height: 600px;">
 	<Content style="padding: 25;">
 		<div style=" display: flex; flex-direction: row; overflow-y: auto; max-height: 280px; ">
-
+			{#if !resultReaction[0].img}
 			<Card
 				style=" width: 140px; height: 70px; margin: 0 25px 0 0;"
 				on:click={() => {
@@ -71,7 +73,7 @@
 			</Card>
 			{#if selectFirstIngridient}
 				<SelectIngridient
-					{flags}
+					{wikipediaData}
 					bind:selectedIngridient={firstIngridient}
 					bind:showIngridientsList={selectFirstIngridient}
 					bind:hideMixedBtn
@@ -93,14 +95,15 @@
 			</Card>
 			{#if selectSecondIngridient}
 				<SelectIngridient
-					{flags}
+					{wikipediaData}
 					bind:selectedIngridient={secondIngridient}
 					bind:showIngridientsList={selectSecondIngridient}
 					bind:hideMixedBtn
 				/>
 			{/if}
+			{/if}
 		</div>
-		{#if !hideMixedBtn}
+		{#if !hideMixedBtn && !resultReaction[0].img}
 			<Card
 				on:click={() => {
 					if (firstIngridient.number && secondIngridient.number) {
@@ -111,6 +114,22 @@
 				}}
 				style="width: 300px; margin: 15px 0 10px 0; background-image: url(https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/bg_btn_hint.png);height: 85px; "
 			/>
+		{/if}
+
+		{#if resultReaction[0].img}
+			<Card style=" width: 300px;  margin: 0  0 25px 0;">
+				<Media class="card-media-16x9" style="background-image: url({resultReaction[2].img});" aspectRatio="16x9" />
+				<Actions fullBleed>
+					<Button on:click={() => {
+						resultReaction = [{}, {}, {img: ''}];
+						firstIngridient = '';
+						secondIngridient = '';
+					}}>
+					<Label>Сontinued</Label>
+					<i class="material-icons" aria-hidden="true">arrow_forward</i>
+					</Button>
+				</Actions>
+			</Card>
 		{/if}
 	</Content>
 </Card>
