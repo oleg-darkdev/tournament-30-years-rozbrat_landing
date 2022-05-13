@@ -18,6 +18,7 @@ import Recommendations from '../../components/gamePage/Recommendations.svelte';
 
 
 import gamesList from '../../data/gamesData';
+
 let game = gamesList[$page.params.game];
 let data = [
     {
