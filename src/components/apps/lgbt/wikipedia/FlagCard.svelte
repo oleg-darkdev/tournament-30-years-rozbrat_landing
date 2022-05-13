@@ -48,7 +48,7 @@ export let flag;
 </script>
 
 
-<Card style="width: 340px; margin: 0 0 15px 0;">
+<Card style="width: 340px; margin: 10px;">
     <PrimaryAction on:click={() => showFullInfo = !showFullInfo} >
         <div style="padding: 1rem;">
             <h2 class="mdc-typography--headline6" style="margin: 0;">
