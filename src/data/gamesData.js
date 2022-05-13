@@ -20,6 +20,7 @@ function getGames(gamesCategory) {
 	return arrayTemp;
 }
 
+
 let allGamesList = {
 	categories: {
 		civicActivism: civicActivismGames,
