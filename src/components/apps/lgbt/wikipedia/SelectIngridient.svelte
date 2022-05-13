@@ -1,6 +1,6 @@
 <script>
 	import List, { Item, Graphic, Meta, Text, PrimaryText, SecondaryText } from '@smui/list';
-	export let flags;
+	export let wikipediaData;
     export let selectedIngridient;
     export let showIngridientsList;
     export let hideMixedBtn;
@@ -14,7 +14,7 @@
 	avatarList
 	singleSelection
 >
-	{#each flags as flag}
+	{#each wikipediaData as flag}
 		<Item style="margin: 0 10px 0 0; height: 70px; padding: 0; "
 			on:SMUI:action={() => {
                 selectedIngridient = flag;
