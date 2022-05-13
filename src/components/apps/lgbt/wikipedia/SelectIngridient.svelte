@@ -4,11 +4,13 @@
     export let selectedIngridient;
     export let showIngridientsList;
     export let hideMixedBtn;
+	export let showSecondIngridient;
+	export let showFirstIngridient;
 </script>
 
 
 <List
-	style="width: auto;"
+	style="width: 100%; height: 560px; "
 	class="demo-list"
 	twoLine
 	avatarList
@@ -20,7 +22,8 @@
                 selectedIngridient = flag;
                 showIngridientsList = false;
                 hideMixedBtn = false;
-                // console.log(selectedIngridient)
+				showSecondIngridient = true;
+				showFirstIngridient = true;
             }}>
 			<div class="flag-promo" style="background-image: url({flag.img});" />
 			<Text>
