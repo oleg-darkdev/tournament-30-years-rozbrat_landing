@@ -9,11 +9,11 @@
         MediaContent,
     } from '@smui/card';
 
-    import FlagCard from '../../components/apps/lgbt/wikipedia/FlagCard.svelte';
-    // import SmartyFlagList from '../../components/apps/lgbt/wikipedia/SmartyFlagList.svelte'
+    import FlagCard from '../../components/apps/lgbt/FlagCard.svelte';
+    // import SmartyFlagList from '../../components/apps/lgbt/SmartyFlagList.svelte'
     // import TabPanel from '../../components/apps/lgbt/TabPanel.svelte';
     import allflags from '../../data/gamesApps/lgbt/arrayFlags.js';
-    import AlchimIngridients from '../../components/apps/lgbt/wikipedia/AlchimIngridients.svelte';
+    import AlchimIngridients from '../../components/apps/lgbt/alchimicReaction/AlchimIngridients.svelte';
 
     const lesbianFlags = allflags.lesbian,
           bearFlags = allflags.bear,
