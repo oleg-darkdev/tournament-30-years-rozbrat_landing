@@ -10,6 +10,7 @@
 	} from '@smui/card';
 	import Button, { Label } from '@smui/button';
 	import SelectIngridient from './SelectIngridient.svelte';
+	import ReactionMsg from './ReactionMsg.svelte';
 	import trueReactions from '../../../../data/gamesApps/lgbt/reactions';
 
 	let selectFirstIngridient = false,
@@ -18,6 +19,9 @@
 		showSecondIngridient = true,
 		hideMixedBtn = false,
         noReactionMsg = false;
+
+	let showMsgMenu = false,
+		msgText = '';
 
 	let firstIngridient = {
 			number: 0
@@ -52,6 +56,10 @@
 		})
 	};
 
+	function MsgMenu(text) {
+		msgText = text;
+		showMsgMenu = true;
+	}
 	export let wikipediaData;
 </script>
 
@@ -59,7 +67,7 @@
 <Card style="width: 340px; margin: 0 0 25px 0; max-height: 600px;">
 	<Content style="padding: 25; ">
 		<div style=" display: flex; flex-direction: row; overflow-y: auto; max-height: 280px; ">
-			{#if !resultReaction[0].img}
+			{#if !resultReaction[0].img && !showMsgMenu}
 				{#if showFirstIngridient}
 				<Card
 					style=" width: 140px; height: 70px; margin: 0 25px 0 0;"
@@ -73,7 +81,7 @@
 				>
 					<Media
 						class="card-media-16x9"
-						style="background-image: url({firstIngridient ? firstIngridient.img : ''});"
+						style="background-image: url({firstIngridient.img ? firstIngridient.img : 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/ingridient.png'});"
 						aspectRatio="16x9"
 					/>
 				</Card>
@@ -102,7 +110,7 @@
 					>
 						<Media
 							class="card-media-16x9"
-							style="background-image: url({secondIngridient ? secondIngridient.img : ''});"
+							style="background-image: url({secondIngridient.img ? secondIngridient.img : 'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/ingridient.png'});"
 							aspectRatio="16x9"
 						/>
 					</Card>
@@ -121,25 +129,43 @@
 			{/if}
 		</div>
 		{#if !hideMixedBtn && !resultReaction[0].img}
+			{#if showMsgMenu}
+				<ReactionMsg bind:msgText bind:showMsgMenu/>
+			{/if}
 			<Card
 				on:click={() => {
 					if (firstIngridient.number && secondIngridient.number) {
                         sortArr = [], temp = [];
 						findFirstIngridient();
 						findSecondIngridient();
+					} 
+					if (!firstIngridient.number) {
+						MsgMenu('First Ingridient');
 					}
+					if (!secondIngridient.number) {
+						MsgMenu('Second Ingridient');
+					}					
+					if (!secondIngridient.number && !firstIngridient.number) {
+						MsgMenu('Second && First Ingridient');
+					}
+					if (noReactionMsg) {
+						MsgMenu('No reaction');
+					}
+					
 				}}
 				style="width: 300px; margin: 15px 0 10px 0; background-image: url(https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/apps/lgbt/bg_btn_hint.png);height: 85px; "
 			/>
 		{/if}
 
 		{#if resultReaction[0].img}
+		
 			<Card style=" width: 300px;  margin: 0  0 25px 0;">
 				<Media class="card-media-16x9" style="background-image: url({resultReaction[2].img});" aspectRatio="16x9" />
 				<Actions fullBleed>
 					<Button on:click={() => {
 						resultReaction = [{}, {}, {img: ''}];
 						firstIngridient = '';
+						showMsgMenu = false;
 						secondIngridient = '';
 					}}>
 					<Label>Сontinued</Label>

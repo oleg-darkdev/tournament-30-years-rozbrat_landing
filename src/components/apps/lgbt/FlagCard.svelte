@@ -12,16 +12,16 @@ import Chip, { Set, LeadingIcon, TrailingIcon, Text } from '@smui/chips';
 import { fly } from 'svelte/transition';
 import List from '@smui/list';
 
-import ListRow from './card/ListRow.svelte';
-import FlagColors from './card/FlagColors.svelte';
-import Etymology from './card/Etymology.svelte';
-import References from './card/References.svelte';
-import RelatedTermsTable from './card/RelatedTermsTable.svelte';
-import SpecificsTable from './card/SpecificsTable.svelte';
-import ReactionsList from './ReactionsList.svelte';
-import ReactionIngridients from './ReactionIngridients.svelte';
+import ListRow from './flagCard/ListRow.svelte';
+import FlagColors from './flagCard/FlagColors.svelte';
+import Etymology from './flagCard/Etymology.svelte';
+import References from './flagCard/References.svelte';
+import RelatedTermsTable from './flagCard/RelatedTermsTable.svelte';
+import SpecificsTable from './flagCard/SpecificsTable.svelte';
+import ReactionsList from './flagCard/ReactionsList.svelte';
+import ReactionIngridients from './flagCard/ReactionIngridients.svelte';
 
-import trueReactions from '../../../../data/gamesApps/lgbt/reactions';
+import trueReactions from '../../../data/gamesApps/lgbt/reactions';
 
 let showSpecifics = false,
     showRelatedTerms = false, 
@@ -117,19 +117,4 @@ export let flag;
             </Card>
         {/if}
     </Content>
-    <!-- <Actions fullBleed>
-        <Button on:click={() => showFullInfo = !showFullInfo}>
-        <Label>{showFullInfo ? 'Hide element': 'Show element'} </Label>
-        <i class="material-icons" aria-hidden="true">{showFullInfo ? 'arrow_back':'arrow_forward'}</i>
-        </Button>
-    </Actions> -->
-    </Card>
-
-
-    <style>
-        .d {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-    </style>
+</Card>
