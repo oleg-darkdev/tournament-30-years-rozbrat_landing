@@ -1,6 +1,3 @@
-import GameClass from './template'
+import EN from './kanbanel/EN';
 
-
-let game = new GameClass();
-
-export default game;
+export default EN;

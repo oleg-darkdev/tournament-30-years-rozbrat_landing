@@ -29,10 +29,16 @@ min-width: 300px; для мелких карточек сделать!
  gulagUSSr
  gulagRussia
  linux
- kanbanel
+ kanbanel - 
  spyral game
  FNB
  ROR
  Squat
  tattoo
  wikileaks
+
+
+Софт для игр:
+ * kanbanel - выбор из различных сценариев + их реализация
+ * a_game - полный список литературы + поиск + добавление в финальный список
+ * wtb - генерация занятых квадратов

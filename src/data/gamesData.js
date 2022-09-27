@@ -63,7 +63,7 @@ let allGamesList = {
 	// tattoo:  artGames.tattoo ,
 
 	// itGames
-	// kanbanel:  itGames.kanbanel ,
+	kanbanel:  itGames.kanbanel,
 	linux:  itGames.linux,
 
 };
