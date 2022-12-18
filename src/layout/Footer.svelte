@@ -1,6 +1,8 @@
 <script>
-import Line from '../components/footer/Line.svelte';
-import PolicyMenu from '../components/footer/PolicyMenu.svelte';
+// import Line from '../components/footer/Line.svelte';
+// import PolicyMenu from '../components/footer/PolicyMenu.svelte';
+
+
 // import Paper, {Title, Subtitle, Content} from '@smui/paper/dist';
 import gamesData from '../data/gamesData';
 import SvgLine from "./BlackSvgLine.svelte";
@@ -104,9 +106,9 @@ termsOfService;
     </ImageList>
 </div>
 </div> -->
-   <PolicyMenu bind:merchPolicy  bind:refundPolicy bind:shippingPolicy bind:privacyPolicy bind:termsOfService/>
+   <!-- <PolicyMenu bind:merchPolicy  bind:refundPolicy bind:shippingPolicy bind:privacyPolicy bind:termsOfService/>
 
-	<Line bind:merchPolicy  bind:refundPolicy bind:shippingPolicy bind:privacyPolicy bind:termsOfService/>
+	<Line bind:merchPolicy  bind:refundPolicy bind:shippingPolicy bind:privacyPolicy bind:termsOfService/> -->
 </footer>
 
 <style>
