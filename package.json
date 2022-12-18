@@ -2,7 +2,7 @@
   "name": "dd",
   "version": "0.0.1",
   "scripts": {
-    "start": "node my-output-directory",
+    "start": "node production",
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
