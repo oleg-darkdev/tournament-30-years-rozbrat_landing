@@ -1,7 +1,9 @@
+/production
 .DS_Store
 node_modules
 /build
 /.svelte-kit
+/production
 /package
 .env
 .env.*

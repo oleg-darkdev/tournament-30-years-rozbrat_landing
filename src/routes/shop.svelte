@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
    import Card, {
     Content,
     PrimaryAction,
@@ -18,46 +18,7 @@ import Banner from '../layout/BannerSection.svelte'
 
   let choices = ['Political', 'Historical', 'Economical', 'Strategic', 'IT', 'Office', 'Management', 'Art',];
   let selected = [];
-
-  // let allGamesList = [].concat(
-  //   gamesList.politicalGames,
-  //   gamesList.historicalGames,
-  //   gamesList.economicalGames,
-  //   gamesList.strategicGames,
-  //   gamesList.iTGames,
-  //   gamesList.officeGames,
-  //   gamesList.managementGames,
-  //   gamesList.artGames
-  // )
-
-// function concatFilteredGames (selectedCattegory) {
-//   let filtredArray = [''];
-//   if (selectedCattegory == 'Political') {
-//         console.log(gamesList.politicalGames)
-//         filtredArray.concat(gamesList.politicalGames)
-//       }
-
-
-//       return filtredArray;
-// }
 function getGames(gamesCattegories) {
-    // gamesCattegories
-  // gamesCattegories.filter(concatFilteredGames)
-
-    // gamesCattegories.filter((selectedCattegory) => {
-
-    //   if (selectedCattegory == 'Political') {
-    //     console.log(gamesList.politicalGames)
-    //     filtredArray.concat(gamesList.politicalGames)
-    //   }
-    //   if (selectedCattegory =='Art') filtredArray.concat(gamesList.artGames)
-    //   if (selectedCattegory =='Historical') filtredArray.concat(gamesList.historicalGames)
-    //       console.log(selectedCattegory)
-    //       console.log(filtredArray)
-
-    // })
-    // return filtredArray
-    // gamesCatalog
 		return gamesList.politicalGames
 	}
 	
@@ -65,12 +26,9 @@ function getGames(gamesCattegories) {
    $: filtredGames = getGames(selected);
 
 let gamesStep = 3;
-// console.log(allGamesList)
-</script>
-<!-- promo: {
-    name: "Graffity culture",  -->
 
-    <!-- <Filters /> -->
+</script>
+
 <BlackFaq title="Our board games. Use cattegory filtering 👇"  >
   <div class="games-promo-wrap">
 
@@ -110,18 +68,8 @@ let gamesStep = 3;
 justify-content: center;
 flex-direction: row;
 width: 90%;
-/* 
-border: solid 2px #000;
-border-radius: 4px; */
 }
 
 
-.games-promo-wrap {
-  display: flex;
-justify-content: center;
-flex-direction: row;
-flex-wrap: wrap;
-}
 
-
-</style>
+</style> -->

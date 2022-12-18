@@ -1,200 +1,218 @@
-
 <script>
-  import Card, {
-    Content,
-    PrimaryAction,
-    Media,
-    MediaContent,
-    Actions,
-    ActionButtons,
-    ActionIcons,
-  } from '@smui/card';
-  import Button, { Label } from '@smui/button';
-  import IconButton, { Icon } from '@smui/icon-button';
+import Paper, {Title, Subtitle, Content} from '@smui/paper/dist';
+import Carousel from '../components/landingPage/Carousel.svelte';
+import CarouselBg from '../components/landingPage/CarouselBg.svelte';
 
+import Menu from '../components/landingPage/MainMenu.svelte';
+import GameMenu from '../components/landingPage/GameMenu.svelte';
+import AnimationLeftWrap from '../layout/AnimationLeftWrap.svelte';
+import AnimationRightWrap from '../layout/AnimationRightWrap.svelte';
 
+import SocialPanel from '../layout/SocialPanel.svelte';
 
-  let workshopsCatalog = [
-    {
-      name: 'Workshop 1',
-      description: 'A Game of Woodland Might and Right',
-      link: '',
-      img: 'https://cdn.shopify.com/s/files/1/0106/0162/7706/files/box-root_360x.jpg?v=1596378293',
-      id: ''
-    },
-    {
-      name: 'Workshop 2',
-      description: 'A Game of Woodland Might and Right',
-      link: '',
-      img: 'https://cdn.shopify.com/s/files/1/0106/0162/7706/files/box-oath_360x.jpg?v=1596378306',
-      id: ''
-    },
-    {
-      name: 'Workshop 3',
-      description: 'A Game of Woodland Might and Right',
-      link: '',
-      img: 'https://cdn.shopify.com/s/files/1/0106/0162/7706/files/ledergames-fort_360x.jpg?v=1596378316',
-      id: ''
-    },
-    {
-      name: 'Workshop 4',
-      description: 'A Game of Woodland Might and Right',
-      link: '',
-      img: 'https://cdn.shopify.com/s/files/1/0106/0162/7706/files/box-vast-tmm_360x.jpg?v=1596378327',
-      id: ''
-    },
-  ];
+import gamesData from '../data/gamesData';
+const games = [
+    {path:  gamesData.graffity.promo.promo, id: gamesData.graffity.promo.serial, link: gamesData.graffity.promo.id},
+    {path:  gamesData.a.promo.promo, id: gamesData.a.promo.serial, link: gamesData.a.promo.id},
+    {path:  gamesData.lgbt.promo.promo, id: gamesData.lgbt.promo.serial, link: gamesData.lgbt.promo.id},
+    {path:  gamesData.covid.promo.promo, id: gamesData.covid.promo.serial, link: gamesData.covid.promo.id},
+    {path:  gamesData.ksg.promo.promo, id: gamesData.ksg.promo.serial, link: gamesData.ksg.promo.id},
+    {path:  gamesData.linux.promo.promo, id: gamesData.linux.promo.serial, link: gamesData.linux.promo.id},
+    {path:  gamesData.gulagUSSR.promo.promo, id: gamesData.gulagUSSR.promo.serial, link: gamesData.gulagUSSR.promo.id},
+    {path:  gamesData.fnb.promo.promo, id: gamesData.fnb.promo.serial, link: gamesData.fnb.promo.id},
+    {path:  gamesData.ror.promo.promo, id: gamesData.ror.promo.serial, link: gamesData.ror.promo.id},
+    // {path:  gamesData.fnb.promo.promo, id: gamesData.fnb.promo.serial, link: gamesData.graffity.promo.id},
+    // {path:  gamesData.fnb.promo.promo, id: gamesData.fnb.promo.serial, link: gamesData.graffity.promo.id},
+    // {path:  gamesData.fnb.promo.promo, id: gamesData.fnb.promo.serial, link: gamesData.graffity.promo.id},
+    // {path:  gamesData.fnb.promo.promo, id: gamesData.fnb.promo.serial, link: gamesData.graffity.promo.id},
+    // {path:  gamesData.fnb.promo.promo, id: gamesData.fnb.promo.serial, link: gamesData.graffity.promo.id},
+	
+	];
 
+const bgImages = [
+		{path: '/img/bg/boardgames.png', id: '101'},
+		{path: '/img/bg/workshops.png', id: '102'},
+		{path: '/img/bg/handmade.png', id: '103'},
+		{path: '/img/bg/faq.png', id: '104'},
+		{path: '/img/bg/boardgames.png', id: '105'},
+		// {path: '/img/bg/workshops.png', id: '106'},
+		// {path: '/img/bg/workshops.png', id: '107'},
+		// {path: '', id: '108'},
+		// {path: '', id: '109'},
+		// {path: '', id: '110'},
+		// {path: '', id: '111'},
+		// {path: '', id: '112'},
+		// {path: '', id: '113'},
+		// {path: '', id: '114'},
+		// {path: '', id: '115'},
+		// {path: '', id: '116'},
+		// {path: '', id: '117'},
+		// {path: '', id: '118'},
+		// {path: '', id: '119'},
+		// {path: '', id: '120'},
+	]
 
-
-let shop = false,
-faq = false,
-about = false,
-support = false,
-workshops = false;
-
-let getStarted = false,
-firstMenu = [
-  {
-    text: 'shop',
-    variable: shop,
-    link: 'shop',
-    emoji: '🛒'
-  },
-    {
-    text: 'FAQs',
-    variable: faq,
-    link: 'faq',
-    emoji: '⁉️'
-  },
-      {
-    text: 'Support',
-    variable: support,
-    link: 'support',
-    emoji: '🖤'
-  },
-  //     {
-  //   text: 'workshops',
-  //   variable: workshops,
-  //   link: 'workshops',
-  //   emoji: '🎲'
-  // },
-  // {
-  //   text: 'about',
-  //   variable: about,
-  //   link: 'about',
-  //   emoji: 'ℹ️'
-  // }
-
-]
 </script>
+
+<svelte:head>
+    <title>DarkDev Games</title>
+</svelte:head>
+    <!-- <div class="video-bg">
+    <video src="img/social.mp4" type="video/mp4" autoplay muted loop></video>
+    <div class="effects"></div>
+    <div class="video-bg__content">
+            
+        </div>
+    </div> -->
+    <!-- <div style="height: 100vh; width: 100%;">
+    <CarouselBg 
+        {bgImages}
+        controlColor={'white'}
+        controlScale={0.8}
+        autoplay={true}
+        autoplaySpeed={3000}
+    />
+    </div> -->
+
+
+<!-- <div class="wrap-game-block" style="height: 230px; z-index: 0; background-image: url('img/bg/first_bg.png');  margin-top: 0px; ">
+ 
+</div>    -->
+<!-- 640px -->
+      <div style="height: 700px; width: 100%; z-index: 0;">
+          <CarouselBg 
+        {bgImages}
+        controlColor={'white'}
+        controlScale={0.8}
+        autoplay={true}
+        autoplaySpeed={3000}/>
+    </div>
+
+<div class="index-menu" style=" ">
+    <section style="min-width: 430px;  max-width:760px; width: auto; margin: 0; ">
+        <div class="tur-bg" >
+            <Menu />
+        </div>
+    </section>
+</div>   
+
+<div class="wrap-game-block" style=" height: auto; width; 100%; margin-top: -60px; background-color: #47babb;">
+                                                            <!-- position: absolute; top: 20px; left: 37%; z-index: 1; -->
+
+    <Paper style="width: auto; width: 100%; margin: 0; max-width: 1960px; background-color: #191B1B; margin-left: -15px;">
+      <Title style="color: #fff; font: 26px 'grafitty';">My Boardgames</Title>
+      <Content style="">
+        <Carousel 
+        {games}
+        controlColor={'white'}
+        controlScale={0.8}
+        autoplay={true}
+        autoplaySpeed={3000}
+    />
+
+      </Content>
+    </Paper>
+</div>    
+
+
+
+
+<AnimationRightWrap backgroundImg={gamesData.covid.promo.landingBanner}>
+    <GameMenu gameData={gamesData.covid}/>
+</AnimationRightWrap>
+<AnimationLeftWrap backgroundImg={gamesData.a.promo.landingBanner}>
+    <GameMenu gameData={gamesData.a}/>
+</AnimationLeftWrap>
+
+
+<AnimationRightWrap backgroundImg={gamesData.graffity.promo.landingBanner}>
+    <GameMenu gameData={gamesData.graffity}/>
+</AnimationRightWrap>
+<AnimationLeftWrap backgroundImg={gamesData.linux.promo.landingBanner}>
+    <GameMenu gameData={gamesData.linux}/>
+</AnimationLeftWrap>
+
+
+<AnimationRightWrap backgroundImg={gamesData.ksg.promo.landingBanner}>
+    <GameMenu gameData={gamesData.ksg}/>
+</AnimationRightWrap>
+<AnimationLeftWrap backgroundImg={gamesData.lgbt.promo.landingBanner}>
+    <GameMenu gameData={gamesData.lgbt}/>
+</AnimationLeftWrap>
+
+
+<AnimationRightWrap backgroundImg={gamesData.fnb.promo.landingBanner}>
+    <GameMenu gameData={gamesData.fnb}/>
+</AnimationRightWrap>
+<AnimationLeftWrap backgroundImg={gamesData.ror.promo.landingBanner}>
+    <GameMenu gameData={gamesData.ror}/>
+</AnimationLeftWrap>
+
+
+<AnimationRightWrap backgroundImg={gamesData.squat.promo.landingBanner}>
+    <GameMenu gameData={gamesData.squat}/>
+</AnimationRightWrap>
+<!-- <AnimationLeftWrap backgroundImg={gamesData.lgbt.promo.landingBanner}>
+    <GameMenu gameData={gamesData.lgbt}/>
+</AnimationLeftWrap> -->
+
+<AnimationRightWrap backgroundImg={gamesData.gulagUSSR.promo.landingBanner}>
+    <GameMenu gameData={gamesData.gulagUSSR}/>
+</AnimationRightWrap>
+<!-- <AnimationLeftWrap backgroundImg={gamesData.gulagUSSR.promo.landingBanner}>
+    <GameMenu gameData={gamesData.gulagUSSR}/>
+</AnimationLeftWrap> -->
+
+
+
+
 
 
 <style>
-@font-face {
-    font-family: 'grafitty';
-    src: url('grafitty.otf');
+.video-bg {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
-/* https://www.fontspace.com/amanzing-grafiti-font-f47454
-https://www.fontspace.com/whoa-font-f6273 */
-
-
-* :global(a) {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-  text-decoration: none;
+.video-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
-
-.tur-bg {
-width: 100%;
-height: 1000px;
-background-color: #47babb;
-display: flex;
-justify-content: center;
-/* flex-direction: column; */
-}
-
-.games-promo-wrap {
-  display: flex;
-justify-content: center;
-flex-direction: row;
-}
-
-.btns {
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-justify-content: space-between;
-margin-left:35px;
+/* .effects {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+} */
+.video-bg__content {
+    z-index:999;
+    color: #ffffff;
+    font-size: 50px;
 }
 
-* :global(.hidden) {
-	display: none;
+
+.index-menu {
+    display: flex; 
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    margin-top: -340px;
+    z-index: 9999;  
+    position: relative;
+    /* background-image: url('img/bg/first_bg.png'); z-index: 0; */
 }
 
 </style>
-
-<svelte:head>
-  <title>DarkDev Games</title>
-</svelte:head>
-
-
-<section style="max-width: 760px; width: 760px; margin: 0px 0 -45px 0; ">
-<div class="tur-bg" >
-  <Card style='width: 380px; margin-top: 25px; height: 550px; background-color: #000000;'>
-    <PrimaryAction >
-      {#if !getStarted}
-        <Media  style='background-image: url("img/glad_to_see_you.png");  height: 450px; width: 100%;' ></Media>
-      {/if}
-      <Content class="mdc-typography--body2" style="display: flex;
-      align-items: center; background-color: #050506; flex-direction: column;
-      ">
-      {#if !getStarted}
-      <Card style='width: 250px;  height: 80px; margin-bottom: 15px;'>
-      <PrimaryAction style="display: flex;      align-items: center; " on:click={() => getStarted = !getStarted} padded>
-        <span style="font: 35px 'grafitty';">Get started</span>
-      </PrimaryAction>
-      </Card> 
-   
-      {:else}
-      {#each firstMenu as menuItem}
-     <Card style='width: 300px;  height: 90px; margin-bottom: 10px;'>
-      <PrimaryAction style="display: flex;      align-items: center; " on:click={() => {
-        
-        menuItem.variable = !menuItem.variable;
-        // console.log(menuItem.variable )
-      }} padded>
-        <a rel=prefetch href={menuItem.link}><span style="font: 40px 'grafitty';">{menuItem.text} {menuItem.emoji}</span> </a>
-      </PrimaryAction>
-
-  
-     
-      </Card> 
-      {/each}
-      {/if}
-          </Content>
-    </PrimaryAction>
-  </Card>
-
-  <!-- <SocialPanel style="" title=''/> -->
-   <!-- -->
-</div>
-</section>
-
-<!-- 
-
-
-    {#each workshopsCatalog as workshop}
-    <Card style="width: 340px; background-color: #050506; margin: 10px;">
-      <PrimaryAction on:click={() => console.log('click')}>
-        <Media class="card-media-16x9" style="background-image: url({workshop.img});" aspectRatio="16x9"></Media>
-        <Content class="mdc-typography--body2">
-          <h2 class="mdc-typography--headline6" style="margin: 0; font: 54px'grafitty'; color: #fff;">{workshop.name}</h2>
-          <h3 class="mdc-typography--subtitle2" style="margin: 0 0 10px; font-family: roboto; color: #888;">{workshop.description}</h3>
-        </Content>
-      </PrimaryAction>
-     </Card>
-    {/each} -->

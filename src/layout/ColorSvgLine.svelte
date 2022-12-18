@@ -2,11 +2,7 @@
 </script>
 
 <style>
-    .section-svg-line {
-  display: block;
-width: 100%;
-margin-bottom: -10px;
-}
+
 </style>
 
 
