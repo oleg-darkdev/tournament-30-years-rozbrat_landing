@@ -1,11 +1,11 @@
 <script>
-	import { logos } from '$lib/shared';
+	// import { logos } from '$lib/shared';
 </script>
 
 <div class='wrap'>
 <article class="gallery w-full px-20">
   <a href='/' target='_blank'>
-<img src="/images/games/{logos[0]}" />
+<img src="" />
   </a>
   <blockquote class="quote spacer">
     <span>Without music, life would be a mistake.</span>

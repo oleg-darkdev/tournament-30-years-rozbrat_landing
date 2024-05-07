@@ -19,7 +19,7 @@ let boardgames = [
 			download: '/',
 			site: '/',
 			youtube: '/',
-			bgg: ''
+			bgg: '/'
 		},
 		keywords: ['music', 'samba', 'protests', 'drums', ''],
 		images: [
@@ -57,7 +57,7 @@ let boardgames = [
 			download: '/',
 			site: 'https://chaos-theory.vercel.app/en',
 			youtube: '/',
-			bgg: ''
+			bgg: '/'
 		},
 		keywords: ['anarchy', 'liberty', 'stateless', 'history', ''],
 		images: [
@@ -97,7 +97,7 @@ let boardgames = [
 			download: '/',
 			site: '/',
 			youtube: '/',
-			bgg: ''
+			bgg: '/'
 		},
 		keywords: ['free food', 'vegan', 'no war', 'homeless', ''],
 		images: [
@@ -136,7 +136,7 @@ let boardgames = [
 			download: '/',
 			site: 'https://ecocide.vercel.app/en',
 			youtube: '/',
-			bgg: ''
+			bgg: '/'
 		},
 		keywords: ['ecology', 'forest', 'protests'],
 		images: [
@@ -175,7 +175,7 @@ let boardgames = [
 			download: '/',
 			site: 'https://graffity-cultute.vercel.app/',
 			youtube: '/',
-			bgg: ''
+			bgg: '/'
 		},
 		keywords: ['anarchy', 'liberty', 'stateless', 'history', ''],
 		images: [
@@ -213,7 +213,7 @@ let boardgames = [
 			download: '/',
 			site: '/',
 			youtube: '/',
-			bgg: ''
+			bgg: '/'
 		},
 		keywords: ['anarchy', 'liberty', 'stateless', 'history', ''],
 		images: [

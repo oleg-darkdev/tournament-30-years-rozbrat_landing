@@ -15,7 +15,7 @@ let boardgames = [
 			download: '/',
 			site: '/',
 			youtube: '/',
-			bgg: ''
+			bgg: '/'
 		},
 		keywords: ['lorem', 'lorem', 'lorem', 'lorem', ''],
 		images: [
@@ -49,7 +49,7 @@ let boardgames = [
 			download: '/',
 			site: '/',
 			youtube: '/',
-			bgg: ''
+			bgg: '/'
 		},
 		keywords: ['lorem', 'lorem', 'lorem', 'lorem', ''],
 		images: [
@@ -83,7 +83,7 @@ let boardgames = [
 			download: '/',
 			site: '/',
 			youtube: '/',
-			bgg: ''
+			bgg: '/'
 		},
 		keywords: ['lorem', 'lorem', 'lorem', 'lorem', ''],
 		images: [

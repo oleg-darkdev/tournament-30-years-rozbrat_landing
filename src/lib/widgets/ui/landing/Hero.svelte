@@ -32,14 +32,14 @@
 				tabindex="0"
 				class="dropdown-content menu rounded-box menu-compact mt-3 w-64 bg-gray-900 p-2 shadow"
 			>
-				<li class="text-info"><a href="#about">O nas</a></li>
+				<!-- <li class="text-info"><a href="#about">O nas</a></li>
 				<li class="text-info"><a href="#projects">Projekty</a></li>
 				<li class="text-info"><a href="#faq">F.A.Q</a></li>
-				<li class="text-info"><a href="#contact">Kontakt</a></li>
+				<li class="text-info"><a href="#contact">Kontakt</a></li> -->
 			</ul>
 		</div>
 		<img
-			src="/images/logos/darkdev_turq.svg"
+			src=""
 			alt=""
 			class="h-16 md:hidden lg:hidden xl:hidden"
 			srcset=""
@@ -50,7 +50,7 @@
 				<ul
 					class="order-1 mt-4 flex flex-col p-4 md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium"
 				>
-					<li>
+					<!-- <li>
 						<a
 							href="#offer"
 							class="block  py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
@@ -84,7 +84,7 @@
 							class="block  py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
 							>Kontakt</a
 						>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>

@@ -15,7 +15,7 @@ let boardgames = [
 			download: '/',
 			site: 'https://mks-14-app.vercel.app/en',
 			youtube: '/',
-			bgg: ''
+			bgg: '/'
 		},
 		keywords: ['Hard-scify', 'Cosmoc', 'ISS', 'Science', ''],
 		images: [
@@ -49,7 +49,7 @@ let boardgames = [
 			download: '/',
 			site: 'https://lgbt-tree.vercel.app/',
 			youtube: '/',
-			bgg: ''
+			bgg: '/'
 		},
 		keywords: ['lorem', 'lorem', 'lorem', 'lorem', ''],
 		images: [
@@ -83,7 +83,7 @@ let boardgames = [
 			download: '/',
 			site: 'https://by-pl.vercel.app/ ',
 			youtube: '/',
-			bgg: ''
+			bgg: '/'
 		},
 		keywords: ['language', 'traditions', 'ethnos', 'culture', 'Poland', 'Belarus'],
 		images: [
