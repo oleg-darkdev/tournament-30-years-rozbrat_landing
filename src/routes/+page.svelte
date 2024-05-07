@@ -1,9 +1,14 @@
 <script>
 	import { antISystems, social, historical } from '$lib/shared';
-	import { BoardgameSection, Hero, Footer, SupportUs } from '$lib/widgets';
+	import { BoardgameSection, Hero, Footer, AntiSystems, SupportUs, OurClients } from '$lib/widgets';
 </script>
 
 <Hero />
+
+<OurClients />
+
+<AntiSystems />
+
 
 {#each antISystems as boardgame}
 	<BoardgameSection {boardgame} />
