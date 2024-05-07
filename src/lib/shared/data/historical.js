@@ -1,8 +1,12 @@
 let boardgames = [
 	{
 		bgImage: 'gulag-bg',
+		logo: 'asssasas.svg',
+
 		title: 'Lorem impsum',
 		description: ['', '', ''],
+				bggRaiting: 7.2,
+
 		align: 'start',
 		anchor: 'lorem',
 		price: '60',
@@ -15,10 +19,10 @@ let boardgames = [
 		},
 		keywords: ['lorem', 'lorem', 'lorem', 'lorem', ''],
 		images: [
-			'https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
-			'https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
-			'https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
-			'https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg'
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -32,6 +36,9 @@ let boardgames = [
 	},
 	{
 		bgImage: 'cov-bg',
+		logo: 'asssasas.svg',
+		bggRaiting: 7.2,
+
 		title: 'Lorem impsum',
 		description: ['', '', ''],
 		align: 'end',
@@ -46,10 +53,10 @@ let boardgames = [
 		},
 		keywords: ['lorem', 'lorem', 'lorem', 'lorem', ''],
 		images: [
-			'https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
-			'https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
-			'https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
-			'https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg'
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -60,14 +67,18 @@ let boardgames = [
 				]
 			}
 		]
-	},{
+	},
+	{
 		bgImage: 'yakudza-bg',
+		logo: 'asssasas.svg',
+		bggRaiting: 7.2,
+
 		title: 'Lorem impsum',
 		description: ['', '', ''],
 		align: 'start',
 		anchor: 'lorem',
 		price: '60',
-		brandColor: '#e94b80',
+		brandColor: '#ff0000',
 		links: {
 			download: '/',
 			site: '/',
@@ -76,10 +87,10 @@ let boardgames = [
 		},
 		keywords: ['lorem', 'lorem', 'lorem', 'lorem', ''],
 		images: [
-			'https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
-			'https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
-			'https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
-			'https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg'
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
 		],
 		factsAboutBoardgame: [
 			{

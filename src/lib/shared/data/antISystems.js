@@ -2,6 +2,7 @@ let boardgames = [
 	//     locators-bg? hackerspace?
 	{
 		bgImage: 'ror-bg',
+		logo: 'asssasas.svg',
 		title: 'Rhythms of Resistance',
 		description: [
 			`Ever wanted to take part in loud demonstrations or direct action protests? Dive into the world of rhythmic drumming and become part of the vibrant pink-and-silver carnival bloc within the transnational anti-hierarchical, anti-capitalist, anti-sexist, and anti-racist network fighting for social and environmental justice.`,
@@ -12,6 +13,8 @@ let boardgames = [
 		anchor: 'rhythms-of-resistance',
 		price: '60',
 		brandColor: '#A6529A',
+				bggRaiting: 7.2,
+
 		links: {
 			download: '/',
 			site: '/',
@@ -20,10 +23,10 @@ let boardgames = [
 		},
 		keywords: ['music', 'samba', 'protests', 'drums', ''],
 		images: [
-			'https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
-			'https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
-			'https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
-			'https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg'
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -37,6 +40,8 @@ let boardgames = [
 	},
 	{
 		bgImage: 'a-bg',
+		logo: 'asssasas.svg',
+
 		title: 'Philosophy of liberty',
 		description: [
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -46,18 +51,20 @@ let boardgames = [
 		anchor: 'philosophy-of-liberty',
 		price: '60',
 		brandColor: '#BD1819',
+				bggRaiting: 7.2,
+
 		links: {
 			download: '/',
-			site: '/',
+			site: 'https://chaos-theory.vercel.app/en',
 			youtube: '/',
 			bgg: ''
 		},
 		keywords: ['anarchy', 'liberty', 'stateless', 'history', ''],
 		images: [
-			'https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
-			'https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
-			'https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
-			'https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg'
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -72,6 +79,8 @@ let boardgames = [
 
 	{
 		bgImage: 'fnb-bg',
+		logo: 'asssasas.svg',
+
 		title: 'Food not bombs',
 		description: [
 			`Food Not Bombs (FNB) is an educational board game based on the global movement of Food Not Bombs (FNB), which aims to distribute free, primarily vegan food as a protest against war and poverty. In this game, you will immerse yourself in the world of activism and learn about the principles and goals of the FNB movement.`,
@@ -82,6 +91,8 @@ let boardgames = [
 		anchor: 'food-not-bombs',
 		price: '60',
 		brandColor: '#E58824',
+				bggRaiting: 7.2,
+
 		links: {
 			download: '/',
 			site: '/',
@@ -90,10 +101,10 @@ let boardgames = [
 		},
 		keywords: ['free food', 'vegan', 'no war', 'homeless', ''],
 		images: [
-			'https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
-			'https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
-			'https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
-			'https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg'
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -107,27 +118,32 @@ let boardgames = [
 	},
 	{
 		bgImage: 'eco-bg',
+		logo: 'asssasas.svg',
+
 		title: 'Ecological riot',
 		description: [
 			`Records of heatwaves on land and sea are being shattered worldwide, while intense storms, fueled by warming waters, have led to floods of unprecedented magnitude. In some regions, extreme drought exacerbates forest fires, causing widespread concern.`,
 			`As the world burns, a more radical faction of the climate movement has taken to the streets in protest. Activists block traffic, march slowly, sabotage machinery, and do whatever it takes to disrupt deforestation efforts.`,
 			`Despite numerous articles about confrontational tactics, theory alone isn't enough, and players must take practical action into their own hands. Join the movement, raise your voice, and fight for the future of our planet.`
-  		],
+		],
 		align: 'start',
 		anchor: 'ecological-riot',
 		price: '60',
 		brandColor: '#5AB034',
+				bggRaiting: 7.2,
+
 		links: {
 			download: '/',
-			site: '/',
-			youtube: '/'
+			site: 'https://ecocide.vercel.app/en',
+			youtube: '/',
+			bgg: ''
 		},
 		keywords: ['ecology', 'forest', 'protests'],
 		images: [
-			'https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
-			'https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
-			'https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
-			'https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg'
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -142,6 +158,8 @@ let boardgames = [
 
 	{
 		bgImage: 'graffity-bg',
+		logo: 'asssasas.svg',
+
 		title: 'Graffity culture',
 		description: [
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -151,18 +169,20 @@ let boardgames = [
 		anchor: 'graffity-wars',
 		price: '60',
 		brandColor: '#f3e600',
+				bggRaiting: 7.2,
+
 		links: {
 			download: '/',
-			site: '/',
+			site: 'https://graffity-cultute.vercel.app/',
 			youtube: '/',
 			bgg: ''
 		},
 		keywords: ['anarchy', 'liberty', 'stateless', 'history', ''],
 		images: [
-			'https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
-			'https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
-			'https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
-			'https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg'
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -176,6 +196,8 @@ let boardgames = [
 	},
 	{
 		bgImage: 'squat-bg',
+		logo: 'asssasas.svg',
+
 		title: 'Squat the planet',
 		description: [
 			`Would you like to try your hand at occupying abandoned buildings? Then this educational board game about the squatter movement is just for you.`,
@@ -186,6 +208,7 @@ let boardgames = [
 		anchor: 'squat-the-planet',
 		price: '60',
 		brandColor: '#ffffff',
+		bggRaiting: 7.2,
 		links: {
 			download: '/',
 			site: '/',
@@ -194,10 +217,10 @@ let boardgames = [
 		},
 		keywords: ['anarchy', 'liberty', 'stateless', 'history', ''],
 		images: [
-			'https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
-			'https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
-			'https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
-			'https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg'
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
 		],
 		factsAboutBoardgame: [
 			{

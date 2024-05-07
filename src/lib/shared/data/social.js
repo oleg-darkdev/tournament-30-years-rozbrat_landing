@@ -2,24 +2,27 @@ let boardgames = [
 	// mks, lgbt,
 	{
 		bgImage: 'mks-bg',
-		title: 'Lorem impsum',
-		description: ['', '', ''],
+		logo: 'asssasas.svg',
+		bggRaiting: 7.2,
+
+		title: 'ISS-14',
+		description: ['Edukacyjna kolekcjonerska gra o kosmosie i pracy na międzynarodowej stacji kosmicznej.', '', ''],
 		align: 'end',
 		anchor: 'lorem',
 		price: '60',
 		brandColor: '#564495',
 		links: {
 			download: '/',
-			site: '/',
+			site: 'https://mks-14-app.vercel.app/en',
 			youtube: '/',
 			bgg: ''
 		},
-		keywords: ['lorem', 'lorem', 'lorem', 'lorem', ''],
+		keywords: ['Hard-scify', 'Cosmoc', 'ISS', 'Science', ''],
 		images: [
-			'https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
-			'https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
-			'https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
-			'https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg'
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -33,24 +36,27 @@ let boardgames = [
 	},
 	{
 		bgImage: 'lgbt-bg',
+		logo: 'asssasas.svg',
+		bggRaiting: 7.2,
+
 		title: 'Lorem impsum',
 		description: ['', '', ''],
 		align: 'start',
 		anchor: 'lorem',
 		price: '60',
-		brandColor: '#564495',
+		brandColor: '#e62934',
 		links: {
 			download: '/',
-			site: '/',
+			site: 'https://lgbt-tree.vercel.app/',
 			youtube: '/',
 			bgg: ''
 		},
 		keywords: ['lorem', 'lorem', 'lorem', 'lorem', ''],
 		images: [
-			'https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
-			'https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
-			'https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
-			'https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg'
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -64,24 +70,27 @@ let boardgames = [
 	},
 	{
 		bgImage: 'by_pl-bg',
-		title: 'Lorem impsum',
-		description: ['', '', ''],
+		logo: 'asssasas.svg',
+		bggRaiting: 7.2,
+
+		title: 'BY-PL - co łączy narody Białorusi i Polski',
+		description: ['Dzięki materiałom przygotowanym w ramach tego projektu dowiesz się więcej o związku tych dwóch sąsiadujących ze sobą krajów, ich historii, kulturze i tradycji.', 'Będziesz podróżować przez historyczne epoki i poruszać różne tematy, takie jak kultura, sztuka, historia i inne, aby odkryć podobieństwa i porównać, co łączy ludzi z Białorusi i Polski.',],
 		align: 'end',
 		anchor: 'lorem',
 		price: '60',
-		brandColor: '#564495',
+		brandColor: '#eb5c55',
 		links: {
 			download: '/',
-			site: '/',
+			site: 'https://by-pl.vercel.app/ ',
 			youtube: '/',
 			bgg: ''
 		},
-		keywords: ['lorem', 'lorem', 'lorem', 'lorem', ''],
+		keywords: ['language', 'traditions', 'ethnos', 'culture', 'Poland', 'Belarus'],
 		images: [
-			'https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
-			'https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
-			'https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
-			'https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg'
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
+			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
 		],
 		factsAboutBoardgame: [
 			{
