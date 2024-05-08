@@ -7,27 +7,21 @@
   $: selectedBoardgame = emptyBoardgame;
   $: selectedMenu = menu[0];
 
-
-
-
 	let showMenu = false;
-
 </script>
+
+
+<svelte:head>
+  <title>44Games - shop 🎲</title>
+</svelte:head>
 
 <header class="bg-neitral-200 h-screen w-full">
   <Aside bind:selectedBoardgame bind:showMenu bind:selectedMenu />
 		{#if !showMenu}
-		<!-- <section class="banner banner-bg">
-			<div class="relative left-20 top-[50vh]">
-				<h1 class="max-w-xl text-5xl font-black">
-				</h1>
-			</div>
-		</section> -->
-
-    <AnimaterdLogo />
+      <AnimaterdLogo />
 	{:else}
 		<div class=" grid grid-cols-2  ">
-			<article class='wrap py-6  px-2  {selectedBoardgame.id ? selectedBoardgame.bgImage : 'menu'}'>
+			<article class='wrap py-6  px-2  {selectedBoardgame.id ? selectedBoardgame.bgImage : 'menu '}'>
 				<section class='pl-24 pr-4'>
           <!-- class='hidden' -->
           {#if selectedMenu.id == 1}
@@ -273,25 +267,9 @@
 	}
 
 	@media (max-width: 560px) {
-		img {
-			display: none;
-		}
-		.banner-bg {
-			background-image: url(/images/banner_sm.svg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			height: 370px;
-			background-position: center;
-		}
+
 	}
 	@media (min-width: 560px) {
-		.banner-bg {
-			background-image: url(/images/banner.svg);
-			height: 100%;
-			background-repeat: no-repeat;
-      background-position: right;
-/* 86 */
-			background-size: 40%;
-		}
+
 	}
 </style>
