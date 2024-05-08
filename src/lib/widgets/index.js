@@ -7,4 +7,5 @@ import OurClients from './ui/landing/OurClients.svelte';
 import Aside from './ui/landing/Aside.svelte';
 import AnimaterdLogo from './ui/landing/AnimaterdLogo.svelte';
 
+
 export { BoardgameSection, Hero, Aside, AntiSystems, SupportUs, AnimaterdLogo, OurClients, Footer };
