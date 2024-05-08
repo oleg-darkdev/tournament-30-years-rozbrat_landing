@@ -1,13 +1,8 @@
 <script>
-  import Email from "carbon-icons-svelte/lib/Email.svelte";
-  import LogoLinkedin from "carbon-icons-svelte/lib/LogoLinkedin.svelte";
-  import GameConsole from "carbon-icons-svelte/lib/GameConsole.svelte";
-  import LogoGithub from "carbon-icons-svelte/lib/LogoGithub.svelte";
-import BuildingInsights_2 from "carbon-icons-svelte/lib/BuildingInsights_2.svelte";
-import PersonFavorite from "carbon-icons-svelte/lib/PersonFavorite.svelte";
+  import { menu, contactLinks, antISystems, Email, LogoLinkedin, GameConsole, LogoGithub, BuildingInsights_2, PersonFavorite } from '$lib/shared';
 
-      import { menu, contactLinks, antISystems } from '$lib/shared';
-let boardgame = antISystems[0];
+
+  let boardgame = antISystems[0];
 
   export let selectedMenu, showMenu, selectedBoardgame;
 </script>
