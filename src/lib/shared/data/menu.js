@@ -2,27 +2,27 @@ const menu = [
     {
       id: 1,
       title: 'ABOUT',
-      subTitle: ''
+      subTitle: 'Lorem ipsum is placeholder text commonly used in the graphic.'
     },
     {
       id: 2,
       title: 'PRODUCTS',
-      subTitle: ''
+      subTitle: 'Lorem ipsum is placeholder text commonly used in the graphic'
     },
     {
       id: 3,
       title: 'FOR ORGANISATIONS',
-      subTitle: ''
+      subTitle: 'Lorem ipsum is placeholder text commonly used in the graphic'
     },
     {
       id: 4,
       title: 'FOR INDIVIDUAL',
-      subTitle: ''
+      subTitle: 'Lorem ipsum is placeholder text commonly used in the graphic'
     },
     {
       id: 5,
       title: 'CONTACT',
-      subTitle: ''
+      subTitle: 'Lorem ipsum is placeholder text commonly used in the graphic'
     },
   ];
 

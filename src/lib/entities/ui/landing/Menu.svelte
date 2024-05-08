@@ -4,7 +4,7 @@
  import Link from "carbon-icons-svelte/lib/Link.svelte";
  import Return from "carbon-icons-svelte/lib/Return.svelte";
 
-    import { antISystems, social, historical, menu, emptyBoardgame} from '$lib/shared';
+    import { antISystems, social, historical, menu, emptyBoardgame, Email, GameConsole, BuildingInsights_2, PersonFavorite} from '$lib/shared';
 	const boardgames = [].concat(antISystems, social, historical);
 
 
@@ -65,14 +65,29 @@ export let  selectedMenu, selectedBoardgame;
 
 
                     {:else}
-                    {#each menu as nav}
-    <li class="c-work__item" on:click={()=> {selectedMenu = nav;  selectedMenu.id == 2 ? selectedBoardgame = boardgames[0]: ''}}>
+                    {#each menu as nav, i}
+    <li class="c-work__item pl-10" on:click={()=> {selectedMenu = nav;  selectedMenu.id == 2 ? selectedBoardgame = boardgames[0]: ''}}>
       <div class="c-work-item " data-work-preview-id="{nav.id}">
         <span class="c-work-item__number u-b6">
-                            {nav.id}
+                             {#if nav.id == 1}
+                              <Email size={40} />
+
+
+                            {:else if i + 1 ==2}
+                                                                                      <GameConsole size={40} />
+
+                            {:else if i + 1 ==3}
+                                                          <BuildingInsights_2 size={40} />
+
+                            {:else if i + 1 ==4}
+                                                          <PersonFavorite size={40} />
+
+                            {:else}
+                              <Email size={40} />
+                            {/if}
                         </span>
         <div class="c-work-item__title">
-          <h3 class="u-a6">
+          <h3 class="u-a6" style='margin-bottom: 0.4em;'>
             {nav.title}
           </h3>
         </div>
