@@ -10,7 +10,7 @@
 <aside id="topnav">
 <button class="group transition duration-300 ease-in-out delay-150 transform hover:scale-110 relative z-10" on:click={() => (showMenu = !showMenu)}>
 		<div class=" h-32 w-32 flex-col justify-center">
-			<div class="menu-btn h-full w-full" />
+			<div class="{showMenu ? 'menu-btn-white': 'menu-btn-dark'} h-full w-full" />
 			<h2 class="text-right text-md pr-6 text-neutral-400 group-hover:text-white">MENU</h2>
 		</div>
 	</button>
@@ -59,13 +59,19 @@
 
 
 <style>
-  .menu-btn {
+  .menu-btn-dark {
 		background-image: url(/images/menu.svg);
 
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 
+  .menu-btn-white {
+		background-image: url(/images/menu_white.svg);
+
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
 	:root {
 		--maingb1: 90, 180, 94;
 		--maingb2: 173, 180, 90;
