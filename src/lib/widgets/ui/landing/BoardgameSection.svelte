@@ -4,45 +4,19 @@
 	export let boardgame;
 </script>
 
-<!--
- -->
-<!-- <section
-	id={boardgame.anchor}
-	style="background-position: {boardgame.align == 'start' ? 'right' : 'left'};"
-	class="{boardgame.bgImage} work-wrap grid grid-cols-1 bg-black"
->
-	<div
-		data-aos="fade-down"
-		data-aos-delay="80"
-		data-aos-duration="800"
-		data-aos-once="false"
-		data-aos-mirror="true"
-		style=""
-		class="flex w-full {boardgame.align == 'start'
-			? 'justify-self-start '
-			: 'justify-self-end '}  glass lg:w-6/12"
-	> -->
-		<div class="coffee-card w-full" data-aos="flip-up"
-		data-aos-delay="80"
-		data-aos-duration="800"
-		data-aos-once="false"
-		data-aos-mirror="true">
-			<!-- <div class="mb-4 flex flex-row space-x-2">
-				{#each boardgame.keywords as keyword}
-					<span style="color: {boardgame.brandColor};" class="badge badge-outline badge-lg"
-						>{keyword}</span
-					>
-				{/each}
-			</div> -->
-
+  <div class=" px-6 py-6 overflow-x-hidden w-full">
+		<div class="coffee-card overflow-x-hidden py-3  w-full">
 			<a class="name" href={boardgame.links.site} target="_blank"
-				><h5 class=" ">
+				><h2 class="font-black text-4xl">
 					{boardgame.title}
-				</h5></a
+				</h2></a
 			>
 			<div class="info"> 				{#each boardgame.keywords as keyword}
- {keyword} /
- 
+
+ <span style="color: {boardgame.brandColor};" class="mr-2"
+						>#{keyword}</span
+					>
+
  {/each}      </div>
  				<a id="#{boardgame.anchor}" />
 
@@ -58,7 +32,7 @@
 
 			</div>
 
-      
+
 			<div class="date"><span class="side-title">Roast Date</span>$84.00</div>
 			<div class="weight"><span class="side-title"> <a class='' href={boardgame.links.site} target="_blank">
 				BGG: {boardgame.bggRaiting} </a></span> </div>
@@ -67,16 +41,15 @@
 				Free Download for Print and Play </a>
         </div>
 			<div class="site">{boardgame.links.site}</div>
-			<div class="pattern h-full">
+			<div class="pattern ">
 				<!-- <Carousel autoplay="2000" images={boardgame.images} /> -->
 
       </div>
-			<div class="square one" style="color: {boardgame.brandColor};"/>
-			<div class="square two" style="color: {boardgame.brandColor};"/>
+			<div class="square one" style="background-color: {boardgame.brandColor};"/>
+			<div class="square two" style="background-color: {boardgame.brandColor};"/>
 			<div class="strip" />
 		</div>
-	<!-- </div>
-</section> -->
+</div>
 
 <style>
 	strong {
@@ -84,17 +57,14 @@
 	}
 
 	.coffee-card {
-		/* font-weight: 300;
-	font-size: 14px; */
+
 		flex: 1;
-		/* max-width: 430px; */
-		/* w */
+
 		min-width: 380px;
 		display: grid;
 		grid-template-columns: 1.2fr 1fr min-content;
 		grid-auto-rows: min-content;
-		/* background: #fdfdfd; */
-		margin: 2rem;
+		/* margin: 2rem; */
 		line-height: 1.5;
 		position: relative;
 		box-shadow: 0 4px 0 -2px #ddd, 1px 1px 0 0 #f7f7f7;
@@ -109,9 +79,7 @@
 		width: 50%;
 		top: 80%;
 		max-width: 300px;
-		/* background: #777; */
-		/* box-shadow: 0 35px 20px #777; */
-		/* transform: rotate(-4deg); */
+
 	}
 	.coffee-card::after {
 		transform: rotate(4deg);
@@ -163,7 +131,7 @@
 	}
 	.coffee-card .pattern {
 		grid-row: 6 / span 2;
-		min-height: 16.5rem;
+		min-height: 13.5rem;
 		background-repeat: repeat;
 	}
 
@@ -188,43 +156,6 @@
 		border-right: 0.5px dashed;
 	}
 
-	.checkbox {
-		display: inline-block;
-		pointer-events: none;
-	}
-	.checkbox:nth-child(1) {
-		margin-right: 30px;
-	}
-	.checkbox input {
-		height: 0;
-		width: 0;
-		overflow: hidden;
-		position: absolute;
-		z-index: -1;
-	}
-	.checkbox input:checked + label:after {
-		content: '';
-		position: absolute;
-		width: 22px;
-		height: 5px;
-		background: black;
-		left: 3px;
-		transform: rotate(-45deg);
-		top: 10px;
-		border-radius: 5px;
-	}
-	.checkbox label {
-		padding: 5px 20px 5px 30px;
-		position: relative;
-	}
-	.checkbox label:before {
-		content: '';
-		position: absolute;
-		border: 1px dashed;
-		width: 18px;
-		height: 18px;
-		left: 0;
-	}
 
 	.strip {
 		grid-column: 1/3;
@@ -233,36 +164,21 @@
 
 	.square {
 		background: white;
-    
+
 	}
 	.square.one {
 		grid-row: 1;
 		grid-column: 3/4;
 		height: 2.5rem;
 	}
-	/* .pattern {
-  background-image: repeating-radial-gradient(circle at 60%, #eee, #eee 3px, transparent 4px, #eee 5px), repeating-radial-gradient(circle at 45%, #999, #999 3px, transparent 4px, #999 5px);
-  background-size: 200%;
-}
 
-.pattern-one {
-  background-image: radial-gradient(#999 15%, transparent 16%), radial-gradient(#bbbbbb 15%, transparent 16%), linear-gradient(45deg, transparent 48%, #666 48%, #666 52%, transparent 52%), linear-gradient(-45deg, #fff 48%, #999 48%, #999 52%, #fff 52%);
-  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
-  background-position: 0 0, 10px 10px, 0 0, 0 0;
-}
-
-.pattern-two {
-  background-image: repeating-radial-gradient(ellipse at right, #888 10%, #888 1px, transparent 1px, transparent 3px, #888 3px, #888 4px, transparent 4px, transparent 5px, #888 5px, #888 6px, transparent 6px, #888 6px, #888 7px, transparent 7px, transparent 8px, #888 8px, #888 9px, transparent 9px, transparent 10px);
-  background-size: 20px 40px;
-} */
 
 	.glass {
 		background: rgba(12, 10, 9, 0.6);
-		overflow: hidden;
 		border: none;
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
 	}
 
-	
+
 </style>

@@ -1,82 +1,127 @@
 <script>
-
- import CaretRight from "carbon-icons-svelte/lib/CaretRight.svelte";
- import CaretLeft from "carbon-icons-svelte/lib/CaretLeft.svelte";
-
-	import { antISystems, social, historical } from '$lib/shared';
-	import { BoardgameSection } from '$lib/widgets';
-
+	import { antISystems, social, historical, menu, emptyBoardgame } from '$lib/shared';
+	import { BoardgameSection, Aside } from '$lib/widgets';
+  import { Menu } from '$lib/entities'
 	const boardgames = [].concat(antISystems, social, historical);
 
-  $: now = 0;
+  $: selectedBoardgame = emptyBoardgame;
+  $: selectedMenu = menu[0];
 
-	$: selectedBoardgame = boardgames[0];
-  // $: filteredBoardgames = boardgames.slice(now, now + step);
 
-  let step = 4;
 
-	let showMenu = false;
 
+	let showMenu = true;
 
 </script>
 
 <header class="bg-neitral-200 h-screen w-full">
-	<button class="absolute left-[90%] top-10" on:click={() => (showMenu = !showMenu)}>
-		<div class=" h-32 w-32 flex-col justify-center">
-			<div class="menu-btn h-full w-full" />
-			<h2 class="text-center text-2xl font-black">MENU</h2>
-		</div>
-	</button>
-
-	{#if showMenu}
+  <Aside bind:selectedBoardgame bind:showMenu bind:selectedMenu />
+		{#if !showMenu}
 		<section class="banner banner-bg">
 			<div class="relative left-20 top-[50vh]">
 				<h1 class="max-w-xl text-5xl font-black">
-					44Games <br />- only quality educational boardgame
-					<!-- <a href="https://www.uber.design/case-studies/rebrand-2018" target="_blank">Uber Rebrand Site</a> -->
+					<!-- 44Games <br />- only quality educational boardgame -->
 				</h1>
 			</div>
 		</section>
 	{:else}
-		<div class=" grid grid-cols-2">
-			<article class='wrap py-6 px-2  {selectedBoardgame.bgImage}'>
-				<section class='glass  px-10'>
-					<BoardgameSection bind:boardgame={selectedBoardgame} />
+		<div class=" grid grid-cols-2  ">
+			<article class='wrap py-6  px-2  {selectedBoardgame.id ? selectedBoardgame.bgImage : 'menu'}'>
+				<section class='pl-24 pr-4'>
+          <!-- class='hidden' -->
+          {#if selectedMenu.id == 1}
+<div class="card w-full h-[94vh]" data-aos="flip-up"
+		data-aos-delay="80"
+		data-aos-duration="800"
+		data-aos-once="false"
+		data-aos-mirror="true">
+
+    <div class="flex pl-16 pt-10 pr-4 flex-col w-full max-w-3xl mx-auto prose text-left prose-blue">
+            <div class="w-full mx-auto">
+                <h1>About 44Games</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+                <p>
+                  Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+<!-- <h2 class='relative left-20 top-10 text-4xl font-black'> About </h2>
+<p class="text-md">
+  Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+</p> -->
+        </div>
+					{:else if selectedMenu.id == 2}
+          <div class="card overflow-x-hidden w-full h-[90vh]" data-aos="flip-up"
+		data-aos-delay="80"
+		data-aos-duration="800"
+		data-aos-once="false"
+		data-aos-mirror="true">
+            <BoardgameSection  bind:boardgame={selectedBoardgame} />
+
+            </div>
+					{:else if selectedMenu.id == 3}
+<div class="card w-full h-[90vh]" data-aos="flip-up"
+		data-aos-delay="80"
+		data-aos-duration="800"
+		data-aos-once="false"
+		data-aos-mirror="true">
+<div class="flex pl-16 pt-10 pr-4 flex-col w-full max-w-3xl mx-auto prose text-left prose-blue">
+            <div class="w-full mx-auto">
+                <h1>Offer BTB</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+                <p>
+                  Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        </div>
+          {:else if selectedMenu.id == 4}
+<div class="card w-full h-[90vh]" data-aos="flip-up"
+		data-aos-delay="80"
+		data-aos-duration="800"
+		data-aos-once="false"
+		data-aos-mirror="true">
+<div class="flex pl-16 pt-10 pr-4 flex-col w-full max-w-3xl mx-auto prose text-left prose-blue">
+            <div class="w-full mx-auto">
+                <h1>Offer BTC</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+                <p>
+                  Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        </div>
+
+        {:else if selectedMenu.id == 5}
+<div class="card w-full h-[90vh]" data-aos="flip-up"
+		data-aos-delay="80"
+		data-aos-duration="800"
+		data-aos-once="false"
+		data-aos-mirror="true">
+<div class="flex pl-16 pt-10 pr-4 flex-col w-full max-w-3xl mx-auto prose text-left prose-blue">
+            <div class="w-full mx-auto">
+                <h1>CONTACT</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+                <p>
+                  Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+            </div>
+        </div>
+        </div>
+
+          {/if}
 				</section>
 			</article>
 			<nav class="">
-				<div class="menu h-full max-h-screen py-10 pr-40">
-					<ul class="h-full overflow-y-scroll">
-						{#each boardgames.slice(now, now + step) as boardgame}
-							<li class="h-34 my-2 max-w-lg text-start text-6xl font-black">
-								<button on:click={() => selectedBoardgame = boardgame} class=""
-									><h2 class="text-start text-6xl font-black">
-										{boardgame.title}
-									</h2></button
-								>
-							</li>
-						{/each}
-
-
-            <div class="flex justify-center">
-           {#if now > 0}
-
-<button on:click={() => now = now - step} class="mr-4 btn btn-circle btn-outline">
-  <CaretLeft size={32}/>
-</button> 
-           {/if}
-
-<button on:click={() => now = now + step} class="btn btn-circle btn-outline">
-  <CaretRight size={32}/>
-</button>
-  
-				</div>
-					</ul>
-
-
-				</div>
+				<div class=" h-full max-h-screen py-10 pr-40">
+          <Menu bind:selectedMenu bind:selectedBoardgame/>
+        </div>
 			</nav>
-	
+
 		</div>
 	{/if}
 </header>
@@ -128,8 +173,18 @@
 
 
 <style>
-   
-  /*  */
+
+
+  .card {
+    background: rgba(12, 10, 9, 0.6);
+
+		border: none;
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+  }
+.hidden {
+  display: none;
+}
   .glass {
 		background: rgba(12, 10, 9, 0.6);
 		overflow: hidden;
@@ -142,15 +197,18 @@
 		height: auto;
 		background-repeat: no-repeat;
 		background-size: contain;
-		/* min-height: 100vh; */
-
 		background-attachment: fixed;
 	}
 
+.menu {
+  background-image: url(/images/menu.svg);
+  height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+}
 	@media (min-width: 1024px) {
-		/* .work-wrap {
-			min-height: 100vh;
-		} */
+
 		.a-bg {
 			background-image: url(/images/games/a-bg.svg);
 		}
@@ -207,39 +265,12 @@
 		} */
 	}
 	@media (min-device-width: 320px) and (max-device-width: 1024px) {
-		.work-wrap {
-			/* min-height: 60vh;
-			height: auto; */
-		}
+
 		.a-bg {
 			background-color: #000;
 		}
 	}
 
-	.menu-btn {
-		background-image: url(/images/menu.svg);
-
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
-	/* .content {
-  position: relative;
-  flex: 1;
-  padding: 80px 40px 40px;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/124740/2018-09-28%2009_21_48-https___d2kbkpwf98wmwo.cloudfront.net_videos_hero-lg.mp4.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-.content p {
-  color: #fff;
-  opacity: 0;
-  transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-.content p a {
-  color: #fff;
-  box-shadow: 0 1px 0 0 #EF3340;
-} */
 	@media (max-width: 560px) {
 		img {
 			display: none;
@@ -257,7 +288,9 @@
 			background-image: url(/images/banner.svg);
 			height: 100%;
 			background-repeat: no-repeat;
-			background-size: 92%;
+      background-position: center;
+
+			background-size: 86%;
 		}
 	}
 </style>
