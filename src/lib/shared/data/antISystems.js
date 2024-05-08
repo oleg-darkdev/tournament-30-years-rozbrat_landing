@@ -1,8 +1,10 @@
 let boardgames = [
 	//     locators-bg? hackerspace?
 	{
+		id: 1,
 		bgImage: 'ror-bg',
 		logo: 'asssasas.svg',
+		shortDesc: 'Lorem ipsum dolor sit amet, consectetur.',
 		title: 'Rhythms of Resistance',
 		description: [
 			`Ever wanted to take part in loud demonstrations or direct action protests? Dive into the world of rhythmic drumming and become part of the vibrant pink-and-silver carnival bloc within the transnational anti-hierarchical, anti-capitalist, anti-sexist, and anti-racist network fighting for social and environmental justice.`,
@@ -39,8 +41,11 @@ let boardgames = [
 		]
 	},
 	{
+				id: 2,
+
 		bgImage: 'a-bg',
 		logo: 'asssasas.svg',
+		shortDesc: 'Lorem ipsum dolor sit amet, consectetur.',
 
 		title: 'Philosophy of liberty',
 		description: [
@@ -80,6 +85,8 @@ let boardgames = [
 	{
 		bgImage: 'fnb-bg',
 		logo: 'asssasas.svg',
+		shortDesc: 'Lorem ipsum dolor sit amet, consectetur.',
+				id: 3,
 
 		title: 'Food not bombs',
 		description: [
@@ -119,6 +126,8 @@ let boardgames = [
 	{
 		bgImage: 'eco-bg',
 		logo: 'asssasas.svg',
+		shortDesc: 'Lorem ipsum dolor sit amet, consectetur.',
+				id: 4,
 
 		title: 'Ecological riot',
 		description: [
@@ -159,6 +168,8 @@ let boardgames = [
 	{
 		bgImage: 'graffity-bg',
 		logo: 'asssasas.svg',
+				id: 5,
+		shortDesc: 'Lorem ipsum dolor sit amet, consectetur.',
 
 		title: 'Graffity culture',
 		description: [
@@ -197,6 +208,8 @@ let boardgames = [
 	{
 		bgImage: 'squat-bg',
 		logo: 'asssasas.svg',
+				id: 6,
+		shortDesc: 'Lorem ipsum dolor sit amet, consectetur.',
 
 		title: 'Squat the planet',
 		description: [

@@ -6,6 +6,8 @@ let boardgames = [
 		title: 'Lorem impsum',
 		description: ['', '', ''],
 		bggRaiting: 7.2,
+		shortDesc: 'Lorem ipsum dolor sit amet, consectetur.',
+				id: 10,
 
 		align: 'start',
 		anchor: 'lorem',
@@ -38,6 +40,8 @@ let boardgames = [
 		bgImage: 'cov-bg',
 		logo: 'asssasas.svg',
 		bggRaiting: 7.2,
+		shortDesc: 'Lorem ipsum dolor sit amet, consectetur.',
+				id: 11,
 
 		title: 'Lorem impsum',
 		description: ['', '', ''],
@@ -72,6 +76,8 @@ let boardgames = [
 		bgImage: 'yakudza-bg',
 		logo: 'asssasas.svg',
 		bggRaiting: 7.2,
+		shortDesc: 'Lorem ipsum dolor sit amet, consectetur.',
+				id: 12,
 
 		title: 'Lorem impsum',
 		description: ['', '', ''],

@@ -4,6 +4,8 @@ let boardgames = [
 		bgImage: 'mks-bg',
 		logo: 'asssasas.svg',
 		bggRaiting: 7.2,
+		shortDesc: 'Lorem ipsum dolor sit amet, consectetur.',
+				id: 20,
 
 		title: 'ISS-14',
 		description: [
@@ -42,6 +44,8 @@ let boardgames = [
 		bgImage: 'lgbt-bg',
 		logo: 'asssasas.svg',
 		bggRaiting: 7.2,
+		shortDesc: 'Lorem ipsum dolor sit amet, consectetur.',
+				id: 21,
 
 		title: 'Lorem impsum',
 		description: ['', '', ''],
@@ -76,6 +80,8 @@ let boardgames = [
 		bgImage: 'by_pl-bg',
 		logo: 'asssasas.svg',
 		bggRaiting: 7.2,
+		shortDesc: 'Lorem ipsum dolor sit amet, consectetur.',
+				id: 22,
 
 		title: 'BY-PL - co łączy narody Białorusi i Polski',
 		description: [
