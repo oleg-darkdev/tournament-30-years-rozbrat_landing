@@ -13,10 +13,8 @@
 </main>
 
 <style>
-  main {
-      font-family: "Roboto Mono", sans-serif;
+  
 
-  }
 	:global(.font-roadsBlock) {
 		font-family: 'RoadsBlock';
 		line-height: 1.2;
