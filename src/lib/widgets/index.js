@@ -5,5 +5,6 @@ import Footer from './ui/landing/Footer.svelte';
 import AntiSystems from './ui/landing/AntiSystems.svelte';
 import OurClients from './ui/landing/OurClients.svelte';
 import Aside from './ui/landing/Aside.svelte';
+import AnimaterdLogo from './ui/landing/AnimaterdLogo.svelte';
 
-export { BoardgameSection, Hero, Aside, AntiSystems, SupportUs, OurClients, Footer };
+export { BoardgameSection, Hero, Aside, AntiSystems, SupportUs, AnimaterdLogo, OurClients, Footer };

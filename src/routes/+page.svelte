@@ -1,6 +1,6 @@
 <script>
 	import { antISystems, social, historical, menu, emptyBoardgame } from '$lib/shared';
-	import { BoardgameSection, Aside } from '$lib/widgets';
+	import { BoardgameSection, Aside, AnimaterdLogo } from '$lib/widgets';
   import { Menu } from '$lib/entities'
 	const boardgames = [].concat(antISystems, social, historical);
 
@@ -10,20 +10,21 @@
 
 
 
-	let showMenu = true;
+	let showMenu = false;
 
 </script>
 
 <header class="bg-neitral-200 h-screen w-full">
   <Aside bind:selectedBoardgame bind:showMenu bind:selectedMenu />
 		{#if !showMenu}
-		<section class="banner banner-bg">
+		<!-- <section class="banner banner-bg">
 			<div class="relative left-20 top-[50vh]">
 				<h1 class="max-w-xl text-5xl font-black">
-					<!-- 44Games <br />- only quality educational boardgame -->
 				</h1>
 			</div>
-		</section>
+		</section> -->
+
+    <AnimaterdLogo />
 	{:else}
 		<div class=" grid grid-cols-2  ">
 			<article class='wrap py-6  px-2  {selectedBoardgame.id ? selectedBoardgame.bgImage : 'menu'}'>
@@ -288,9 +289,9 @@
 			background-image: url(/images/banner.svg);
 			height: 100%;
 			background-repeat: no-repeat;
-      background-position: center;
-
-			background-size: 86%;
+      background-position: right;
+/* 86 */
+			background-size: 40%;
 		}
 	}
 </style>
