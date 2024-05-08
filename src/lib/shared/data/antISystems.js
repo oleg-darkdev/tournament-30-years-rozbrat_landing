@@ -13,7 +13,7 @@ let boardgames = [
 		anchor: 'rhythms-of-resistance',
 		price: '60',
 		brandColor: '#A6529A',
-				bggRaiting: 7.2,
+		bggRaiting: 7.2,
 
 		links: {
 			download: '/',
@@ -23,10 +23,10 @@ let boardgames = [
 		},
 		keywords: ['music', 'samba', 'protests', 'drums', ''],
 		images: [
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -51,7 +51,7 @@ let boardgames = [
 		anchor: 'philosophy-of-liberty',
 		price: '60',
 		brandColor: '#BD1819',
-				bggRaiting: 7.2,
+		bggRaiting: 7.2,
 
 		links: {
 			download: '/',
@@ -61,10 +61,10 @@ let boardgames = [
 		},
 		keywords: ['anarchy', 'liberty', 'stateless', 'history', ''],
 		images: [
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -91,7 +91,7 @@ let boardgames = [
 		anchor: 'food-not-bombs',
 		price: '60',
 		brandColor: '#E58824',
-				bggRaiting: 7.2,
+		bggRaiting: 7.2,
 
 		links: {
 			download: '/',
@@ -101,10 +101,10 @@ let boardgames = [
 		},
 		keywords: ['free food', 'vegan', 'no war', 'homeless', ''],
 		images: [
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -130,7 +130,7 @@ let boardgames = [
 		anchor: 'ecological-riot',
 		price: '60',
 		brandColor: '#5AB034',
-				bggRaiting: 7.2,
+		bggRaiting: 7.2,
 
 		links: {
 			download: '/',
@@ -140,10 +140,10 @@ let boardgames = [
 		},
 		keywords: ['ecology', 'forest', 'protests'],
 		images: [
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -169,7 +169,7 @@ let boardgames = [
 		anchor: 'graffity-wars',
 		price: '60',
 		brandColor: '#f3e600',
-				bggRaiting: 7.2,
+		bggRaiting: 7.2,
 
 		links: {
 			download: '/',
@@ -179,10 +179,10 @@ let boardgames = [
 		},
 		keywords: ['anarchy', 'liberty', 'stateless', 'history', ''],
 		images: [
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg'
 		],
 		factsAboutBoardgame: [
 			{
@@ -217,10 +217,10 @@ let boardgames = [
 		},
 		keywords: ['anarchy', 'liberty', 'stateless', 'history', ''],
 		images: [
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg',
-			'https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg'
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg',
+			'https://clipground.com/images/small-flower-images-12.jpg'
 		],
 		factsAboutBoardgame: [
 			{

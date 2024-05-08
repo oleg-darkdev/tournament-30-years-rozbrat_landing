@@ -6,7 +6,7 @@
 
 <!--
  -->
-<!-- <section
+<section
 	id={boardgame.anchor}
 	style="background-position: {boardgame.align == 'start' ? 'right' : 'left'};"
 	class="{boardgame.bgImage} work-wrap grid grid-cols-1 bg-black"
@@ -21,12 +21,8 @@
 		class="flex w-full {boardgame.align == 'start'
 			? 'justify-self-start '
 			: 'justify-self-end '}  glass lg:w-6/12"
-	> -->
-		<div class="coffee-card w-full" data-aos="flip-up"
-		data-aos-delay="80"
-		data-aos-duration="800"
-		data-aos-once="false"
-		data-aos-mirror="true">
+	>
+		<div class="coffee-card w-full " >
 			<!-- <div class="mb-4 flex flex-row space-x-2">
 				{#each boardgame.keywords as keyword}
 					<span style="color: {boardgame.brandColor};" class="badge badge-outline badge-lg"
@@ -35,18 +31,18 @@
 				{/each}
 			</div> -->
 
-			<a class="name" href={boardgame.links.site} target="_blank"
+			<a class="name" style='border-color: {boardgame.brandColor};' href={boardgame.links.site} target="_blank"
 				><h5 class=" ">
 					{boardgame.title}
 				</h5></a
 			>
-			<div class="info"> 				{#each boardgame.keywords as keyword}
- {keyword} /
+			<div class="info " style='border-color: {boardgame.brandColor}; color: {boardgame.brandColor};'> 				{#each boardgame.keywords as keyword}
+ <span> {keyword} / </span>
  
  {/each}      </div>
  				<a id="#{boardgame.anchor}" />
 
-			<div class="location">
+			<div class="location" style='border-color: {boardgame.brandColor};'>
         {#each boardgame.description as description}
 						<p class="m-2 text-start font-normal leading-tight text-neutral-300 ">
 							{description}
@@ -59,24 +55,24 @@
 			</div>
 
       
-			<div class="date"><span class="side-title">Roast Date</span>$84.00</div>
-			<div class="weight"><span class="side-title"> <a class='' href={boardgame.links.site} target="_blank">
+			<div class="date" style='border-color: {boardgame.brandColor}; color: {boardgame.brandColor};'><span class="side-title" style='border-color: {boardgame.brandColor}; color: {boardgame.brandColor};'>Roast Date</span>$84.00</div>
+			<div class="weight" style='border-color: {boardgame.brandColor};'><span class="side-title" style='border-color: {boardgame.brandColor}; color: {boardgame.brandColor};'> <a class='' href={boardgame.links.site} target="_blank">
 				BGG: {boardgame.bggRaiting} </a></span> </div>
-			<div class="footnote">
+			<div class="footnote" style='border-color: {boardgame.brandColor}; color: {boardgame.brandColor};'>
         <a class='' href={boardgame.links.download} target="_blank">
 				Free Download for Print and Play </a>
         </div>
-			<div class="site">{boardgame.links.site}</div>
-			<div class="pattern h-full">
-				<!-- <Carousel autoplay="2000" images={boardgame.images} /> -->
+			<div class="site" style='border-color: {boardgame.brandColor}; color: {boardgame.brandColor};'>{boardgame.links.site}</div>
+			<div class="pattern h-full w-full">
+				<Carousel autoplay="2000" images={boardgame.images} />
 
       </div>
-			<div class="square one" style="color: {boardgame.brandColor};"/>
-			<div class="square two" style="color: {boardgame.brandColor};"/>
-			<div class="strip" />
+			<div class="square one" style="background-color: {boardgame.brandColor};"/>
+			<div class="square two" style="background-color: {boardgame.brandColor};"/>
+			<div class="strip" style='border-color: {boardgame.brandColor};'/>
 		</div>
-	<!-- </div>
-</section> -->
+	</div>
+</section>
 
 <style>
 	strong {
@@ -264,5 +260,81 @@
 		-webkit-backdrop-filter: blur(10px);
 	}
 
-	
+	.work-wrap {
+		height: auto;
+		background-repeat: no-repeat;
+		background-size: contain;
+		min-height: 100vh;
+
+		background-attachment: fixed;
+	}
+
+	@media (min-width: 1024px) {
+		/* .work-wrap {
+			min-height: 100vh;
+		} */
+		.a-bg {
+			background-image: url(/images/games/a-bg.svg);
+		}
+
+		.eco-bg {
+			background-image: url(/images/games/eco-bg.svg);
+		}
+
+		.ror-bg {
+			background-image: url(/images/games/ror-bg.png);
+		}
+
+		.fnb-bg {
+			background-image: url(/images/games/fnb-bg.svg);
+		}
+
+		.graffity-bg {
+			background-image: url(/images/games/graffity-bg.svg);
+		}
+
+		.locators-bg {
+			background-image: url(/images/games/fnb-bg.svg);
+		}
+
+		.squat-bg {
+			background-image: url(/images/games/squat-bg.svg);
+		}
+
+		.mks-bg {
+			background-image: url(/images/games/mks-bg.png);
+		}
+
+		.lgbt-bg {
+			background-image: url(/images/games/lgbt-bg.svg);
+		}
+		.cov-bg {
+			background-image: url(/images/games/cov-bg.svg);
+		}
+
+		.gulag-bg {
+			background-image: url(/images/games/gulag-bg.svg);
+		}
+
+		.yakudza-bg {
+			background-image: url(/images/games/yakudza-bg.svg);
+		}
+
+		.by_pl-bg {
+			background-image: url(/images/games/by-pl-bg.svg);
+		}
+		/*
+    .squat-bg {
+			background-image: url(/images/games/squat-bg.svg);
+		} */
+	}
+	@media (min-device-width: 320px) and (max-device-width: 1024px) {
+		.work-wrap {
+			/* min-height: 60vh;
+			height: auto; */
+		}
+		.a-bg {
+			background-color: #000;
+		}
+	}
 </style>

@@ -6,10 +6,10 @@
 
 <!--
  -->
-<!-- <section
+<section
 	id={boardgame.anchor}
 	style="background-position: {boardgame.align == 'start' ? 'right' : 'left'};"
-	class="{boardgame.bgImage} work-wrap grid grid-cols-1 bg-black"
+	class="{boardgame.bgImage} work-wrap grid grid-cols-1 bg-black"hg
 >
 	<div
 		data-aos="fade-down"
@@ -21,12 +21,8 @@
 		class="flex w-full {boardgame.align == 'start'
 			? 'justify-self-start '
 			: 'justify-self-end '}  glass lg:w-6/12"
-	> -->
-		<div class="coffee-card w-full" data-aos="flip-up"
-		data-aos-delay="80"
-		data-aos-duration="800"
-		data-aos-once="false"
-		data-aos-mirror="true">
+	>
+		<div class="coffee-card w-full">
 			<!-- <div class="mb-4 flex flex-row space-x-2">
 				{#each boardgame.keywords as keyword}
 					<span style="color: {boardgame.brandColor};" class="badge badge-outline badge-lg"
@@ -68,15 +64,15 @@
         </div>
 			<div class="site">{boardgame.links.site}</div>
 			<div class="pattern h-full">
-				<!-- <Carousel autoplay="2000" images={boardgame.images} /> -->
+				<Carousel autoplay="2000" images={boardgame.images} />
 
       </div>
 			<div class="square one" style="color: {boardgame.brandColor};"/>
 			<div class="square two" style="color: {boardgame.brandColor};"/>
 			<div class="strip" />
 		</div>
-	<!-- </div>
-</section> -->
+	</div>
+</section>
 
 <style>
 	strong {
@@ -264,5 +260,81 @@
 		-webkit-backdrop-filter: blur(10px);
 	}
 
-	
+	.work-wrap {
+		height: auto;
+		background-repeat: no-repeat;
+		background-size: contain;
+		min-height: 100vh;
+
+		background-attachment: fixed;
+	}
+
+	@media (min-width: 1024px) {
+		/* .work-wrap {
+			min-height: 100vh;
+		} */
+		.a-bg {
+			background-image: url(/images/games/a-bg.svg);
+		}
+
+		.eco-bg {
+			background-image: url(/images/games/eco-bg.svg);
+		}
+
+		.ror-bg {
+			background-image: url(/images/games/ror-bg.png);
+		}
+
+		.fnb-bg {
+			background-image: url(/images/games/fnb-bg.svg);
+		}
+
+		.graffity-bg {
+			background-image: url(/images/games/graffity-bg.svg);
+		}
+
+		.locators-bg {
+			background-image: url(/images/games/fnb-bg.svg);
+		}
+
+		.squat-bg {
+			background-image: url(/images/games/squat-bg.svg);
+		}
+
+		.mks-bg {
+			background-image: url(/images/games/mks-bg.png);
+		}
+
+		.lgbt-bg {
+			background-image: url(/images/games/lgbt-bg.svg);
+		}
+		.cov-bg {
+			background-image: url(/images/games/cov-bg.svg);
+		}
+
+		.gulag-bg {
+			background-image: url(/images/games/gulag-bg.svg);
+		}
+
+		.yakudza-bg {
+			background-image: url(/images/games/yakudza-bg.svg);
+		}
+
+		.by_pl-bg {
+			background-image: url(/images/games/by-pl-bg.svg);
+		}
+		/*
+    .squat-bg {
+			background-image: url(/images/games/squat-bg.svg);
+		} */
+	}
+	@media (min-device-width: 320px) and (max-device-width: 1024px) {
+		.work-wrap {
+			/* min-height: 60vh;
+			height: auto; */
+		}
+		.a-bg {
+			background-color: #000;
+		}
+	}
 </style>
