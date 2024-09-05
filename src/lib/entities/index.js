@@ -1,4 +1,9 @@
-// import FactSheet from './ui/landing/FactSheet.svelte';
+import AgendaCard from './ui/landing/AgendaCard.svelte';
+import AwardCard from './ui/landing/AwardCard.svelte';
+// import AgendaCard from './ui/landing/AgendaCard.svelte';
+// import AgendaCard from './ui/landing/AgendaCard.svelte';
+// import AgendaCard from './ui/landing/AgendaCard.svelte';
+// import AgendaCard from './ui/landing/AgendaCard.svelte';
 
 
-// export { FactSheet };
+export { AgendaCard, AwardCard };
