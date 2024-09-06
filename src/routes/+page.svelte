@@ -27,7 +27,7 @@
 
     <AboutOrganisator />
 
-    <!-- <Awards /> -->
+    <Awards />
 
     <!-- <News /> -->
 
