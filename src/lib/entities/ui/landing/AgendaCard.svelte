@@ -64,7 +64,7 @@
   text-align: center;
 }
 .layout486_number {
-  font-family: PT Serif, serif;
+  font-family: CFPunkAttitude, serif;
   font-size: 8rem;
   font-weight: 700;
   line-height: 1;
