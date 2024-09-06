@@ -1,29 +1,12 @@
 <script>
-  const orgs = [
-    {
-      title: 'Oleg Medvedev',
-      link: 'https://oleg-darkdev.vercel.app/'
-    },
-    {
-      title: 'DarkDev.Foundation',
-      link: 'https://darkdev-foundation.vercel.app/'
-    },
-    {
-      title: 'Ekipa skłotu ROZBRAT',
-      link: 'https://www.rozbrat.org/'
-    },
-    {
-      title: 'Food Not Bombs - Gdańsk',
-      link: 'https://www.facebook.com/FNBgdansk/'
-    },
-  ]
+  import {orgs} from '$shared';
 </script>
 
 <section class="shell-wrapper">
-  <div class="side-menu-wrapper icaros">
-    <a href="/" class="text-component w-inline-block">
-      <p class="hero-text text-[#dc2626]">org</p>
-    </a>
+    <div class="side-menu-wrapper">
+    <div class="text-component">
+      <h1 class="hero-text text-[#dc2626]">org</h1>
+    </div>
   </div>
   <div class="main-wrapper">
     <div class="">
@@ -44,27 +27,27 @@
                       </p>
                     </div> -->
                     <div class="margin-bottom margin-tiny">
-                      <!-- <h2 class="text-white  heading-style-h4">Organizatorzy turnieju:</h2> -->
+                      <h2 class="text-white  heading-style-h4">Słowo organizatora:</h2>
                     </div>
                     <div class="text-white  margin-bottom margin-medium">
                       <p class='mb-4'>
                         Turniej szachowy jako sposób na zbliżenie społeczności nie tylko w intelektualnej walce na planszy szachowej, ale także w klimacie solidarności i oporu.
                       </p>
                       <p>
-                        Dziękuje nie tylko za podtrzymywanie ducha Rozbratu, ale także za kontynuowanie tworzenia przestrzeni dla kulturowego i społecznego oporu. ти
+                        Dziękuje nie tylko za podtrzymywanie ducha Rozbratu, ale także za kontynuowanie tworzenia przestrzeni dla kulturowego i społecznego oporu.
                       </p>
                     </div>
                     <div class="margin-bottom margin-small">
                       {#each orgs as {title, link}}
-                        <p class="flex flex-row text-white mb-4 text-no-uppercase heading-style-h2 text-style-italic">
-                          <span class="icon-embed-medium w-embed text-[#dc2626]">
+                        <h3 class="flex flex-row text-white items-center content-center mb-4 text-no-uppercase heading-style-h2 text-style-italic">
+                          <span class="icon-embed-medium w-embed my-1 text-[#dc2626]">
                             <svg width="" height="" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5">
                               </path>
                             </svg>
                           </span>
                           <a href="{link}" class='hover:text-[#dc2626] text-white' target="_blank">{title}</a>
-                        </p>
+                        </h3>
                       {/each}
                       <!-- <h2 class="text-white heading-style-h4">Lorem Ipsum is simply dummy:</h2> -->
                     </div>
@@ -78,7 +61,10 @@
                     </div> -->
                   </div>
                   <div>
-                    <div class="text-white margin-bottom margin-tiny">
+                    <div class="text-white margin-bottom margin-medium">
+                      <p>
+                        Sędzia
+                      </p>
                       <h2>Oleg Medvedev.</h2>
                     </div>
                     <div class="margin-bottom margin-tiny">
@@ -90,9 +76,9 @@
                         <p>
                           <strong>Tytuł:</strong> Mistrz Białorusi w szachach.
                         </p>
-                        <p>
+                        <!-- <p>
                           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
+                        </p> -->
                       </div>
                     </div>
                     <div class="margin-bottom margin-small w-condition-invisible">
