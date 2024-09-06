@@ -47,8 +47,11 @@
                       <!-- <h2 class="text-white  heading-style-h4">Organizatorzy turnieju:</h2> -->
                     </div>
                     <div class="text-white  margin-bottom margin-medium">
+                      <p class='mb-4'>
+                        Turniej szachowy jako sposób na zbliżenie społeczności nie tylko w intelektualnej walce na planszy szachowej, ale także w klimacie solidarności i oporu.
+                      </p>
                       <p>
-                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        Dziękuje nie tylko za podtrzymywanie ducha Rozbratu, ale także za kontynuowanie tworzenia przestrzeni dla kulturowego i społecznego oporu. ти
                       </p>
                     </div>
                     <div class="margin-bottom margin-small">
@@ -60,7 +63,7 @@
                               </path>
                             </svg>
                           </span>
-                          <a href="{link}" class='text-white' target="_blank">{title}</a>
+                          <a href="{link}" class='hover:text-[#dc2626] text-white' target="_blank">{title}</a>
                         </p>
                       {/each}
                       <!-- <h2 class="text-white heading-style-h4">Lorem Ipsum is simply dummy:</h2> -->
