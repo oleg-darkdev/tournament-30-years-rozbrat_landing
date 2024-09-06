@@ -7,7 +7,7 @@
 <section class="shell-wrapper">
   <div class="side-menu-wrapper">
     <div class="text-component">
-      <h1 class="hero-text white">Rozkład</h1>
+      <h1 class="hero-text text-[#dc2626]">Rozkład</h1>
     </div>
   </div>
   <div class="main-wrapper">

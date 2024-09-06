@@ -22,12 +22,12 @@
 <section class="shell-wrapper">
   <div class="side-menu-wrapper icaros">
     <a href="/" class="text-component w-inline-block">
-      <p class="hero-text">org</p>
+      <p class="hero-text text-[#dc2626]">org</p>
     </a>
   </div>
   <div class="main-wrapper">
     <div class="">
-      
+
       <div class="padding-global">
         <div class="container-large">
           <div class="padding-section-small">
@@ -54,7 +54,7 @@
                     <div class="margin-bottom margin-small">
                       {#each orgs as {title, link}}
                         <p class="flex flex-row text-white mb-4 text-no-uppercase heading-style-h2 text-style-italic">
-                          <span class="icon-embed-medium w-embed">
+                          <span class="icon-embed-medium w-embed text-[#dc2626]">
                             <svg width="" height="" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5">
                               </path>
