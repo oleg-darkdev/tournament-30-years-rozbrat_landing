@@ -3890,7 +3890,7 @@ figcaption {
   display: flex;
 }
 .hero-text {
-  color: var(--text-color--text-alternate);
+  /* color: var(--text-color--text-alternate); */
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 8rem;
@@ -3898,7 +3898,7 @@ figcaption {
   line-height: 1;
 }
 .hero-text.white {
-  color: var(--base-color-neutral--white);
+  /* color: var(--base-color-neutral--white); */
 }
 .hero-text.black {
   color: var(--base-color-neutral--neutral-darkest);
