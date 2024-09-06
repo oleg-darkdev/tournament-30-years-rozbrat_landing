@@ -15,7 +15,7 @@
 <section class="shell-wrapper">
   <div class="hero-side-menu">
   <div class="hero-text-component">
-    <h1 class="hero-text white"><span class='hide-desctop'>turniej szachowy <br/> na </span>  30 lecie Rozbratu</h1>
+    <h1 class="hero-text text-[#dc2626]"><span class='hide-desctop text-white'>turniej szachowy <br/> na </span>  30 lecie Rozbratu</h1>
   </div>
 </div>
 
@@ -33,7 +33,7 @@
 
 <style>
 .hero-text {
-  color: var(--text-color--text-alternate);
+  /* color: var(--text-color--text-alternate); */
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 7rem;
@@ -130,7 +130,7 @@
     left: 0;
   }
   .hero-text {
-  color: var(--text-color--text-alternate);
+  /* color: var(--text-color--text-alternate); */
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 6.5rem;
