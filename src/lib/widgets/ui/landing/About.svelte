@@ -21,7 +21,7 @@
               </div>
               <div class="margin-bottom margin-huge">
                 <div class="w-layout-grid content24_content-wrapper">
-                  <h2 class="uppercase">Turniej szachowy z okazji 30-lecia legendarnego  <a href=' https://www.rozbrat.org/' class="text-[#dc2626]" target="_blank">skłotu „Rozbrat”</a></h2>
+                  <h2 class="uppercase">Turniej szachowy z okazji 30-lecia legendarnego  <a href='https://www.rozbrat.org/' class="text-[#dc2626]" target="_blank">skłotu „Rozbrat”</a></h2>
                   <div class="content24_content-right">
                     <div class="margin-bottom margin-small">
                       <div class="text-rich-text w-richtext">
