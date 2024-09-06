@@ -5,7 +5,7 @@
 <section class="shell-wrapper">
   <div class="side-menu-wrapper">
     <div class="text-component">
-      <h1 class="hero-text white">Info</h1>
+      <h1 class="hero-text text-[#dc2626]">Info</h1>
     </div>
   </div>
   <div class="main-wrapper">
@@ -21,20 +21,19 @@
               </div>
               <div class="margin-bottom margin-huge">
                 <div class="w-layout-grid content24_content-wrapper">
-                  <h2 class="uppercase">Lorem Ipsum is simply dummy text of the </h2>
+                  <h2 class="uppercase">Turniej szachowy z okazji 30-lecia legendarnego  <a href=' https://www.rozbrat.org/' class="text-[#dc2626]" target="_blank">skłotu „Rozbrat”</a></h2>
                   <div class="content24_content-right">
                     <div class="margin-bottom margin-small">
                       <div class="text-rich-text w-richtext">
-                        <!--  <a href="https://www.alaasafi.com/television/the-chosen">The Chosen (2017)</a>. -->
                         <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                          <a class=''>link</a>. </p>
+                          Zapraszamy miłośników szachów i sympatyków kultury alternatywnej. Na 30 rocznicy skłotu „Rozbrat” organizujemy anarchistyczny turniej szachowy, w którym strategia konfrontacji szachowej symbolizuje walkę między samoorganizującymi się ludźmi a systemem.
+                        </p>
                         <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                          <a class=''>link</a>. </p>
+                           Do udziału zapraszamy zarówno początkujących, jak i doświadczonych graczy, a dla zwycięzców przygotowano pamiątkowe nagrody.
+                        </p>
                         <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                          <a class=''>link</a>. </p>
+                          Turniej organizowany jest według <a class='https://pl.wikipedia.org/wiki/System_szwajcarski' target="_blank">systemu szwajcarskiego</a>, 6 rund po 10 minut dla każdej osoby i odbędzie się w samym sercu skłotu przy ulicy
+                          <a class='https://maps.app.goo.gl/uLtBncrGcqY6V6pc9' target="_blank">Kazimierza Pułaskiego 21A, 60-607 Poznań, Polska.</a>. </p>
                       </div>
                     </div>
                   </div>
