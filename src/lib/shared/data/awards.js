@@ -3,7 +3,7 @@ const awards = [
         img: '/images/medals/honors_second.svg',
         title: 'Drugie',
         awards: [
-            'Smaczne piwko',
+            'Zimny napój',
             'Drewniany magnes',
             'Dyplom',
         ]
@@ -12,7 +12,7 @@ const awards = [
         img: '/images/medals/honors_first.svg',
         title: 'Pierwsze',
         awards: [
-            'Smaczne piwko',
+            'Zimny napój',
             'Drewniany magnes',
             'Dyplom',
             // 'Prezent od sponsorów.'
@@ -23,7 +23,7 @@ const awards = [
         img: '/images/medals/honors_third.svg',
         title: 'Trzecie',
       awards: [
-            'Smaczne piwko',
+            'Zimny napój',
             'Drewniany magnes',
             'Dyplom',
         ]

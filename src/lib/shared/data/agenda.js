@@ -62,7 +62,7 @@ const agenda = [
     },
 
     {
-      title: '3-cija rundka.',
+      title: '3-cia rundka.',
       desc: 'Całkowity maksymalny czas na rundę wynosi 20 minut, po 10 minut dla każdego gracza.',
             time: {
         start: '17:10',
@@ -114,7 +114,7 @@ const agenda = [
     },
     {
       title: 'Podsumowanie wyników i nagrodzenie zwycięzców.',
-      desc: 'Ogłoszenie wyników, uroczyste wręczenie wejściówek na imprezę oraz upominków od naszych partnerów.',
+      desc: 'Ogłoszenie wyników, uroczyste wręczenie upominków.',
             time: {
         start: '18:20',
         finish: '18:30'

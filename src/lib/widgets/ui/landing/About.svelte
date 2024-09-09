@@ -33,7 +33,7 @@
                         </p>
                         <p>
                           Turniej organizowany jest według <a class='https://pl.wikipedia.org/wiki/System_szwajcarski' target="_blank">systemu szwajcarskiego</a>, 6 rund po 10 minut dla każdej osoby i odbędzie się w samym sercu skłotu przy ulicy
-                          <a class='https://maps.app.goo.gl/uLtBncrGcqY6V6pc9' target="_blank">Kazimierza Pułaskiego 21A, 60-607 Poznań, Polska.</a>. </p>
+                          <a class='https://maps.app.goo.gl/uLtBncrGcqY6V6pc9' target="_blank">Kazimierza Pułaskiego 21A, 60-607 Poznań, Polska.</a></p>
                       </div>
                     </div>
                   </div>
