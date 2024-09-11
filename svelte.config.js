@@ -1,5 +1,6 @@
 import preprocess from "svelte-preprocess";
 import adapter from "@sveltejs/adapter-vercel";
+import path from 'path';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -13,7 +14,14 @@ const config = {
 			$processes: 'src/lib/processes',
 			$widgets: 'src/lib/widgets',
 			$stores: 'src/lib/shared/stores',
-			$shared: 'src/lib/shared'
+      $shared: 'src/lib/shared',
+
+      // legacy pomodoro timer
+      '@coreEntities': path.resolve('./src/lib/app/entities'),
+			'@coreFeatures': path.resolve('./src/lib/app/features'),
+			'@coreProcesses': path.resolve('./src/lib/app/processes'),
+			'@coreShared': path.resolve('./src/lib/app/shared'),
+			'@coreWidgets': path.resolve('./src/lib/app/widgets'),
 		}
 	},
 

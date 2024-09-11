@@ -15,9 +15,9 @@
           <div>
             <div class="content24_component">
               <div class="margin-bottom margin-xxlarge">
-                <div class="content24_image-wrapper">
+                <!-- <div class="content24_image-wrapper">
                   <img src="" loading="lazy" sizes="(max-width: 479px) 81vw, (max-width: 767px) 77vw, (max-width: 1919px) 81vw, 85vw"  alt="" class="content24_image">
-                </div>
+                </div> -->
               </div>
               <div class="margin-bottom margin-huge">
                 <div class="w-layout-grid content24_content-wrapper">

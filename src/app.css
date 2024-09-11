@@ -12,6 +12,9 @@
   line-height: 1.2;
 }
 
+.font-CFPunkAttitude {
+   font-family: CFPunkAttitude, sans-serif;
+}
 .text-component, .hero-text-component {
   display: flex;
   flex-direction: row;
