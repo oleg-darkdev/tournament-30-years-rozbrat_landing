@@ -9,7 +9,7 @@
     </div>
   </div>
   <div class="main-wrapper">
-    <div class="section_content24">
+    <div class="section_content">
       <div class="padding-global-film">
         <div class="container-large">
           <div>
