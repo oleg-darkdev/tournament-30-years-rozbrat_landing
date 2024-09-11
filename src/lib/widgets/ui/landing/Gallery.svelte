@@ -2,7 +2,7 @@
 
 </script>
 
-<section class="section_content24">
+<section class="section_content">
   <div class="padding-global">
     <div class="container-large">
       <div>
