@@ -15,9 +15,9 @@
     <div class="container-large">
       <div class="padding-section-large">
           <div class="padding-section-medium">
-            <div class="portfolio13_component">
-              <div class="portfolio13_list-wrapper w-dyn-list">
-                <div role="list" class="portfolio13_list w-dyn-items mx-auto">
+            <div class="list_component">
+              <div class=" w-dyn-list">
+                <div role="list" class="list w-dyn-items mx-auto">
                   {#each awards as award}
                     <AwardCard {award}/>
                   {/each}
@@ -33,5 +33,28 @@
 </section>
 
 <style>
+.list_component {
+  flex-direction: column;
+  align-items: center;
+}
+.list {
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+}
 
+@media screen and (max-width: 991px) {
+  .list {
+    grid-column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .list {
+    grid-row-gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+}
 </style>
